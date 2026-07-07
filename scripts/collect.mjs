@@ -275,6 +275,7 @@ async function updateHistory(snapshot) {
     date: today,
     usdkrw: snapshot.markets.fx?.rates?.KRW ?? null,
     btc: snapshot.markets.crypto?.btc?.usd ?? null,
+    eth: snapshot.markets.crypto?.eth?.usd ?? null,
     kospi: snapshot.markets.indices?.kospi?.price ?? null,
     sp500: snapshot.markets.indices?.sp500?.price ?? null,
     nasdaq: snapshot.markets.indices?.nasdaq?.price ?? null,

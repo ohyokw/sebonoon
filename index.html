@@ -66,19 +66,19 @@ body {
   color: var(--text-1);
   font-family: "Pretendard Variable", Pretendard, system-ui, -apple-system, "Segoe UI",
     "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  font-size: 15px;
-  line-height: 1.55;
+  font-size: 13.5px;
+  line-height: 1.45;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 64px; }
+.wrap { max-width: 1320px; margin: 0 auto; padding: 14px 18px 40px; }
 
 /* ── 헤더 ─────────────────────────── */
-header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
-header h1 { font-size: 26px; font-weight: 800; margin: 0; letter-spacing: -0.5px; }
+header { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 2px; }
+header h1 { font-size: 20px; font-weight: 800; margin: 0; letter-spacing: -0.4px; }
 header .eye { color: var(--series-1); }
 header .meta { color: var(--muted); font-size: 13px; }
 header .spacer { flex: 1; }
@@ -87,119 +87,124 @@ header .spacer { flex: 1; }
   border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer;
 }
 #themeToggle:hover { background: var(--accent-wash); }
-.tagline { color: var(--text-2); font-size: 14px; margin: 0 0 14px; }
+.tagline-inline { color: var(--muted); font-size: 12px; }
+@media (max-width: 900px) { .tagline-inline { display: none; } }
 
 /* ── 퀵 내비게이션 (모바일 한 페이지 이동) ─── */
 nav.quicknav {
   position: sticky; top: 0; z-index: 20;
   display: flex; gap: 8px; overflow-x: auto;
-  padding: 10px 2px; margin: 0 -2px 14px;
+  padding: 6px 2px; margin: 0 -2px 10px;
   background: color-mix(in srgb, var(--page) 86%, transparent);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
   scrollbar-width: none; -webkit-overflow-scrolling: touch;
 }
 nav.quicknav::-webkit-scrollbar { display: none; }
 nav.quicknav a {
-  flex: none; font-size: 13px; font-weight: 550; color: var(--text-2);
+  flex: none; font-size: 12.5px; font-weight: 550; color: var(--text-2);
   border: 1px solid var(--border); background: var(--surface-1);
-  border-radius: 999px; padding: 6px 13px; white-space: nowrap;
+  border-radius: 999px; padding: 4px 11px; white-space: nowrap;
 }
 nav.quicknav a:hover { text-decoration: none; background: var(--accent-wash); color: var(--text-1); }
 
 .banner {
   background: var(--accent-wash); border: 1px solid var(--border); border-radius: 10px;
-  padding: 10px 14px; font-size: 13.5px; color: var(--text-2); margin-bottom: 20px;
+  padding: 8px 12px; font-size: 12.5px; color: var(--text-2); margin-bottom: 12px;
 }
 .banner strong { color: var(--text-1); }
 
 /* ── 카드 공통 ─────────────────────── */
-section { margin-bottom: 26px; }
+section { margin-bottom: 14px; }
 h2 {
-  font-size: 13px; font-weight: 700; color: var(--muted);
-  text-transform: none; letter-spacing: 0.4px; margin: 0 0 10px 2px;
+  font-size: 12px; font-weight: 700; color: var(--muted);
+  text-transform: none; letter-spacing: 0.4px; margin: 0 0 6px 2px;
 }
 h2 .cnt { font-weight: 500; }
 .card {
   background: var(--surface-1); border: 1px solid var(--border);
-  border-radius: 12px; padding: 16px 18px;
+  border-radius: 10px; padding: 10px 13px;
 }
-.cols { display: grid; gap: 14px; }
+.cols { display: grid; gap: 10px; }
+.cols > * { min-width: 0; } /* nowrap 콘텐츠가 그리드 트랙을 늘리지 않도록 */
 .cols-3 { grid-template-columns: repeat(3, 1fr); }
 .cols-2 { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 900px) { .cols-3 { grid-template-columns: 1fr; } .cols-2 { grid-template-columns: 1fr; } }
 
 /* ── 시장 스탯 타일 ─────────────────── */
-.tiles { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.tiles { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.tiles > .tile { min-width: 0; }
 @media (max-width: 1024px) { .tiles { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 640px)  { .tiles { grid-template-columns: repeat(2, 1fr); } }
-.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 13px 15px 11px; }
-.tile .label { font-size: 12.5px; color: var(--text-2); margin-bottom: 3px; }
-.tile .value { font-size: 21px; font-weight: 650; letter-spacing: -0.3px; }
-.tile .delta { font-size: 12.5px; font-weight: 600; margin-top: 1px; }
+.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 8px 11px; }
+.tile .top { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+.tile .vrow { display: flex; align-items: center; gap: 8px; margin-top: 1px; }
+.tile .label { font-size: 11.5px; color: var(--text-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tile .value { font-size: 17px; font-weight: 650; letter-spacing: -0.3px; white-space: nowrap; }
+.tile .delta { font-size: 11.5px; font-weight: 600; white-space: nowrap; }
 .tile .delta.up   { color: var(--delta-good); }
 .tile .delta.down { color: var(--delta-bad); }
 .tile .delta.flat { color: var(--muted); font-weight: 500; }
-.tile svg { display: block; width: 100%; height: 34px; margin-top: 8px; }
-.tile .nodata { color: var(--muted); font-weight: 400; font-size: 16px; }
+.tile svg { display: block; flex: 1 1 30px; min-width: 0; width: 100%; height: 22px; }
+.tile .nodata { color: var(--muted); font-weight: 400; font-size: 13px; }
 
 /* ── 뉴스 리스트 ────────────────────── */
 ul.news { list-style: none; margin: 0; padding: 0; }
-ul.news li { padding: 8px 0; border-bottom: 1px solid var(--grid); }
-ul.news li:last-child { border-bottom: 0; padding-bottom: 2px; }
-ul.news li:first-child { padding-top: 2px; }
-ul.news .t { display: block; font-size: 14px; font-weight: 500; color: var(--text-1); }
-ul.news .s { font-size: 12px; color: var(--muted); margin-top: 1px; }
+ul.news li { display: flex; align-items: baseline; gap: 8px; padding: 3.5px 0; border-bottom: 1px solid var(--grid); }
+ul.news li:last-child { border-bottom: 0; padding-bottom: 0; }
+ul.news li:first-child { padding-top: 0; }
+ul.news .t { flex: 1 1 auto; min-width: 0; font-size: 13px; font-weight: 500; color: var(--text-1); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+ul.news .s { flex: none; font-size: 11px; color: var(--muted); white-space: nowrap; }
 ul.news .hnmeta a { color: var(--muted); }
 
 /* ── 트렌드 칩 ─────────────────────── */
-.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
   display: inline-flex; align-items: baseline; gap: 6px;
   border: 1px solid var(--border); border-radius: 999px;
-  background: var(--surface-1); padding: 5px 12px; font-size: 13.5px;
+  background: var(--surface-1); padding: 3px 10px; font-size: 12.5px;
 }
 .chip .rank { color: var(--series-1); font-weight: 700; font-size: 12px; }
 .chip .traffic { color: var(--muted); font-size: 11.5px; }
-.empty { color: var(--muted); font-size: 13.5px; padding: 6px 0; }
+.empty { color: var(--muted); font-size: 12.5px; padding: 4px 0; }
 
 /* ── 생각거리 ─────────────────────── */
-.question { font-size: 16.5px; font-weight: 600; line-height: 1.5; }
-.question-sub { color: var(--text-2); font-size: 13px; margin-top: 8px; }
+.question { font-size: 14px; font-weight: 600; line-height: 1.45; }
+.question-sub { color: var(--text-2); font-size: 11.5px; margin-top: 5px; }
 
 /* ── 예측 노트 ─────────────────────── */
-.pstats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 14px; }
+.pstats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
 @media (max-width: 640px) { .pstats { grid-template-columns: repeat(2, 1fr); } }
-.pstat { padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; }
-.pstat .label { font-size: 12px; color: var(--text-2); }
-.pstat .value { font-size: 22px; font-weight: 650; }
-.pstat .hint { font-size: 11.5px; color: var(--muted); }
+.pstat { padding: 7px 11px; border: 1px solid var(--border); border-radius: 9px; }
+.pstat .label { font-size: 11px; color: var(--text-2); }
+.pstat .value { font-size: 17px; font-weight: 650; }
+.pstat .hint { font-size: 10.5px; color: var(--muted); }
 
-form.pform { display: grid; grid-template-columns: 1fr 110px 150px 92px; gap: 10px; margin-bottom: 6px; }
+form.pform { display: grid; grid-template-columns: 1fr 100px 140px 84px; gap: 8px; margin-bottom: 4px; }
 @media (max-width: 760px) { form.pform { grid-template-columns: 1fr; } }
 form.pform input, form.pform button {
-  font: inherit; font-size: 14px; border-radius: 9px; border: 1px solid var(--border);
-  background: var(--page); color: var(--text-1); padding: 9px 12px;
+  font: inherit; font-size: 13px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--page); color: var(--text-1); padding: 7px 10px;
 }
 form.pform input:focus { outline: 2px solid var(--series-1); outline-offset: 0; border-color: transparent; }
 form.pform button {
   background: var(--series-1); color: #fff; border: 0; font-weight: 650; cursor: pointer;
 }
 form.pform button:hover { filter: brightness(1.08); }
-.pform-hint { font-size: 12px; color: var(--muted); margin: 2px 2px 14px; }
+.pform-hint { font-size: 11px; color: var(--muted); margin: 2px 2px 10px; }
 
 ul.plist { list-style: none; margin: 0; padding: 0; }
 ul.plist li {
   display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
-  padding: 10px 2px; border-bottom: 1px solid var(--grid);
+  padding: 6px 2px; border-bottom: 1px solid var(--grid);
 }
 ul.plist li:last-child { border-bottom: 0; }
-ul.plist .ptext { flex: 1 1 320px; font-size: 14px; }
-ul.plist .pmeta { font-size: 12px; color: var(--muted); white-space: nowrap; }
+ul.plist .ptext { flex: 1 1 320px; font-size: 13px; }
+ul.plist .pmeta { font-size: 11px; color: var(--muted); white-space: nowrap; }
 ul.plist .pdue-over { color: var(--status-warn); font-weight: 600; }
-.conf-meter { width: 74px; height: 6px; border-radius: 3px; background: var(--series-1-de); overflow: hidden; flex: none; }
+.conf-meter { width: 60px; height: 5px; border-radius: 3px; background: var(--series-1-de); overflow: hidden; flex: none; }
 .conf-meter i { display: block; height: 100%; background: var(--series-1); }
 .pbtn {
-  font: inherit; font-size: 12.5px; border-radius: 7px; cursor: pointer; padding: 4px 10px;
+  font: inherit; font-size: 12px; border-radius: 7px; cursor: pointer; padding: 3px 9px;
   border: 1px solid var(--border); background: var(--surface-1); color: var(--text-2);
 }
 .pbtn:hover { background: var(--accent-wash); }
@@ -207,41 +212,37 @@ ul.plist .pdue-over { color: var(--status-warn); font-weight: 600; }
 .badge { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
 .badge.hit  { color: var(--status-good); background: color-mix(in srgb, var(--status-good) 12%, transparent); }
 .badge.miss { color: var(--status-crit); background: color-mix(in srgb, var(--status-crit) 12%, transparent); }
-.ptools { display: flex; gap: 8px; margin-top: 12px; }
-.resolved-toggle { margin-top: 14px; }
+.ptools { display: flex; gap: 8px; margin-top: 8px; }
+.resolved-toggle { margin-top: 10px; }
 
 /* ── 푸터 ─────────────────────────── */
-footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; line-height: 1.8; }
+footer { margin-top: 18px; color: var(--muted); font-size: 11.5px; line-height: 1.65; }
 footer b { color: var(--text-2); }
 
 /* ── 모바일 최적화 ──────────────────── */
 @media (max-width: 640px) {
-  body { font-size: 14.5px; }
-  .wrap { padding: 12px 14px calc(48px + env(safe-area-inset-bottom)); }
-  header { gap: 10px; margin-bottom: 4px; }
-  header h1 { font-size: 21px; }
-  header .meta { font-size: 12px; }
+  .wrap { padding: 10px 12px calc(36px + env(safe-area-inset-bottom)); }
+  header { gap: 8px; margin-bottom: 2px; }
+  header h1 { font-size: 18px; }
+  header .meta { font-size: 11.5px; }
   #updatedLabel { display: none; } /* 좁은 화면에선 날짜만 */
-  .tagline { font-size: 13px; margin-bottom: 10px; }
-  .card { padding: 13px 14px; border-radius: 11px; }
-  .cols { gap: 11px; }
-  .tiles { gap: 9px; }
-  .tile { padding: 11px 12px 9px; }
-  .tile .value { font-size: 18px; }
-  .tile svg { height: 28px; margin-top: 6px; }
-  section { margin-bottom: 20px; }
-  ul.news .t { font-size: 13.5px; }
-  .question { font-size: 15px; }
-  .pstat .value { font-size: 19px; }
-  ul.plist li { row-gap: 6px; }
+  .card { padding: 9px 11px; }
+  .cols { gap: 8px; }
+  .tiles { gap: 7px; }
+  .tile { padding: 7px 9px; }
+  .tile .value { font-size: 15px; }
+  .tile svg { height: 18px; }
+  section { margin-bottom: 11px; }
+  ul.news .s { max-width: 96px; overflow: hidden; text-overflow: ellipsis; }
+  ul.plist li { row-gap: 5px; }
   ul.plist .ptext { flex-basis: 100%; }
 }
 /* 터치 기기 — 탭 타겟 확대 */
 @media (pointer: coarse) {
-  .pbtn { padding: 8px 14px; font-size: 13px; }
-  form.pform input, form.pform button { padding: 12px 13px; }
-  #themeToggle { padding: 7px 14px; }
-  ul.news li { padding: 10px 0; }
+  .pbtn { padding: 6px 12px; }
+  form.pform input, form.pform button { padding: 10px 12px; }
+  #themeToggle { padding: 6px 13px; }
+  ul.news li { padding: 6px 0; }
 }
 </style>
 </head>
@@ -252,10 +253,10 @@ footer b { color: var(--text-2); }
   <h1><span class="eye">◉</span> 세상을 보는 눈</h1>
   <span class="meta" id="todayLabel"></span>
   <span class="meta" id="updatedLabel"></span>
+  <span class="tagline-inline">— 매일 세상의 흐름을 한 페이지로</span>
   <span class="spacer"></span>
   <button id="themeToggle" type="button" aria-label="테마 전환">테마</button>
 </header>
-<p class="tagline">매일 세상의 흐름을 한 페이지로 읽고, 예측을 기록하며 '보는 힘'을 기릅니다.</p>
 
 <nav class="quicknav" aria-label="섹션 바로가기">
   <a href="#sec-markets">📈 시장</a>
@@ -277,18 +278,11 @@ footer b { color: var(--text-2); }
 </section>
 
 <section id="sec-news" aria-label="뉴스">
-  <h2>오늘의 헤드라인</h2>
   <div class="cols cols-3">
     <div class="card"><h2>🌍 세계</h2><ul class="news" id="news-world"></ul></div>
     <div class="card"><h2>🇰🇷 한국</h2><ul class="news" id="news-korea"></ul></div>
     <div class="card"><h2>💹 경제·비즈니스</h2><ul class="news" id="news-business"></ul></div>
-  </div>
-</section>
-
-<section id="sec-tech" aria-label="기술과 과학">
-  <h2>기술 · 과학 · 커뮤니티</h2>
-  <div class="cols cols-3">
-    <div class="card"><h2>🤖 기술</h2><ul class="news" id="news-tech"></ul></div>
+    <div class="card" id="sec-tech"><h2>🤖 기술</h2><ul class="news" id="news-tech"></ul></div>
     <div class="card"><h2>🔬 과학</h2><ul class="news" id="news-science"></ul></div>
     <div class="card"><h2>🟠 Hacker News</h2><ul class="news" id="news-hn"></ul></div>
   </div>
@@ -431,12 +425,16 @@ function renderTiles(history) {
     const dir = st.changePct == null ? 'flat' : st.changePct > 0 ? 'up' : st.changePct < 0 ? 'down' : 'flat';
     const arrow = dir === 'up' ? '▲' : dir === 'down' ? '▼' : '';
     return `<div class="tile">
-      <div class="label">${esc(def.label)}</div>
-      <div class="value">${val != null
-        ? `${def.prefix ?? ''}${val}${def.unit ? `<span style="font-size:13px;font-weight:500;color:var(--text-2)"> ${def.unit}</span>` : ''}`
-        : '<span class="nodata">수집 대기</span>'}</div>
-      <div class="delta ${dir}">${deltaTxt != null ? `${arrow} ${deltaTxt} <span style="color:var(--muted);font-weight:500">전일 대비</span>` : ''}</div>
-      ${sparkline(histMap[def.key])}
+      <div class="top">
+        <span class="label">${esc(def.label)}</span>
+        <span class="delta ${dir}" title="전일 대비">${deltaTxt != null ? `${arrow} ${deltaTxt}` : ''}</span>
+      </div>
+      <div class="vrow">
+        <span class="value">${val != null
+          ? `${def.prefix ?? ''}${val}${def.unit ? `<span style="font-size:11px;font-weight:500;color:var(--text-2)"> ${def.unit}</span>` : ''}`
+          : '<span class="nodata">수집 대기</span>'}</span>
+        ${sparkline(histMap[def.key])}
+      </div>
     </div>`;
   }).join('');
 }
@@ -481,15 +479,15 @@ async function liveMarkets(history) {
 }
 
 /* ───────────────────── 뉴스 렌더링 ───────────────────── */
-function renderNewsList(elId, items, max = 8) {
+function renderNewsList(elId, items, max = 10) {
   const el = $(elId);
   if (!items || !items.length) {
     el.innerHTML = '<li class="empty">아직 수집된 항목이 없습니다.</li>';
     return;
   }
   el.innerHTML = items.slice(0, max).map((it) => `<li>
-    <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.title)}</a>
-    <div class="s">${esc(it.source || '')}${it.pubDate ? ` · ${fmt.rel(it.pubDate)}` : ''}</div>
+    <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener" title="${esc(it.title)}${it.source ? ` — ${esc(it.source)}` : ''}">${esc(it.title)}</a>
+    <span class="s">${esc(it.source || '')}${it.pubDate ? ` · ${fmt.rel(it.pubDate)}` : ''}</span>
   </li>`).join('');
 }
 
@@ -499,9 +497,9 @@ function renderHN(items) {
     el.innerHTML = '<li class="empty">아직 수집된 항목이 없습니다.</li>';
     return;
   }
-  el.innerHTML = items.slice(0, 8).map((it) => `<li>
-    <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.title)}</a>
-    <div class="s hnmeta">▲ ${fmt.num(it.points) ?? 0}점 · <a href="${esc(it.hnLink)}" target="_blank" rel="noopener">댓글 ${fmt.num(it.comments) ?? 0}</a></div>
+  el.innerHTML = items.slice(0, 10).map((it) => `<li>
+    <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener" title="${esc(it.title)}">${esc(it.title)}</a>
+    <span class="s hnmeta">▲${fmt.num(it.points) ?? 0} · <a href="${esc(it.hnLink)}" target="_blank" rel="noopener">💬${fmt.num(it.comments) ?? 0}</a></span>
   </li>`).join('');
 }
 
