@@ -2,9 +2,13 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>세상을 보는 눈</title>
 <meta name="description" content="매일의 뉴스·시장·트렌드를 한 페이지로 보고, 예측 노트로 '보는 눈'을 기르는 대시보드">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9f9f7">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0d0d">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="세상을 보는 눈">
 <style>
 :root {
   --page:        #f9f9f7;
@@ -55,7 +59,7 @@
 }
 
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 58px; }
 body {
   margin: 0;
   background: var(--page);
@@ -64,6 +68,8 @@ body {
     "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
   font-size: 15px;
   line-height: 1.55;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -81,7 +87,24 @@ header .spacer { flex: 1; }
   border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer;
 }
 #themeToggle:hover { background: var(--accent-wash); }
-.tagline { color: var(--text-2); font-size: 14px; margin: 0 0 20px; }
+.tagline { color: var(--text-2); font-size: 14px; margin: 0 0 14px; }
+
+/* ── 퀵 내비게이션 (모바일 한 페이지 이동) ─── */
+nav.quicknav {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; gap: 8px; overflow-x: auto;
+  padding: 10px 2px; margin: 0 -2px 14px;
+  background: color-mix(in srgb, var(--page) 86%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+nav.quicknav::-webkit-scrollbar { display: none; }
+nav.quicknav a {
+  flex: none; font-size: 13px; font-weight: 550; color: var(--text-2);
+  border: 1px solid var(--border); background: var(--surface-1);
+  border-radius: 999px; padding: 6px 13px; white-space: nowrap;
+}
+nav.quicknav a:hover { text-decoration: none; background: var(--accent-wash); color: var(--text-1); }
 
 .banner {
   background: var(--accent-wash); border: 1px solid var(--border); border-radius: 10px;
@@ -190,6 +213,36 @@ ul.plist .pdue-over { color: var(--status-warn); font-weight: 600; }
 /* ── 푸터 ─────────────────────────── */
 footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; line-height: 1.8; }
 footer b { color: var(--text-2); }
+
+/* ── 모바일 최적화 ──────────────────── */
+@media (max-width: 640px) {
+  body { font-size: 14.5px; }
+  .wrap { padding: 12px 14px calc(48px + env(safe-area-inset-bottom)); }
+  header { gap: 10px; margin-bottom: 4px; }
+  header h1 { font-size: 21px; }
+  header .meta { font-size: 12px; }
+  #updatedLabel { display: none; } /* 좁은 화면에선 날짜만 */
+  .tagline { font-size: 13px; margin-bottom: 10px; }
+  .card { padding: 13px 14px; border-radius: 11px; }
+  .cols { gap: 11px; }
+  .tiles { gap: 9px; }
+  .tile { padding: 11px 12px 9px; }
+  .tile .value { font-size: 18px; }
+  .tile svg { height: 28px; margin-top: 6px; }
+  section { margin-bottom: 20px; }
+  ul.news .t { font-size: 13.5px; }
+  .question { font-size: 15px; }
+  .pstat .value { font-size: 19px; }
+  ul.plist li { row-gap: 6px; }
+  ul.plist .ptext { flex-basis: 100%; }
+}
+/* 터치 기기 — 탭 타겟 확대 */
+@media (pointer: coarse) {
+  .pbtn { padding: 8px 14px; font-size: 13px; }
+  form.pform input, form.pform button { padding: 12px 13px; }
+  #themeToggle { padding: 7px 14px; }
+  ul.news li { padding: 10px 0; }
+}
 </style>
 </head>
 <body>
@@ -204,18 +257,26 @@ footer b { color: var(--text-2); }
 </header>
 <p class="tagline">매일 세상의 흐름을 한 페이지로 읽고, 예측을 기록하며 '보는 힘'을 기릅니다.</p>
 
+<nav class="quicknav" aria-label="섹션 바로가기">
+  <a href="#sec-markets">📈 시장</a>
+  <a href="#sec-news">📰 헤드라인</a>
+  <a href="#sec-tech">🤖 기술·과학</a>
+  <a href="#sec-trends">🔎 트렌드</a>
+  <a href="#sec-predict">🎯 예측 노트</a>
+</nav>
+
 <div class="banner" id="sampleBanner" hidden>
   <strong>지금은 샘플 데이터입니다.</strong>
   GitHub Actions의 <code>daily-collect</code> 워크플로우가 처음 실행되면 (매일 아침 자동, 또는 Actions 탭에서 수동 실행)
   실제 뉴스·시장·트렌드 데이터로 채워집니다. 환율·코인 시세는 지금도 브라우저에서 실시간으로 불러옵니다.
 </div>
 
-<section aria-label="시장 지표">
+<section id="sec-markets" aria-label="시장 지표">
   <h2>시장 지표 <span class="cnt" id="marketNote"></span></h2>
   <div class="tiles" id="tiles"></div>
 </section>
 
-<section aria-label="뉴스">
+<section id="sec-news" aria-label="뉴스">
   <h2>오늘의 헤드라인</h2>
   <div class="cols cols-3">
     <div class="card"><h2>🌍 세계</h2><ul class="news" id="news-world"></ul></div>
@@ -224,7 +285,7 @@ footer b { color: var(--text-2); }
   </div>
 </section>
 
-<section aria-label="기술과 과학">
+<section id="sec-tech" aria-label="기술과 과학">
   <h2>기술 · 과학 · 커뮤니티</h2>
   <div class="cols cols-3">
     <div class="card"><h2>🤖 기술</h2><ul class="news" id="news-tech"></ul></div>
@@ -233,7 +294,7 @@ footer b { color: var(--text-2); }
   </div>
 </section>
 
-<section aria-label="트렌드와 생각거리">
+<section id="sec-trends" aria-label="트렌드와 생각거리">
   <div class="cols cols-2">
     <div class="card">
       <h2>🔎 한국 검색 트렌드</h2>
@@ -247,7 +308,7 @@ footer b { color: var(--text-2); }
   </div>
 </section>
 
-<section aria-label="예측 노트">
+<section id="sec-predict" aria-label="예측 노트">
   <h2>🎯 예측 노트 — 기록해야 눈이 길러집니다</h2>
   <div class="card">
     <div class="pstats" id="pstats"></div>
@@ -275,8 +336,10 @@ footer b { color: var(--text-2); }
   <b>보는 눈 훈련 루틴</b> — ① 매일 아침 이 페이지를 5분간 훑는다 ② '오늘의 생각거리'에 답한다
   ③ 일주일에 2–3개, 기한이 있는 예측을 확신도와 함께 기록한다 ④ 판정일에 반드시 판정한다
   ⑤ 적중률과 확신도의 차이(과신 여부)를 확인하고 다음 예측을 조정한다.<br>
-  데이터 출처: Google News RSS · Hacker News API · Frankfurter(환율) · CoinGecko(암호화폐) · Yahoo Finance(지수) · Google Trends.
-  매일 아침 GitHub Actions가 자동 수집합니다.
+  <b>출처 정책</b> — 뉴스는 사실 보도 중심의 통신사·공영·학술 매체만 집계합니다:
+  Reuters · AP · BBC (국제 통신사/공영), 연합뉴스·뉴시스·뉴스1·KBS·YTN (국내 통신사/공영), Science(AAAS)·Nature (학술지), MIT Technology Review (기술).
+  시장 데이터는 1차 출처를 사용합니다: ECB 고시환율(Frankfurter) · CoinGecko · Yahoo Finance. 검색 트렌드는 편집 개입이 없는 Google Trends 원시 데이터입니다.
+  정파성이 뚜렷한 매체는 자동 집계에서 제외되며, 매일 06:30/18:30 KST에 GitHub Actions가 수집합니다.
 </footer>
 
 </div>
