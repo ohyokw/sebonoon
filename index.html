@@ -253,6 +253,16 @@ ul.plist .pdue-over { color: var(--status-warn); font-weight: 600; }
   padding: 6px 10px; margin-top: 2px; line-height: 1.6;
 }
 .evid .d { color: var(--muted); }
+.llm-settings { margin-top: 10px; border-top: 1px solid var(--grid); padding-top: 8px; }
+.llm-settings summary { font-size: 12px; color: var(--text-2); cursor: pointer; }
+#llmStatus { color: var(--muted); font-weight: 500; margin-left: 6px; }
+.llm-desc { font-size: 11px; color: var(--muted); line-height: 1.55; margin: 6px 0 8px; }
+.llm-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.llm-row input {
+  flex: 1 1 200px; min-width: 0; font: inherit; font-size: 12.5px;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--page); color: var(--text-1); padding: 6px 10px;
+}
 
 /* ── 푸터 ─────────────────────────── */
 footer { margin-top: 18px; color: var(--muted); font-size: 11.5px; line-height: 1.65; }
@@ -379,6 +389,23 @@ footer b { color: var(--text-2); }
       <button class="pbtn" id="exportBtn" type="button">내보내기 (JSON)</button>
       <label class="pbtn" style="display:inline-block">가져오기<input id="importFile" type="file" accept=".json" hidden></label>
     </div>
+    <details class="llm-settings" id="llmSettings">
+      <summary>🖥️ 로컬 LLM 자동 판정 (Ollama) <span id="llmStatus"></span></summary>
+      <p class="llm-desc">
+        내 기기(맥미니 등)에서 실행 중인 Ollama로, 기한이 된 자유 예측을 기간 중 수집된 헤드라인을 근거로
+        <b>무료</b> 자동 판정합니다. 외부 서버로는 아무것도 전송되지 않습니다.
+        근거가 부족하면 보류하고 직접 판정을 기다리며, 판정 결과는 '정정'으로 뒤집을 수 있습니다.
+        Ollama 쪽에서 <code>OLLAMA_ORIGINS</code> 허용이 필요합니다 (README 참고).
+        이 기기에서 Ollama에 접근할 수 없으면 조용히 건너뜁니다.
+      </p>
+      <div class="llm-row">
+        <input id="llmUrl" type="url" placeholder="http://localhost:11434" autocomplete="off">
+        <input id="llmModel" type="text" placeholder="모델명 (예: exaone3.5:7.8b, qwen2.5:14b)" autocomplete="off">
+        <button class="pbtn" id="llmSave" type="button">저장</button>
+        <button class="pbtn" id="llmTest" type="button">연결 테스트</button>
+        <button class="pbtn del" id="llmOff" type="button">끄기</button>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -687,6 +714,102 @@ function relatedHeadlines(p) {
   return hits.slice(0, 8);
 }
 
+/* ── 로컬 LLM(Ollama) 자동 판정 — 선택 기능, 외부 서버·비용 없음 ── */
+const LLMCFG = 'sebonoon.localLlm';
+const llmCfg = () => { try { return JSON.parse(localStorage.getItem(LLMCFG)); } catch { return null; } };
+function setLlmStatus(msg) { $('llmStatus').textContent = msg || ''; }
+
+const LLM_FORMAT = { // Ollama structured output (format 필드에 JSON 스키마)
+  type: 'object',
+  properties: {
+    verdict: { type: 'string', enum: ['hit', 'miss', 'unclear'] },
+    reason: { type: 'string' },
+  },
+  required: ['verdict', 'reason'],
+};
+
+function buildEvidence(p) {
+  const from = (p.created || '').slice(0, 10);
+  const to = p.due < todayKst() ? p.due : todayKst();
+  const days = NEWS_ARCHIVE.filter((d) => d.date >= from && d.date <= to);
+  let lines = days.flatMap((d) => d.items.map((it) => `[${d.date}] ${it.t} (${it.s})`));
+  if (lines.length > 120) { // 로컬 모델의 컨텍스트를 고려해 기간 전체에서 고르게 샘플링
+    const step = lines.length / 120;
+    lines = Array.from({ length: 120 }, (_, i) => lines[Math.floor(i * step)]);
+  }
+  return lines.join('\n');
+}
+
+function judgePrompt(p, evidence) {
+  return `너는 예측 판정관이다. 아래 예측이 기한 내에 실현되었는지, 수집된 뉴스 헤드라인을 증거로 판정하라.
+
+예측: "${p.text}"
+기록일: ${(p.created || '').slice(0, 10)} / 판정 기한: ${p.due} / 오늘: ${todayKst()}
+
+증거 (기간 중 수집된 주요 헤드라인 — 전체 뉴스가 아닌 표본):
+${evidence || '(수집된 헤드라인 없음)'}
+
+판정 규칙:
+- "hit": 예측이 기한 내 실현되었음을 증거가 명확히 뒷받침한다
+- "miss": 실현되지 않았음이 명확하다. 또는 기한이 지났고, 실현되었다면 반드시 크게 보도되었을 사안인데 관련 증거가 전혀 없다
+- "unclear": 증거가 불충분하거나 애매하다 — 조금이라도 확신이 없으면 반드시 unclear를 골라라 (사람이 직접 판정한다)
+
+JSON으로만 답하라: {"verdict": "hit|miss|unclear", "reason": "근거 한두 문장(한국어)"}`;
+}
+
+async function callLocalJudge(prompt) {
+  const cfg = llmCfg();
+  const res = await fetch(`${cfg.url.replace(/\/+$/, '')}/api/chat`, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({
+      model: cfg.model,
+      stream: false,
+      format: LLM_FORMAT,
+      options: { temperature: 0 },
+      messages: [{ role: 'user', content: prompt }],
+    }),
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const j = await res.json();
+  return JSON.parse(j.message?.content ?? '{}');
+}
+
+/** 기한이 도래한 자유 예측을 로컬 LLM으로 판정 (예측당 하루 1회 시도) */
+async function llmJudgeDue() {
+  const cfg = llmCfg();
+  if (!cfg?.url || !cfg?.model) return;
+  const today = todayKst();
+  const preds = loadPreds();
+  const due = preds.filter(
+    (p) => !p.resolved && p.type !== 'metric' && p.due <= today && p.llmTriedAt !== today
+  );
+  if (!due.length) return;
+  setLlmStatus(`판정 중… (${due.length}건)`);
+  for (const p of due) {
+    p.llmTriedAt = today;
+    try {
+      const v = await callLocalJudge(judgePrompt(p, buildEvidence(p)));
+      if (v.verdict === 'hit' || v.verdict === 'miss') {
+        p.resolved = v.verdict;
+        p.autoJudged = 'llm';
+        p.llmReason = v.reason;
+        p.resolvedAt = new Date().toISOString();
+      } else {
+        p.llmReason = v.reason; // 보류 — 관련 헤드라인(🔎)을 보고 직접 판정
+      }
+    } catch {
+      // Ollama가 없는 기기(폰 등)이거나 꺼져 있음 — 조용히 건너뜀
+      savePreds(preds);
+      setLlmStatus('연결 안 됨');
+      return;
+    }
+  }
+  savePreds(preds);
+  renderPreds();
+  setLlmStatus('판정 완료 ✓');
+}
+
 function predStats(preds) {
   const resolved = preds.filter((p) => p.resolved);
   const hits = resolved.filter((p) => p.resolved === 'hit');
@@ -722,7 +845,9 @@ function predRow(p) {
     const cur = s.length ? s[s.length - 1].v : null;
     if (cur != null) progress = ` · 현재 ${fmt.num(cur, METRICS[p.metric]?.digits ?? 2)}`;
   }
-  const judgedBy = p.autoJudged ? ' · 자동 판정' : '';
+  const judgedBy = p.autoJudged === 'llm' ? ' · 🖥️ LLM 판정' : p.autoJudged ? ' · 자동 판정' : '';
+  const llmHold = !p.resolved && !isMetric && p.llmReason
+    ? ` · <span title="${esc(p.llmReason)}">🖥️ 보류</span>` : '';
   // 무료 판정 도우미: 기간 중 관련 헤드라인을 찾아 판정을 돕는다
   let evidBtn = '', evidBlock = '';
   if (!p.resolved && !isMetric) {
@@ -737,8 +862,8 @@ function predRow(p) {
     }
   }
   const meta = p.resolved
-    ? `확신 ${p.conf}% · 기한 ${p.due}${judgedBy}`
-    : `<span class="${overdue ? 'pdue-over' : ''}">기한 ${p.due}${overdue && !isMetric ? ' — 판정하세요!' : ''}</span>${progress}`;
+    ? `<span title="${esc(p.llmReason || '')}">확신 ${p.conf}% · 기한 ${p.due}${judgedBy}</span>`
+    : `<span class="${overdue ? 'pdue-over' : ''}">기한 ${p.due}${overdue && !isMetric && !p.llmReason ? ' — 판정하세요!' : ''}</span>${progress}${llmHold}`;
   return `<li data-id="${p.id}">
     <span class="ptext">${isMetric ? '📊 ' : ''}${esc(p.text)}</span>
     <span class="conf-meter" title="확신도 ${p.conf}%"><i style="width:${p.conf}%"></i></span>
@@ -888,6 +1013,42 @@ $('importFile').addEventListener('change', async (e) => {
   e.target.value = '';
 });
 
+/* ── 로컬 LLM 설정 ── */
+function refreshLlmSettings() {
+  const cfg = llmCfg();
+  if (cfg?.url) $('llmUrl').value = cfg.url;
+  if (cfg?.model) $('llmModel').value = cfg.model;
+  if (!$('llmStatus').textContent) setLlmStatus(cfg?.url && cfg?.model ? '켜짐' : '');
+}
+$('llmSave').addEventListener('click', () => {
+  const url = $('llmUrl').value.trim() || 'http://localhost:11434';
+  const model = $('llmModel').value.trim();
+  if (!model) { alert('모델명을 입력하세요 (예: exaone3.5:7.8b). `ollama list`로 확인할 수 있습니다.'); return; }
+  localStorage.setItem(LLMCFG, JSON.stringify({ url, model }));
+  setLlmStatus('켜짐');
+  llmJudgeDue();
+});
+$('llmTest').addEventListener('click', async () => {
+  const url = ($('llmUrl').value.trim() || 'http://localhost:11434').replace(/\/+$/, '');
+  setLlmStatus('테스트 중…');
+  try {
+    const j = await (await fetch(`${url}/api/tags`)).json();
+    const models = (j.models || []).map((m) => m.name);
+    const want = $('llmModel').value.trim();
+    setLlmStatus(want && !models.some((m) => m.startsWith(want))
+      ? `연결됨 — 단, '${want}' 모델 없음 (설치된: ${models.slice(0, 3).join(', ') || '없음'})`
+      : `연결됨 ✓ (모델 ${models.length}개)`);
+  } catch {
+    setLlmStatus('연결 실패 — Ollama 실행 여부와 OLLAMA_ORIGINS 설정을 확인하세요');
+  }
+});
+$('llmOff').addEventListener('click', () => {
+  localStorage.removeItem(LLMCFG);
+  $('llmUrl').value = ''; $('llmModel').value = '';
+  setLlmStatus('');
+});
+refreshLlmSettings();
+
 // 판정일 기본값: 2주 뒤
 $('pdue').value = new Date(Date.now() + 14 * 86400000).toISOString().slice(0, 10);
 renderPreds();
@@ -930,6 +1091,7 @@ async function main() {
   refreshTargetPlaceholder();
   renderPreds(); // 수집 데이터 기준 자동 판정 + 관련 헤드라인 반영
   liveMarkets(history); // 백그라운드로 실시간 갱신
+  llmJudgeDue(); // 로컬 LLM 설정 시, 기한 도래한 자유 예측 판정
 }
 main();
 </script>
