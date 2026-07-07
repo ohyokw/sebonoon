@@ -9,6 +9,10 @@
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0d0d0d">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="세상을 보는 눈">
+<!-- PC 전용 Pretendard (동적 서브셋 — 사용 글리프만 다운로드). 모바일은 OS 기본 폰트 사용 -->
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" media="(min-width: 901px)"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
 :root {
   --page:        #f9f9f7;
@@ -64,12 +68,20 @@ body {
   margin: 0;
   background: var(--page);
   color: var(--text-1);
-  font-family: "Pretendard Variable", Pretendard, system-ui, -apple-system, "Segoe UI",
-    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  /* 모바일: OS 기본 폰트 (이미 한글 최적화, 웹폰트 다운로드 없음) */
+  font-family: system-ui, -apple-system, "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
   font-size: 13.5px;
   line-height: 1.45;
   word-break: keep-all;
   overflow-wrap: break-word;
+}
+/* PC: Pretendard (미로드 시 시스템 폰트로 폴백) */
+@media (min-width: 901px) {
+  body {
+    font-family: "Pretendard Variable", Pretendard, system-ui, -apple-system, "Segoe UI",
+      "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
 }
 a { color: inherit; text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -179,17 +191,38 @@ ul.news .hnmeta a { color: var(--muted); }
 .pstat .value { font-size: 17px; font-weight: 650; }
 .pstat .hint { font-size: 10.5px; color: var(--muted); }
 
-form.pform { display: grid; grid-template-columns: 1fr 100px 140px 84px; gap: 8px; margin-bottom: 4px; }
-@media (max-width: 760px) { form.pform { grid-template-columns: 1fr; } }
-form.pform input, form.pform button {
+.ptabs { display: flex; gap: 6px; margin-bottom: 8px; }
+.ptab {
+  font: inherit; font-size: 12px; font-weight: 600; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface-1); color: var(--muted);
+  border-radius: 999px; padding: 4px 12px;
+}
+.ptab.active { background: var(--accent-wash); color: var(--text-1); border-color: var(--series-1); }
+
+form.pform { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+form.pform input, form.pform select, form.pform button {
   font: inherit; font-size: 13px; border-radius: 8px; border: 1px solid var(--border);
   background: var(--page); color: var(--text-1); padding: 7px 10px;
 }
-form.pform input:focus { outline: 2px solid var(--series-1); outline-offset: 0; border-color: transparent; }
-form.pform button {
-  background: var(--series-1); color: #fff; border: 0; font-weight: 650; cursor: pointer;
+form.pform :is(input, select):focus { outline: 2px solid var(--series-1); outline-offset: 0; border-color: transparent; }
+#pmetric { flex: 0 1 150px; }
+#pop     { flex: 0 1 110px; }
+#ptarget { flex: 0 1 130px; }
+#ptext   { flex: 1 1 260px; min-width: 0; }
+#pconf   { flex: 0 1 110px; }
+#pdue    { flex: 0 1 140px; }
+form.pform button[type="submit"] {
+  flex: 0 1 76px; background: var(--series-1); color: #fff; border: 0; font-weight: 650; cursor: pointer;
 }
-form.pform button:hover { filter: brightness(1.08); }
+form.pform button[type="submit"]:hover { filter: brightness(1.08); }
+form.pform.mode-metric .f-free { display: none; }
+form.pform.mode-free .f-metric { display: none; }
+@media (max-width: 640px) {
+  form.pform > * { flex: 1 1 44% !important; }
+  #ptext, form.pform button[type="submit"] { flex: 1 1 100% !important; }
+}
+.due-chips { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+.due-chips .dlabel { font-size: 11px; color: var(--muted); }
 .pform-hint { font-size: 11px; color: var(--muted); margin: 2px 2px 10px; }
 
 ul.plist { list-style: none; margin: 0; padding: 0; }
@@ -306,14 +339,31 @@ footer b { color: var(--text-2); }
   <h2>🎯 예측 노트 — 기록해야 눈이 길러집니다</h2>
   <div class="card">
     <div class="pstats" id="pstats"></div>
-    <form class="pform" id="pform">
-      <input id="ptext" type="text" required maxlength="200"
-             placeholder="예측을 문장으로 적으세요 (예: 8월 말까지 원/달러 환율이 1,400원을 넘는다)">
-      <input id="pconf" type="number" required min="1" max="99" step="1" placeholder="확신도 %">
-      <input id="pdue"  type="date" required>
+    <div class="ptabs" role="tablist">
+      <button type="button" class="ptab active" id="tab-metric" data-mode="metric">📊 지표 예측 · 자동 판정</button>
+      <button type="button" class="ptab" id="tab-free" data-mode="free">✏️ 자유 예측</button>
+    </div>
+    <form class="pform mode-metric" id="pform">
+      <select id="pmetric" class="f-metric" aria-label="지표 선택"></select>
+      <select id="pop" class="f-metric" aria-label="방향">
+        <option value=">=">이상 도달</option>
+        <option value="<=">이하 도달</option>
+      </select>
+      <input id="ptarget" class="f-metric" type="number" step="any" inputmode="decimal" placeholder="목표값">
+      <input id="ptext" class="f-free" type="text" maxlength="200"
+             placeholder="예측 문장 (판정 가능하게 구체적으로 — 예: 9월 내 휴전 합의 발표)">
+      <select id="pconf" aria-label="확신도"></select>
+      <input id="pdue" type="date" required aria-label="판정 기한">
       <button type="submit">기록</button>
     </form>
-    <div class="pform-hint">확신도는 1–99%. 판정일이 되면 적중/빗나감을 스스로 판정하세요. 데이터는 이 브라우저(localStorage)에만 저장됩니다.</div>
+    <div class="due-chips" id="dueChips">
+      <span class="dlabel">기한:</span>
+      <button type="button" class="pbtn" data-days="7">+1주</button>
+      <button type="button" class="pbtn" data-days="30">+1개월</button>
+      <button type="button" class="pbtn" data-days="90">+3개월</button>
+      <button type="button" class="pbtn" data-days="eoy">연말</button>
+    </div>
+    <div class="pform-hint">📊 지표 예측은 매일 수집되는 값 기준으로 자동 판정됩니다 — 기한 내 한 번이라도 목표에 닿으면 적중, 기한이 지나면 빗나감. ✏️ 자유 예측은 판정일에 직접 판정하세요. 데이터는 이 브라우저(localStorage)에만 저장됩니다.</div>
     <ul class="plist" id="plist-open"></ul>
     <div class="resolved-toggle">
       <button class="pbtn" id="toggleResolved" type="button">판정 완료 보기</button>
@@ -475,6 +525,8 @@ async function liveMarkets(history) {
   if (updated) {
     $('marketNote').textContent = '· 환율/코인은 실시간, 지수는 일 1회 수집';
     renderTiles(history);
+    refreshTargetPlaceholder();
+    renderPreds(); // 실시간 값으로 지표 예측 진행 상황·자동 판정 갱신
   }
 }
 
@@ -541,6 +593,48 @@ const PKEY = 'sebonoon.predictions.v1';
 const loadPreds = () => { try { return JSON.parse(localStorage.getItem(PKEY)) || []; } catch { return []; } };
 const savePreds = (p) => localStorage.setItem(PKEY, JSON.stringify(p));
 
+/* 지표 예측 — 대시보드가 매일 수집하는 지표로 자동 판정 */
+const METRICS = {
+  usdkrw: { label: 'USD/KRW 환율', digits: 1 },
+  kospi:  { label: 'KOSPI', digits: 2 },
+  sp500:  { label: 'S&P 500', digits: 2 },
+  nasdaq: { label: 'NASDAQ', digits: 2 },
+  btc:    { label: '비트코인(USD)', digits: 0 },
+  eth:    { label: '이더리움(USD)', digits: 0 },
+};
+let HISTORY = []; // main()에서 data/history.json 로드
+const todayKst = () => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Asia/Seoul' }).format(new Date());
+
+/** 일별 수집값 + 실시간 값(있으면)을 합친 시계열 */
+function metricSeries(key) {
+  const s = HISTORY.filter((h) => h[key] != null).map((h) => ({ date: h.date, v: h[key] }));
+  const live = tileState[key]?.value;
+  if (live != null) s.push({ date: todayKst(), v: live });
+  return s;
+}
+
+const satisfied = (p, v) => (p.op === '>=' ? v >= p.target : v <= p.target);
+
+/** 지표 예측 자동 판정: 기록일~기한 사이 한 번이라도 도달 → 적중, 기한 경과 → 빗나감 */
+function autoJudge(preds) {
+  const today = todayKst();
+  let changed = false;
+  for (const p of preds) {
+    if (p.resolved || p.type !== 'metric') continue;
+    const from = (p.created || '').slice(0, 10);
+    const touched = metricSeries(p.metric).some(
+      (x) => x.date >= from && x.date <= p.due && satisfied(p, x.v)
+    );
+    if (touched || today > p.due) {
+      p.resolved = touched ? 'hit' : 'miss';
+      p.autoJudged = true;
+      p.resolvedAt = new Date().toISOString();
+      changed = true;
+    }
+  }
+  return changed;
+}
+
 function predStats(preds) {
   const resolved = preds.filter((p) => p.resolved);
   const hits = resolved.filter((p) => p.resolved === 'hit');
@@ -567,26 +661,34 @@ function renderPredStats() {
 }
 
 function predRow(p) {
-  const today = new Date().toISOString().slice(0, 10);
+  const today = todayKst();
   const overdue = !p.resolved && p.due && p.due <= today;
+  const isMetric = p.type === 'metric';
+  let progress = '';
+  if (!p.resolved && isMetric) {
+    const s = metricSeries(p.metric);
+    const cur = s.length ? s[s.length - 1].v : null;
+    if (cur != null) progress = ` · 현재 ${fmt.num(cur, METRICS[p.metric]?.digits ?? 2)}`;
+  }
   const meta = p.resolved
-    ? `확신 ${p.conf}% · ${p.due} 판정`
-    : `<span class="${overdue ? 'pdue-over' : ''}">판정일 ${p.due}${overdue ? ' — 판정하세요!' : ''}</span>`;
+    ? `확신 ${p.conf}% · 기한 ${p.due}${p.autoJudged ? ' · 자동 판정' : ''}`
+    : `<span class="${overdue ? 'pdue-over' : ''}">기한 ${p.due}${overdue && !isMetric ? ' — 판정하세요!' : ''}</span>${progress}`;
   return `<li data-id="${p.id}">
-    <span class="ptext">${esc(p.text)}</span>
+    <span class="ptext">${isMetric ? '📊 ' : ''}${esc(p.text)}</span>
     <span class="conf-meter" title="확신도 ${p.conf}%"><i style="width:${p.conf}%"></i></span>
     <span class="pmeta">${meta}</span>
     ${p.resolved
       ? `<span class="badge ${p.resolved}">${p.resolved === 'hit' ? '✓ 적중' : '✗ 빗나감'}</span>
          <button class="pbtn del" data-act="del">삭제</button>`
-      : `<button class="pbtn" data-act="hit">적중</button>
-         <button class="pbtn" data-act="miss">빗나감</button>
+      : `${isMetric ? '' : `<button class="pbtn" data-act="hit">적중</button>
+         <button class="pbtn" data-act="miss">빗나감</button>`}
          <button class="pbtn del" data-act="del">삭제</button>`}
   </li>`;
 }
 
 function renderPreds() {
   const preds = loadPreds();
+  if (autoJudge(preds)) savePreds(preds);
   const open = preds.filter((p) => !p.resolved).sort((a, b) => a.due.localeCompare(b.due));
   const resolved = preds.filter((p) => p.resolved).sort((a, b) => (b.resolvedAt || '').localeCompare(a.resolvedAt || ''));
   $('plist-open').innerHTML = open.length ? open.map(predRow).join('')
@@ -597,16 +699,65 @@ function renderPreds() {
   renderPredStats();
 }
 
+/* ── 입력 폼: 지표/자유 모드, 확신도·지표 select, 기한 퀵 버튼 ── */
+let formMode = 'metric';
+
+$('pmetric').innerHTML = Object.entries(METRICS)
+  .map(([k, m]) => `<option value="${k}">${esc(m.label)}</option>`).join('');
+$('pconf').innerHTML = [50, 55, 60, 65, 70, 75, 80, 85, 90, 95]
+  .map((v) => `<option value="${v}"${v === 65 ? ' selected' : ''}>확신 ${v}%</option>`).join('');
+
+function refreshTargetPlaceholder() {
+  const key = $('pmetric').value;
+  const v = tileState[key]?.value;
+  $('ptarget').placeholder = v != null
+    ? `목표값 (현재 ${fmt.num(v, METRICS[key].digits)})`
+    : '목표값';
+}
+$('pmetric').addEventListener('change', refreshTargetPlaceholder);
+
+for (const tab of document.querySelectorAll('.ptab')) {
+  tab.addEventListener('click', () => {
+    formMode = tab.dataset.mode;
+    document.querySelectorAll('.ptab').forEach((t) => t.classList.toggle('active', t === tab));
+    $('pform').classList.toggle('mode-metric', formMode === 'metric');
+    $('pform').classList.toggle('mode-free', formMode === 'free');
+    (formMode === 'metric' ? $('ptarget') : $('ptext')).focus();
+  });
+}
+
+$('dueChips').addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-days]');
+  if (!btn) return;
+  const d = btn.dataset.days === 'eoy'
+    ? new Date(new Date().getFullYear(), 11, 31)
+    : new Date(Date.now() + Number(btn.dataset.days) * 86400000);
+  $('pdue').value = d.toISOString().slice(0, 10);
+});
+
 $('pform').addEventListener('submit', (e) => {
   e.preventDefault();
-  const text = $('ptext').value.trim();
   const conf = Number($('pconf').value);
   const due = $('pdue').value;
-  if (!text || !conf || !due) return;
+  if (!due) return;
   const preds = loadPreds();
-  preds.push({ id: crypto.randomUUID(), text, conf, due, created: new Date().toISOString(), resolved: null });
+  const base = { id: crypto.randomUUID(), conf, due, created: new Date().toISOString(), resolved: null };
+  if (formMode === 'metric') {
+    const metric = $('pmetric').value;
+    const op = $('pop').value;
+    const target = Number($('ptarget').value);
+    if ($('ptarget').value === '' || !Number.isFinite(target)) { $('ptarget').focus(); return; }
+    const m = METRICS[metric];
+    const text = `${m.label} ${fmt.num(target, m.digits)} ${op === '>=' ? '이상' : '이하'} 도달`;
+    preds.push({ ...base, type: 'metric', metric, op, target, text });
+    $('ptarget').value = '';
+  } else {
+    const text = $('ptext').value.trim();
+    if (!text) { $('ptext').focus(); return; }
+    preds.push({ ...base, type: 'free', text });
+    $('ptext').value = '';
+  }
   savePreds(preds);
-  e.target.reset();
   renderPreds();
 });
 
@@ -695,7 +846,10 @@ async function main() {
     renderTrends(data.trends);
     fillTileStateFromSnapshot(data.markets);
   }
+  HISTORY = history;
   renderTiles(history);
+  refreshTargetPlaceholder();
+  renderPreds(); // 수집 데이터 기준 자동 판정 반영
   liveMarkets(history); // 백그라운드로 실시간 갱신
 }
 main();
