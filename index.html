@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>세상을 보는 눈</title>
+<meta name="description" content="매일의 뉴스·시장·트렌드를 한 페이지로 보고, 예측 노트로 '보는 눈'을 기르는 대시보드">
+<style>
+:root {
+  --page:        #f9f9f7;
+  --surface-1:   #fcfcfb;
+  --text-1:      #0b0b0b;
+  --text-2:      #52514e;
+  --muted:       #898781;
+  --grid:        #e1e0d9;
+  --baseline:    #c3c2b7;
+  --border:      rgba(11,11,11,0.10);
+  --series-1:    #2a78d6;
+  --series-1-de: #86b6ef;
+  --accent-wash: rgba(42,120,214,0.08);
+  --delta-good:  #006300;
+  --delta-bad:   #d03b3b;
+  --status-good: #0ca30c;
+  --status-crit: #d03b3b;
+  --status-warn: #fab219;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page:        #0d0d0d;
+    --surface-1:   #1a1a19;
+    --text-1:      #ffffff;
+    --text-2:      #c3c2b7;
+    --muted:       #898781;
+    --grid:        #2c2c2a;
+    --baseline:    #383835;
+    --border:      rgba(255,255,255,0.10);
+    --series-1:    #3987e5;
+    --series-1-de: #1c5cab;
+    --accent-wash: rgba(57,135,229,0.12);
+    --delta-good:  #0ca30c;
+    --delta-bad:   #e66767;
+  }
+}
+:root[data-theme="light"] {
+  --page:#f9f9f7; --surface-1:#fcfcfb; --text-1:#0b0b0b; --text-2:#52514e;
+  --muted:#898781; --grid:#e1e0d9; --baseline:#c3c2b7; --border:rgba(11,11,11,0.10);
+  --series-1:#2a78d6; --series-1-de:#86b6ef; --accent-wash:rgba(42,120,214,0.08);
+  --delta-good:#006300; --delta-bad:#d03b3b;
+}
+:root[data-theme="dark"] {
+  --page:#0d0d0d; --surface-1:#1a1a19; --text-1:#ffffff; --text-2:#c3c2b7;
+  --muted:#898781; --grid:#2c2c2a; --baseline:#383835; --border:rgba(255,255,255,0.10);
+  --series-1:#3987e5; --series-1-de:#1c5cab; --accent-wash:rgba(57,135,229,0.12);
+  --delta-good:#0ca30c; --delta-bad:#e66767;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text-1);
+  font-family: "Pretendard Variable", Pretendard, system-ui, -apple-system, "Segoe UI",
+    "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+}
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 20px 64px; }
+
+/* ── 헤더 ─────────────────────────── */
+header { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
+header h1 { font-size: 26px; font-weight: 800; margin: 0; letter-spacing: -0.5px; }
+header .eye { color: var(--series-1); }
+header .meta { color: var(--muted); font-size: 13px; }
+header .spacer { flex: 1; }
+#themeToggle {
+  border: 1px solid var(--border); background: var(--surface-1); color: var(--text-2);
+  border-radius: 999px; padding: 4px 12px; font-size: 13px; cursor: pointer;
+}
+#themeToggle:hover { background: var(--accent-wash); }
+.tagline { color: var(--text-2); font-size: 14px; margin: 0 0 20px; }
+
+.banner {
+  background: var(--accent-wash); border: 1px solid var(--border); border-radius: 10px;
+  padding: 10px 14px; font-size: 13.5px; color: var(--text-2); margin-bottom: 20px;
+}
+.banner strong { color: var(--text-1); }
+
+/* ── 카드 공통 ─────────────────────── */
+section { margin-bottom: 26px; }
+h2 {
+  font-size: 13px; font-weight: 700; color: var(--muted);
+  text-transform: none; letter-spacing: 0.4px; margin: 0 0 10px 2px;
+}
+h2 .cnt { font-weight: 500; }
+.card {
+  background: var(--surface-1); border: 1px solid var(--border);
+  border-radius: 12px; padding: 16px 18px;
+}
+.cols { display: grid; gap: 14px; }
+.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.cols-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) { .cols-3 { grid-template-columns: 1fr; } .cols-2 { grid-template-columns: 1fr; } }
+
+/* ── 시장 스탯 타일 ─────────────────── */
+.tiles { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+@media (max-width: 1024px) { .tiles { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px)  { .tiles { grid-template-columns: repeat(2, 1fr); } }
+.tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 13px 15px 11px; }
+.tile .label { font-size: 12.5px; color: var(--text-2); margin-bottom: 3px; }
+.tile .value { font-size: 21px; font-weight: 650; letter-spacing: -0.3px; }
+.tile .delta { font-size: 12.5px; font-weight: 600; margin-top: 1px; }
+.tile .delta.up   { color: var(--delta-good); }
+.tile .delta.down { color: var(--delta-bad); }
+.tile .delta.flat { color: var(--muted); font-weight: 500; }
+.tile svg { display: block; width: 100%; height: 34px; margin-top: 8px; }
+.tile .nodata { color: var(--muted); font-weight: 400; font-size: 16px; }
+
+/* ── 뉴스 리스트 ────────────────────── */
+ul.news { list-style: none; margin: 0; padding: 0; }
+ul.news li { padding: 8px 0; border-bottom: 1px solid var(--grid); }
+ul.news li:last-child { border-bottom: 0; padding-bottom: 2px; }
+ul.news li:first-child { padding-top: 2px; }
+ul.news .t { display: block; font-size: 14px; font-weight: 500; color: var(--text-1); }
+ul.news .s { font-size: 12px; color: var(--muted); margin-top: 1px; }
+ul.news .hnmeta a { color: var(--muted); }
+
+/* ── 트렌드 칩 ─────────────────────── */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  display: inline-flex; align-items: baseline; gap: 6px;
+  border: 1px solid var(--border); border-radius: 999px;
+  background: var(--surface-1); padding: 5px 12px; font-size: 13.5px;
+}
+.chip .rank { color: var(--series-1); font-weight: 700; font-size: 12px; }
+.chip .traffic { color: var(--muted); font-size: 11.5px; }
+.empty { color: var(--muted); font-size: 13.5px; padding: 6px 0; }
+
+/* ── 생각거리 ─────────────────────── */
+.question { font-size: 16.5px; font-weight: 600; line-height: 1.5; }
+.question-sub { color: var(--text-2); font-size: 13px; margin-top: 8px; }
+
+/* ── 예측 노트 ─────────────────────── */
+.pstats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 14px; }
+@media (max-width: 640px) { .pstats { grid-template-columns: repeat(2, 1fr); } }
+.pstat { padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; }
+.pstat .label { font-size: 12px; color: var(--text-2); }
+.pstat .value { font-size: 22px; font-weight: 650; }
+.pstat .hint { font-size: 11.5px; color: var(--muted); }
+
+form.pform { display: grid; grid-template-columns: 1fr 110px 150px 92px; gap: 10px; margin-bottom: 6px; }
+@media (max-width: 760px) { form.pform { grid-template-columns: 1fr; } }
+form.pform input, form.pform button {
+  font: inherit; font-size: 14px; border-radius: 9px; border: 1px solid var(--border);
+  background: var(--page); color: var(--text-1); padding: 9px 12px;
+}
+form.pform input:focus { outline: 2px solid var(--series-1); outline-offset: 0; border-color: transparent; }
+form.pform button {
+  background: var(--series-1); color: #fff; border: 0; font-weight: 650; cursor: pointer;
+}
+form.pform button:hover { filter: brightness(1.08); }
+.pform-hint { font-size: 12px; color: var(--muted); margin: 2px 2px 14px; }
+
+ul.plist { list-style: none; margin: 0; padding: 0; }
+ul.plist li {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding: 10px 2px; border-bottom: 1px solid var(--grid);
+}
+ul.plist li:last-child { border-bottom: 0; }
+ul.plist .ptext { flex: 1 1 320px; font-size: 14px; }
+ul.plist .pmeta { font-size: 12px; color: var(--muted); white-space: nowrap; }
+ul.plist .pdue-over { color: var(--status-warn); font-weight: 600; }
+.conf-meter { width: 74px; height: 6px; border-radius: 3px; background: var(--series-1-de); overflow: hidden; flex: none; }
+.conf-meter i { display: block; height: 100%; background: var(--series-1); }
+.pbtn {
+  font: inherit; font-size: 12.5px; border-radius: 7px; cursor: pointer; padding: 4px 10px;
+  border: 1px solid var(--border); background: var(--surface-1); color: var(--text-2);
+}
+.pbtn:hover { background: var(--accent-wash); }
+.pbtn.del { color: var(--muted); border-color: transparent; }
+.badge { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
+.badge.hit  { color: var(--status-good); background: color-mix(in srgb, var(--status-good) 12%, transparent); }
+.badge.miss { color: var(--status-crit); background: color-mix(in srgb, var(--status-crit) 12%, transparent); }
+.ptools { display: flex; gap: 8px; margin-top: 12px; }
+.resolved-toggle { margin-top: 14px; }
+
+/* ── 푸터 ─────────────────────────── */
+footer { margin-top: 36px; color: var(--muted); font-size: 12.5px; line-height: 1.8; }
+footer b { color: var(--text-2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1><span class="eye">◉</span> 세상을 보는 눈</h1>
+  <span class="meta" id="todayLabel"></span>
+  <span class="meta" id="updatedLabel"></span>
+  <span class="spacer"></span>
+  <button id="themeToggle" type="button" aria-label="테마 전환">테마</button>
+</header>
+<p class="tagline">매일 세상의 흐름을 한 페이지로 읽고, 예측을 기록하며 '보는 힘'을 기릅니다.</p>
+
+<div class="banner" id="sampleBanner" hidden>
+  <strong>지금은 샘플 데이터입니다.</strong>
+  GitHub Actions의 <code>daily-collect</code> 워크플로우가 처음 실행되면 (매일 아침 자동, 또는 Actions 탭에서 수동 실행)
+  실제 뉴스·시장·트렌드 데이터로 채워집니다. 환율·코인 시세는 지금도 브라우저에서 실시간으로 불러옵니다.
+</div>
+
+<section aria-label="시장 지표">
+  <h2>시장 지표 <span class="cnt" id="marketNote"></span></h2>
+  <div class="tiles" id="tiles"></div>
+</section>
+
+<section aria-label="뉴스">
+  <h2>오늘의 헤드라인</h2>
+  <div class="cols cols-3">
+    <div class="card"><h2>🌍 세계</h2><ul class="news" id="news-world"></ul></div>
+    <div class="card"><h2>🇰🇷 한국</h2><ul class="news" id="news-korea"></ul></div>
+    <div class="card"><h2>💹 경제·비즈니스</h2><ul class="news" id="news-business"></ul></div>
+  </div>
+</section>
+
+<section aria-label="기술과 과학">
+  <h2>기술 · 과학 · 커뮤니티</h2>
+  <div class="cols cols-3">
+    <div class="card"><h2>🤖 기술</h2><ul class="news" id="news-tech"></ul></div>
+    <div class="card"><h2>🔬 과학</h2><ul class="news" id="news-science"></ul></div>
+    <div class="card"><h2>🟠 Hacker News</h2><ul class="news" id="news-hn"></ul></div>
+  </div>
+</section>
+
+<section aria-label="트렌드와 생각거리">
+  <div class="cols cols-2">
+    <div class="card">
+      <h2>🔎 한국 검색 트렌드</h2>
+      <div class="chips" id="trends"></div>
+    </div>
+    <div class="card">
+      <h2>💭 오늘의 생각거리</h2>
+      <div class="question" id="question"></div>
+      <div class="question-sub">헤드라인을 읽고 이 질문에 스스로 답해 보세요. 답이 예측이 되면 아래 예측 노트에 기록하세요.</div>
+    </div>
+  </div>
+</section>
+
+<section aria-label="예측 노트">
+  <h2>🎯 예측 노트 — 기록해야 눈이 길러집니다</h2>
+  <div class="card">
+    <div class="pstats" id="pstats"></div>
+    <form class="pform" id="pform">
+      <input id="ptext" type="text" required maxlength="200"
+             placeholder="예측을 문장으로 적으세요 (예: 8월 말까지 원/달러 환율이 1,400원을 넘는다)">
+      <input id="pconf" type="number" required min="1" max="99" step="1" placeholder="확신도 %">
+      <input id="pdue"  type="date" required>
+      <button type="submit">기록</button>
+    </form>
+    <div class="pform-hint">확신도는 1–99%. 판정일이 되면 적중/빗나감을 스스로 판정하세요. 데이터는 이 브라우저(localStorage)에만 저장됩니다.</div>
+    <ul class="plist" id="plist-open"></ul>
+    <div class="resolved-toggle">
+      <button class="pbtn" id="toggleResolved" type="button">판정 완료 보기</button>
+      <ul class="plist" id="plist-resolved" hidden></ul>
+    </div>
+    <div class="ptools">
+      <button class="pbtn" id="exportBtn" type="button">내보내기 (JSON)</button>
+      <label class="pbtn" style="display:inline-block">가져오기<input id="importFile" type="file" accept=".json" hidden></label>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>보는 눈 훈련 루틴</b> — ① 매일 아침 이 페이지를 5분간 훑는다 ② '오늘의 생각거리'에 답한다
+  ③ 일주일에 2–3개, 기한이 있는 예측을 확신도와 함께 기록한다 ④ 판정일에 반드시 판정한다
+  ⑤ 적중률과 확신도의 차이(과신 여부)를 확인하고 다음 예측을 조정한다.<br>
+  데이터 출처: Google News RSS · Hacker News API · Frankfurter(환율) · CoinGecko(암호화폐) · Yahoo Finance(지수) · Google Trends.
+  매일 아침 GitHub Actions가 자동 수집합니다.
+</footer>
+
+</div>
+
+<script>
+'use strict';
+
+/* ───────────────────── 유틸 ───────────────────── */
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
+  ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+const fmt = {
+  num(v, digits = 0) {
+    if (v == null || Number.isNaN(v)) return null;
+    return Number(v).toLocaleString('ko-KR', { minimumFractionDigits: digits, maximumFractionDigits: digits });
+  },
+  pct(v) {
+    if (v == null || Number.isNaN(v)) return null;
+    const s = v > 0 ? '+' : '';
+    return `${s}${v.toFixed(2)}%`;
+  },
+  rel(pubDate) {
+    if (!pubDate) return '';
+    const t = new Date(pubDate).getTime();
+    if (Number.isNaN(t)) return '';
+    const m = Math.round((Date.now() - t) / 60000);
+    if (m < 1) return '방금';
+    if (m < 60) return `${m}분 전`;
+    if (m < 60 * 24) return `${Math.round(m / 60)}시간 전`;
+    return `${Math.round(m / 1440)}일 전`;
+  },
+};
+
+/* ───────────────────── 테마 ───────────────────── */
+(function initTheme() {
+  const saved = localStorage.getItem('sebonoon.theme');
+  if (saved) document.documentElement.dataset.theme = saved;
+  $('themeToggle').addEventListener('click', () => {
+    const cur = document.documentElement.dataset.theme ||
+      (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem('sebonoon.theme', next);
+  });
+})();
+
+/* ───────────────────── 헤더 날짜 ───────────────────── */
+$('todayLabel').textContent = new Intl.DateTimeFormat('ko-KR', {
+  dateStyle: 'full', timeZone: 'Asia/Seoul',
+}).format(new Date());
+
+/* ───────────────────── 스파크라인 (단일 계열 → 범례 없음) ───────────────────── */
+function sparkline(values, { w = 120, h = 34 } = {}) {
+  const v = values.filter((x) => x != null && !Number.isNaN(x));
+  if (v.length < 2) return '';
+  const min = Math.min(...v), max = Math.max(...v);
+  const pad = 5;
+  const y = (x) => max === min ? h / 2 : pad + (h - 2 * pad) * (1 - (x - min) / (max - min));
+  const step = (w - 2 * pad) / (v.length - 1);
+  const pts = v.map((x, i) => `${(pad + i * step).toFixed(1)},${y(x).toFixed(1)}`);
+  const [ex, ey] = pts[pts.length - 1].split(',');
+  return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="최근 ${v.length}일 추이" preserveAspectRatio="none">
+    <polyline points="${pts.join(' ')}" fill="none" stroke="var(--series-1-de)" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    <circle cx="${ex}" cy="${ey}" r="4" fill="var(--series-1)" stroke="var(--surface-1)" stroke-width="2"/>
+  </svg>`;
+}
+
+/* ───────────────────── 시장 타일 ───────────────────── */
+const TILE_DEFS = [
+  { key: 'usdkrw', label: 'USD/KRW 환율', digits: 1, unit: '원' },
+  { key: 'kospi',  label: 'KOSPI',        digits: 2 },
+  { key: 'sp500',  label: 'S&P 500',      digits: 2 },
+  { key: 'nasdaq', label: 'NASDAQ',       digits: 2 },
+  { key: 'btc',    label: '비트코인',      digits: 0, prefix: '$' },
+  { key: 'eth',    label: '이더리움',      digits: 0, prefix: '$' },
+];
+const tileState = {}; // key → { value, changePct }
+
+function renderTiles(history) {
+  const histMap = {};
+  for (const def of TILE_DEFS) histMap[def.key] = (history || []).map((h) => h[def.key]).slice(-30);
+
+  $('tiles').innerHTML = TILE_DEFS.map((def) => {
+    const st = tileState[def.key] || {};
+    const val = fmt.num(st.value, def.digits);
+    const deltaTxt = fmt.pct(st.changePct);
+    const dir = st.changePct == null ? 'flat' : st.changePct > 0 ? 'up' : st.changePct < 0 ? 'down' : 'flat';
+    const arrow = dir === 'up' ? '▲' : dir === 'down' ? '▼' : '';
+    return `<div class="tile">
+      <div class="label">${esc(def.label)}</div>
+      <div class="value">${val != null
+        ? `${def.prefix ?? ''}${val}${def.unit ? `<span style="font-size:13px;font-weight:500;color:var(--text-2)"> ${def.unit}</span>` : ''}`
+        : '<span class="nodata">수집 대기</span>'}</div>
+      <div class="delta ${dir}">${deltaTxt != null ? `${arrow} ${deltaTxt} <span style="color:var(--muted);font-weight:500">전일 대비</span>` : ''}</div>
+      ${sparkline(histMap[def.key])}
+    </div>`;
+  }).join('');
+}
+
+function fillTileStateFromSnapshot(markets) {
+  if (!markets) return;
+  const { fx, crypto, indices } = markets;
+  if (fx?.rates?.KRW) tileState.usdkrw = { value: fx.rates.KRW, changePct: tileState.usdkrw?.changePct ?? null };
+  if (crypto?.btc?.usd) tileState.btc = { value: crypto.btc.usd, changePct: crypto.btc.change24h };
+  if (crypto?.eth?.usd) tileState.eth = { value: crypto.eth.usd, changePct: crypto.eth.change24h };
+  for (const k of ['kospi', 'sp500', 'nasdaq']) {
+    const q = indices?.[k];
+    if (q?.price) tileState[k] = { value: q.price, changePct: q.changePct };
+  }
+}
+
+/* 브라우저에서 직접 실시간 시세 (CORS 허용 API만) */
+async function liveMarkets(history) {
+  let updated = false;
+  try {
+    const j = await (await fetch('https://api.frankfurter.dev/v1/latest?base=USD&symbols=KRW')).json();
+    if (j?.rates?.KRW) {
+      const prev = tileState.usdkrw?.value;
+      tileState.usdkrw = {
+        value: j.rates.KRW,
+        changePct: prev ? ((j.rates.KRW - prev) / prev) * 100 : tileState.usdkrw?.changePct ?? null,
+      };
+      updated = true;
+    }
+  } catch { /* 오프라인이거나 차단됨 — 스냅샷 값 유지 */ }
+  try {
+    const j = await (await fetch(
+      'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true'
+    )).json();
+    if (j?.bitcoin?.usd) { tileState.btc = { value: j.bitcoin.usd, changePct: j.bitcoin.usd_24h_change }; updated = true; }
+    if (j?.ethereum?.usd) { tileState.eth = { value: j.ethereum.usd, changePct: j.ethereum.usd_24h_change }; updated = true; }
+  } catch { /* 유지 */ }
+  if (updated) {
+    $('marketNote').textContent = '· 환율/코인은 실시간, 지수는 일 1회 수집';
+    renderTiles(history);
+  }
+}
+
+/* ───────────────────── 뉴스 렌더링 ───────────────────── */
+function renderNewsList(elId, items, max = 8) {
+  const el = $(elId);
+  if (!items || !items.length) {
+    el.innerHTML = '<li class="empty">아직 수집된 항목이 없습니다.</li>';
+    return;
+  }
+  el.innerHTML = items.slice(0, max).map((it) => `<li>
+    <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+    <div class="s">${esc(it.source || '')}${it.pubDate ? ` · ${fmt.rel(it.pubDate)}` : ''}</div>
+  </li>`).join('');
+}
+
+function renderHN(items) {
+  const el = $('news-hn');
+  if (!items || !items.length) {
+    el.innerHTML = '<li class="empty">아직 수집된 항목이 없습니다.</li>';
+    return;
+  }
+  el.innerHTML = items.slice(0, 8).map((it) => `<li>
+    <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+    <div class="s hnmeta">▲ ${fmt.num(it.points) ?? 0}점 · <a href="${esc(it.hnLink)}" target="_blank" rel="noopener">댓글 ${fmt.num(it.comments) ?? 0}</a></div>
+  </li>`).join('');
+}
+
+function renderTrends(items) {
+  const el = $('trends');
+  if (!items || !items.length) {
+    el.innerHTML = '<div class="empty">아직 수집된 트렌드가 없습니다. (Actions 첫 실행 후 표시)</div>';
+    return;
+  }
+  el.innerHTML = items.map((t, i) => `<span class="chip">
+    <span class="rank">${i + 1}</span>${esc(t.title)}${t.traffic ? `<span class="traffic">${esc(t.traffic)}</span>` : ''}
+  </span>`).join('');
+}
+
+/* ───────────────────── 오늘의 생각거리 ───────────────────── */
+const QUESTIONS = [
+  '오늘 헤드라인 중 6개월 뒤에도 중요할 뉴스는 무엇이고, 왜 그런가?',
+  '지금 시장(환율·지수·코인) 움직임의 원인을 한 문장으로 설명할 수 있는가?',
+  '오늘 뉴스에서 서로 연결되는 두 사건을 찾아보자. 그 연결이 시사하는 것은?',
+  '이번 주 가장 과대평가된 이슈와 과소평가된 이슈는 무엇인가?',
+  '오늘 본 기술 뉴스 중 1년 안에 내 일/생활을 바꿀 것은 무엇인가?',
+  '지금 검색 트렌드는 일시적 화제인가, 구조적 변화의 신호인가?',
+  '어제의 내 예상과 오늘 실제 상황이 달랐던 부분은 어디인가?',
+  '오늘 뉴스가 다루지 않는 것 중, 다뤄져야 할 이슈는 무엇인가?',
+  '환율이 지금보다 5% 움직인다면 무엇이 먼저 영향을 받을까?',
+  '오늘 가장 확신에 찬 전문가의 주장을 하나 골라, 반대 논리를 만들어 보자.',
+  '이번 달 뉴스 흐름을 세 단어로 요약한다면?',
+  '지금 세계에서 자본·인재·관심은 각각 어디로 이동하고 있는가?',
+  '오늘 헤드라인 중 3개월 뒤 결과를 예측할 수 있는 것을 골라 예측 노트에 적어 보자.',
+  '최근 내 예측이 틀렸다면, 어떤 정보를 놓쳤기 때문인가?',
+];
+(function renderQuestion() {
+  const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 86400000);
+  $('question').textContent = QUESTIONS[dayOfYear % QUESTIONS.length];
+})();
+
+/* ───────────────────── 예측 노트 ───────────────────── */
+const PKEY = 'sebonoon.predictions.v1';
+const loadPreds = () => { try { return JSON.parse(localStorage.getItem(PKEY)) || []; } catch { return []; } };
+const savePreds = (p) => localStorage.setItem(PKEY, JSON.stringify(p));
+
+function predStats(preds) {
+  const resolved = preds.filter((p) => p.resolved);
+  const hits = resolved.filter((p) => p.resolved === 'hit');
+  const hitRate = resolved.length ? (hits.length / resolved.length) * 100 : null;
+  const avgConf = resolved.length ? resolved.reduce((s, p) => s + p.conf, 0) / resolved.length : null;
+  const brier = resolved.length
+    ? resolved.reduce((s, p) => s + Math.pow(p.conf / 100 - (p.resolved === 'hit' ? 1 : 0), 2), 0) / resolved.length
+    : null;
+  return { total: preds.length, open: preds.length - resolved.length, resolved: resolved.length, hitRate, avgConf, brier };
+}
+
+function renderPredStats() {
+  const s = predStats(loadPreds());
+  const overconf = s.avgConf != null && s.hitRate != null ? s.avgConf - s.hitRate : null;
+  $('pstats').innerHTML = `
+    <div class="pstat"><div class="label">진행 중 예측</div><div class="value">${s.open}</div><div class="hint">총 ${s.total}건 기록</div></div>
+    <div class="pstat"><div class="label">적중률</div><div class="value">${s.hitRate != null ? s.hitRate.toFixed(0) + '%' : '—'}</div><div class="hint">판정 ${s.resolved}건 기준</div></div>
+    <div class="pstat"><div class="label">평균 확신도</div><div class="value">${s.avgConf != null ? s.avgConf.toFixed(0) + '%' : '—'}</div>
+      <div class="hint">${overconf == null ? '판정이 쌓이면 과신 여부가 보입니다'
+        : overconf > 10 ? `⚠ 확신이 적중률보다 ${overconf.toFixed(0)}%p 높음 — 과신 경향`
+        : overconf < -10 ? `확신이 적중률보다 ${(-overconf).toFixed(0)}%p 낮음 — 과소평가 경향`
+        : '확신도와 적중률이 잘 맞습니다 (보정 양호)'}</div></div>
+    <div class="pstat"><div class="label">브라이어 점수</div><div class="value">${s.brier != null ? s.brier.toFixed(3) : '—'}</div><div class="hint">0에 가까울수록 좋음 (동전 던지기 = 0.25)</div></div>`;
+}
+
+function predRow(p) {
+  const today = new Date().toISOString().slice(0, 10);
+  const overdue = !p.resolved && p.due && p.due <= today;
+  const meta = p.resolved
+    ? `확신 ${p.conf}% · ${p.due} 판정`
+    : `<span class="${overdue ? 'pdue-over' : ''}">판정일 ${p.due}${overdue ? ' — 판정하세요!' : ''}</span>`;
+  return `<li data-id="${p.id}">
+    <span class="ptext">${esc(p.text)}</span>
+    <span class="conf-meter" title="확신도 ${p.conf}%"><i style="width:${p.conf}%"></i></span>
+    <span class="pmeta">${meta}</span>
+    ${p.resolved
+      ? `<span class="badge ${p.resolved}">${p.resolved === 'hit' ? '✓ 적중' : '✗ 빗나감'}</span>
+         <button class="pbtn del" data-act="del">삭제</button>`
+      : `<button class="pbtn" data-act="hit">적중</button>
+         <button class="pbtn" data-act="miss">빗나감</button>
+         <button class="pbtn del" data-act="del">삭제</button>`}
+  </li>`;
+}
+
+function renderPreds() {
+  const preds = loadPreds();
+  const open = preds.filter((p) => !p.resolved).sort((a, b) => a.due.localeCompare(b.due));
+  const resolved = preds.filter((p) => p.resolved).sort((a, b) => (b.resolvedAt || '').localeCompare(a.resolvedAt || ''));
+  $('plist-open').innerHTML = open.length ? open.map(predRow).join('')
+    : '<li class="empty">아직 예측이 없습니다. 첫 예측을 기록해 보세요 — 틀려도 기록하는 것이 훈련입니다.</li>';
+  $('plist-resolved').innerHTML = resolved.length ? resolved.map(predRow).join('')
+    : '<li class="empty">판정 완료된 예측이 없습니다.</li>';
+  $('toggleResolved').textContent = `판정 완료 보기 (${resolved.length})`;
+  renderPredStats();
+}
+
+$('pform').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const text = $('ptext').value.trim();
+  const conf = Number($('pconf').value);
+  const due = $('pdue').value;
+  if (!text || !conf || !due) return;
+  const preds = loadPreds();
+  preds.push({ id: crypto.randomUUID(), text, conf, due, created: new Date().toISOString(), resolved: null });
+  savePreds(preds);
+  e.target.reset();
+  renderPreds();
+});
+
+for (const listId of ['plist-open', 'plist-resolved']) {
+  $(listId).addEventListener('click', (e) => {
+    const btn = e.target.closest('button[data-act]');
+    if (!btn) return;
+    const id = btn.closest('li').dataset.id;
+    const act = btn.dataset.act;
+    let preds = loadPreds();
+    if (act === 'del') {
+      if (!confirm('이 예측을 삭제할까요?')) return;
+      preds = preds.filter((p) => p.id !== id);
+    } else {
+      const p = preds.find((p) => p.id === id);
+      if (p) { p.resolved = act; p.resolvedAt = new Date().toISOString(); }
+    }
+    savePreds(preds);
+    renderPreds();
+  });
+}
+
+$('toggleResolved').addEventListener('click', () => {
+  const ul = $('plist-resolved');
+  ul.hidden = !ul.hidden;
+});
+
+$('exportBtn').addEventListener('click', () => {
+  const blob = new Blob([JSON.stringify(loadPreds(), null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `sebonoon-predictions-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+
+$('importFile').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  try {
+    const imported = JSON.parse(await file.text());
+    if (!Array.isArray(imported)) throw new Error('형식 오류');
+    const byId = new Map(loadPreds().map((p) => [p.id, p]));
+    for (const p of imported) if (p && p.id && p.text) byId.set(p.id, p);
+    savePreds([...byId.values()]);
+    renderPreds();
+    alert(`가져오기 완료 — 총 ${byId.size}건`);
+  } catch {
+    alert('JSON 파일을 읽을 수 없습니다.');
+  }
+  e.target.value = '';
+});
+
+// 판정일 기본값: 2주 뒤
+$('pdue').value = new Date(Date.now() + 14 * 86400000).toISOString().slice(0, 10);
+renderPreds();
+
+/* ───────────────────── 데이터 로드 ───────────────────── */
+async function main() {
+  let data = null, history = [];
+  try {
+    const [d, h] = await Promise.all([
+      fetch(`data/latest.json?t=${Date.now()}`).then((r) => r.json()),
+      fetch(`data/history.json?t=${Date.now()}`).then((r) => r.json()).catch(() => []),
+    ]);
+    data = d; history = Array.isArray(h) ? h : [];
+  } catch {
+    $('sampleBanner').hidden = false;
+    $('sampleBanner').innerHTML =
+      '<strong>데이터 파일을 불러오지 못했습니다.</strong> 로컬에서 여는 경우 <code>npx serve</code> 등 정적 서버로 실행하거나, GitHub Pages 배포 후 접속하세요.';
+  }
+
+  if (data) {
+    $('sampleBanner').hidden = !data.sample;
+    if (data.generatedAt && !data.sample) {
+      $('updatedLabel').textContent = `수집: ${new Intl.DateTimeFormat('ko-KR', {
+        month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Seoul',
+      }).format(new Date(data.generatedAt))} KST`;
+    }
+    renderNewsList('news-world', data.news?.world);
+    renderNewsList('news-korea', data.news?.korea);
+    renderNewsList('news-business', data.news?.business);
+    renderNewsList('news-tech', data.news?.tech);
+    renderNewsList('news-science', data.news?.science);
+    renderHN(data.hackernews);
+    renderTrends(data.trends);
+    fillTileStateFromSnapshot(data.markets);
+  }
+  renderTiles(history);
+  liveMarkets(history); // 백그라운드로 실시간 갱신
+}
+main();
+</script>
+</body>
+</html>
