@@ -169,6 +169,17 @@ ul.news .t { flex: 1 1 auto; min-width: 0; font-size: 13px; font-weight: 500; co
 ul.news .s { flex: none; font-size: 11px; color: var(--muted); white-space: nowrap; }
 ul.news .hnmeta a { color: var(--muted); }
 
+/* ── 트렌드 스트립 (상단 가로 한 줄) ──── */
+.trendstrip {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 12px; overflow-x: auto;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.trendstrip::-webkit-scrollbar { display: none; }
+.trendstrip .tlabel { flex: none; font-size: 12px; font-weight: 700; color: var(--muted); }
+.trendstrip .chips { flex-wrap: nowrap; }
+.trendstrip .chip { flex: none; }
+
 /* ── 트렌드 칩 ─────────────────────── */
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
@@ -327,6 +338,11 @@ footer b { color: var(--text-2); }
   실제 뉴스·시장·트렌드 데이터로 채워집니다. 환율·코인 시세는 지금도 브라우저에서 실시간으로 불러옵니다.
 </div>
 
+<div class="trendstrip" id="sec-trends" aria-label="한국 검색 트렌드">
+  <span class="tlabel">🔎 검색 트렌드</span>
+  <div class="chips" id="trends"></div>
+</div>
+
 <section id="sec-markets" aria-label="시장 지표">
   <h2>시장 지표 <span class="cnt" id="marketNote"></span></h2>
   <div class="tiles" id="tiles"></div>
@@ -340,9 +356,10 @@ footer b { color: var(--text-2); }
     <div class="card" id="sec-ai"><h2>🤖 AI</h2><ul class="news" id="news-ai"></ul></div>
     <div class="card" id="sec-tech"><h2>🔬 기술·과학</h2><ul class="news" id="news-tech"></ul></div>
     <div class="card"><h2>⛓️ 블록체인</h2><ul class="news" id="news-crypto"></ul></div>
+  </div>
+  <div class="cols cols-2" style="margin-top: 10px;">
     <div class="card"><h2>💰 재테크</h2><ul class="news" id="news-wealth"></ul></div>
     <div class="card"><h2>🟠 Hacker News</h2><ul class="news" id="news-hn"></ul></div>
-    <div class="card" id="sec-trends"><h2>🔎 한국 검색 트렌드</h2><div class="chips" id="trends"></div></div>
   </div>
 </section>
 
@@ -650,13 +667,13 @@ function renderNewsList(elId, items, max = 10) {
   </li>`).join('');
 }
 
-function renderHN(items) {
+function renderHN(items, max = 10) {
   const el = $('news-hn');
   if (!items || !items.length) {
-    el.innerHTML = '<li class="empty">아직 수집된 항목이 없습니다.</li>';
+    el.innerHTML = '<li class="empty">다음 수집(최대 30분) 후 표시됩니다.</li>';
     return;
   }
-  el.innerHTML = items.slice(0, 10).map((it) => `<li>
+  el.innerHTML = items.slice(0, max).map((it) => `<li>
     <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener" title="${esc(it.title)}">${esc(it.title)}</a>
     <span class="s hnmeta">▲${fmt.num(it.points) ?? 0} · <a href="${esc(it.hnLink)}" target="_blank" rel="noopener">💬${fmt.num(it.comments) ?? 0}</a></span>
   </li>`).join('');
@@ -1211,15 +1228,16 @@ async function main() {
         month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Seoul',
       }).format(new Date(data.generatedAt))} KST${ago}`;
     }
-    renderNewsList('news-world', data.news?.world);
-    renderNewsList('news-korea', data.news?.korea);
-    renderNewsList('news-business', data.news?.business);
-    renderNewsList('news-ai', data.news?.ai);
+    // 섹션 중요도별 표시 개수 — 핵심(세계·한국·경제) 10건, 나머지 5건
+    renderNewsList('news-world', data.news?.world, 10);
+    renderNewsList('news-korea', data.news?.korea, 10);
+    renderNewsList('news-business', data.news?.business, 10);
+    renderNewsList('news-ai', data.news?.ai, 5);
     // 구버전 데이터(tech/science 분리)와 신버전(통합) 모두 지원
-    renderNewsList('news-tech', [...(data.news?.tech || []), ...(data.news?.science || [])]);
-    renderNewsList('news-crypto', data.news?.crypto);
-    renderNewsList('news-wealth', data.news?.wealth);
-    renderHN(data.hackernews);
+    renderNewsList('news-tech', [...(data.news?.tech || []), ...(data.news?.science || [])], 5);
+    renderNewsList('news-crypto', data.news?.crypto, 5);
+    renderNewsList('news-wealth', data.news?.wealth, 5);
+    renderHN(data.hackernews, 5);
     renderTrends(data.trends);
     fillTileStateFromSnapshot(data.markets);
   } else {
