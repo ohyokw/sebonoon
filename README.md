@@ -70,25 +70,26 @@ npx serve .                # 정적 서버로 열기 → http://localhost:3000
 
 자동 판정이 필요한 예측은 가능하면 📊 지표 예측으로 기록하세요.
 
-### 선택: 로컬 LLM(Ollama)으로 자유 예측 자동 판정 — 무료
+### 선택: 로컬 LLM으로 자유 예측 자동 판정 — 무료
 
-맥미니 등 내 기기에서 Ollama를 돌리고 있다면, 자유 예측도 자동 판정할 수 있습니다.
+맥미니 등 내 기기에서 로컬 LLM 서버를 돌리고 있다면, 자유 예측도 자동 판정할 수 있습니다.
 기한이 된 예측을 기간 중 헤드라인 아카이브를 근거로 판정하고, 확신이 없으면 보류합니다.
 브라우저 → 내 기기 직접 통신이라 **외부 서버 전송·비용이 전혀 없습니다.**
 
-1. **Ollama 설치 + 모델 받기** (한국어가 강한 모델 추천)
-   ```bash
-   brew install ollama
-   ollama pull exaone3.5:7.8b   # 또는 qwen2.5:14b (RAM 16GB+), qwen2.5:7b
-   ```
-2. **브라우저 접근 허용(CORS)** — GitHub Pages에서 호출하려면 필요
-   ```bash
-   launchctl setenv OLLAMA_ORIGINS "*"   # 재부팅 후에도 유지하려면 로그인 항목/plist로
-   # Ollama 앱(메뉴바) 재시작, 또는: OLLAMA_ORIGINS="*" ollama serve
-   ```
-3. 대시보드 예측 노트 → **🖥️ 로컬 LLM 자동 판정** → 주소(`http://localhost:11434`)와 모델명 입력 → 연결 테스트 → 저장
+**두 API 방식을 자동 감지**하므로 서버 종류는 무엇이든 됩니다:
+
+| 방식 | 해당 서버 | 감지 엔드포인트 |
+|---|---|---|
+| OpenAI 호환 | **oMLX**, mlx_lm.server, LM Studio, llama.cpp server 등 | `/v1/models`, `/v1/chat/completions` |
+| Ollama 네이티브 | Ollama | `/api/tags`, `/api/chat` |
+
+설정 방법:
+1. 로컬 LLM 서버를 실행하고 주소를 확인합니다 (예: oMLX/mlx 계열은 보통 `http://localhost:8080`, Ollama는 `:11434`, LM Studio는 `:1234`)
+2. 대시보드 예측 노트 → **🖥️ 로컬 LLM 자동 판정** → 주소 입력 → **연결 테스트** (API 방식을 감지하고 설치된 모델 목록을 확인해 자동으로 채워줍니다) → 저장
+3. 한국어 판정이므로 한국어가 되는 모델 추천: EXAONE 3.5, Qwen 2.5(7B+) 등
 
 참고 사항:
-- HTTPS 페이지에서 `http://localhost` 호출은 Chrome/Edge에서 동작합니다. Safari가 차단하는 경우 Chrome을 쓰거나, 맥미니에서 `npx serve .`로 대시보드를 직접 띄우세요
-- 휴대폰 등 다른 기기에서 열면 Ollama에 접근할 수 없으므로 자동 판정은 건너뛰고(🔎 도우미는 동작) 맥미니에서 열 때 일괄 판정됩니다
+- **CORS**: 서버가 브라우저 요청을 허용해야 합니다. Ollama는 `launchctl setenv OLLAMA_ORIGINS "*"` 후 재시작, LM Studio는 설정에서 CORS 켜기, oMLX/mlx 계열은 대부분 기본 허용 — 연결 테스트가 실패하면 서버의 CORS 설정을 확인하세요
+- HTTPS 페이지(GitHub Pages)에서 `http://localhost` 호출은 Chrome/Edge에서 동작합니다. Safari가 차단하는 경우 Chrome을 쓰거나, 맥미니에서 `npx serve .`로 대시보드를 직접 띄우세요
+- 휴대폰 등 다른 기기에서 열면 로컬 서버에 접근할 수 없으므로 자동 판정은 건너뛰고(🔎 도우미는 동작) 맥미니에서 열 때 일괄 판정됩니다
 - 로컬 소형 모델은 판정 정확도가 완벽하지 않습니다 — 확신 없으면 보류하도록 지시되어 있고, 잘못된 판정은 '정정' 버튼으로 뒤집으세요

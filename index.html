@@ -390,17 +390,17 @@ footer b { color: var(--text-2); }
       <label class="pbtn" style="display:inline-block">가져오기<input id="importFile" type="file" accept=".json" hidden></label>
     </div>
     <details class="llm-settings" id="llmSettings">
-      <summary>🖥️ 로컬 LLM 자동 판정 (Ollama) <span id="llmStatus"></span></summary>
+      <summary>🖥️ 로컬 LLM 자동 판정 (oMLX · Ollama · LM Studio 등) <span id="llmStatus"></span></summary>
       <p class="llm-desc">
-        내 기기(맥미니 등)에서 실행 중인 Ollama로, 기한이 된 자유 예측을 기간 중 수집된 헤드라인을 근거로
+        내 기기(맥미니 등)에서 실행 중인 로컬 LLM 서버로, 기한이 된 자유 예측을 기간 중 수집된 헤드라인을 근거로
         <b>무료</b> 자동 판정합니다. 외부 서버로는 아무것도 전송되지 않습니다.
+        OpenAI 호환 API(oMLX, LM Studio, mlx_lm.server 등)와 Ollama 네이티브 API를 자동 감지합니다.
         근거가 부족하면 보류하고 직접 판정을 기다리며, 판정 결과는 '정정'으로 뒤집을 수 있습니다.
-        Ollama 쪽에서 <code>OLLAMA_ORIGINS</code> 허용이 필요합니다 (README 참고).
-        이 기기에서 Ollama에 접근할 수 없으면 조용히 건너뜁니다.
+        서버가 브라우저 요청(CORS)을 허용해야 합니다 — 연결 테스트로 확인하세요 (README 참고).
       </p>
       <div class="llm-row">
-        <input id="llmUrl" type="url" placeholder="http://localhost:11434" autocomplete="off">
-        <input id="llmModel" type="text" placeholder="모델명 (예: exaone3.5:7.8b, qwen2.5:14b)" autocomplete="off">
+        <input id="llmUrl" type="url" placeholder="서버 주소 (예: http://localhost:8080 — 서버 설정의 포트)" autocomplete="off">
+        <input id="llmModel" type="text" placeholder="모델명 — 연결 테스트로 목록 확인" autocomplete="off">
         <button class="pbtn" id="llmSave" type="button">저장</button>
         <button class="pbtn" id="llmTest" type="button">연결 테스트</button>
         <button class="pbtn del" id="llmOff" type="button">끄기</button>
@@ -757,9 +757,50 @@ ${evidence || '(수집된 헤드라인 없음)'}
 JSON으로만 답하라: {"verdict": "hit|miss|unclear", "reason": "근거 한두 문장(한국어)"}`;
 }
 
+/** 응답 텍스트에서 JSON 오브젝트만 추출 (모델이 앞뒤 설명을 붙여도 견딤) */
+function extractJson(s) {
+  const m = String(s ?? '').match(/\{[\s\S]*\}/);
+  return m ? JSON.parse(m[0]) : {};
+}
+
+/** 서버 API 방식 감지: OpenAI 호환(oMLX·LM Studio·mlx_lm.server) 또는 Ollama 네이티브 */
+async function detectApi(url) {
+  try {
+    const r = await fetch(`${url}/v1/models`);
+    if (r.ok) return 'openai';
+  } catch { /* 다음 방식 시도 */ }
+  try {
+    const r = await fetch(`${url}/api/tags`);
+    if (r.ok) return 'ollama';
+  } catch { /* 연결 불가 */ }
+  return null;
+}
+
 async function callLocalJudge(prompt) {
   const cfg = llmCfg();
-  const res = await fetch(`${cfg.url.replace(/\/+$/, '')}/api/chat`, {
+  const url = cfg.url.replace(/\/+$/, '');
+  if (!cfg.api) { // 최초 1회 감지 후 저장
+    cfg.api = await detectApi(url);
+    if (!cfg.api) throw new Error('연결 불가');
+    localStorage.setItem(LLMCFG, JSON.stringify(cfg));
+  }
+  let res;
+  if (cfg.api === 'openai') {
+    res = await fetch(`${url}/v1/chat/completions`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        model: cfg.model,
+        temperature: 0,
+        stream: false,
+        messages: [{ role: 'user', content: prompt }],
+      }),
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const j = await res.json();
+    return extractJson(j.choices?.[0]?.message?.content);
+  }
+  res = await fetch(`${url}/api/chat`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({
@@ -772,7 +813,7 @@ async function callLocalJudge(prompt) {
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const j = await res.json();
-  return JSON.parse(j.message?.content ?? '{}');
+  return extractJson(j.message?.content);
 }
 
 /** 기한이 도래한 자유 예측을 로컬 LLM으로 판정 (예측당 하루 1회 시도) */
@@ -1021,25 +1062,40 @@ function refreshLlmSettings() {
   if (!$('llmStatus').textContent) setLlmStatus(cfg?.url && cfg?.model ? '켜짐' : '');
 }
 $('llmSave').addEventListener('click', () => {
-  const url = $('llmUrl').value.trim() || 'http://localhost:11434';
+  const url = $('llmUrl').value.trim().replace(/\/+$/, '');
   const model = $('llmModel').value.trim();
-  if (!model) { alert('모델명을 입력하세요 (예: exaone3.5:7.8b). `ollama list`로 확인할 수 있습니다.'); return; }
-  localStorage.setItem(LLMCFG, JSON.stringify({ url, model }));
+  if (!url) { alert('서버 주소를 입력하세요 (예: http://localhost:8080).'); return; }
+  if (!model) { alert("모델명을 입력하세요 — '연결 테스트'를 누르면 목록을 확인하고 자동으로 채워줍니다."); return; }
+  localStorage.setItem(LLMCFG, JSON.stringify({ url, model })); // api는 첫 판정 때 자동 감지
   setLlmStatus('켜짐');
   llmJudgeDue();
 });
 $('llmTest').addEventListener('click', async () => {
-  const url = ($('llmUrl').value.trim() || 'http://localhost:11434').replace(/\/+$/, '');
+  const url = $('llmUrl').value.trim().replace(/\/+$/, '');
+  if (!url) { setLlmStatus('서버 주소를 입력하세요'); return; }
   setLlmStatus('테스트 중…');
+  const api = await detectApi(url);
+  if (!api) {
+    setLlmStatus('연결 실패 — 서버 실행 여부와 CORS 허용 설정을 확인하세요');
+    return;
+  }
   try {
-    const j = await (await fetch(`${url}/api/tags`)).json();
-    const models = (j.models || []).map((m) => m.name);
+    let models = [];
+    if (api === 'openai') {
+      const j = await (await fetch(`${url}/v1/models`)).json();
+      models = (j.data || []).map((m) => m.id);
+    } else {
+      const j = await (await fetch(`${url}/api/tags`)).json();
+      models = (j.models || []).map((m) => m.name);
+    }
+    const kind = api === 'openai' ? 'OpenAI 호환' : 'Ollama';
     const want = $('llmModel').value.trim();
-    setLlmStatus(want && !models.some((m) => m.startsWith(want))
-      ? `연결됨 — 단, '${want}' 모델 없음 (설치된: ${models.slice(0, 3).join(', ') || '없음'})`
-      : `연결됨 ✓ (모델 ${models.length}개)`);
+    if (!want && models.length) $('llmModel').value = models[0]; // 첫 모델 자동 채움
+    setLlmStatus(want && models.length && !models.some((m) => m.startsWith(want))
+      ? `연결됨(${kind}) — 단, '${want}' 모델 없음. 사용 가능: ${models.slice(0, 3).join(', ')}`
+      : `연결됨 ✓ (${kind}, 모델 ${models.length}개)`);
   } catch {
-    setLlmStatus('연결 실패 — Ollama 실행 여부와 OLLAMA_ORIGINS 설정을 확인하세요');
+    setLlmStatus(`연결됨 — 모델 목록은 읽지 못했습니다`);
   }
 });
 $('llmOff').addEventListener('click', () => {
