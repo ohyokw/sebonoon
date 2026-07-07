@@ -288,6 +288,28 @@ async function updateHistory(snapshot) {
   return history;
 }
 
+/** 뉴스 아카이브 — 자유 예측의 AI 자동 판정에 쓸 증거 (최근 60일, 섹션별 상위 6건) */
+async function updateNewsArchive(snapshot) {
+  const file = join(DATA_DIR, 'news-archive.json');
+  let archive = [];
+  try {
+    archive = JSON.parse(await readFile(file, 'utf8'));
+  } catch {
+    /* 첫 실행 */
+  }
+  const items = [];
+  for (const [cat, list] of Object.entries(snapshot.news || {})) {
+    for (const it of (list || []).slice(0, 6)) {
+      items.push({ t: it.title, s: it.source || '', c: cat });
+    }
+  }
+  archive = archive.filter((d) => d.date !== snapshot.date);
+  if (items.length) archive.push({ date: snapshot.date, items });
+  archive.sort((a, b) => a.date.localeCompare(b.date));
+  archive = archive.slice(-60);
+  await writeFile(file, JSON.stringify(archive) + '\n');
+}
+
 // ---------- 메인 ----------
 
 async function main() {
@@ -322,6 +344,7 @@ async function main() {
 
   await writeFile(join(DATA_DIR, 'latest.json'), JSON.stringify(snapshot, null, 1) + '\n');
   await updateHistory(snapshot);
+  await updateNewsArchive(snapshot);
 
   const counts = Object.entries(snapshot.news)
     .map(([k, v]) => `${k}:${v.length}`)

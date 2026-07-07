@@ -247,6 +247,17 @@ ul.plist .pdue-over { color: var(--status-warn); font-weight: 600; }
 .badge.miss { color: var(--status-crit); background: color-mix(in srgb, var(--status-crit) 12%, transparent); }
 .ptools { display: flex; gap: 8px; margin-top: 8px; }
 .resolved-toggle { margin-top: 10px; }
+.ai-settings { margin-top: 10px; border-top: 1px solid var(--grid); padding-top: 8px; }
+.ai-settings summary { font-size: 12px; color: var(--text-2); cursor: pointer; }
+.ai-settings summary::marker { color: var(--muted); }
+#aiStatus { color: var(--muted); font-weight: 500; margin-left: 6px; }
+.ai-desc { font-size: 11px; color: var(--muted); line-height: 1.55; margin: 6px 0 8px; }
+.ai-row { display: flex; gap: 6px; flex-wrap: wrap; }
+.ai-row input {
+  flex: 1 1 220px; min-width: 0; font: inherit; font-size: 12.5px;
+  border: 1px solid var(--border); border-radius: 8px;
+  background: var(--page); color: var(--text-1); padding: 6px 10px;
+}
 
 /* ── 푸터 ─────────────────────────── */
 footer { margin-top: 18px; color: var(--muted); font-size: 11.5px; line-height: 1.65; }
@@ -373,6 +384,19 @@ footer b { color: var(--text-2); }
       <button class="pbtn" id="exportBtn" type="button">내보내기 (JSON)</button>
       <label class="pbtn" style="display:inline-block">가져오기<input id="importFile" type="file" accept=".json" hidden></label>
     </div>
+    <details class="ai-settings" id="aiSettings">
+      <summary>🤖 자유 예측 AI 자동 판정 <span id="aiStatus"></span></summary>
+      <p class="ai-desc">
+        Anthropic API 키를 등록하면, 기한이 된 자유 예측을 매일 수집된 뉴스 헤드라인을 근거로 Claude가 자동 판정합니다
+        (근거가 부족하면 보류하고 직접 판정을 기다립니다). 키는 이 브라우저(localStorage)에만 저장되며
+        api.anthropic.com으로 직접 전송됩니다 — 공용 PC에서는 등록하지 마세요. 판정 1건당 소액의 API 사용료가 발생합니다.
+      </p>
+      <div class="ai-row">
+        <input id="aiKey" type="password" placeholder="sk-ant-..." autocomplete="off">
+        <button class="pbtn" id="aiKeySave" type="button">저장</button>
+        <button class="pbtn del" id="aiKeyDel" type="button">삭제</button>
+      </div>
+    </details>
   </div>
 </section>
 
@@ -635,6 +659,110 @@ function autoJudge(preds) {
   return changed;
 }
 
+/* ── 자유 예측 AI 자동 판정 (Claude API 직접 호출, 키는 localStorage) ── */
+const AIKEY = 'sebonoon.anthropicKey';
+const AI_MODEL = 'claude-opus-4-8';
+let NEWS_ARCHIVE = []; // main()에서 data/news-archive.json 로드
+
+const AI_SCHEMA = {
+  type: 'object',
+  properties: {
+    verdict: { type: 'string', enum: ['hit', 'miss', 'unclear'] },
+    reason: { type: 'string', description: '판정 근거 한두 문장 (한국어)' },
+  },
+  required: ['verdict', 'reason'],
+  additionalProperties: false,
+};
+
+function setAiStatus(msg) { $('aiStatus').textContent = msg || ''; }
+
+function buildEvidence(p) {
+  const from = (p.created || '').slice(0, 10);
+  const to = p.due < todayKst() ? p.due : todayKst();
+  const days = NEWS_ARCHIVE.filter((d) => d.date >= from && d.date <= to);
+  let lines = days.flatMap((d) => d.items.map((it) => `[${d.date}] ${it.t} (${it.s})`));
+  if (lines.length > 150) { // 프롬프트 크기 제한 — 기간 전체에서 고르게 샘플링
+    const step = lines.length / 150;
+    lines = Array.from({ length: 150 }, (_, i) => lines[Math.floor(i * step)]);
+  }
+  return lines.join('\n');
+}
+
+function judgePrompt(p, evidence) {
+  return `당신은 예측 판정관입니다. 아래 예측이 기한 내에 실현되었는지, 수집된 뉴스 헤드라인을 증거로 판정하세요.
+
+예측: "${p.text}"
+기록일: ${(p.created || '').slice(0, 10)} / 판정 기한: ${p.due} / 오늘: ${todayKst()}
+
+증거 (기간 중 수집된 주요 헤드라인 — 전체 뉴스가 아닌 표본임):
+${evidence || '(수집된 헤드라인 없음)'}
+
+판정 기준:
+- "hit": 예측이 기한 내 실현되었음을 증거가 명확히 뒷받침한다
+- "miss": 실현되지 않았음이 명확하다. 또는 기한이 지났고, 실현되었다면 반드시 크게 보도되었을 사안인데 관련 증거가 전혀 없다
+- "unclear": 증거가 불충분하거나 예측 문장이 애매하다 — 조금이라도 확신이 없으면 unclear를 선택하라 (사용자가 직접 판정한다)
+
+reason은 한국어 한두 문장으로.`;
+}
+
+async function callClaudeJudge(prompt) {
+  const key = localStorage.getItem(AIKEY);
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'content-type': 'application/json',
+      'x-api-key': key,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
+    },
+    body: JSON.stringify({
+      model: AI_MODEL,
+      max_tokens: 1024,
+      output_config: { format: { type: 'json_schema', schema: AI_SCHEMA } },
+      messages: [{ role: 'user', content: prompt }],
+    }),
+  });
+  if (!res.ok) throw new Error(`API ${res.status}`);
+  const j = await res.json();
+  if (j.stop_reason === 'refusal') return { verdict: 'unclear', reason: '모델이 판정을 거부했습니다' };
+  const text = j.content?.find((b) => b.type === 'text')?.text;
+  return JSON.parse(text);
+}
+
+/** 기한이 도래한 자유 예측을 AI로 판정 (예측당 하루 1회 시도) */
+async function aiJudgeDue() {
+  if (!localStorage.getItem(AIKEY)) return;
+  const today = todayKst();
+  const preds = loadPreds();
+  const due = preds.filter(
+    (p) => !p.resolved && p.type !== 'metric' && p.due <= today && p.aiTriedAt !== today
+  );
+  if (!due.length) return;
+  setAiStatus(`판정 중… (${due.length}건)`);
+  for (const p of due) {
+    p.aiTriedAt = today;
+    try {
+      const v = await callClaudeJudge(judgePrompt(p, buildEvidence(p)));
+      if (v.verdict === 'hit' || v.verdict === 'miss') {
+        p.resolved = v.verdict;
+        p.autoJudged = 'ai';
+        p.aiReason = v.reason;
+        p.resolvedAt = new Date().toISOString();
+      } else {
+        p.aiReason = v.reason; // 보류 — 사용자가 직접 판정
+      }
+    } catch (e) {
+      savePreds(preds);
+      renderPreds();
+      setAiStatus(`실패: ${e.message} — 키와 크레딧을 확인하세요`);
+      return;
+    }
+  }
+  savePreds(preds);
+  renderPreds();
+  setAiStatus('판정 완료 ✓');
+}
+
 function predStats(preds) {
   const resolved = preds.filter((p) => p.resolved);
   const hits = resolved.filter((p) => p.resolved === 'hit');
@@ -670,15 +798,19 @@ function predRow(p) {
     const cur = s.length ? s[s.length - 1].v : null;
     if (cur != null) progress = ` · 현재 ${fmt.num(cur, METRICS[p.metric]?.digits ?? 2)}`;
   }
+  const judgedBy = p.autoJudged === 'ai' ? ' · 🤖 AI 판정' : p.autoJudged ? ' · 자동 판정' : '';
+  const aiHold = !p.resolved && !isMetric && p.aiReason
+    ? ` · <span title="${esc(p.aiReason)}">🤖 보류(직접 판정 필요)</span>` : '';
   const meta = p.resolved
-    ? `확신 ${p.conf}% · 기한 ${p.due}${p.autoJudged ? ' · 자동 판정' : ''}`
-    : `<span class="${overdue ? 'pdue-over' : ''}">기한 ${p.due}${overdue && !isMetric ? ' — 판정하세요!' : ''}</span>${progress}`;
+    ? `<span title="${esc(p.aiReason || '')}">확신 ${p.conf}% · 기한 ${p.due}${judgedBy}</span>`
+    : `<span class="${overdue ? 'pdue-over' : ''}">기한 ${p.due}${overdue && !isMetric && !p.aiReason ? ' — 판정하세요!' : ''}</span>${progress}${aiHold}`;
   return `<li data-id="${p.id}">
     <span class="ptext">${isMetric ? '📊 ' : ''}${esc(p.text)}</span>
     <span class="conf-meter" title="확신도 ${p.conf}%"><i style="width:${p.conf}%"></i></span>
     <span class="pmeta">${meta}</span>
     ${p.resolved
       ? `<span class="badge ${p.resolved}">${p.resolved === 'hit' ? '✓ 적중' : '✗ 빗나감'}</span>
+         ${p.autoJudged ? '<button class="pbtn" data-act="flip" title="판정이 틀렸다면 뒤집기">정정</button>' : ''}
          <button class="pbtn del" data-act="del">삭제</button>`
       : `${isMetric ? '' : `<button class="pbtn" data-act="hit">적중</button>
          <button class="pbtn" data-act="miss">빗나감</button>`}
@@ -771,6 +903,9 @@ for (const listId of ['plist-open', 'plist-resolved']) {
     if (act === 'del') {
       if (!confirm('이 예측을 삭제할까요?')) return;
       preds = preds.filter((p) => p.id !== id);
+    } else if (act === 'flip') {
+      const p = preds.find((p) => p.id === id);
+      if (p) { p.resolved = p.resolved === 'hit' ? 'miss' : 'hit'; p.autoJudged = false; }
     } else {
       const p = preds.find((p) => p.id === id);
       if (p) { p.resolved = act; p.resolvedAt = new Date().toISOString(); }
@@ -811,6 +946,29 @@ $('importFile').addEventListener('change', async (e) => {
   e.target.value = '';
 });
 
+/* ── AI 판정 설정 ── */
+function refreshAiSettings() {
+  const has = !!localStorage.getItem(AIKEY);
+  $('aiKey').placeholder = has ? '키 등록됨 (변경하려면 새 키 입력)' : 'sk-ant-...';
+  if (!$('aiStatus').textContent) setAiStatus(has ? '켜짐' : '');
+}
+$('aiKeySave').addEventListener('click', () => {
+  const k = $('aiKey').value.trim();
+  if (!k) return;
+  if (!k.startsWith('sk-ant')) { alert('Anthropic API 키(sk-ant-...)를 입력하세요.'); return; }
+  localStorage.setItem(AIKEY, k);
+  $('aiKey').value = '';
+  setAiStatus('켜짐');
+  refreshAiSettings();
+  aiJudgeDue();
+});
+$('aiKeyDel').addEventListener('click', () => {
+  localStorage.removeItem(AIKEY);
+  setAiStatus('');
+  refreshAiSettings();
+});
+refreshAiSettings();
+
 // 판정일 기본값: 2주 뒤
 $('pdue').value = new Date(Date.now() + 14 * 86400000).toISOString().slice(0, 10);
 renderPreds();
@@ -819,11 +977,13 @@ renderPreds();
 async function main() {
   let data = null, history = [];
   try {
-    const [d, h] = await Promise.all([
+    const [d, h, arch] = await Promise.all([
       fetch(`data/latest.json?t=${Date.now()}`).then((r) => r.json()),
       fetch(`data/history.json?t=${Date.now()}`).then((r) => r.json()).catch(() => []),
+      fetch(`data/news-archive.json?t=${Date.now()}`).then((r) => r.json()).catch(() => []),
     ]);
     data = d; history = Array.isArray(h) ? h : [];
+    NEWS_ARCHIVE = Array.isArray(arch) ? arch : [];
   } catch {
     $('sampleBanner').hidden = false;
     $('sampleBanner').innerHTML =
@@ -851,6 +1011,7 @@ async function main() {
   refreshTargetPlaceholder();
   renderPreds(); // 수집 데이터 기준 자동 판정 반영
   liveMarkets(history); // 백그라운드로 실시간 갱신
+  aiJudgeDue(); // 기한 도래한 자유 예측 AI 판정 (키 등록 시)
 }
 main();
 </script>
