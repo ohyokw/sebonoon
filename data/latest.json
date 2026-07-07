@@ -1,0 +1,28 @@
+{
+ "sample": true,
+ "generatedAt": "2026-07-07T00:00:00.000Z",
+ "date": "2026-07-07",
+ "news": {
+  "world": [
+   { "title": "샘플 헤드라인 — GitHub Actions 첫 실행 후 실제 세계 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+  ],
+  "korea": [
+   { "title": "샘플 헤드라인 — GitHub Actions 첫 실행 후 실제 한국 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+  ],
+  "business": [
+   { "title": "샘플 헤드라인 — GitHub Actions 첫 실행 후 실제 경제 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+  ],
+  "tech": [
+   { "title": "샘플 헤드라인 — GitHub Actions 첫 실행 후 실제 기술 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+  ],
+  "science": [
+   { "title": "샘플 헤드라인 — GitHub Actions 첫 실행 후 실제 과학 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+  ]
+ },
+ "hackernews": [
+  { "title": "샘플 — Actions 첫 실행 후 Hacker News 인기 글로 교체됩니다", "link": "#", "points": 0, "comments": 0, "hnLink": "#" }
+ ],
+ "markets": { "fx": null, "crypto": null, "indices": null },
+ "trends": [],
+ "errors": []
+}
