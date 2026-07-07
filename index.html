@@ -429,6 +429,40 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
+/* ── 과부하 방지 캐시 (localStorage, 30분) ──────────────────────────
+   새로고침을 반복해도 30분 안에는 데이터 파일·외부 시세 API를 다시 부르지 않습니다.
+   쿠키 대신 localStorage 사용: 용량이 크고, 매 요청마다 서버로 전송되지 않아 이 용도에 적합합니다. */
+const CACHE_TTL = 30 * 60 * 1000; // 30분
+const cacheKey = (k) => `sebonoon.cache.${k}`;
+function cacheGet(k, ttl = CACHE_TTL) {
+  try {
+    const raw = localStorage.getItem(cacheKey(k));
+    if (!raw) return null;
+    const { t, v } = JSON.parse(raw);
+    return Date.now() - t <= ttl ? v : null; // 만료면 null
+  } catch { return null; }
+}
+const cacheStale = (k) => cacheGet(k, Infinity); // TTL 무시(오프라인 폴백용)
+const cacheAge = (k) => { // 캐시 나이(ms), 없으면 null
+  try { return Date.now() - JSON.parse(localStorage.getItem(cacheKey(k))).t; } catch { return null; }
+};
+function cacheSet(k, v) {
+  try { localStorage.setItem(cacheKey(k), JSON.stringify({ t: Date.now(), v })); } catch { /* 용량 초과 등 무시 */ }
+}
+/** 30분 캐시 우선 JSON 로드. 신선하면 네트워크 생략, 실패 시 만료 캐시라도 반환 */
+async function cachedJson(baseUrl, k, fallback) {
+  const fresh = cacheGet(k);
+  if (fresh != null) return fresh;
+  try {
+    const data = await (await fetch(`${baseUrl}?t=${Date.now()}`)).json();
+    cacheSet(k, data);
+    return data;
+  } catch {
+    const stale = cacheStale(k);
+    return stale != null ? stale : fallback;
+  }
+}
+
 const fmt = {
   num(v, digits = 0) {
     if (v == null || Number.isNaN(v)) return null;
@@ -534,8 +568,21 @@ function fillTileStateFromSnapshot(markets) {
   }
 }
 
-/* 브라우저에서 직접 실시간 시세 (CORS 허용 API만) */
+function applyLiveMarkets(history) {
+  $('marketNote').textContent = '· 환율/코인 30분마다 갱신, 지수는 일 1회 수집';
+  renderTiles(history);
+  refreshTargetPlaceholder();
+  renderPreds(); // 최신 값으로 지표 예측 진행 상황·자동 판정 갱신
+}
+
+/* 브라우저에서 직접 시세 조회 (CORS 허용 API만). 30분 캐시로 과부하 방지 */
 async function liveMarkets(history) {
+  const cached = cacheGet('markets'); // 30분 내면 API 호출 없이 캐시 사용
+  if (cached) {
+    Object.assign(tileState, cached);
+    applyLiveMarkets(history);
+    return;
+  }
   let updated = false;
   try {
     const j = await (await fetch('https://api.frankfurter.dev/v1/latest?base=USD&symbols=KRW')).json();
@@ -556,10 +603,8 @@ async function liveMarkets(history) {
     if (j?.ethereum?.usd) { tileState.eth = { value: j.ethereum.usd, changePct: j.ethereum.usd_24h_change }; updated = true; }
   } catch { /* 유지 */ }
   if (updated) {
-    $('marketNote').textContent = '· 환율/코인은 실시간, 지수는 일 1회 수집';
-    renderTiles(history);
-    refreshTargetPlaceholder();
-    renderPreds(); // 실시간 값으로 지표 예측 진행 상황·자동 판정 갱신
+    cacheSet('markets', { usdkrw: tileState.usdkrw, btc: tileState.btc, eth: tileState.eth });
+    applyLiveMarkets(history);
   }
 }
 
@@ -1111,27 +1156,23 @@ renderPreds();
 
 /* ───────────────────── 데이터 로드 ───────────────────── */
 async function main() {
-  let data = null, history = [];
-  try {
-    const [d, h, arch] = await Promise.all([
-      fetch(`data/latest.json?t=${Date.now()}`).then((r) => r.json()),
-      fetch(`data/history.json?t=${Date.now()}`).then((r) => r.json()).catch(() => []),
-      fetch(`data/news-archive.json?t=${Date.now()}`).then((r) => r.json()).catch(() => []),
-    ]);
-    data = d; history = Array.isArray(h) ? h : [];
-    NEWS_ARCHIVE = Array.isArray(arch) ? arch : [];
-  } catch {
-    $('sampleBanner').hidden = false;
-    $('sampleBanner').innerHTML =
-      '<strong>데이터 파일을 불러오지 못했습니다.</strong> 로컬에서 여는 경우 <code>npx serve</code> 등 정적 서버로 실행하거나, GitHub Pages 배포 후 접속하세요.';
-  }
+  // 데이터 파일은 30분 캐시 — 새로고침을 반복해도 30분 안에는 다시 내려받지 않음
+  const [data, h, arch] = await Promise.all([
+    cachedJson('data/latest.json', 'latest', null),
+    cachedJson('data/history.json', 'history', []),
+    cachedJson('data/news-archive.json', 'archive', []),
+  ]);
+  const history = Array.isArray(h) ? h : [];
+  NEWS_ARCHIVE = Array.isArray(arch) ? arch : [];
 
   if (data) {
     $('sampleBanner').hidden = !data.sample;
     if (data.generatedAt && !data.sample) {
+      const age = cacheAge('latest');
+      const ago = age != null && age > 60000 ? ` · ${Math.round(age / 60000)}분 전 확인` : '';
       $('updatedLabel').textContent = `수집: ${new Intl.DateTimeFormat('ko-KR', {
         month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Seoul',
-      }).format(new Date(data.generatedAt))} KST`;
+      }).format(new Date(data.generatedAt))} KST${ago}`;
     }
     renderNewsList('news-world', data.news?.world);
     renderNewsList('news-korea', data.news?.korea);
@@ -1141,15 +1182,22 @@ async function main() {
     renderHN(data.hackernews);
     renderTrends(data.trends);
     fillTileStateFromSnapshot(data.markets);
+  } else {
+    // 캐시도 없고 네트워크도 실패 — 파일 서빙 안내
+    $('sampleBanner').hidden = false;
+    $('sampleBanner').innerHTML =
+      '<strong>데이터 파일을 불러오지 못했습니다.</strong> 로컬에서 여는 경우 <code>npx serve</code> 등 정적 서버로 실행하거나, GitHub Pages 배포 후 접속하세요.';
   }
   HISTORY = history;
   renderTiles(history);
   refreshTargetPlaceholder();
   renderPreds(); // 수집 데이터 기준 자동 판정 + 관련 헤드라인 반영
-  liveMarkets(history); // 백그라운드로 실시간 갱신
+  liveMarkets(history); // 30분 캐시 기반 시세 갱신
   llmJudgeDue(); // 로컬 LLM 설정 시, 기한 도래한 자유 예측 판정
 }
 main();
+// 페이지를 열어둔 채로도 30분마다 자동 갱신 (캐시가 만료되는 시점에만 실제 네트워크 요청)
+setInterval(main, CACHE_TTL);
 </script>
 </body>
 </html>

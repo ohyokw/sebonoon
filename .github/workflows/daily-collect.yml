@@ -2,9 +2,8 @@ name: daily-collect
 
 on:
   schedule:
-    # KST 06:30 / 18:30 — 하루 두 번 수집 (cron은 UTC 기준)
-    - cron: '30 21 * * *'
-    - cron: '30 9 * * *'
+    # 30분마다 수집 (GitHub 예약 실행은 부하에 따라 수 분 지연되거나 건너뛸 수 있음 — best effort)
+    - cron: '*/30 * * * *'
   workflow_dispatch: {}
 
 permissions:

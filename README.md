@@ -31,9 +31,19 @@
 
 ## 동작 방식
 
-1. `.github/workflows/daily-collect.yml` — GitHub Actions가 **매일 06:30 / 18:30 (KST)** 에 `scripts/collect.mjs`를 실행
-2. 수집 결과를 `data/latest.json`(오늘 스냅샷)과 `data/history.json`(지표 히스토리, 최근 120일)에 커밋
-3. `index.html`이 그 데이터를 읽어 렌더링 — 환율·코인 시세는 브라우저에서 실시간으로도 갱신
+1. `.github/workflows/daily-collect.yml` — GitHub Actions가 **30분마다** `scripts/collect.mjs`를 실행 (GitHub 예약 실행은 부하에 따라 수 분 지연되거나 건너뛸 수 있는 best-effort)
+2. 수집 결과를 `data/latest.json`(스냅샷)과 `data/history.json`(지표 히스토리, 최근 120일)에 커밋
+3. `index.html`이 그 데이터를 읽어 렌더링 — 환율·코인 시세는 브라우저에서도 조회
+
+### 과부하 방지 캐시 (30분)
+
+브라우저는 데이터 파일과 외부 시세 API(CoinGecko·Frankfurter) 응답을 **localStorage에 30분간 캐시**합니다.
+- 새로고침을 반복하거나 페이지를 여러 번 열어도 30분 안에는 재요청하지 않아, 무료 API의 rate limit과 불필요한 부하를 피합니다
+- 페이지를 열어둔 채로도 30분마다 자동 갱신됩니다(캐시 만료 시점에만 실제 네트워크 요청)
+- 쿠키가 아닌 localStorage를 쓰는 이유: 용량이 크고 매 요청마다 서버로 전송되지 않아 이 용도에 적합합니다
+- 수집 주기(Actions 30분)와 브라우저 캐시(30분)가 같아, "30분마다 갱신"이 양쪽에서 일관됩니다
+
+> 참고: 30분 수집은 `data/`에 자주 커밋을 남깁니다(하루 최대 ~48회). 커밋 이력이 부담되면 워크플로우 cron 주기를 늘리세요 — 시세는 브라우저에서 별도로 조회되므로 뉴스 신선도만 영향받습니다.
 
 ## 시작하기
 
