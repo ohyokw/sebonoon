@@ -158,6 +158,7 @@ h2 .cnt { font-weight: 500; }
 .tile .delta.flat { color: var(--muted); font-weight: 500; }
 .tile svg { display: block; flex: 1 1 30px; min-width: 0; width: 100%; height: 22px; }
 .tile .nodata { color: var(--muted); font-weight: 400; font-size: 13px; }
+.tile .trend { font-size: 10.5px; color: var(--muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 /* ── 뉴스 리스트 ────────────────────── */
 ul.news { list-style: none; margin: 0; padding: 0; }
@@ -179,17 +180,22 @@ ul.news .hnmeta a { color: var(--muted); }
 .chip .traffic { color: var(--muted); font-size: 11.5px; }
 .empty { color: var(--muted); font-size: 12.5px; padding: 4px 0; }
 
-/* ── 생각거리 ─────────────────────── */
-.question { font-size: 14px; font-weight: 600; line-height: 1.45; }
-.question-sub { color: var(--text-2); font-size: 11.5px; margin-top: 5px; }
+/* ── 생각거리 (한 줄 스트립) ─────────── */
+.think {
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px;
+  padding: 8px 13px; font-size: 13px; margin-bottom: 14px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.think b { color: var(--muted); font-size: 12px; font-weight: 700; }
+#question { font-weight: 600; }
 
-/* ── 예측 노트 ─────────────────────── */
-.pstats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
-@media (max-width: 640px) { .pstats { grid-template-columns: repeat(2, 1fr); } }
-.pstat { padding: 7px 11px; border: 1px solid var(--border); border-radius: 9px; }
-.pstat .label { font-size: 11px; color: var(--text-2); }
-.pstat .value { font-size: 17px; font-weight: 650; }
-.pstat .hint { font-size: 10.5px; color: var(--muted); }
+/* ── 예측 노트 (압축형) ─────────────── */
+.phead { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+.pstats { display: flex; gap: 14px; flex-wrap: wrap; align-items: baseline; font-size: 12px; color: var(--text-2); flex: 1; }
+.pstats b { color: var(--text-1); font-size: 13.5px; font-weight: 650; }
+.pstats .warn { color: var(--status-warn); }
+.pbtn.accent { background: var(--series-1); color: #fff; border: 0; font-weight: 650; }
+#pformWrap { border-top: 1px solid var(--grid); padding-top: 10px; margin-bottom: 4px; }
 
 .ptabs { display: flex; gap: 6px; margin-bottom: 8px; }
 .ptab {
@@ -310,7 +316,7 @@ footer b { color: var(--text-2); }
 <nav class="quicknav" aria-label="섹션 바로가기">
   <a href="#sec-markets">📈 시장</a>
   <a href="#sec-news">📰 헤드라인</a>
-  <a href="#sec-tech">🤖 기술·과학</a>
+  <a href="#sec-ai">🤖 AI</a>
   <a href="#sec-trends">🔎 트렌드</a>
   <a href="#sec-predict">🎯 예측 노트</a>
 </nav>
@@ -331,30 +337,27 @@ footer b { color: var(--text-2); }
     <div class="card"><h2>🌍 세계</h2><ul class="news" id="news-world"></ul></div>
     <div class="card"><h2>🇰🇷 한국</h2><ul class="news" id="news-korea"></ul></div>
     <div class="card"><h2>💹 경제·비즈니스</h2><ul class="news" id="news-business"></ul></div>
-    <div class="card" id="sec-tech"><h2>🤖 기술</h2><ul class="news" id="news-tech"></ul></div>
-    <div class="card"><h2>🔬 과학</h2><ul class="news" id="news-science"></ul></div>
+    <div class="card" id="sec-ai"><h2>🤖 AI</h2><ul class="news" id="news-ai"></ul></div>
+    <div class="card" id="sec-tech"><h2>🔬 기술·과학</h2><ul class="news" id="news-tech"></ul></div>
+    <div class="card"><h2>⛓️ 블록체인</h2><ul class="news" id="news-crypto"></ul></div>
+    <div class="card"><h2>💰 재테크</h2><ul class="news" id="news-wealth"></ul></div>
     <div class="card"><h2>🟠 Hacker News</h2><ul class="news" id="news-hn"></ul></div>
+    <div class="card" id="sec-trends"><h2>🔎 한국 검색 트렌드</h2><div class="chips" id="trends"></div></div>
   </div>
 </section>
 
-<section id="sec-trends" aria-label="트렌드와 생각거리">
-  <div class="cols cols-2">
-    <div class="card">
-      <h2>🔎 한국 검색 트렌드</h2>
-      <div class="chips" id="trends"></div>
-    </div>
-    <div class="card">
-      <h2>💭 오늘의 생각거리</h2>
-      <div class="question" id="question"></div>
-      <div class="question-sub">헤드라인을 읽고 이 질문에 스스로 답해 보세요. 답이 예측이 되면 아래 예측 노트에 기록하세요.</div>
-    </div>
-  </div>
-</section>
+<div class="think" id="thinkStrip" title="헤드라인을 읽고 이 질문에 스스로 답해 보세요. 답이 예측이 되면 아래 예측 노트에 기록하세요.">
+  💭 <b>오늘의 생각거리</b> — <span id="question"></span>
+</div>
 
 <section id="sec-predict" aria-label="예측 노트">
   <h2>🎯 예측 노트 — 기록해야 눈이 길러집니다</h2>
   <div class="card">
-    <div class="pstats" id="pstats"></div>
+    <div class="phead">
+      <div class="pstats" id="pstats"></div>
+      <button class="pbtn accent" id="newPredBtn" type="button">＋ 새 예측</button>
+    </div>
+    <div id="pformWrap" hidden>
     <div class="ptabs" role="tablist">
       <button type="button" class="ptab active" id="tab-metric" data-mode="metric">📊 지표 예측 · 자동 판정</button>
       <button type="button" class="ptab" id="tab-free" data-mode="free">✏️ 자유 예측</button>
@@ -380,6 +383,7 @@ footer b { color: var(--text-2); }
       <button type="button" class="pbtn" data-days="eoy">연말</button>
     </div>
     <div class="pform-hint">📊 지표 예측은 매일 수집되는 값 기준으로 자동 판정됩니다 — 기한 내 한 번이라도 목표에 닿으면 적중, 기한이 지나면 빗나감. ✏️ 자유 예측은 직접 판정하되, 기간 중 관련 헤드라인(🔎)을 찾아 보여드립니다. 데이터는 이 브라우저(localStorage)에만 저장됩니다.</div>
+    </div><!-- /pformWrap -->
     <ul class="plist" id="plist-open"></ul>
     <div class="resolved-toggle">
       <button class="pbtn" id="toggleResolved" type="button">판정 완료 보기</button>
@@ -531,6 +535,30 @@ const TILE_DEFS = [
 ];
 const tileState = {}; // key → { value, changePct }
 
+/** 히스토리 기반 동향 한 줄 — 주간 변화율 · 연속 상승/하락 · 30일 고저 근접 (규칙 기반, LLM 불필요) */
+function tileTrend(key) {
+  const hist = HISTORY.map((h) => h[key]).filter((x) => x != null && !Number.isNaN(x));
+  const live = tileState[key]?.value;
+  const v = live != null ? [...hist, live] : hist;
+  if (v.length < 4) return ''; // 히스토리가 쌓이면 표시
+  const last = v[v.length - 1];
+  const parts = [];
+  const span = Math.min(7, v.length - 1);
+  const base = v[v.length - 1 - span];
+  if (base) {
+    const pct = ((last - base) / base) * 100;
+    parts.push(`${span === 7 ? '1주' : `${span}일`} ${pct > 0 ? '+' : ''}${pct.toFixed(1)}%`);
+  }
+  const dir = Math.sign(last - v[v.length - 2]);
+  let streak = 0;
+  for (let i = v.length - 1; i > 0 && dir !== 0 && Math.sign(v[i] - v[i - 1]) === dir; i--) streak++;
+  if (streak >= 3) parts.push(`${streak}일째 ${dir > 0 ? '상승' : '하락'}`);
+  const win = v.slice(-30);
+  if (last >= Math.max(...win) * 0.999) parts.push('30일 최고 근접');
+  else if (last <= Math.min(...win) * 1.001) parts.push('30일 최저 근접');
+  return parts.slice(0, 2).join(' · ');
+}
+
 function renderTiles(history) {
   const histMap = {};
   for (const def of TILE_DEFS) histMap[def.key] = (history || []).map((h) => h[def.key]).slice(-30);
@@ -552,6 +580,7 @@ function renderTiles(history) {
           : '<span class="nodata">수집 대기</span>'}</span>
         ${sparkline(histMap[def.key])}
       </div>
+      ${(() => { const t = tileTrend(def.key); return t ? `<div class="trend" title="일별 히스토리 기반 추세">${t}</div>` : ''; })()}
     </div>`;
   }).join('');
 }
@@ -612,7 +641,7 @@ async function liveMarkets(history) {
 function renderNewsList(elId, items, max = 10) {
   const el = $(elId);
   if (!items || !items.length) {
-    el.innerHTML = '<li class="empty">아직 수집된 항목이 없습니다.</li>';
+    el.innerHTML = '<li class="empty">다음 수집(최대 30분) 후 표시됩니다.</li>';
     return;
   }
   el.innerHTML = items.slice(0, max).map((it) => `<li>
@@ -910,15 +939,16 @@ function predStats(preds) {
 function renderPredStats() {
   const s = predStats(loadPreds());
   const overconf = s.avgConf != null && s.hitRate != null ? s.avgConf - s.hitRate : null;
+  const calib = overconf == null ? ''
+    : overconf > 10 ? `<span class="warn" title="확신이 적중률보다 ${overconf.toFixed(0)}%p 높음 — 확신도를 낮춰 보세요">⚠ 과신 경향</span>`
+    : overconf < -10 ? `<span title="확신이 적중률보다 ${(-overconf).toFixed(0)}%p 낮음">과소평가 경향</span>`
+    : `<span title="확신도와 적중률이 잘 맞습니다">보정 양호 ✓</span>`;
   $('pstats').innerHTML = `
-    <div class="pstat"><div class="label">진행 중 예측</div><div class="value">${s.open}</div><div class="hint">총 ${s.total}건 기록</div></div>
-    <div class="pstat"><div class="label">적중률</div><div class="value">${s.hitRate != null ? s.hitRate.toFixed(0) + '%' : '—'}</div><div class="hint">판정 ${s.resolved}건 기준</div></div>
-    <div class="pstat"><div class="label">평균 확신도</div><div class="value">${s.avgConf != null ? s.avgConf.toFixed(0) + '%' : '—'}</div>
-      <div class="hint">${overconf == null ? '판정이 쌓이면 과신 여부가 보입니다'
-        : overconf > 10 ? `⚠ 확신이 적중률보다 ${overconf.toFixed(0)}%p 높음 — 과신 경향`
-        : overconf < -10 ? `확신이 적중률보다 ${(-overconf).toFixed(0)}%p 낮음 — 과소평가 경향`
-        : '확신도와 적중률이 잘 맞습니다 (보정 양호)'}</div></div>
-    <div class="pstat"><div class="label">브라이어 점수</div><div class="value">${s.brier != null ? s.brier.toFixed(3) : '—'}</div><div class="hint">0에 가까울수록 좋음 (동전 던지기 = 0.25)</div></div>`;
+    <span title="총 ${s.total}건 기록">진행 중 <b>${s.open}</b></span>
+    <span title="판정 ${s.resolved}건 기준">적중률 <b>${s.hitRate != null ? s.hitRate.toFixed(0) + '%' : '—'}</b></span>
+    <span>평균 확신 <b>${s.avgConf != null ? s.avgConf.toFixed(0) + '%' : '—'}</b></span>
+    <span title="0에 가까울수록 좋음 (동전 던지기 = 0.25)">브라이어 <b>${s.brier != null ? s.brier.toFixed(3) : '—'}</b></span>
+    ${calib}`;
 }
 
 function predRow(p) {
@@ -1005,6 +1035,13 @@ for (const tab of document.querySelectorAll('.ptab')) {
     (formMode === 'metric' ? $('ptarget') : $('ptext')).focus();
   });
 }
+
+$('newPredBtn').addEventListener('click', () => {
+  const w = $('pformWrap');
+  w.hidden = !w.hidden;
+  $('newPredBtn').textContent = w.hidden ? '＋ 새 예측' : '접기';
+  if (!w.hidden) (formMode === 'metric' ? $('ptarget') : $('ptext')).focus();
+});
 
 $('dueChips').addEventListener('click', (e) => {
   const btn = e.target.closest('button[data-days]');
@@ -1177,8 +1214,11 @@ async function main() {
     renderNewsList('news-world', data.news?.world);
     renderNewsList('news-korea', data.news?.korea);
     renderNewsList('news-business', data.news?.business);
-    renderNewsList('news-tech', data.news?.tech);
-    renderNewsList('news-science', data.news?.science);
+    renderNewsList('news-ai', data.news?.ai);
+    // 구버전 데이터(tech/science 분리)와 신버전(통합) 모두 지원
+    renderNewsList('news-tech', [...(data.news?.tech || []), ...(data.news?.science || [])]);
+    renderNewsList('news-crypto', data.news?.crypto);
+    renderNewsList('news-wealth', data.news?.wealth);
     renderHN(data.hackernews);
     renderTrends(data.trends);
     fillTileStateFromSnapshot(data.markets);

@@ -88,6 +88,8 @@ const GN_KO = (path) =>
   `https://news.google.com/rss${path}${path.includes('?') ? '&' : '?'}hl=ko&gl=KR&ceid=KR:ko`;
 const GN_SEARCH_EN = (q) =>
   `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
+const GN_SEARCH_KO = (q) =>
+  `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=ko&gl=KR&ceid=KR:ko`;
 
 /** 직접 RSS — 매체명 고정 */
 async function fromRss(url, name, take) {
@@ -125,6 +127,18 @@ async function fromGnTopic(path, take) {
   }
 }
 
+/** Google News 한국어 키워드 검색 — 토픽과 같은 화이트리스트 규칙 (AI/블록체인/재테크 섹션용) */
+async function fromGnSearchKo(q, take) {
+  try {
+    const all = parseRss(await get(GN_SEARCH_KO(q), 'text'));
+    const trusted = all.filter((it) => isTrustedKr(it.source));
+    return (trusted.length >= 3 ? trusted : all).slice(0, take);
+  } catch (e) {
+    errors.push(`GN검색(${q.slice(0, 14)}…): ${e.message}`);
+    return [];
+  }
+}
+
 /** 여러 소스를 라운드로빈으로 섞어 한 소스가 지면을 독점하지 않게 하고, 제목으로 중복 제거 */
 function interleave(lists, max) {
   const out = [];
@@ -155,6 +169,9 @@ async function collectNews() {
     bbcBiz, reutersBiz, gnBiz,
     mitTech, bbcTech, gnTech,
     aaas, nature, gnSci,
+    gnAi, reutersAi,
+    gnCrypto, coindesk,
+    gnWealth,
   ] = await Promise.all([
     // 세계 — 국제 통신사/공영 + 한국어 보도(화이트리스트)
     fromRss('https://feeds.bbci.co.uk/news/world/rss.xml', 'BBC', 4),
@@ -164,26 +181,38 @@ async function collectNews() {
     // 한국 — 연합뉴스 직접 + 화이트리스트
     fromRss('https://www.yna.co.kr/rss/news.xml', '연합뉴스', 7),
     fromGnTopic('', 9),
-    // 경제
+    // 경제·비즈니스 (거시·기업 — 개인 재테크는 별도 섹션)
     fromRss('https://feeds.bbci.co.uk/news/business/rss.xml', 'BBC', 3),
     fromGnSearch('when:1d business source:Reuters', 'Reuters', 4),
     fromGnTopic('/headlines/section/topic/BUSINESS', 5),
-    // 기술
+    // 기술·과학 (통합)
     fromRss('https://www.technologyreview.com/feed/', 'MIT Tech Review', 3),
     fromRss('https://feeds.bbci.co.uk/news/technology/rss.xml', 'BBC', 3),
     fromGnTopic('/headlines/section/topic/TECHNOLOGY', 5),
-    // 과학 — 학술지 뉴스
     fromRss('https://www.science.org/rss/news_current.xml', 'Science', 3),
     fromRss('https://www.nature.com/nature.rss', 'Nature', 3),
     fromGnTopic('/headlines/section/topic/SCIENCE', 4),
+    // AI
+    fromGnSearchKo('AI OR 인공지능 when:1d', 8),
+    fromGnSearch('when:1d "artificial intelligence" source:Reuters', 'Reuters', 3),
+    // 블록체인·크립토
+    fromGnSearchKo('비트코인 OR 이더리움 OR 암호화폐 OR 블록체인 when:1d', 8),
+    fromRss('https://www.coindesk.com/arc/outboundfeeds/rss/', 'CoinDesk', 4),
+    // 재테크 — 금리·부동산·자산 관리 (경제 섹션과 역할 분리)
+    fromGnSearchKo('금리 OR 부동산 OR 청약 OR 연금 OR 재테크 OR 절세 when:1d', 10),
   ]);
+
+  // MIT Tech Review에서 AI 관련 기사만 AI 섹션에도 배치
+  const mitAi = mitTech.filter((it) => /\bAI\b|artificial intelligence/i.test(it.title));
 
   return {
     world: interleave([gnWorld, reutersWorld, bbcWorld, apWorld], 10),
     korea: interleave([yonhap, gnKorea], 12),
     business: interleave([gnBiz, reutersBiz, bbcBiz], 10),
-    tech: interleave([gnTech, mitTech, bbcTech], 10),
-    science: interleave([gnSci, aaas, nature], 8),
+    ai: interleave([gnAi, reutersAi, mitAi], 10),
+    tech: interleave([gnTech, gnSci, mitTech, bbcTech, aaas, nature], 10),
+    crypto: interleave([gnCrypto, coindesk], 8),
+    wealth: interleave([gnWealth], 8),
   };
 }
 

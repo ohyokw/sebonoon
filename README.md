@@ -6,12 +6,15 @@
 
 | 섹션 | 내용 | 출처 |
 |---|---|---|
-| 시장 지표 | USD/KRW · KOSPI · S&P 500 · NASDAQ · BTC · ETH + 추이 스파크라인 | Frankfurter(ECB 고시환율), Yahoo Finance, CoinGecko |
-| 오늘의 헤드라인 | 세계 / 한국 / 경제 뉴스 | Reuters · AP · BBC · 연합뉴스 등 (아래 출처 정책) |
-| 기술·과학·커뮤니티 | 기술 / 과학 뉴스 + Hacker News 인기 글 | MIT Tech Review · BBC · Science · Nature, HN API |
-| 검색 트렌드 | 한국 실시간 급상승 검색어 | Google Trends |
-| 오늘의 생각거리 | 매일 바뀌는 사고 훈련 질문 | 내장 |
-| 예측 노트 | 확신도와 기한을 붙여 예측 기록 → 판정 → 적중률·과신 여부·브라이어 점수 | 브라우저 localStorage |
+| 시장 지표 | USD/KRW · KOSPI · S&P 500 · NASDAQ · BTC · ETH + 스파크라인 + **동향 한 줄**(주간 변화율·연속 상승/하락·30일 고저 근접 — 히스토리 기반 규칙 계산) | Frankfurter(ECB 고시환율), Yahoo Finance, CoinGecko |
+| 세계 / 한국 / 경제·비즈니스 | 종합·거시 뉴스 | Reuters · AP · BBC · 연합뉴스 등 (아래 출처 정책) |
+| 🤖 AI | AI 뉴스 (키워드 수집 + MIT TR AI 기사) | Google News 화이트리스트, Reuters, MIT Tech Review |
+| 🔬 기술·과학 | 기술+과학 통합 | MIT Tech Review · BBC · Science(AAAS) · Nature + 화이트리스트 |
+| ⛓️ 블록체인 | 크립토·블록체인 뉴스 | Google News 화이트리스트 + CoinDesk |
+| 💰 재테크 | 금리·부동산·연금·절세 (경제 섹션과 역할 분리) | Google News 화이트리스트 |
+| Hacker News / 검색 트렌드 | 글로벌 커뮤니티 + 한국 급상승 검색어 | HN API, Google Trends |
+| 오늘의 생각거리 | 매일 바뀌는 사고 훈련 질문 (한 줄 스트립) | 내장 |
+| 예측 노트 | 확신도·기한 기록 → 판정 → 적중률·과신 여부·브라이어 점수. 입력 폼은 '＋ 새 예측'으로 펼침 | 브라우저 localStorage |
 
 모두 **무료 공개 API/RSS**만 사용합니다. API 키 불필요. 모바일 화면에 최적화되어 있고, 상단 퀵 내비게이션으로 섹션 간 이동이 가능합니다.
 
