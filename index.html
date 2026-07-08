@@ -160,8 +160,36 @@ h2 .cnt { font-weight: 500; }
 .tile .nodata { color: var(--muted); font-weight: 400; font-size: 13px; }
 .tile .trend { font-size: 10.5px; color: var(--muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
+/* ── 섹션 부제 ─────────────────────── */
+.card h2 { display: flex; align-items: baseline; gap: 6px; }
+.card h2 .sub { margin-left: auto; font-weight: 500; font-size: 10.5px; color: var(--muted); white-space: nowrap; }
+@media (max-width: 420px) { .card h2 .sub { display: none; } }
+
+/* ── 뉴스 검색/관심 컨트롤 ───────────── */
+.newsctl { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+.newsctl input {
+  font: inherit; font-size: 13px; border: 1px solid var(--border); border-radius: 9px;
+  background: var(--surface-1); color: var(--text-1); padding: 7px 12px; min-width: 0;
+}
+.newsctl #newsFilter { flex: 2 1 240px; }
+.newsctl #watchInput { flex: 1 1 180px; }
+.newsctl input:focus { outline: 2px solid var(--series-1); outline-offset: 0; border-color: transparent; }
+
+/* ── 관심사 카드 ────────────────────── */
+.watchcard { margin-bottom: 12px; border-color: var(--series-1); }
+.watch-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.watch-chips .wchip {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 12px;
+  background: var(--accent-wash); border: 1px solid var(--border); border-radius: 999px; padding: 3px 6px 3px 10px;
+}
+.watch-chips .wchip button { border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 13px; line-height: 1; padding: 0 2px; }
+.watch-chips .wchip button:hover { color: var(--delta-bad); }
+ul.news mark { background: color-mix(in srgb, var(--series-1) 28%, transparent); color: inherit; border-radius: 3px; padding: 0 1px; }
+.wsec { flex: none; font-size: 11px; color: var(--series-1); font-weight: 600; }
+
 /* ── 뉴스 리스트 ────────────────────── */
 ul.news { list-style: none; margin: 0; padding: 0; }
+ul.news li[hidden] { display: none; }
 ul.news li { display: flex; align-items: baseline; gap: 8px; padding: 3.5px 0; border-bottom: 1px solid var(--grid); }
 ul.news li:last-child { border-bottom: 0; padding-bottom: 0; }
 ul.news li:first-child { padding-top: 0; }
@@ -349,18 +377,29 @@ footer b { color: var(--text-2); }
 </section>
 
 <section id="sec-news" aria-label="뉴스">
+  <div class="newsctl">
+    <input id="newsFilter" type="search" placeholder="🔎 전체 헤드라인에서 검색…" autocomplete="off">
+    <input id="watchInput" type="text" placeholder="관심 키워드 등록 (예: 반도체, 금리)" autocomplete="off">
+    <button class="pbtn" id="watchAdd" type="button">＋ 관심 등록</button>
+  </div>
+  <div class="card watchcard" id="watchCard" hidden>
+    <h2>⭐ 관심사 <span class="sub">등록한 키워드의 오늘 기사</span></h2>
+    <div class="watch-chips" id="watchChips"></div>
+    <ul class="news" id="news-watch"></ul>
+  </div>
   <div class="cols cols-3">
-    <div class="card"><h2>🌍 세계</h2><ul class="news" id="news-world"></ul></div>
-    <div class="card"><h2>🇰🇷 한국</h2><ul class="news" id="news-korea"></ul></div>
-    <div class="card"><h2>💹 경제·비즈니스</h2><ul class="news" id="news-business"></ul></div>
-    <div class="card" id="sec-ai"><h2>🤖 AI</h2><ul class="news" id="news-ai"></ul></div>
-    <div class="card" id="sec-tech"><h2>🔬 기술·과학</h2><ul class="news" id="news-tech"></ul></div>
-    <div class="card"><h2>⛓️ 블록체인</h2><ul class="news" id="news-crypto"></ul></div>
+    <div class="card"><h2>🌍 세계 <span class="sub">세계는 지금</span></h2><ul class="news" id="news-world"></ul></div>
+    <div class="card"><h2>🇰🇷 한국 <span class="sub">국내 주요 이슈</span></h2><ul class="news" id="news-korea"></ul></div>
+    <div class="card"><h2>💹 경제·비즈니스 <span class="sub">거시·기업 동향</span></h2><ul class="news" id="news-business"></ul></div>
+    <div class="card" id="sec-ai"><h2>🤖 AI <span class="sub">AI 최근 동향</span></h2><ul class="news" id="news-ai"></ul></div>
+    <div class="card" id="sec-tech"><h2>🔬 기술·과학 <span class="sub">테크·리서치</span></h2><ul class="news" id="news-tech"></ul></div>
+    <div class="card"><h2>⛓️ 블록체인 <span class="sub">디지털 자산</span></h2><ul class="news" id="news-crypto"></ul></div>
   </div>
   <div class="cols cols-2" style="margin-top: 10px;">
-    <div class="card"><h2>💰 재테크</h2><ul class="news" id="news-wealth"></ul></div>
-    <div class="card"><h2>🟠 Hacker News</h2><ul class="news" id="news-hn"></ul></div>
+    <div class="card"><h2>💰 재테크 <span class="sub">금리·부동산·자산</span></h2><ul class="news" id="news-wealth"></ul></div>
+    <div class="card"><h2>🟠 Hacker News <span class="sub">글로벌 개발 커뮤니티</span></h2><ul class="news" id="news-hn"></ul></div>
   </div>
+  <div class="empty" id="filterEmpty" hidden>검색어와 일치하는 헤드라인이 없습니다.</div>
 </section>
 
 <div class="think" id="thinkStrip" title="헤드라인을 읽고 이 질문에 스스로 답해 보세요. 답이 예측이 되면 아래 예측 노트에 기록하세요.">
@@ -688,6 +727,82 @@ function renderTrends(items) {
   el.innerHTML = items.map((t, i) => `<span class="chip">
     <span class="rank">${i + 1}</span>${esc(t.title)}${t.traffic ? `<span class="traffic">${esc(t.traffic)}</span>` : ''}
   </span>`).join('');
+}
+
+/* ───────────────────── 관심사 워치리스트 + 전체 검색 필터 ───────────────────── */
+const SECTION_LABELS = {
+  world: '세계', korea: '한국', business: '경제', ai: 'AI',
+  tech: '기술·과학', science: '기술·과학', crypto: '블록체인', wealth: '재테크', hackernews: 'HN',
+};
+let ALL_NEWS = []; // main()에서 전 섹션 기사를 평탄화 (관심사·검색의 대상)
+let newsFilterQ = ''; // 현재 검색어
+
+/** data.news + hackernews → [{title, link, source, pubDate, sec}] */
+function buildAllNews(data) {
+  const out = [];
+  for (const [k, list] of Object.entries(data?.news || {})) {
+    for (const it of (list || [])) out.push({ ...it, sec: SECTION_LABELS[k] || k });
+  }
+  for (const it of (data?.hackernews || [])) {
+    out.push({ title: it.title, link: it.link, source: 'Hacker News', pubDate: '', sec: 'HN' });
+  }
+  return out;
+}
+
+const WATCH = 'sebonoon.watch';
+const loadWatch = () => { try { return JSON.parse(localStorage.getItem(WATCH)) || []; } catch { return []; } };
+const saveWatch = (a) => localStorage.setItem(WATCH, JSON.stringify(a));
+
+const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+/** 제목에서 매칭 키워드를 <mark>로 강조 (esc 후 안전 삽입) */
+function highlight(title, kws) {
+  let html = esc(title);
+  for (const kw of kws) {
+    if (!kw) continue;
+    html = html.replace(new RegExp(`(${reEsc(esc(kw))})`, 'gi'), '<mark>$1</mark>');
+  }
+  return html;
+}
+
+function renderWatch() {
+  const kws = loadWatch();
+  const card = $('watchCard');
+  if (!kws.length) { card.hidden = true; return; }
+  card.hidden = false;
+  $('watchChips').innerHTML = kws.map((k, i) =>
+    `<span class="wchip">${esc(k)}<button data-i="${i}" title="삭제" aria-label="${esc(k)} 삭제">×</button></span>`).join('');
+  const lower = kws.map((k) => k.toLowerCase());
+  const hits = ALL_NEWS
+    .filter((it) => lower.some((k) => it.title.toLowerCase().includes(k)))
+    .sort((a, b) => (Date.parse(b.pubDate) || 0) - (Date.parse(a.pubDate) || 0));
+  const seen = new Set();
+  const uniq = hits.filter((it) => { const key = it.title.slice(0, 40); return seen.has(key) ? false : seen.add(key); }).slice(0, 15);
+  $('news-watch').innerHTML = uniq.length
+    ? uniq.map((it) => `<li>
+        <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener" title="${esc(it.title)}">${highlight(it.title, kws)}</a>
+        <span class="s"><span class="wsec">${esc(it.sec)}</span> · ${esc(it.source || '')}</span>
+      </li>`).join('')
+    : '<li class="empty">등록한 키워드에 해당하는 오늘 기사가 아직 없습니다.</li>';
+}
+
+/** 전체 뉴스 검색 필터 — 일치하지 않는 항목/빈 카드 숨김 */
+function applyNewsFilter() {
+  const q = newsFilterQ.trim().toLowerCase();
+  let anyVisible = false;
+  document.querySelectorAll('#sec-news .card').forEach((card) => {
+    let visible = 0;
+    card.querySelectorAll('ul.news li').forEach((li) => {
+      const t = li.querySelector('.t');
+      if (!t) return; // empty-state
+      const match = !q || t.textContent.toLowerCase().includes(q);
+      li.hidden = !match;
+      if (match) visible++;
+    });
+    if (card.id === 'watchCard') return; // 관심사 카드는 키워드 유무로만 표시
+    card.hidden = !!q && visible === 0;
+    if (!card.hidden) anyVisible = true;
+  });
+  $('filterEmpty').hidden = !q || anyVisible;
 }
 
 /* ───────────────────── 오늘의 생각거리 ───────────────────── */
@@ -1204,6 +1319,29 @@ $('llmOff').addEventListener('click', () => {
 });
 refreshLlmSettings();
 
+/* ── 관심사 · 검색 필터 이벤트 ── */
+function addWatch() {
+  const v = $('watchInput').value.trim();
+  if (!v) return;
+  const kws = loadWatch();
+  if (!kws.some((k) => k.toLowerCase() === v.toLowerCase())) { kws.push(v); saveWatch(kws); }
+  $('watchInput').value = '';
+  renderWatch();
+  applyNewsFilter();
+}
+$('watchAdd').addEventListener('click', addWatch);
+$('watchInput').addEventListener('keydown', (e) => { if (e.key === 'Enter') addWatch(); });
+$('watchChips').addEventListener('click', (e) => {
+  const btn = e.target.closest('button[data-i]');
+  if (!btn) return;
+  const kws = loadWatch();
+  kws.splice(Number(btn.dataset.i), 1);
+  saveWatch(kws);
+  renderWatch();
+  applyNewsFilter();
+});
+$('newsFilter').addEventListener('input', (e) => { newsFilterQ = e.target.value; applyNewsFilter(); });
+
 // 판정일 기본값: 2주 뒤
 $('pdue').value = new Date(Date.now() + 14 * 86400000).toISOString().slice(0, 10);
 renderPreds();
@@ -1240,6 +1378,9 @@ async function main() {
     renderHN(data.hackernews, 5);
     renderTrends(data.trends);
     fillTileStateFromSnapshot(data.markets);
+    ALL_NEWS = buildAllNews(data);
+    renderWatch();       // 관심사 섹션 갱신
+    applyNewsFilter();   // 검색어가 있으면 재적용
   } else {
     // 캐시도 없고 네트워크도 실패 — 파일 서빙 안내
     $('sampleBanner').hidden = false;
