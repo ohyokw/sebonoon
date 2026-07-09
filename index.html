@@ -185,6 +185,8 @@ h2 .cnt { font-weight: 500; }
 .watch-chips .wchip button { border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 13px; line-height: 1; padding: 0 2px; }
 .watch-chips .wchip button:hover { color: var(--delta-bad); }
 ul.news mark { background: color-mix(in srgb, var(--series-1) 28%, transparent); color: inherit; border-radius: 3px; padding: 0 1px; }
+ul.news .t.tr { border-bottom: 1px dotted var(--muted); } /* 번역된 제목 — 마우스오버로 원문 */
+#trToggle.on { background: var(--accent-wash); color: var(--text-1); border-color: var(--series-1); }
 .wsec { flex: none; font-size: 11px; color: var(--series-1); font-weight: 600; }
 
 /* ── 뉴스 리스트 ────────────────────── */
@@ -381,6 +383,7 @@ footer b { color: var(--text-2); }
     <input id="newsFilter" type="search" placeholder="🔎 전체 헤드라인에서 검색…" autocomplete="off">
     <input id="watchInput" type="text" placeholder="관심 키워드 등록 (예: 반도체, 금리)" autocomplete="off">
     <button class="pbtn" id="watchAdd" type="button">＋ 관심 등록</button>
+    <button class="pbtn" id="trToggle" type="button" title="영어 제목을 한국어로 자동 번역 (원문은 마우스오버로 확인)">🌐 번역</button>
   </div>
   <div class="card watchcard" id="watchCard" hidden>
     <h2>⭐ 관심사 <span class="sub">등록한 키워드의 오늘 기사</span></h2>
@@ -694,6 +697,59 @@ async function liveMarkets(history) {
 }
 
 /* ───────────────────── 뉴스 렌더링 ───────────────────── */
+/* ── 영어 제목 한국어 번역 (무료 MyMemory API, 캐시) ────────────────
+   해외 소스를 그대로 유지하면서 한국어로 읽히게. 원문은 마우스오버(title)로 확인. */
+const TRKEY = 'sebonoon.tr', TRON = 'sebonoon.trOn';
+let TR = {}; try { TR = JSON.parse(localStorage.getItem(TRKEY)) || {}; } catch { /* 손상 무시 */ }
+let trOn = localStorage.getItem(TRON) !== 'off'; // 기본 켜짐
+
+function isEnglish(s) {
+  const t = String(s).replace(/\s/g, '');
+  if (!t) return false;
+  const han = (t.match(/[가-힣]/g) || []).length;
+  return han / t.length < 0.15 && /[A-Za-z]{3,}/.test(s); // 한글 비율 낮고 영단어 있음
+}
+const trText = (t) => (trOn && TR[t] && TR[t] !== t) ? TR[t] : t; // 표시 제목
+const trCls = (t) => (trOn && TR[t] && TR[t] !== t) ? ' tr' : '';
+
+async function translateOne(text) {
+  const r = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|ko`);
+  if (!r.ok) throw new Error('HTTP ' + r.status);
+  const ko = (await r.json())?.responseData?.translatedText;
+  if (!ko || /MYMEMORY WARNING|INVALID|QUOTA/i.test(ko)) throw new Error('번역 실패');
+  return ko;
+}
+
+/** 화면의 영어 제목 중 미번역분을 번역해 캐시하고 반영 (동시 4개) */
+async function queueTranslations() {
+  if (!trOn) { applyTranslations(); return; }
+  const need = [...new Set(
+    [...document.querySelectorAll('#sec-news .t[data-o]')]
+      .map((a) => a.dataset.o).filter((o) => isEnglish(o) && !(o in TR))
+  )];
+  applyTranslations(); // 캐시된 건 먼저 반영
+  if (!need.length) return;
+  let i = 0, changed = false;
+  const worker = async () => {
+    while (i < need.length) {
+      const o = need[i++];
+      try { TR[o] = await translateOne(o); changed = true; }
+      catch { /* 실패분은 캐시하지 않음 → 다음 로드에 재시도 */ }
+    }
+  };
+  await Promise.all([worker(), worker(), worker(), worker()]);
+  if (changed) { try { localStorage.setItem(TRKEY, JSON.stringify(TR)); } catch {} applyTranslations(); }
+}
+
+/** data-o(원문)를 기준으로 현재 토글/캐시 상태에 맞게 제목 텍스트 갱신 */
+function applyTranslations() {
+  document.querySelectorAll('#sec-news .t[data-o]').forEach((a) => {
+    const o = a.dataset.o;
+    a.textContent = trText(o);
+    a.classList.toggle('tr', trOn && !!TR[o] && TR[o] !== o);
+  });
+}
+
 function renderNewsList(elId, items, max = 10) {
   const el = $(elId);
   if (!items || !items.length) {
@@ -701,7 +757,7 @@ function renderNewsList(elId, items, max = 10) {
     return;
   }
   el.innerHTML = items.slice(0, max).map((it) => `<li>
-    <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener" title="${esc(it.title)}${it.source ? ` — ${esc(it.source)}` : ''}">${esc(it.title)}</a>
+    <a class="t${trCls(it.title)}" data-o="${esc(it.title)}" href="${esc(it.link)}" target="_blank" rel="noopener" title="${esc(it.title)}${it.source ? ` — ${esc(it.source)}` : ''}">${esc(trText(it.title))}</a>
     <span class="s">${esc(it.source || '')}${it.pubDate ? ` · ${fmt.rel(it.pubDate)}` : ''}</span>
   </li>`).join('');
 }
@@ -713,7 +769,7 @@ function renderHN(items, max = 10) {
     return;
   }
   el.innerHTML = items.slice(0, max).map((it) => `<li>
-    <a class="t" href="${esc(it.link)}" target="_blank" rel="noopener" title="${esc(it.title)}">${esc(it.title)}</a>
+    <a class="t${trCls(it.title)}" data-o="${esc(it.title)}" href="${esc(it.link)}" target="_blank" rel="noopener" title="${esc(it.title)}">${esc(trText(it.title))}</a>
     <span class="s hnmeta">▲${fmt.num(it.points) ?? 0} · <a href="${esc(it.hnLink)}" target="_blank" rel="noopener">💬${fmt.num(it.comments) ?? 0}</a></span>
   </li>`).join('');
 }
@@ -791,7 +847,9 @@ function filterList(root, q) {
   root.querySelectorAll('ul.news li').forEach((li) => {
     const t = li.querySelector('.t');
     if (!t) return; // empty-state 항목
-    const match = !q || t.textContent.toLowerCase().includes(q);
+    // 번역 제목과 원문(data-o) 양쪽으로 검색되게
+    const hay = (t.textContent + ' ' + (t.dataset.o || '')).toLowerCase();
+    const match = !q || hay.includes(q);
     li.hidden = !match;
     if (match) visible++;
   });
@@ -1351,6 +1409,19 @@ $('watchChips').addEventListener('click', (e) => {
 });
 $('newsFilter').addEventListener('input', (e) => { newsFilterQ = e.target.value; applyNewsFilter(); });
 
+function refreshTrToggle() {
+  $('trToggle').textContent = trOn ? '🌐 번역 켜짐' : '🌐 번역 꺼짐';
+  $('trToggle').classList.toggle('on', trOn);
+}
+$('trToggle').addEventListener('click', () => {
+  trOn = !trOn;
+  localStorage.setItem(TRON, trOn ? 'on' : 'off');
+  refreshTrToggle();
+  applyTranslations();
+  if (trOn) queueTranslations();
+});
+refreshTrToggle();
+
 // 판정일 기본값: 2주 뒤
 $('pdue').value = new Date(Date.now() + 14 * 86400000).toISOString().slice(0, 10);
 renderPreds();
@@ -1390,6 +1461,7 @@ async function main() {
     ALL_NEWS = buildAllNews(data);
     renderWatch();       // 관심사 섹션 갱신
     applyNewsFilter();   // 검색어가 있으면 재적용
+    queueTranslations(); // 영어 제목 번역(토글 켜짐 시)
   } else {
     // 캐시도 없고 네트워크도 실패 — 파일 서빙 안내
     $('sampleBanner').hidden = false;
