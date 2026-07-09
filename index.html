@@ -785,23 +785,32 @@ function renderWatch() {
     : '<li class="empty">등록한 키워드에 해당하는 오늘 기사가 아직 없습니다.</li>';
 }
 
+/** ul.news 안의 항목을 검색어로 필터, 매칭 수 반환 */
+function filterList(root, q) {
+  let visible = 0;
+  root.querySelectorAll('ul.news li').forEach((li) => {
+    const t = li.querySelector('.t');
+    if (!t) return; // empty-state 항목
+    const match = !q || t.textContent.toLowerCase().includes(q);
+    li.hidden = !match;
+    if (match) visible++;
+  });
+  return visible;
+}
+
 /** 전체 뉴스 검색 필터 — 일치하지 않는 항목/빈 카드 숨김 */
 function applyNewsFilter() {
   const q = newsFilterQ.trim().toLowerCase();
   let anyVisible = false;
-  document.querySelectorAll('#sec-news .card').forEach((card) => {
-    let visible = 0;
-    card.querySelectorAll('ul.news li').forEach((li) => {
-      const t = li.querySelector('.t');
-      if (!t) return; // empty-state
-      const match = !q || t.textContent.toLowerCase().includes(q);
-      li.hidden = !match;
-      if (match) visible++;
-    });
-    if (card.id === 'watchCard') return; // 관심사 카드는 키워드 유무로만 표시
+  // 섹션 카드(그리드 내부만) — 일치 없으면 카드째 숨김
+  document.querySelectorAll('#sec-news .cols .card').forEach((card) => {
+    const visible = filterList(card, q);
     card.hidden = !!q && visible === 0;
-    if (!card.hidden) anyVisible = true;
+    if (visible > 0) anyVisible = true;
   });
+  // 관심사 카드는 표시 중일 때만 필터(키워드 유무로만 노출)
+  const wc = $('watchCard');
+  if (!wc.hidden && filterList(wc, q) > 0) anyVisible = true;
   $('filterEmpty').hidden = !q || anyVisible;
 }
 
