@@ -139,11 +139,11 @@ async function fromGnSearchKo(q, take) {
   }
 }
 
+const norm = (t) => t.toLowerCase().replace(/\s+/g, '').slice(0, 40);
+
 /** 여러 소스를 라운드로빈으로 섞어 한 소스가 지면을 독점하지 않게 하고, 제목으로 중복 제거 */
-function interleave(lists, max) {
+function interleave(lists, max, seen = new Set()) {
   const out = [];
-  const seen = new Set();
-  const norm = (t) => t.toLowerCase().replace(/\s+/g, '').slice(0, 40);
   for (let i = 0; out.length < max; i++) {
     let pushedAny = false;
     for (const list of lists) {
@@ -162,56 +162,59 @@ function interleave(lists, max) {
   return out;
 }
 
+/** 한국어 소스로 먼저 채우고, 부족분만 영어 소스로 보충 (클릭해도 한국어 우선) */
+function koFirst(koLists, enLists, max) {
+  const seen = new Set();
+  const ko = interleave(koLists, max, seen);
+  if (ko.length >= max) return ko;
+  const en = interleave(enLists, max - ko.length, seen); // 같은 seen으로 중복 제거
+  return [...ko, ...en];
+}
+
 async function collectNews() {
   const [
-    bbcWorld, reutersWorld, apWorld, gnWorld,
-    yonhap, gnKorea,
-    bbcBiz, reutersBiz, gnBiz,
-    mitTech, bbcTech, gnTech,
-    aaas, nature, gnSci,
-    gnAi, reutersAi,
-    gnCrypto, coindesk,
-    gnWealth,
+    // 한국어 소스 (섹션별 우선 노출용)
+    yonhap, ynaIntl, ynaEcon, gnKorea, gnWorld, gnBiz, gnTech, gnSci, gnAi, gnCrypto, gnWealth,
+    // 영어 소스 (부족분 보충용 — 원문 국제 보도, 제목은 대시보드에서 번역)
+    bbcWorld, reutersWorld, apWorld, bbcBiz, reutersBiz,
+    mitTech, bbcTech, aaas, nature, reutersAi, coindesk,
   ] = await Promise.all([
-    // 세계 — 국제 통신사/공영 + 한국어 보도(화이트리스트)
+    // ── 한국어 ──
+    fromRss('https://www.yna.co.kr/rss/news.xml', '연합뉴스', 7),                 // 연합 전체
+    fromRss('https://www.yna.co.kr/rss/international.xml', '연합뉴스', 6),          // 연합 국제
+    fromRss('https://www.yna.co.kr/rss/economy.xml', '연합뉴스', 6),               // 연합 경제
+    fromGnTopic('', 9),                                                            // GN 한국 홈
+    fromGnTopic('/headlines/section/topic/WORLD', 9),                              // GN 세계(한국어)
+    fromGnTopic('/headlines/section/topic/BUSINESS', 8),                           // GN 경제(한국어)
+    fromGnTopic('/headlines/section/topic/TECHNOLOGY', 6),                         // GN 기술(한국어)
+    fromGnTopic('/headlines/section/topic/SCIENCE', 5),                            // GN 과학(한국어)
+    fromGnSearchKo('AI OR 인공지능 when:1d', 10),                                  // AI(한국어)
+    fromGnSearchKo('비트코인 OR 이더리움 OR 암호화폐 OR 블록체인 when:1d', 10),      // 크립토(한국어)
+    fromGnSearchKo('금리 OR 부동산 OR 청약 OR 연금 OR 재테크 OR 절세 when:1d', 10),  // 재테크(한국어)
+    // ── 영어(보충) ──
     fromRss('https://feeds.bbci.co.uk/news/world/rss.xml', 'BBC', 4),
     fromGnSearch('when:1d source:Reuters', 'Reuters', 4),
     fromGnSearch('when:1d source:"Associated Press"', 'Associated Press', 3),
-    fromGnTopic('/headlines/section/topic/WORLD', 5),
-    // 한국 — 연합뉴스 직접 + 화이트리스트
-    fromRss('https://www.yna.co.kr/rss/news.xml', '연합뉴스', 7),
-    fromGnTopic('', 9),
-    // 경제·비즈니스 (거시·기업 — 개인 재테크는 별도 섹션)
     fromRss('https://feeds.bbci.co.uk/news/business/rss.xml', 'BBC', 3),
     fromGnSearch('when:1d business source:Reuters', 'Reuters', 4),
-    fromGnTopic('/headlines/section/topic/BUSINESS', 5),
-    // 기술·과학 (통합)
     fromRss('https://www.technologyreview.com/feed/', 'MIT Tech Review', 3),
     fromRss('https://feeds.bbci.co.uk/news/technology/rss.xml', 'BBC', 3),
-    fromGnTopic('/headlines/section/topic/TECHNOLOGY', 5),
     fromRss('https://www.science.org/rss/news_current.xml', 'Science', 3),
     fromRss('https://www.nature.com/nature.rss', 'Nature', 3),
-    fromGnTopic('/headlines/section/topic/SCIENCE', 4),
-    // AI
-    fromGnSearchKo('AI OR 인공지능 when:1d', 8),
     fromGnSearch('when:1d "artificial intelligence" source:Reuters', 'Reuters', 3),
-    // 블록체인·크립토
-    fromGnSearchKo('비트코인 OR 이더리움 OR 암호화폐 OR 블록체인 when:1d', 8),
     fromRss('https://www.coindesk.com/arc/outboundfeeds/rss/', 'CoinDesk', 4),
-    // 재테크 — 금리·부동산·자산 관리 (경제 섹션과 역할 분리)
-    fromGnSearchKo('금리 OR 부동산 OR 청약 OR 연금 OR 재테크 OR 절세 when:1d', 10),
   ]);
 
-  // MIT Tech Review에서 AI 관련 기사만 AI 섹션에도 배치
   const mitAi = mitTech.filter((it) => /\bAI\b|artificial intelligence/i.test(it.title));
 
+  // 한국어 우선 → 영어는 부족분만 (클릭해도 한국어 우선, 원문 국제 소스는 보조로 유지)
   return {
-    world: interleave([gnWorld, reutersWorld, bbcWorld, apWorld], 10),
+    world: koFirst([gnWorld, ynaIntl], [reutersWorld, bbcWorld, apWorld], 10),
     korea: interleave([yonhap, gnKorea], 12),
-    business: interleave([gnBiz, reutersBiz, bbcBiz], 10),
-    ai: interleave([gnAi, reutersAi, mitAi], 10),
-    tech: interleave([gnTech, gnSci, mitTech, bbcTech, aaas, nature], 10),
-    crypto: interleave([gnCrypto, coindesk], 8),
+    business: koFirst([gnBiz, ynaEcon], [reutersBiz, bbcBiz], 10),
+    ai: koFirst([gnAi], [reutersAi, mitAi], 10),
+    tech: koFirst([gnTech, gnSci], [mitTech, bbcTech, aaas, nature], 10),
+    crypto: koFirst([gnCrypto], [coindesk], 8),
     wealth: interleave([gnWealth], 8),
   };
 }
