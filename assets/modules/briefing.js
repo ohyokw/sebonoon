@@ -15,7 +15,8 @@ const CONFIDENCE_LABEL = {
  */
 export function renderStatus(status, data) {
   const el = $('dataStatus');
-  if (!status && !data) { el.hidden = true; return; }
+  // 데이터가 전혀 없거나 샘플 자리표시자만 있으면 상태줄 대신 배너가 안내
+  if ((!status && !data) || data?.sample) { el.hidden = true; return; }
   el.hidden = false;
 
   const lastGood = status?.lastSuccessAt || data?.generatedAt || '';
