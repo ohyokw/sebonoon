@@ -1,26 +1,8 @@
 {
- "generatedAt": "2026-07-12T09:23:00.214Z",
+ "generatedAt": "2026-07-12T10:49:27.977Z",
  "date": "2026-07-12",
  "news": {
   "world": [
-   {
-    "title": "美, 호르무즈 상선 피격에 이란 공습 재개…\"대가 치를 것\"",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LeEpRV2FLQnpTN2hrRW1CT0JoMDVDMmc0LW9VWVV4U3FGWkx3ak80V2RLZ1QyX1ZxdGFnUDBucEJ4MkFDcmhKUEdXZ0I2aENUbDdsVjdVT3d4ZEHSAWBBVV95cUxPRm5iRUtsbUpFeXBqcHB2NzBJYzZGUWQ2S2dRbkpQcmtCbGxkcFB5MWQxTFRFS2NrS2c2dVFLak9kci1sNDVGbnI2N2dxb1JfZ0d2VEhxUm1GRFg2cW5waEU?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 00:14:36 GMT"
-   },
-   {
-    "title": "Turkey still evaluating participation in Canada's global defence bank, sources say",
-    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQcEhFYkJqV0dPUVJhMjZQYUhpUkZFb3FtVEpoLS1MamtKU1lTdWFSVjNmcXYyUkZha21zTmtMVEZZa0hxMnlTM0ZjUEZxWmotRXBOQmZxQk8wVVpiODZTV00zeUY2N3FQWC1FTkNoeEJ5cDBJTHlDRElDTzFEdGMzT2JyZG9VNFYxUEUyUUN2YUZMV0tHSFYxWkpKdUt4RzBTUGNBaWptVDJtNGo2Y2g3SHZacURUdVczY0dVdVRaNWJZanhEbXJNQnpDaw?oc=5",
-    "source": "Reuters",
-    "pubDate": "Sat, 11 Jul 2026 12:53:43 GMT"
-   },
-   {
-    "title": "US launches fresh strikes as Iran closes Strait of Hormuz",
-    "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
-    "source": "BBC",
-    "pubDate": "Sun, 12 Jul 2026 06:49:46 GMT"
-   },
    {
     "title": "이란, '휴전 없이 협상' 트럼프 주장 일축…\"입장 철회 전까지 협상 없어\"",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAxMTJkaWJfTi1DRDgyS3VLc0cwRnVCZFdzWndQUjQ2dHpXSkR1SmRtUlE4RlRjbFV0NE1IOERaUWRyRnd2aTMtajljWVcxMXZIVUE2VjJlZDZ0bzhNVDE3a1ZjZFNHdFNQdllqX1d4Q0E?oc=5",
@@ -34,10 +16,10 @@
     "pubDate": "Sat, 11 Jul 2026 20:44:23 GMT"
    },
    {
-    "title": "US Senator and close Trump ally Lindsey Graham dies after 'brief and sudden illness'",
-    "link": "https://www.bbc.co.uk/news/articles/cvgj25j6nmeo?at_medium=RSS&at_campaign=rss",
+    "title": "US launches fresh strikes as Iran closes Strait of Hormuz",
+    "link": "https://www.bbc.co.uk/news/articles/cj9gkpp0dkeo?at_medium=RSS&at_campaign=rss",
     "source": "BBC",
-    "pubDate": "Sun, 12 Jul 2026 09:01:55 GMT"
+    "pubDate": "Sun, 12 Jul 2026 06:49:46 GMT"
    },
    {
     "title": "이 대통령, 에르도안 ’권총 선물’ 받아…“대통령 기록관 이관“",
@@ -46,10 +28,16 @@
     "pubDate": "Sat, 11 Jul 2026 01:10:00 GMT"
    },
    {
-    "title": "China evacuates nearly two million people as powerful typhoon makes landfall",
-    "link": "https://www.bbc.co.uk/news/articles/cdxd3wkp2rzo?at_medium=RSS&at_campaign=rss",
+    "title": "Turkey still evaluating participation in Canada's global defence bank, sources say",
+    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQcEhFYkJqV0dPUVJhMjZQYUhpUkZFb3FtVEpoLS1MamtKU1lTdWFSVjNmcXYyUkZha21zTmtMVEZZa0hxMnlTM0ZjUEZxWmotRXBOQmZxQk8wVVpiODZTV00zeUY2N3FQWC1FTkNoeEJ5cDBJTHlDRElDTzFEdGMzT2JyZG9VNFYxUEUyUUN2YUZMV0tHSFYxWkpKdUt4RzBTUGNBaWptVDJtNGo2Y2g3SHZacURUdVczY0dVdVRaNWJZanhEbXJNQnpDaw?oc=5",
+    "source": "Reuters",
+    "pubDate": "Sat, 11 Jul 2026 12:53:43 GMT"
+   },
+   {
+    "title": "US Senator and close Trump ally Lindsey Graham dies after 'brief and sudden illness'",
+    "link": "https://www.bbc.co.uk/news/articles/cvgj25j6nmeo?at_medium=RSS&at_campaign=rss",
     "source": "BBC",
-    "pubDate": "Sun, 12 Jul 2026 07:39:45 GMT"
+    "pubDate": "Sun, 12 Jul 2026 09:47:43 GMT"
    },
    {
     "title": "브라질판 '염전노예'…3대·55년간 노동 착취당한 여성 구조",
@@ -58,105 +46,99 @@
     "pubDate": "Fri, 10 Jul 2026 16:53:10 GMT"
    },
    {
-    "title": "At least two killed in Toronto street festival shooting",
-    "link": "https://www.bbc.co.uk/news/articles/ce3e66e1x3go?at_medium=RSS&at_campaign=rss",
+    "title": "Badly burned British couple rescued from ravine during Spain wildfires",
+    "link": "https://www.bbc.co.uk/news/articles/cx2x7441762o?at_medium=RSS&at_campaign=rss",
     "source": "BBC",
-    "pubDate": "Sun, 12 Jul 2026 03:56:02 GMT"
+    "pubDate": "Sun, 12 Jul 2026 10:18:02 GMT"
+   },
+   {
+    "title": "’엄마 최애 번호’로 6,700만 원 당첨…복권 한 장으로 효도한 아들",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5XYVpDZmN0dHlEdmpSQ3BURzVmNEdOTllieGEtVGk3Sk44bTVwbTNyb0pPOEtERlNXMlYyLXVPXzE0aUNYRjdXNVl1N1p4Rm5YSEF5M3VsUDZXbThGYU44RVFKTC13dmM?oc=5",
+    "source": "연합뉴스TV",
+    "pubDate": "Sat, 11 Jul 2026 00:06:32 GMT"
+   },
+   {
+    "title": "China evacuates nearly two million people as powerful typhoon makes landfall",
+    "link": "https://www.bbc.co.uk/news/articles/cdxd3wkp2rzo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Sun, 12 Jul 2026 07:39:45 GMT"
    }
   ],
   "korea": [
    {
-    "title": "서울시, 천경자 도록 저작권료 논란…유족측 분쟁조정 절차(종합)",
-    "link": "https://www.yna.co.kr/view/AKR20260711045951004",
+    "title": "'반갑다 바다야'…동해안 해수욕장 주말 20만명 '풍덩'",
+    "link": "https://www.yna.co.kr/view/AKR20260712048600062",
     "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 18:19:26 +0900"
+    "pubDate": "Sun, 12 Jul 2026 19:32:54 +0900"
    },
    {
-    "title": "“대구보다 더 핫한 경북”…경산·포항에 첫 ‘폭염중대경보’ [잇슈#태그]",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE4wMjNBeWZ1MHJydEpTdDJCUTc1U01oRDBzVzQyZGdLaFJXVl9IdV9hSG1KcFhvRjlfaElfWEt0YUl4b0FoWDE2MWE3V3JGQ2JaNU9rWGktN0s1bGVmal8tTkNHWkNSQQ?oc=5",
-    "source": "KBS 뉴스",
-    "pubDate": "Sun, 12 Jul 2026 07:38:00 GMT"
+    "title": "일부 여당 의원들, 사회적 약자 대상 범죄 사건에 보완수사권 주는 형사소송법 개정안 발의 예정",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yTkwxeUdfS3cwYi1tbFEweGRRTUFsTl9lVHkyNldLZlVkemhxdXQ2am1TbnlodEpHb2xEX1h5NjNDV3RlN0hwQTA1MzJCNlMyZ0tGbl9DMEMxd9IBX0FVX3lxTE9LMEFQdW1nTUliX1VIM0VtOTFLV0VKR2lqalhZR0JsaGNRQnBDYlo5ejYzOUdxLUs0ODlVNVFpUTRZOE9rdEduX3htWXdMUV9yNmhvTHZ3MEJuVmlNeUxZ?oc=5",
+    "source": "경향신문",
+    "pubDate": "Sun, 12 Jul 2026 09:01:00 GMT"
    },
    {
-    "title": "강훈식, 대전 LoL 결승전 방문…\"게임 현장 목소리 듣겠다\"",
-    "link": "https://www.yna.co.kr/view/AKR20260712044800017",
+    "title": "中CCTV \"박태성 北총리, 공산당 역사관·철도 관제센터 참관\"",
+    "link": "https://www.yna.co.kr/view/AKR20260712046400083",
     "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 18:09:15 +0900"
+    "pubDate": "Sun, 12 Jul 2026 19:25:18 +0900"
    },
    {
-    "title": "폭우 지나니 폭염…물대포·물총으로 더위 탈출",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5iTC15WGR6eDRuaFg4bFBjU2w4TzBPWVpiRkR5QWllY2ZSNXJaWmRGMTYybFhZOXRjMlVJSldwU2lKX3NYcF82QVphVndoNm1JVXhmM3BCQjZjZm8?oc=5",
-    "source": "KBS 뉴스",
-    "pubDate": "Sat, 11 Jul 2026 12:16:00 GMT"
+    "title": "정부, 북한에 ‘실종 해군’ 수색 협조 요청…“NLL 표류 가능성”",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5wWDJrSGxaLXhpWl9rUnV5aTRVTzB3emVqWVN4T2JxQXMxQ0R1R3pJZXR2cDI5T3VpYVB6NWFkWlVMZTFtajVSQ1BsSFp3bWlTUW85UXZONXJtbEh6dFptTGl2N1ZSaVBrM1lmS2xLa09zVkZY?oc=5",
+    "source": "한겨레",
+    "pubDate": "Sun, 12 Jul 2026 09:24:00 GMT"
    },
    {
-    "title": "통일부 \"北에 실종 해군함정 병사 수색·송환 협조 요청\"(종합)",
-    "link": "https://www.yna.co.kr/view/AKR20260712041351504",
+    "title": "열대야에 잠못드는 유럽…한밤 최저기온도 최고기록 경신",
+    "link": "https://www.yna.co.kr/view/AKR20260712046800085",
     "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 18:09:15 +0900"
+    "pubDate": "Sun, 12 Jul 2026 19:06:22 +0900"
    },
    {
-    "title": "이란, '휴전 없이 협상' 트럼프 주장 일축…\"입장 철회 전까지 협상 없어\"",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFAxMTJkaWJfTi1DRDgyS3VLc0cwRnVCZFdzWndQUjQ2dHpXSkR1SmRtUlE4RlRjbFV0NE1IOERaUWRyRnd2aTMtajljWVcxMXZIVUE2VjJlZDZ0bzhNVDE3a1ZjZFNHdFNQdllqX1d4Q0E?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Sat, 11 Jul 2026 16:36:00 GMT"
+    "title": "폭염에 하루 99명 온열질환자 발생",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1WOFR4NFVVNmZNd3NXS0hIWjZ6T0EtOWxWOWZuT0JFZUlmTTFjaGRWSmJfZE51Y2IwbW9LbU1TNm1IZUE0Z09pZmFpMllLUDRDZmtTaG92ODJneDlFdlVHTXBIT2R5Zw?oc=5",
+    "source": "한겨레",
+    "pubDate": "Sun, 12 Jul 2026 09:30:00 GMT"
    },
    {
-    "title": "서귀포시남부·제주시북부 강풍주의보 해제",
-    "link": "https://www.yna.co.kr/view/AKR20260712045000527",
+    "title": "9월부터 시내버스 와이파이 빨라진다…LGU+ 사업 수주",
+    "link": "https://www.yna.co.kr/view/AKR20260712046300017",
     "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 18:01:53 +0900"
+    "pubDate": "Sun, 12 Jul 2026 19:04:26 +0900"
    },
    {
-    "title": "‘눈물의 떨이 할인’ 홈플러스…파산 막을 길은 ‘깜깜’",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WMnNKQ3lORkpIWURHM0Z0eTBxQ1JUalZFV3pGcHA4cy1ycmJsVlZPU3JNUVpVcmc2ZmhjOUIxUDdiUG5QeHZhcU9WRDItcVVnbjM2eW1iVVFFaU0?oc=5",
-    "source": "KBS 뉴스",
-    "pubDate": "Sat, 11 Jul 2026 22:01:00 GMT"
+    "title": "정청래 \"최악의 자기정치는 탈당·무소속 출마\" 김민석·송영길에 반격",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNQjJLcXpnUXJSWHNSQl91X21DSkJiLWFsdkpoX0hWdzFwd3pXQ3EtY2NBaUtDVGE4c2hoZnpqS0kwWGZOTDdDQ0hhY1FDamxqWnZIZnRNNGwtYkZDTzdKdGRFMTZ1b0JVMUduTEMyb1hsUVJ4NGJPdWJ6ZU1CQ25HUzNSWHpRUQ?oc=5",
+    "source": "조선일보",
+    "pubDate": "Sun, 12 Jul 2026 05:26:00 GMT"
    },
    {
-    "title": "포항 산업단지 내 도로 횡단방향으로 20ｍ 파손…'통행 제한'",
-    "link": "https://www.yna.co.kr/view/AKR20260712044900053",
+    "title": "이란, 美 공습에 대규모 반격…중동 전역 美기지 겨냥 공격(종합2보)",
+    "link": "https://www.yna.co.kr/view/AKR20260712023352009",
     "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 18:00:59 +0900"
+    "pubDate": "Sun, 12 Jul 2026 19:04:05 +0900"
    },
    {
-    "title": "외국인 ETF 매수 1위는 '인버스'…\"단일 레버리지 헷지용 수급\" 분석도",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQWk5aMTBseEEzTzB6ZktMNFhWWlRXbTE5NU44LVUwVUg5OWtocl9kcDY3Z0wxZFR0Mk05N1U1MkFYTmRVT1lJZzF1LTRfVy1mTXRVczE3dnh4MVhPd0k1TFBrZnd2SkNlSXpXcTFIeWQ?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Sat, 11 Jul 2026 23:43:13 GMT"
+    "title": "호르무즈 24일 만에 다시 닫힌다…美·이란 서로 \"네 탓\"",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9rOWxPbjhYTUg2ZUN4QTZJSWxaU0NpUFNYN1h3ZjZJcGFxMHo4cWVSTnVvaEZnWHJrYzAzQWNxb0o2VFlCQUNVTGFyamc0SDlEa2wxV1k0Z1U5d9IBVEFVX3lxTFBIdjdORU5pdDZfaDZ0clFuQk1FSktpRm5KajJBbkFyQXc3bkFGSWphbHdTbDZsLTE1X21vMXdhNHl0dXpod0FKN0xhRmpVbGFoQUpseA?oc=5",
+    "source": "한국경제",
+    "pubDate": "Sun, 12 Jul 2026 08:57:25 GMT"
    },
    {
-    "title": "월요일도 '찜통더위' 기승…낮 최고 37도·내륙 중심 소나기",
-    "link": "https://www.yna.co.kr/view/AKR20260712044400530",
+    "title": "신한투자, 선취 판매수수료 없는 '라이트 펀드' 등 출시",
+    "link": "https://www.yna.co.kr/view/AKR20260712046500008",
     "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 17:53:55 +0900"
+    "pubDate": "Sun, 12 Jul 2026 18:58:50 +0900"
    },
    {
-    "title": "[월드컵] 잉글랜드 동점골 오심 논란…\"골킥이 카메라 케이블 맞았다\"",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Uc3ZqcHlFNFRsRFNSQkZPazFLVVBOM2xTREhPVUctd3k1Z3VnUURocENFR0IydXlxR045aHc5T1R0c3lJdTNhb3ZLYzlXTGpfdEoyVE42NU5WMVXSAWBBVV95cUxPYndLNHp4dVpxQWYwTjdKbTBLdVRYZmJIMHpQb0Q4MEpzZ3ZiZ0JOTFV1OHc4NW5xcDZUcEFkclhjY2xBQTd1SmhSSUlZbUhKc0pzZVBkZHRxdW12UDRzUW8?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 01:33:13 GMT"
+    "title": "‘보완수사권 국면’ 위기감 커지는 경찰…‘장윤기 사건’ 유독 뼈아픈 이유",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94aHZmSFEtMDNkVHlrSU9UNzlvXzFib1Y4U2d0dDRUaTRqSVZKaEdsQURyQU5UQk1TRUhiUjc1SFI4TGFublhraF92NEJJaDlrUFNjRkZJUGRZZ9IBX0FVX3lxTE9nWnVPTkZUSktrZzFZMk9MbTUtUU1ENmFIaVRDMm5WazduWTVqWEhjcUNEVk1JVmU4RV9UVkZoRmxLd2pWX3dFblJCRlI2dmVhek9Da3dCZENqZDhucFp3?oc=5",
+    "source": "경향신문",
+    "pubDate": "Sun, 12 Jul 2026 08:55:00 GMT"
    }
   ],
   "business": [
-   {
-    "title": "‘눈물의 떨이 할인’ 홈플러스…파산 막을 길은 ‘깜깜’",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WMnNKQ3lORkpIWURHM0Z0eTBxQ1JUalZFV3pGcHA4cy1ycmJsVlZPU3JNUVpVcmc2ZmhjOUIxUDdiUG5QeHZhcU9WRDItcVVnbjM2eW1iVVFFaU0?oc=5",
-    "source": "KBS 뉴스",
-    "pubDate": "Sat, 11 Jul 2026 22:01:00 GMT"
-   },
-   {
-    "title": "India's Tata Consultancy Services plans up to 8,900 AI deployment engineers, seeks AI acquisitions",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZHVWMTZfdlZoNHBPbVhNSTktYk5yTzBaN3BOTWc2NjNhczhUWVJVTktLZld3WC0zeGEyREFDZk1kWkFjNzBFaXV0M3JSMC1mNFlPQU9DYy1palFFbTRoUFYxR1JZVDNRVmhCQzREYnMxOGd1cEFhNE9aeTFOVzhDTjF6UVY3b0RzUm5ReWIyQkQ2ZjF2OC1kNG40clpPNzhkTTJZOWJUckc0SUlaWVhaa1VFOVpkVXA3am9aY1I2bWlqODM3N2c?oc=5",
-    "source": "Reuters",
-    "pubDate": "Sun, 12 Jul 2026 08:37:43 GMT"
-   },
-   {
-    "title": "How Aldi is taking on US supermarkets with its $4 almond butter",
-    "link": "https://www.bbc.co.uk/news/articles/cly0l5d5xn7o?at_medium=RSS&at_campaign=rss",
-    "source": "BBC",
-    "pubDate": "Sun, 12 Jul 2026 05:00:15 GMT"
-   },
    {
     "title": "외국인 ETF 매수 1위는 '인버스'…\"단일 레버리지 헷지용 수급\" 분석도",
     "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBQWk5aMTBseEEzTzB6ZktMNFhWWlRXbTE5NU44LVUwVUg5OWtocl9kcDY3Z0wxZFR0Mk05N1U1MkFYTmRVT1lJZzF1LTRfVy1mTXRVczE3dnh4MVhPd0k1TFBrZnd2SkNlSXpXcTFIeWQ?oc=5",
@@ -167,7 +149,25 @@
     "title": "Typhoon Bavi batters eastern China, threatens days of heavy rain",
     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNeWtNV1dZVG12dFREVVVYbGZsZWRjYmJQWHhWWHV3Wk9DUEpwb2kwaDhLZWNsNHZGOWZrN0F1YTBjVDRwbW1Vend0NkZRNU9qQUg1ZDNhZ3hzMzRWS2lyN2RqeEZKa0puc3FuTGM2cjg2UVF4eGFEem1LdmlUcDdILTYwM3dmM1ROczhwWThvMUgxX0VZQVhoMG4zWnZNSWJiM1dHd18zYmFWMWJRTGxpNXNyaWtvZw?oc=5",
     "source": "Reuters",
-    "pubDate": "Sun, 12 Jul 2026 08:34:04 GMT"
+    "pubDate": "Sun, 12 Jul 2026 09:55:20 GMT"
+   },
+   {
+    "title": "How Aldi is taking on US supermarkets with its $4 almond butter",
+    "link": "https://www.bbc.co.uk/news/articles/cly0l5d5xn7o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Sun, 12 Jul 2026 05:00:15 GMT"
+   },
+   {
+    "title": "‘눈물의 떨이 할인’ 홈플러스…파산 막을 길은 ‘깜깜’",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WMnNKQ3lORkpIWURHM0Z0eTBxQ1JUalZFV3pGcHA4cy1ycmJsVlZPU3JNUVpVcmc2ZmhjOUIxUDdiUG5QeHZhcU9WRDItcVVnbjM2eW1iVVFFaU0?oc=5",
+    "source": "KBS 뉴스",
+    "pubDate": "Sat, 11 Jul 2026 22:01:00 GMT"
+   },
+   {
+    "title": "Japan to push its massive pension fund to boost alternative investments, Nikkei says",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNT3BCNEk4aVozc3pMcDBVN1lqYVRsT1B6VU5UOVNVdWJNWjU2Um9lZ1c2dURqREUtbDZsdzZrUVlsUVJ5MVVnbnV0b0FyWUJJRmR4WGsxZ1AzNzhwbzhUbmxiV1NOZzgwT0NWRmVPaTlLdnY5Z0t4SExITEVhQVlaNWRJQk1jUXdSTGpKTVdqdWpBUk5hbDBiLVRoZkNxSVZzc2o0WGY2RWFnQktlVHZvY0NOYXlsLXcyVGcxVkF4XzBvVmNMRm9OamZBVzc?oc=5",
+    "source": "Reuters",
+    "pubDate": "Sun, 12 Jul 2026 04:19:33 GMT"
    },
    {
     "title": "Reeves tells BBC: Burnham needs worked-through plan to govern from the start",
@@ -182,10 +182,10 @@
     "pubDate": "Sat, 11 Jul 2026 20:45:00 GMT"
    },
    {
-    "title": "Japan to push its massive pension fund to boost alternative investments, Nikkei says",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNT3BCNEk4aVozc3pMcDBVN1lqYVRsT1B6VU5UOVNVdWJNWjU2Um9lZ1c2dURqREUtbDZsdzZrUVlsUVJ5MVVnbnV0b0FyWUJJRmR4WGsxZ1AzNzhwbzhUbmxiV1NOZzgwT0NWRmVPaTlLdnY5Z0t4SExITEVhQVlaNWRJQk1jUXdSTGpKTVdqdWpBUk5hbDBiLVRoZkNxSVZzc2o0WGY2RWFnQktlVHZvY0NOYXlsLXcyVGcxVkF4XzBvVmNMRm9OamZBVzc?oc=5",
+    "title": "Trump administration subpoenas New York Times journalists over Air Force One story, newspaper says",
+    "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSHoyVWJPLXpERllzOE44WHRjYUZEc2tGRTdmZXREdWg1VlMyczdhcUFJVWlGYTZiZTREaWpGMjRBZ3FKeWcwcDBoVHpzT25vSHphZ1oxa3BJSVpZaEtiZU5MUHhONUNsdkNiY1JIWmRrdHBnaDV3bXEwWkhXQndiNGZDWVlOTTk5b1ptREFOOGpxY0pqcUUtSFB6eFVOcDJIcS1rckcwVGhtcGpGVGdMM3FTdEpwb2dVTVVYcm51TUhXTDR5OWVhM0JmT0dPVGhY?oc=5",
     "source": "Reuters",
-    "pubDate": "Sun, 12 Jul 2026 04:19:33 GMT"
+    "pubDate": "Sat, 11 Jul 2026 20:03:08 GMT"
    },
    {
     "title": "Will Trump Accounts deliver for American children?",
@@ -202,10 +202,10 @@
   ],
   "tech": [
    {
-    "title": "테슬라, 모델 S·X 라인 46일 만 철거…휴머노이드 '옵티머스' 생산 채비",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTFp5bXpEOE0xZHJteTVhSzRTMHVBLWx2VXJUN2xTU0twQzU3V2h4Tk1yVUtPN0JIM01UaFVuMVJWNE5KSEVYeXdUanRELXRXRnpYc1NpcWxGZlZmcDdPTzE3WHJnbWpSUC1sRUJpWi1ybHNBendKb3JxWHJNNzA3cg?oc=5",
-    "source": "이데일리",
-    "pubDate": "Sat, 11 Jul 2026 02:40:03 GMT"
+    "title": "[월드컵] 잉글랜드 동점골 오심 논란…\"골킥이 카메라 케이블 맞았다\"",
+    "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fMUh6OF9iMEtTMUlNXzNSVjgzcnotYmR1VkxrQmluOEx0YVRDa0RObzlQSVBlZzZGQ21PeU5mYlp3b3QzeW1jQlVsU244V3M?oc=5",
+    "source": "v.daum.net",
+    "pubDate": "Sun, 12 Jul 2026 01:34:49 GMT"
    },
    {
     "title": "The Download: Claude’s inner workings and OpenAI’s “super app”",
@@ -220,10 +220,10 @@
     "pubDate": "Sat, 11 Jul 2026 01:45:59 GMT"
    },
    {
-    "title": "태웅, SMR(소형모듈원자로) 넘어 英 대형원전 사업 진출…유럽 공략 가속",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOV2Z2Qm5PdFFQSkRrUm9NS3I4UzNlOU9Pd3dxOUdGeU51SkVqNXQ0UHJlaWo4LXBzb2Zyb0ZGa05SYUE2MkJzQzZOVFktMDRmTVAxMWE5Qk00NlphTFM1NTNCUW9rWUNNVWFnSXNGbFYwNFZUQ1JKVkFWMExZMXdEM1ZheEd5WjZhcFJkUDNn?oc=5",
-    "source": "국제신문",
-    "pubDate": "Thu, 09 Jul 2026 10:57:00 GMT"
+    "title": "테슬라, 모델 S·X 라인 46일 만 철거…휴머노이드 '옵티머스' 생산 채비",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTFp5bXpEOE0xZHJteTVhSzRTMHVBLWx2VXJUN2xTU0twQzU3V2h4Tk1yVUtPN0JIM01UaFVuMVJWNE5KSEVYeXdUanRELXRXRnpYc1NpcWxGZlZmcDdPTzE3WHJnbWpSUC1sRUJpWi1ybHNBendKb3JxWHJNNzA3cg?oc=5",
+    "source": "이데일리",
+    "pubDate": "Sat, 11 Jul 2026 02:40:03 GMT"
    },
    {
     "title": "Sperm donors need limits, says a European fertility group",
@@ -256,10 +256,10 @@
     "pubDate": "Fri, 10 Jul 2026 22:54:16 GMT"
    },
    {
-    "title": "[월드컵] 잉글랜드 동점골 오심 논란…\"골킥이 카메라 케이블 맞았다\"",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Uc3ZqcHlFNFRsRFNSQkZPazFLVVBOM2xTREhPVUctd3k1Z3VnUURocENFR0IydXlxR045aHc5T1R0c3lJdTNhb3ZLYzlXTGpfdEoyVE42NU5WMVXSAWBBVV95cUxPYndLNHp4dVpxQWYwTjdKbTBLdVRYZmJIMHpQb0Q4MEpzZ3ZiZ0JOTFV1OHc4NW5xcDZUcEFkclhjY2xBQTd1SmhSSUlZbUhKc0pzZVBkZHRxdW12UDRzUW8?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Sun, 12 Jul 2026 01:33:13 GMT"
+    "title": "태웅, SMR(소형모듈원자로) 넘어 英 대형원전 사업 진출…유럽 공략 가속",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOV2Z2Qm5PdFFQSkRrUm9NS3I4UzNlOU9Pd3dxOUdGeU51SkVqNXQ0UHJlaWo4LXBzb2Zyb0ZGa05SYUE2MkJzQzZOVFktMDRmTVAxMWE5Qk00NlphTFM1NTNCUW9rWUNNVWFnSXNGbFYwNFZUQ1JKVkFWMExZMXdEM1ZheEd5WjZhcFJkUDNn?oc=5",
+    "source": "국제신문",
+    "pubDate": "Thu, 09 Jul 2026 10:57:00 GMT"
    }
   ],
   "science": [
@@ -291,88 +291,88 @@
  },
  "hackernews": [
   {
+   "title": "Vint Cerf, a “father of the Internet”, is retiring",
+   "link": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
+   "points": 81,
+   "comments": 52,
+   "hnLink": "https://news.ycombinator.com/item?id=48854168"
+  },
+  {
    "title": "Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
    "link": "https://github.com/cosmtrek/mindwalk",
-   "points": 36,
-   "comments": 8,
+   "points": 66,
+   "comments": 30,
    "hnLink": "https://news.ycombinator.com/item?id=48878682"
   },
   {
    "title": "Mesh LLM: distributed AI computing on iroh",
    "link": "https://www.iroh.computer/blog/mesh-llm",
-   "points": 251,
-   "comments": 56,
+   "points": 264,
+   "comments": 59,
    "hnLink": "https://news.ycombinator.com/item?id=48876505"
   },
   {
    "title": "Protobuf-py: Protobuf for Python, without compromises",
    "link": "https://buf.build/blog/protobuf-py",
-   "points": 41,
-   "comments": 4,
+   "points": 52,
+   "comments": 8,
    "hnLink": "https://news.ycombinator.com/item?id=48827058"
-  },
-  {
-   "title": "Vint Cerf, a “father of the Internet”, is retiring",
-   "link": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/",
-   "points": 55,
-   "comments": 29,
-   "hnLink": "https://news.ycombinator.com/item?id=48854168"
   },
   {
    "title": "Text art tools",
    "link": "https://hlnet.notion.site/text-art-tools",
-   "points": 34,
-   "comments": 13,
+   "points": 48,
+   "comments": 14,
    "hnLink": "https://news.ycombinator.com/item?id=48831384"
-  },
-  {
-   "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
-   "link": "https://antjs.org",
-   "points": 265,
-   "comments": 113,
-   "hnLink": "https://news.ycombinator.com/item?id=48875377"
   },
   {
    "title": "An agent in 100 lines of Lisp",
    "link": "https://thebeach.dev/posts/lisp-agent/",
-   "points": 143,
-   "comments": 21,
+   "points": 159,
+   "comments": 31,
    "hnLink": "https://news.ycombinator.com/item?id=48823981"
   },
   {
-   "title": "RISCBoy is an open-source portable games console, designed from scratch",
-   "link": "https://github.com/Wren6991/RISCBoy",
-   "points": 139,
-   "comments": 20,
-   "hnLink": "https://news.ycombinator.com/item?id=48876245"
+   "title": "Show HN: Ant – A JavaScript runtime and ecosystem",
+   "link": "https://antjs.org",
+   "points": 271,
+   "comments": 117,
+   "hnLink": "https://news.ycombinator.com/item?id=48875377"
   },
   {
    "title": "Nvidia, CoreWeave, and Nebius: Inside the Circular Financing of the GPU Boom",
    "link": "https://io-fund.com/ai-stocks/nvidia-coreweave-nebius-circular-financing-gpu-boom",
-   "points": 258,
-   "comments": 95,
+   "points": 269,
+   "comments": 106,
    "hnLink": "https://news.ycombinator.com/item?id=48873836"
+  },
+  {
+   "title": "RISCBoy is an open-source portable games console, designed from scratch",
+   "link": "https://github.com/Wren6991/RISCBoy",
+   "points": 145,
+   "comments": 21,
+   "hnLink": "https://news.ycombinator.com/item?id=48876245"
   },
   {
    "title": "I Did Not Kill Stanley Lieber: How to Draw (With 9front)",
    "link": "https://triapul.cz/automa/i_did_not_kill_stanley_lieber",
-   "points": 64,
-   "comments": 19,
+   "points": 72,
+   "comments": 24,
    "hnLink": "https://news.ycombinator.com/item?id=48846177"
-  },
-  {
-   "title": "Jellyfish Undersea Roundabout",
-   "link": "https://visitfaroeislands.com/en/plan-your-stay/getting-around/world-first-under-sea-roundabout",
-   "points": 43,
-   "comments": 7,
-   "hnLink": "https://news.ycombinator.com/item?id=48840152"
   },
   {
    "title": "EF Core 11 makes your split queries faster",
    "link": "https://steven-giesel.com/blogPost/d4401fd0-805a-4703-9d9e-5fe3b57c25ea",
-   "points": 38,
-   "comments": 10,
+   "points": 45,
+   "comments": 16,
    "hnLink": "https://news.ycombinator.com/item?id=48785102"
+  },
+  {
+   "title": "Jellyfish Undersea Roundabout",
+   "link": "https://visitfaroeislands.com/en/plan-your-stay/getting-around/world-first-under-sea-roundabout",
+   "points": 53,
+   "comments": 10,
+   "hnLink": "https://news.ycombinator.com/item?id=48840152"
   }
  ],
  "markets": {
@@ -387,19 +387,15 @@
   },
   "crypto": {
    "btc": {
-    "usd": 63769,
-    "change24h": -0.6647597477543332
+    "usd": 63819,
+    "change24h": -0.472594791164173
    },
    "eth": {
-    "usd": 1798.55,
-    "change24h": 0.04941761989416414
+    "usd": 1798.46,
+    "change24h": 0.052125179591991797
    }
   },
   "indices": {
-   "nasdaq": {
-    "price": 26281.607,
-    "changePct": 1.7378652690565928
-   },
    "sp500": {
     "price": 7575.39,
     "changePct": 1.231418476488801
@@ -407,49 +403,53 @@
    "kospi": {
     "price": 7475.94,
     "changePct": -7.571392893968361
+   },
+   "nasdaq": {
+    "price": 26281.607,
+    "changePct": 1.7378652690565928
    }
   }
  },
  "trends": [
   {
-   "title": "에코프로 비엠",
-   "traffic": "500+"
-  },
-  {
-   "title": "ewc",
-   "traffic": "200+"
-  },
-  {
-   "title": "축구 감독",
+   "title": "fc 서울 대 강원",
    "traffic": "2000+"
   },
   {
-   "title": "롯데그룹",
+   "title": "제주 대 대전",
+   "traffic": "1000+"
+  },
+  {
+   "title": "fifa 랭킹",
+   "traffic": "20000+"
+  },
+  {
+   "title": "초복",
    "traffic": "200+"
   },
   {
-   "title": "유병재",
-   "traffic": "100+"
+   "title": "태풍 바비 경로",
+   "traffic": "2000+"
   },
   {
-   "title": "통화 스와프",
+   "title": "소이현",
    "traffic": "200+"
   },
   {
-   "title": "구마유시",
-   "traffic": "100+"
-  },
-  {
-   "title": "린지 그레이엄",
+   "title": "수도권 광역급행철도",
    "traffic": "500+"
   },
   {
-   "title": "미국 상품거래위원회",
-   "traffic": "100+"
+   "title": "이석연",
+   "traffic": "2000+"
   },
   {
-   "title": "lindsey graham",
-   "traffic": "1000+"
+   "title": "더불어민주당",
+   "traffic": "200+"
+  },
+  {
+   "title": "에코프로 비엠",
+   "traffic": "2000+"
   }
  ],
  "errors": []
