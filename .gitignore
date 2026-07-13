@@ -1,0 +1,9 @@
+# 비밀 값 — 절대 커밋 금지 (변수 이름 템플릿은 .env.example 참고)
+.env
+.env.local
+.env.*.local
+
+# 의존성·임시 파일
+node_modules/
+*.log
+.DS_Store

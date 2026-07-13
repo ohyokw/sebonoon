@@ -1,0 +1,10 @@
+{
+  "name": "sebonoon",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "test": "node --test 'test/**/*.test.mjs'"
+  }
+}

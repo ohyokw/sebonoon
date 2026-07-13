@@ -2,8 +2,9 @@ name: daily-collect
 
 on:
   schedule:
-    # 30분마다 수집 (GitHub 예약 실행은 부하에 따라 수 분 지연되거나 건너뛸 수 있음 — best effort)
-    - cron: '*/30 * * * *'
+    # 하루 4회, KST 06:17 / 12:17 / 18:17 / 23:17 (UTC = KST - 9h → 21:17 / 03:17 / 09:17 / 14:17)
+    # 정각을 피해 17분으로 설정 — GitHub 예약 실행은 부하에 따라 수 분 지연되거나 건너뛸 수 있는 best-effort
+    - cron: '17 21,3,9,14 * * *'
   workflow_dispatch: {}
 
 permissions:
@@ -17,14 +18,24 @@ jobs:
   collect:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '24'
+          package-manager-cache: false
 
-      - name: 데이터 수집
+      - name: 테스트
+        run: npm test
+
+      - name: 데이터 수집 (품질 게이트 통과 시에만 latest.json 승격)
         run: node scripts/collect.mjs
+        # 향후 API 키가 필요한 소스를 추가하면: 저장소 Settings → Secrets and variables →
+        # Actions에 등록한 뒤 아래 주석을 해제해 주입하세요 (.env.example의 변수 이름과 일치)
+        # env:
+        #   NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        #   TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
+        #   MARKET_API_KEY: ${{ secrets.MARKET_API_KEY }}
 
       - name: 변경 사항 커밋
         run: |
