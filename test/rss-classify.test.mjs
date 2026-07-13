@@ -20,6 +20,18 @@ test('4. RSS 파싱 — source 태그·제목 접미사·CDATA·엔티티 처리
   assert.equal(decodeEntities('&lt;b&gt;'), '<b>');
 });
 
+test('RSS 링크 스킴 방어 — http(s) 외 링크는 버린다', () => {
+  const xml = `<rss><channel>
+    <item><title>정상 링크</title><link>https://ok.example/a</link></item>
+    <item><title>위험 링크</title><link>javascript:alert(1)</link></item>
+    <item><title>상대 경로</title><link>/relative/path</link></item>
+  </channel></rss>`;
+  const items = parseRss(xml);
+  assert.equal(items[0].link, 'https://ok.example/a');
+  assert.equal(items[1].link, '', 'javascript: 스킴 제거');
+  assert.equal(items[2].link, '', '상대 경로 제거');
+});
+
 test('5. 뉴스 카테고리 분류 — 키워드 규칙', () => {
   assert.equal(categorize('한국은행 기준금리 동결 결정'), 'business');
   assert.equal(categorize('생성형 AI 규제 법안 통과'), 'ai');

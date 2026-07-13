@@ -31,6 +31,26 @@ test('8. 사건 클러스터링 — 같은 사건 묶기 + 안정적 ID', () => 
   assert.equal(again.find((e) => e.articles.length === 2).id, fed.id);
 });
 
+test('사건 대표 기사 — 제목과 링크가 같은 기사를 가리킨다 (tier 우선)', () => {
+  // 낮은 등급 기사가 먼저 수집되어도 headline과 articles[0]이 같은(tier 1) 기사여야 함
+  const events = clusterEvents([
+    { title: '미 연준 기준금리 0.25%포인트 인하…시장 반응', source: 'YTN', pubDate: '', category: 'world', sourceType: 'public', tier: 2, link: 'https://ytn.example/a' },
+    { title: '미 연준, 기준금리 0.25%포인트 인하 결정', source: '연합뉴스', pubDate: '', category: 'world', sourceType: 'wire', tier: 1, link: 'https://yna.example/b' },
+  ]);
+  const ev = events.find((e) => e.articles.length === 2);
+  assert.ok(ev);
+  assert.equal(ev.headline, ev.articles[0].title, '카드 제목 = 첫 기사(링크 대상) 제목');
+  assert.equal(ev.articles[0].source, '연합뉴스');
+  assert.equal(ev.articles[0].url, 'https://yna.example/b');
+});
+
+test('고유명사 추출 — 라틴 국가 토큰은 단어 경계로만 매칭', async () => {
+  const { entitiesOf } = await import('../scripts/lib/cluster.mjs');
+  assert.ok(entitiesOf('EU summit reaches deal').has('eu'));
+  assert.ok(!entitiesOf('Museum reopens after renovation').has('eu'), 'museum의 eu는 오탐');
+  assert.ok(!entitiesOf('Reuters exclusive report').has('eu'), 'Reuters의 eu는 오탐');
+});
+
 test('9. 중요도 점수 — 다출처·파급력 사건이 높고, 이유가 저장된다', () => {
   const big = {
     category: 'world',

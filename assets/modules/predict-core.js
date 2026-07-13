@@ -54,9 +54,10 @@ export function judgeMetric(pred, series, today) {
   }
   if (today <= to) return { state: 'open', coverage: inWindow.length };
 
-  // 기한 경과 — 데이터가 충분할 때만 miss 확정, 아니면 직접 판정 요청
+  // 기한 경과 — 데이터가 충분할 때만 miss 확정, 아니면 직접 판정 요청.
+  // 요구치는 창 길이를 넘지 않는다 (하루짜리 창은 그날 데이터 하나면 충분)
   const windowDays = Math.max(1, Math.round((Date.parse(to) - Date.parse(from)) / 86400000) + 1);
-  const needed = Math.max(2, Math.ceil(Math.min(windowDays, 30) * 0.4));
+  const needed = Math.min(windowDays, Math.max(2, Math.ceil(Math.min(windowDays, 30) * 0.4)));
   if (inWindow.length < needed) return { state: 'data-insufficient', coverage: inWindow.length };
   return { state: 'miss', coverage: inWindow.length };
 }

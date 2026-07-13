@@ -35,7 +35,8 @@ export function parseRss(xml, limit = 40) {
       const suffix = ` - ${source}`;
       if (title.endsWith(suffix)) title = title.slice(0, -suffix.length);
     }
-    const link = tag(block, 'link');
+    let link = tag(block, 'link');
+    if (!/^https?:\/\//i.test(link)) link = ''; // http(s) 외 스킴은 버림 — javascript: 등 주입 방어
     const pubDate = tag(block, 'pubDate');
     if (title) items.push({ title, link, source, pubDate });
     if (items.length >= limit) break;

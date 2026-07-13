@@ -34,6 +34,13 @@ import { mergeHistoryEntry, METRIC_KEYS } from './lib/history.mjs';
 import { mergeArchiveDay } from './lib/archive.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+
+// .env 자동 로드 (있을 때만) — API 키가 필요한 소스를 추가할 때 사용.
+// 실제 값은 .env(로컬, gitignore) 또는 GitHub Actions Secrets에만 두세요 (.env.example 참고).
+if (typeof process.loadEnvFile === 'function') {
+  try { process.loadEnvFile(join(ROOT, '.env')); } catch { /* .env 없음 — 선택 사항 */ }
+}
+
 const DATA_DIR = process.env.SEBONOON_DATA_DIR || join(ROOT, 'data');
 const FIXTURES = process.env.SEBONOON_FIXTURES || null; // 테스트용 — 네트워크 대신 fixture 파일
 const UA = 'Mozilla/5.0 (compatible; sebonoon-collector/2.0)';
@@ -232,7 +239,8 @@ async function collectHackerNews() {
     .filter(Boolean)
     .map((it) => ({
       title: it.title,
-      link: it.url || `https://news.ycombinator.com/item?id=${it.id}`,
+      // http(s) 외 스킴은 HN 토론 링크로 대체 (주입 방어)
+      link: /^https?:\/\//i.test(it.url || '') ? it.url : `https://news.ycombinator.com/item?id=${it.id}`,
       points: it.score,
       comments: it.descendants ?? 0,
       hnLink: `https://news.ycombinator.com/item?id=${it.id}`,

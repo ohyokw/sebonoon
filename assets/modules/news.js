@@ -171,8 +171,9 @@ function filterList(root, q) {
 export function applyNewsFilter() {
   const q = state.filterQ.trim().toLowerCase();
   let anyVisible = false;
-  // 섹션 카드(그리드 내부만) — 일치 없으면 카드째 숨김
-  document.querySelectorAll('#sec-news .cols .card').forEach((card) => {
+  // 뉴스 섹션 + 개발자 신호(HN) 카드 — 일치 없으면 카드째 숨김
+  document.querySelectorAll('#sec-news .cols .card, #sec-signals .card').forEach((card) => {
+    if (!card.querySelector('ul.news')) return; // 검색 대상 아님 (트렌드 칩 카드)
     const visible = filterList(card, q);
     card.hidden = !!q && visible === 0;
     if (visible > 0) anyVisible = true;

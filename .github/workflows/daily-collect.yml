@@ -30,6 +30,12 @@ jobs:
 
       - name: 데이터 수집 (품질 게이트 통과 시에만 latest.json 승격)
         run: node scripts/collect.mjs
+        # 향후 API 키가 필요한 소스를 추가하면: 저장소 Settings → Secrets and variables →
+        # Actions에 등록한 뒤 아래 주석을 해제해 주입하세요 (.env.example의 변수 이름과 일치)
+        # env:
+        #   NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        #   TRANSLATE_API_KEY: ${{ secrets.TRANSLATE_API_KEY }}
+        #   MARKET_API_KEY: ${{ secrets.MARKET_API_KEY }}
 
       - name: 변경 사항 커밋
         run: |

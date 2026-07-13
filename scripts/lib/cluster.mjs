@@ -43,7 +43,11 @@ const COUNTRIES = [
 export function entitiesOf(title) {
   const ents = new Set();
   const norm = normTitle(title);
-  for (const c of COUNTRIES) if (norm.includes(c)) ents.add(c);
+  for (const c of COUNTRIES) {
+    // 라틴 국가 토큰('eu')은 단어 경계로만 — museum·Reuters 등의 부분 문자열 오탐 방지
+    const hit = /^[a-z]+$/.test(c) ? new RegExp(`(?:^| )${c}(?: |$)`).test(norm) : norm.includes(c);
+    if (hit) ents.add(c);
+  }
   for (const m of String(title || '').matchAll(/\b[A-Z][A-Za-z]{2,}\b/g)) ents.add(m[0].toLowerCase());
   for (const m of norm.matchAll(/\d+(?:\.\d+)?%?/g)) ents.add(m[0]);
   return ents;
@@ -97,14 +101,16 @@ export function clusterEvents(articles, { threshold = 0.5 } = {}) {
     }
   }
   return clusters.map((c) => {
-    // 대표 기사: 등급(tier) 높은 순 → 먼저 수집된 순
-    const rep = [...c.articles].sort((x, y) => (x.tier ?? 9) - (y.tier ?? 9))[0];
+    // 대표 기사(등급 높은 순 → 먼저 수집된 순)를 articles[0]에 두어
+    // 카드의 제목과 링크가 항상 같은 기사를 가리키게 한다
+    const arts = [...c.articles].sort((x, y) => (x.tier ?? 9) - (y.tier ?? 9));
+    const rep = arts[0];
     return {
       id: eventIdOf(c.category, c.seedSig), // 시드 기사 기준 — 클러스터 병합 순서와 무관하게 안정적
       category: c.category,
       headline: rep.title,
       status: 'new', // 이전 스냅샷과 비교해 developing 승격은 수집기에서 수행
-      articles: c.articles.map((a) => ({
+      articles: arts.map((a) => ({
         title: a.title,
         source: a.source || '',
         sourceType: a.sourceType || 'unknown',

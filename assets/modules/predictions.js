@@ -95,8 +95,12 @@ function predRow(p) {
   }
   const insufficientNote = dataInsufficient && overdue
     ? ' · <span class="pdue-over" title="기한 내 수집된 지표 데이터가 부족해 자동 판정할 수 없습니다">데이터 부족 — 직접 판정하세요</span>' : '';
+  // LLM 판정은 사용한 증거 헤드라인까지 툴팁으로 표시 (판정 근거 투명성)
+  const resolvedTip = p.llmReason
+    ? `${p.llmReason}${p.llmSources?.length ? ` | 근거: ${p.llmSources.join(' · ')}` : ''}`
+    : (p.touchedDate ? `${p.touchedDate} 도달` : '');
   const meta = p.resolved
-    ? `<span title="${esc(p.llmReason || (p.touchedDate ? `${p.touchedDate} 도달` : ''))}">확신 ${p.conf}% · 기한 ${p.due}${judgedBy}</span>`
+    ? `<span title="${esc(resolvedTip)}">확신 ${p.conf}% · 기한 ${p.due}${judgedBy}</span>`
     : `<span class="${overdue ? 'pdue-over' : ''}">기한 ${p.due}${overdue && !isMetric && !p.llmReason ? ' — 판정하세요!' : ''}</span>${progress}${llmHold}${insufficientNote}`;
   // 지표 예측도 데이터 부족 시에는 직접 판정 버튼을 노출
   const manualBtns = (!isMetric || dataInsufficient)

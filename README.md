@@ -84,6 +84,20 @@ fixture로 네트워크 없이 수집기를 실행하려면:
 
 > 예약 워크플로우(cron)는 **기본 브랜치(main)** 에서만 동작합니다.
 
+## 환경 변수와 비밀 관리
+
+**현재 필요한 API 키는 없습니다** — 모든 소스가 키 불요 무료 API/RSS입니다. 향후 키가 필요한 소스를 추가할 때의 규칙:
+
+1. **로컬**: `cp .env.example .env` 후 값 입력 — 수집기가 `.env`를 자동 로드하며, `.gitignore`가 커밋을 차단합니다.
+   `.env.example`에는 **변수 이름만** 유지하고 실제 값은 절대 넣지 않습니다.
+2. **GitHub Actions (현재 수집 경로)**: 저장소 Settings → Secrets and variables → Actions에 등록 후,
+   `daily-collect.yml` 수집 단계의 `env:` 주석 블록을 해제해 주입합니다.
+3. **Vercel / Netlify (호스팅을 옮기는 경우)**: Vercel은 Project → Settings → Environment Variables,
+   Netlify는 Site configuration → Environment variables에 같은 이름으로 등록합니다.
+   단, 두 서비스 모두 환경 변수는 **빌드/서버 단계에서만** 쓸 수 있습니다 — 이 프로젝트처럼 순수 정적 사이트의
+   브라우저 JS에는 비밀 키를 어떤 방식으로도 넣지 마세요 (소스 보기로 그대로 노출됩니다).
+   키가 필요한 호출은 반드시 수집기(GitHub Actions)에서 수행해 결과 JSON만 게시하는 현재 구조를 유지하세요.
+
 ## 예측 판정 — 전부 무료, 외부 API 없음
 
 | 유형 | 판정 방식 |
