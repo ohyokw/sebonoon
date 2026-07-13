@@ -1,34 +1,450 @@
 {
- "sample": true,
- "generatedAt": "2026-07-07T00:00:00.000Z",
- "date": "2026-07-07",
+ "generatedAt": "2026-07-13T04:52:01.972Z",
+ "date": "2026-07-13",
  "news": {
   "world": [
-   { "title": "샘플 헤드라인 — 다음 수집 후 실제 세계 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+   {
+    "title": "트럼프 “이란, 사악하고 정신 나간 사람들”…미군, 추가공습 개시",
+    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNb1pHbGpnYUdoZUN2MUM0blN6YWtlQjE0Z2wxZ1hSYU1wRXpMc0JfbWRwd2JTWVMydDF2U3R4eTJtYXkyZHJ1c2tCR3VyUlQwMXpuX1NHUm56QVJpWUh6UDREb1NsM2FyLWczdEtNMjVjb0V0b09vZTNsMkJ1bm1CMEFR?oc=5",
+    "source": "한겨레",
+    "pubDate": "Mon, 13 Jul 2026 02:53:00 GMT"
+   },
+   {
+    "title": "Samsung Electronics to advance start of chip factory in Yongin to 2029",
+    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQmliVUlTLXI4Vmx6WHJKbkl0LVowcGMzLVM2d01DQlhob3U2Tl9mNHF5ZGJQRzRsLUE4bmhnenl5dUVONDFvLWtxTzVuVzFnY2lyTW1HY1hBUjdFT0tMLWxMejJEbjRNczhqX2wyZ2l1Z3ZjNVFwN2ZDeVlVRG9QbzdESE5iV0J1R2JvdkwyOFhJWF82T3JZZ0F6dk1wbWZwSUtKV2s2UkZzbVdoejgzeC1ISGhJZGlyN3MxdkZLSzh4Wnc?oc=5",
+    "source": "Reuters",
+    "pubDate": "Mon, 13 Jul 2026 00:32:00 GMT"
+   },
+   {
+    "title": "At least 27 killed, eight critically injured in Bangkok bar fire",
+    "link": "https://www.bbc.co.uk/news/articles/c24yev53q06o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Mon, 13 Jul 2026 02:28:35 GMT"
+   },
+   {
+    "title": "방콕 공연주점 대형 화재로 최소 27명 사망…“전기설비서 연기”",
+    "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBMY0ZXcmdaRUNzME1GczlaaVAxSDVTdXo1aEpFckVXcW1odnFTWEFWeDNtc19kdGV3MFJ4UlpUMTJSb01ISW1jeWxJOG9KNm5RVkFTSC1aaUU2X1dXVEVmdHUwZXE2azV1QzFsc3FSM21KWTTSAWZBVV95cUxOaDg5RWdwOXJMYm5aaHBKTTFRU0RxVnlwQkhQOVNlMXU4QmxTT2Z2ZE5ZU0JzRzFjU1Z5U1Fia0JDWXd1Z254aUs2YTF1OXVRMnFnY1ZoVG5XOVlJcTJ5bWdtbnlCR0E?oc=5",
+    "source": "동아일보",
+    "pubDate": "Mon, 13 Jul 2026 01:16:00 GMT"
+   },
+   {
+    "title": "Germany funds 50,000 strike drones for Ukraine, source says",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxObmw1bUVFVGYxWlZDbmR2eVB0QkZreWY0SW8wUW9rYkdSXzF6QVJWa1QyeDhOLVRjWVNiSkhSVURjdFg4RHA5eW9peC14SzZ3cHNqLVNTS0VsbWdFTlNVREtzTEFnaHpfSFEzWEppbG9taElxMUlHMllGenJiSGJzemQyRFBGS0labzdCX1dYQlEzcDh0ODJ2enpScw?oc=5",
+    "source": "Reuters",
+    "pubDate": "Sun, 12 Jul 2026 12:29:00 GMT"
+   },
+   {
+    "title": "US and Iran trade fire as tensions rise over Strait of Hormuz",
+    "link": "https://www.bbc.co.uk/news/articles/cevlr112pmgo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Mon, 13 Jul 2026 04:30:02 GMT"
+   },
+   {
+    "title": "트럼프·네타냐후 이마에 조준선... 이란 일간, 하메네이 복수 대상 13人 지목",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQSEk2TDJaYmwwdjRseFEwVERtR3ZCOUFzRTltSDNrMllLV0thOXp6NFp3cWNuRzVJUjJObmdLWFFNckRBRUdoR3BlYjE5RkVkNEFVT3dSNm1GSmlyckZLcEpuYkM2azIwUWdweDI0ZnM0NHBXQmdvcE1LUDYzWWFsV3B1QUZBSV9aQmdCazhFbkUtZFRsRXFNNk8teE8xdw?oc=5",
+    "source": "조선일보",
+    "pubDate": "Mon, 13 Jul 2026 00:33:00 GMT"
+   },
+   {
+    "title": "Bangkok pub fire kills 27, officials say emergency exits were obstructed",
+    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcU5scGJEQ180c2NSNHpsckgwa09pYlMzN0NCWkpLQ3Y1OERrNFJZTGlZWkIwM2R0by1JamVsS3FxcTZfMkFia3hCMzYyNm9tbzhLLUxEU2RnYnpEVkVDcjVwNHpPNHEzdmZqWkJGRFd2TkU1dUdsRndxVGRCSjhBTWNmV0ZuejRkbXNsUmFndmZLNkhGVGhDYlZuQVRqbVZGQXFtN3pXTQ?oc=5",
+    "source": "Reuters",
+    "pubDate": "Sun, 12 Jul 2026 19:24:00 GMT"
+   },
+   {
+    "title": "US senator and close Trump ally Lindsey Graham dies after 'brief and sudden illness'",
+    "link": "https://www.bbc.co.uk/news/articles/cvgj25j6nmeo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Sun, 12 Jul 2026 22:08:07 GMT"
+   },
+   {
+    "title": "'대이란 강경파' 미 그레이엄 의원 자택서 급사···‘한국의 쿠팡 제재’ 비난 앞장도",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9TX3ZyV092RERWNFh5ekg0bzJNRi1fTFFTQWNJRWZFNUd3RzlIVi1GVzhoQWtLYTFyLTZobVdqLXRSRFJWcHMtS05ERWF2UmpsLVJ4Q3BrYkE4QQ?oc=5",
+    "source": "경향신문",
+    "pubDate": "Sun, 12 Jul 2026 11:41:00 GMT"
+   }
   ],
   "korea": [
-   { "title": "샘플 헤드라인 — 다음 수집 후 실제 한국 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+   {
+    "title": "코스피 8%대 급락, 장중 7,000선 무너져…서킷브레이커 발동(종합)",
+    "link": "https://www.yna.co.kr/view/AKR20260713080351008",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 13:47:13 +0900"
+   },
+   {
+    "title": "김민석 \"선수는 룰 안 따져...전 당원 100% 투표독려\"",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1XeU9WZlJrZVM3RkVpU2s3Z1hMQ0xIQ04tdHVNUWFnYUlFdFFMWm5OdWozbjZLbEZrbU4xTzJKQWlZbDZhQWtlZlpqLUNNVS1peDhhbTN1eHo3XzRGZ1E?oc=5",
+    "source": "YTN",
+    "pubDate": "Mon, 13 Jul 2026 01:41:00 GMT"
+   },
+   {
+    "title": "춘천경찰, 지역치안협의회 개최…'공동체 치안 거버넌스 강화'",
+    "link": "https://www.yna.co.kr/view/AKR20260713089600062",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 13:45:52 +0900"
+   },
+   {
+    "title": "7월초 수출, 한 달 만에 최대치 경신…반도체 약 3배로 늘어(종합)",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE02Z001SEVrLWRtbXFTRmJlMngtUGZfUUFzUkRvaXR2RkpITHJIX1hlTTlYOTdFRDI1Mk1aeEJWQ2pQVUNWaWhnc0RUdS1yUmU5Z2hTSHJFSG11ZVHSAWBBVV95cUxNOHRXN0h5R2lYSFZoak9kM3RxVEdFTlR0VEZPQzdJcnoxN2VEMDYzeG9WLVliSnhrSXh4VTBqYmh2S1JPTEFfVWgyTHBSVHVOUHprOFpNTGkwT05LSC02cTI?oc=5",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 00:28:29 GMT"
+   },
+   {
+    "title": "'핫한 포토존' 동해 하평해변 철도건널목, 피서철 2시간 연장",
+    "link": "https://www.yna.co.kr/view/AKR20260713089200062",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 13:44:28 +0900"
+   },
+   {
+    "title": "장중 200만닉스 붕괴...코스피 급락에 매도 사이드카",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBuSV84eU10YjlxRnowWGF1ZXhCV2VHTXIzS1BfT1FiRDFuVFZCbWtBZndzSGhSRGJhMVZCWmZ0OEdhdmdmM2w0M3IxUTQ1ZVJQVGhtZHhMTkh4aFBWNFE?oc=5",
+    "source": "YTN",
+    "pubDate": "Mon, 13 Jul 2026 02:40:00 GMT"
+   },
+   {
+    "title": "KLPGA, E1과 함께 '제14회 E1 채리티 오픈' 자선기금 전달",
+    "link": "https://www.yna.co.kr/view/AKR20260713090000007",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 13:43:53 +0900"
+   },
+   {
+    "title": "[K-VIBE] 의사 엄융의의 K-건강법…건강하게 먹는 것, 칼로리를 잊어라",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE4wRjRSS2Y1STZPak9hUG4xMG5mM1NvUWU1YWhUNkE1SEhac0lveWhqWF9HMnNEMDhqSjNpVHdiaDIyYl9LTVM4S09vSktNNFJFTXRXemp5b1RDOUXSAWBBVV95cUxNUHh0bU50d1lERmRUbXU3YTNfSDI5em56SEVKWnlDcXVMcHNoSWpPRUtoOEZaYXByYld5bl9EQm5zSXUxN3FjUG5uMGkxOEdXTGZ0ajBQZUJUS0NLTzhsV1M?oc=5",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 00:37:50 GMT"
+   },
+   {
+    "title": "경남연구원 \"진주 교방음식, 미식관광 핵심 콘텐츠로 키워야\"",
+    "link": "https://www.yna.co.kr/view/AKR20260713087600052",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 13:43:22 +0900"
+   },
+   {
+    "title": "'바가지 요금' 없는 단양…숙박요금 사전공시제 도입",
+    "link": "https://www.yna.co.kr/view/AKR20260713088800064",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 13:43:10 +0900"
+   },
+   {
+    "title": "\"상가엔 있고 주택엔 없어\"…익산시의원, 차수막 예산 촉구",
+    "link": "https://www.yna.co.kr/view/AKR20260713087300055",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 13:41:13 +0900"
+   }
   ],
   "business": [
-   { "title": "샘플 헤드라인 — 다음 수집 후 실제 경제 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
-  ],
-  "ai": [
-   { "title": "샘플 헤드라인 — 다음 수집 후 실제 AI 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+   {
+    "title": "7월초 수출, 한 달 만에 최대치 경신…반도체 약 3배로 늘어(종합)",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE02Z001SEVrLWRtbXFTRmJlMngtUGZfUUFzUkRvaXR2RkpITHJIX1hlTTlYOTdFRDI1Mk1aeEJWQ2pQVUNWaWhnc0RUdS1yUmU5Z2hTSHJFSG11ZVHSAWBBVV95cUxNOHRXN0h5R2lYSFZoak9kM3RxVEdFTlR0VEZPQzdJcnoxN2VEMDYzeG9WLVliSnhrSXh4VTBqYmh2S1JPTEFfVWgyTHBSVHVOUHprOFpNTGkwT05LSC02cTI?oc=5",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 00:28:29 GMT"
+   },
+   {
+    "title": "Shares skid in Asia as oil climbs on Gulf conflict",
+    "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQS2QwU3pIcHNXVlZZZW1SUXpNSVlUYlRILUdqUmJBODg5ZDh0Q3d4U21VZkdHZGhmZDlnNFFxYWZ1Y1AwTTJ1bTBZVlQ5ZFpSSngtMTdzNzljNExjWk15WE11MDBScXMwTmJkcG9NM2lEMjM3Z1E5ODNPWWljYnVxUko5T21tZ055eHhtMnh0bDZNZw?oc=5",
+    "source": "Reuters",
+    "pubDate": "Mon, 13 Jul 2026 02:27:02 GMT"
+   },
+   {
+    "title": "Why switching to save money is easier than you might think",
+    "link": "https://www.bbc.co.uk/news/articles/cd7w98n2y3eo?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Sun, 12 Jul 2026 23:28:01 GMT"
+   },
+   {
+    "title": "장중 200만닉스 붕괴...코스피 급락에 매도 사이드카",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBuSV84eU10YjlxRnowWGF1ZXhCV2VHTXIzS1BfT1FiRDFuVFZCbWtBZndzSGhSRGJhMVZCWmZ0OEdhdmdmM2w0M3IxUTQ1ZVJQVGhtZHhMTkh4aFBWNFE?oc=5",
+    "source": "YTN",
+    "pubDate": "Mon, 13 Jul 2026 02:40:00 GMT"
+   },
+   {
+    "title": "Mastercard examines sale of UK payments subsidiary Vocalink, FT reports",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLUc3SWZkOFZTS1FnZWgtNExwMjRncnVoSjhNUVBabEY5NFhmdjJXZXUzdFdjaTJsOFBmSkl0blZsR2paWUNRakxYNUdYakliemR3SVliQjU4YzUyelZSdnRPbDRkeFdjaS1qaGhXRzQ5REp2cVF0TjAyUXhqOEUxd29xc2Z1QXpjQjh6cjRnRy1vNXVCNXpDaF9yMG0zVnNMZFBFeEdmOERHMkpXZjFCV2Fn?oc=5",
+    "source": "Reuters",
+    "pubDate": "Mon, 13 Jul 2026 04:23:00 GMT"
+   },
+   {
+    "title": "10 years of Pokémon Go and the millions still trying to catch 'em all",
+    "link": "https://www.bbc.co.uk/news/articles/cevlwk4nrm7o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Mon, 13 Jul 2026 00:07:00 GMT"
+   },
+   {
+    "title": "리밸런싱 압박 벗어난 연기금…10주 만에 88억 순매수 전환",
+    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDNXBrVmtTUHpKTzdiNld0aFE4TDZnR0tweENsOE1xaDRvVWxpTzloallPaVRGemo3XzIzU2FIX3pjakVIb3czQ21WWUJyMlVFYUJ2bVlYblQ0dC00U21PcFdmejNYUTFMRXNkM2dQc0_SAXRBVV95cUxQenZfOWVoZ1gwdzktNFgxdDR5OHFGZl9rUDhPNUpGNndWWW9GOU9jVmlZazBWR1otS3JfQTU3Z1lUZktFRkpFVGMxNGFnbG1hTXJSVUxQXzZmdXBuYjZ5NnYwVWVXNUc1UEpHX2ZjSlFrcktNXw?oc=5",
+    "source": "연합인포맥스",
+    "pubDate": "Sun, 12 Jul 2026 23:00:00 GMT"
+   },
+   {
+    "title": "Oil jumps 4% as new military strikes threaten Hormuz shipments",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUFpPY1lfc0lIc0xsNVlaSkZQanVuM3RZd0lUMTdLMlktT0dLajFOWExXSTZEd1pJd1kteDBWeTk5UnFHMmFtdUE1cWdmMEZwaDR4M09lV3NENXlhTHIwOUc1NEhTbGNYQTBZUmFNYlRIT3RUWWNyc3JZOXR2WXFrTWRFTmc1V2FHWnlDRW90YkJrOW1WWGstZ0d1bS1JaEJYZTcya0dUdkN4VzZQczhz?oc=5",
+    "source": "Reuters",
+    "pubDate": "Sun, 12 Jul 2026 22:12:00 GMT"
+   },
+   {
+    "title": "How Aldi is taking on US supermarkets with its $4 almond butter",
+    "link": "https://www.bbc.co.uk/news/articles/cly0l5d5xn7o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Sun, 12 Jul 2026 05:00:15 GMT"
+   },
+   {
+    "title": "법원, 삼성 낸드 인력 SK하이닉스 전직 1년반 금지 결정",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE81c0dLdG5aTXE5VTVlTFV0SUJ5TS1ucDZXUjloclBKVFVvbGl6dWdsMm1oano2VzNWWV9kQVVhQmcyS2ZkcWlFUnl6c2JSQkdKMHA5N0RxNHlTTjjSAWBBVV95cUxOQ0xBWDhQcFhpUXZ0MmJRYlhxeWt4bF9hX3pBdjA2NVg3aFhVU3pFYW9ySWxHRUlJOEx6bzVRcGFkY2U1RFQ4dFIzOUROTEdncnJOTjlHdllHazBJcnpMSFQ?oc=5",
+    "source": "연합뉴스",
+    "pubDate": "Mon, 13 Jul 2026 02:10:34 GMT"
+   }
   ],
   "tech": [
-   { "title": "샘플 헤드라인 — 다음 수집 후 실제 기술·과학 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+   {
+    "title": "[단독] \"로봇에 야근 뺏길라\"…현대차, 60년 만에 중대 결단",
+    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9Kb2J4VE5IQTVHZFNwSGtGZ0xlQVZXa2ZxbDlPRkxldXlKYWQ4akFRb0NLRFgyWmtvOWNPX0VGbXJBUFhGQTlnYmUtdnlTeEhpNk9v?oc=5",
+    "source": "네이트",
+    "pubDate": "Sun, 12 Jul 2026 08:54:00 GMT"
+   },
+   {
+    "title": "The Download: Claude’s inner workings and OpenAI’s “super app”",
+    "link": "https://www.technologyreview.com/2026/07/10/1140316/the-download-anthropic-claude-hidden-space-openai-super-app/",
+    "source": "MIT Tech Review",
+    "pubDate": "Fri, 10 Jul 2026 12:10:00 +0000"
+   },
+   {
+    "title": "10 years of Pokémon Go and the millions still trying to catch 'em all",
+    "link": "https://www.bbc.co.uk/news/articles/cevlwk4nrm7o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Mon, 13 Jul 2026 00:07:00 GMT"
+   },
+   {
+    "title": "당정 \"미래대응기금 신설 추진, 신규 원전도 배제 안 해\"",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbG9xY0R5TGQ2aEc2ZHdPLUZ3MWI2SkVyUEI0bGFqUHczUEZ6b1BidGJPc09QbUhrQl9jUEtJX3lrank0NkF1WXozSTRzLWhrRFV4a3dyZGlBdVM3MTF3NE9TSWlNZWswX25pa3dPa2hvRmQ5NllvMjJzTGZUeC1pWXFhZXAwdw?oc=5",
+    "source": "조선일보",
+    "pubDate": "Mon, 13 Jul 2026 01:04:00 GMT"
+   },
+   {
+    "title": "Sperm donors need limits, says a European fertility group",
+    "link": "https://www.technologyreview.com/2026/07/10/1140289/sperm-donors-need-limits-says-a-european-fertility-group/",
+    "source": "MIT Tech Review",
+    "pubDate": "Fri, 10 Jul 2026 09:00:00 +0000"
+   },
+   {
+    "title": "Meta pulls new AI image feature after days of backlash",
+    "link": "https://www.bbc.co.uk/news/articles/c2dy6e8klw0o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Sat, 11 Jul 2026 01:45:59 GMT"
+   },
+   {
+    "title": "126억 적자 '로봇회사'…SK온·HD현대일렉트릭이 콕 찍었다",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FdWM4ZXBUWlF2NW9uR1dCeU9YVm1EdmxDd2ppeUR1eV9PRzE4NnJsZnNIOWhFQkZMQ1JmVmpJbXRqZ1paM29Sb2l4SVJtei1RS2RnYVV1X1o0d9IBVEFVX3lxTE5SZlVTTHUxVTcwVjhUdE5USE5lNTY2bFlNUmNVdXd5M0pibWtNd3hDbzZkQlRRbVN1WHhXOGg5VTFCelViMGVkTVJaMGJnZFVCYVQ1TA?oc=5",
+    "source": "한국경제",
+    "pubDate": "Sun, 12 Jul 2026 22:30:03 GMT"
+   },
+   {
+    "title": "Anthropic found a hidden space where Claude puzzles over concepts",
+    "link": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/",
+    "source": "MIT Tech Review",
+    "pubDate": "Thu, 09 Jul 2026 20:22:28 +0000"
+   },
+   {
+    "title": "Is the Assassin's Creed Black Flag remake worth the 13 year wait?",
+    "link": "https://www.bbc.co.uk/news/articles/cjrg9r80908o?at_medium=RSS&at_campaign=rss",
+    "source": "BBC",
+    "pubDate": "Sat, 11 Jul 2026 00:08:51 GMT"
+   },
+   {
+    "title": "[월드컵] 잉글랜드 동점골 오심 논란…\"골킥이 카메라 케이블 맞았다\"",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Uc3ZqcHlFNFRsRFNSQkZPazFLVVBOM2xTREhPVUctd3k1Z3VnUURocENFR0IydXlxR045aHc5T1R0c3lJdTNhb3ZLYzlXTGpfdEoyVE42NU5WMVXSAWBBVV95cUxPYndLNHp4dVpxQWYwTjdKbTBLdVRYZmJIMHpQb0Q4MEpzZ3ZiZ0JOTFV1OHc4NW5xcDZUcEFkclhjY2xBQTd1SmhSSUlZbUhKc0pzZVBkZHRxdW12UDRzUW8?oc=5",
+    "source": "연합뉴스",
+    "pubDate": "Sun, 12 Jul 2026 01:33:13 GMT"
+   }
   ],
-  "crypto": [
-   { "title": "샘플 헤드라인 — 다음 수집 후 실제 블록체인 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
-  ],
-  "wealth": [
-   { "title": "샘플 헤드라인 — 다음 수집 후 실제 재테크 뉴스로 교체됩니다", "link": "#", "source": "샘플", "pubDate": "" }
+  "science": [
+   {
+    "title": "오픈AI \"GPT-5.6 솔 울트라, 50년 수학 난제 1시간 만에 증명\"",
+    "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1mc2NrX05RbFBWNk1wamR0a0czMDBYQWdXY1BtMThndmx0dGw1b2lUUTdNYUtUQTk5clBGaC1kZGxFdDVnU3VPX1dYWUhjMHZuTlh5bWh3?oc=5",
+    "source": "지디넷코리아",
+    "pubDate": "Sun, 12 Jul 2026 07:58:55 GMT"
+   },
+   {
+    "title": "에펠탑만 한 소행성 ‘아포피스’ 3년 뒤 지구에 바짝···아찔한 우주쇼, 76억명이 함께 본다",
+    "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DWFBfMm50OUhJZ2hJVTFaOVMxdk81aW1mcloyUnYyUTNhaHo5alRkZnZjSzNuYUdiLUF1N2YtWEx5WF9WckRnZjQ1YzQ1c2QwTGFjRXBMemlRUdIBX0FVX3lxTE85SzYydFlBNFIyU25YUjJsbmZtTDdfbm1IMGx1R0Z3bWZ0MVd5bUpSTDNqNHQ0MjU5QVFRcnU1SFhxWW1ob2NiTERUeXF3dUVPVko4TWozaGMwVWN3WEk4?oc=5",
+    "source": "경향신문",
+    "pubDate": "Sun, 12 Jul 2026 00:00:00 GMT"
+   },
+   {
+    "title": "중국 톈원 2호, 10억㎞ 날아서 ‘지름 20m’ 준위성 궤도 진입 성공",
+    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5rZUl6TXUxZkZPRzNZNk5lcnNmbXUzU1hEV18tb00xLUswdGxueEhJQzNHR1l0VnJSMmF5d01TZ2NOT0JDbTdGVlY4Z0ZoQ1p6a2hNdU5yQ19tV2djUFNGUE9WT3dDQ3JKZFFReE80UzNqdw?oc=5",
+    "source": "한겨레",
+    "pubDate": "Mon, 13 Jul 2026 00:37:00 GMT"
+   },
+   {
+    "title": "‘반신반의’로 시작한 숙면 실험, 1년 반 만에 중독된 기자 부부",
+    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQ0dVYm85YXhDc3YtTXhvWGtuSmo0eFlDdEhUT285NFZoWURaVkpDY0Y0aTY4U2YwQmlOTmdoTThSMU9jdWFzSjh5VFktLWdnWW1DZW9iYl9UcDNSSG5TRVl1MGFNNlBZOGpLWGNFS2swUXFXYzJfQndud3ZCemYwb3JxNDZfNWVqLXFz?oc=5",
+    "source": "조선일보",
+    "pubDate": "Sun, 12 Jul 2026 20:20:00 GMT"
+   }
   ]
  },
  "hackernews": [
-  { "title": "샘플 — 다음 수집 후 Hacker News 인기 글로 교체됩니다", "link": "#", "points": 0, "comments": 0, "hnLink": "#" }
+  {
+   "title": "GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years",
+   "link": "https://nebusec.ai/research/ionstack-part-2/",
+   "points": 154,
+   "comments": 57,
+   "hnLink": "https://news.ycombinator.com/item?id=48834309"
+  },
+  {
+   "title": "Cyberpunk Comics, Manga and Graphic Novels",
+   "link": "https://shellzine.net/cyberpunk-comics/",
+   "points": 122,
+   "comments": 31,
+   "hnLink": "https://news.ycombinator.com/item?id=48885643"
+  },
+  {
+   "title": "Ask HN: Add flag for AI-generated articles",
+   "link": "https://news.ycombinator.com/item?id=48886741",
+   "points": 240,
+   "comments": 150,
+   "hnLink": "https://news.ycombinator.com/item?id=48886741"
+  },
+  {
+   "title": "Tiny Emulators",
+   "link": "https://floooh.github.io/tiny8bit-preview/index.html",
+   "points": 180,
+   "comments": 11,
+   "hnLink": "https://news.ycombinator.com/item?id=48884395"
+  },
+  {
+   "title": "So you want to learn physics (second edition, 2021)",
+   "link": "https://www.susanrigetti.com/physics",
+   "points": 135,
+   "comments": 19,
+   "hnLink": "https://news.ycombinator.com/item?id=48827126"
+  },
+  {
+   "title": "Designing and assembling my first PCB",
+   "link": "https://vilkeliskis.com/b/2026/0711.html",
+   "points": 73,
+   "comments": 26,
+   "hnLink": "https://news.ycombinator.com/item?id=48885728"
+  },
+  {
+   "title": "First look at Quest, the final ship of Antarctic explorer Shackleton",
+   "link": "https://www.cbc.ca/news/canada/quest-shipwreck-expedition-images-9.7262229",
+   "points": 15,
+   "comments": 0,
+   "hnLink": "https://news.ycombinator.com/item?id=48831840"
+  },
+  {
+   "title": "Ask HN: What Are You Working On? (July 2026)",
+   "link": "https://news.ycombinator.com/item?id=48884984",
+   "points": 101,
+   "comments": 308,
+   "hnLink": "https://news.ycombinator.com/item?id=48884984"
+  },
+  {
+   "title": "LARP – Revenue infrastructure for serious founders",
+   "link": "https://www.larp.website/",
+   "points": 190,
+   "comments": 40,
+   "hnLink": "https://news.ycombinator.com/item?id=48882569"
+  },
+  {
+   "title": "Claude Code sends 33k tokens before reading the prompt; OpenCode sends 7k",
+   "link": "https://systima.ai/blog/claude-code-vs-opencode-token-overhead",
+   "points": 510,
+   "comments": 284,
+   "hnLink": "https://news.ycombinator.com/item?id=48883275"
+  },
+  {
+   "title": "Count Binface",
+   "link": "https://countbinface.com",
+   "points": 52,
+   "comments": 13,
+   "hnLink": "https://news.ycombinator.com/item?id=48887753"
+  },
+  {
+   "title": "Kode Dot Programmable pocket device for makers, pentesters and geeks",
+   "link": "https://kode.diy",
+   "points": 56,
+   "comments": 15,
+   "hnLink": "https://news.ycombinator.com/item?id=48884992"
+  }
  ],
- "markets": { "fx": null, "crypto": null, "indices": null },
- "trends": [],
+ "markets": {
+  "fx": {
+   "date": "2026-07-10",
+   "rates": {
+    "CNY": 6.7745,
+    "EUR": 0.87489,
+    "JPY": 161.87,
+    "KRW": 1504.92
+   }
+  },
+  "crypto": {
+   "btc": {
+    "usd": 62709,
+    "change24h": -1.9312276334450187
+   },
+   "eth": {
+    "usd": 1780.38,
+    "change24h": -1.3379554276939454
+   }
+  },
+  "indices": {
+   "kospi": {
+    "price": 6880.97,
+    "changePct": -14.536231902058413
+   },
+   "nasdaq": {
+    "price": 26281.607,
+    "changePct": 1.7378652690565928
+   },
+   "sp500": {
+    "price": 7575.39,
+    "changePct": 1.231418476488801
+   }
+  }
+ },
+ "trends": [
+  {
+   "title": "전인화",
+   "traffic": "100+"
+  },
+  {
+   "title": "kospi",
+   "traffic": "200+"
+  },
+  {
+   "title": "코스피지수",
+   "traffic": "200+"
+  },
+  {
+   "title": "복날",
+   "traffic": "200+"
+  },
+  {
+   "title": "버거킹",
+   "traffic": "100+"
+  },
+  {
+   "title": "연비",
+   "traffic": "1000+"
+  },
+  {
+   "title": "초과 근무",
+   "traffic": "2000+"
+  },
+  {
+   "title": "코인니스 - 빠르고 정확한 코인 투자 뉴스, 커뮤니티",
+   "traffic": "1000+"
+  },
+  {
+   "title": "대한민국 해군",
+   "traffic": "1000+"
+  },
+  {
+   "title": "고영욱",
+   "traffic": "5000+"
+  }
+ ],
  "errors": []
 }
