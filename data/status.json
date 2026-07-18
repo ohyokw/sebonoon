@@ -1,13 +1,26 @@
 {
- "lastAttemptAt": "2026-07-18T10:39:54.107Z",
- "lastSuccessAt": "2026-07-18T10:39:54.107Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-07-18T15:12:46.537Z",
+ "lastSuccessAt": "2026-07-18T15:12:46.537Z",
+ "status": "partial",
+ "errors": [
+  "GN검색(금리 OR 부동산 OR 청…): 503 Service Unavailable — https://news.google.com/rss/search?q=%EA%B8%88%EB%A6%AC%20OR%20%EB%B6%80%EB%8F%99%EC%82%B0%20OR%20%EC%B2%AD%EC%95%BD%20OR%20%EC%97%B0%EA%B8%88%20OR%20%EC%9E%AC%ED%85%8C%ED%81%AC%20OR%20%EC%A0%88%EC%84%B8%20when%3A1d&hl=ko&gl=KR&ceid=KR:ko",
+  "GN토픽/headlines/section/topic/BUSINESS: 503 Service Unavailable — https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko",
+  "GN:Reuters: 503 Service Unavailable — https://news.google.com/rss/search?q=when%3A1d%20business%20source%3AReuters&hl=en-US&gl=US&ceid=US:en",
+  "GN검색(비트코인 OR 이더리움 O…): 503 Service Unavailable — https://news.google.com/rss/search?q=%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8%20OR%20%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80%20OR%20%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%20OR%20%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%20when%3A1d&hl=ko&gl=KR&ceid=KR:ko",
+  "GN:Reuters: 503 Service Unavailable — https://news.google.com/rss/search?q=when%3A1d%20source%3AReuters&hl=en-US&gl=US&ceid=US:en",
+  "GN:Reuters: 503 Service Unavailable — https://news.google.com/rss/search?q=when%3A1d%20%22artificial%20intelligence%22%20source%3AReuters&hl=en-US&gl=US&ceid=US:en",
+  "GN토픽/headlines/section/topic/TECHNOLOGY: 503 Service Unavailable — https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=ko&gl=KR&ceid=KR:ko",
+  "GN검색(AI OR 인공지능 whe…): 503 Service Unavailable — https://news.google.com/rss/search?q=AI%20OR%20%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5%20when%3A1d&hl=ko&gl=KR&ceid=KR:ko",
+  "GN:Associated Press: 503 Service Unavailable — https://news.google.com/rss/search?q=when%3A1d%20source%3A%22Associated%20Press%22&hl=en-US&gl=US&ceid=US:en",
+  "GN토픽/headlines/section/topic/SCIENCE: 503 Service Unavailable — https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=ko&gl=KR&ceid=KR:ko",
+  "GN토픽/headlines/section/topic/WORLD: 503 Service Unavailable — https://news.google.com/rss/headlines/section/topic/WORLD?hl=ko&gl=KR&ceid=KR:ko",
+  "GN토픽/: 503 Service Unavailable — https://news.google.com/rss?hl=ko&gl=KR&ceid=KR:ko"
+ ],
  "quality": {
   "passed": true,
-  "score": 100,
+  "score": 92,
   "reasons": [
-   "모든 품질 기준 통과"
+   "-8 수집 오류 12/27"
   ]
  }
 }
