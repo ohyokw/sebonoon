@@ -1,15 +1,13 @@
 {
- "lastAttemptAt": "2026-07-20T16:00:45.016Z",
- "lastSuccessAt": "2026-07-20T16:00:45.016Z",
- "status": "partial",
- "errors": [
-  "Science: 403 Forbidden — https://www.science.org/rss/news_current.xml"
- ],
+ "lastAttemptAt": "2026-07-20T22:12:13.506Z",
+ "lastSuccessAt": "2026-07-20T22:12:13.506Z",
+ "status": "ok",
+ "errors": [],
  "quality": {
   "passed": true,
-  "score": 90,
+  "score": 100,
   "reasons": [
-   "-10 중복 제목 12건"
+   "모든 품질 기준 통과"
   ]
  }
 }
