@@ -1,10 +1,9 @@
 {
- "lastAttemptAt": "2026-07-24T11:10:25.147Z",
- "lastSuccessAt": "2026-07-24T11:10:25.147Z",
+ "lastAttemptAt": "2026-07-24T15:42:29.580Z",
+ "lastSuccessAt": "2026-07-24T15:42:29.580Z",
  "status": "partial",
  "errors": [
-  "Science: 403 Forbidden — https://www.science.org/rss/news_current.xml",
-  "fx: The operation was aborted due to timeout"
+  "Science: 403 Forbidden — https://www.science.org/rss/news_current.xml"
  ],
  "quality": {
   "passed": true,
