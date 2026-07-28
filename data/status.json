@@ -1,16 +1,13 @@
 {
- "lastAttemptAt": "2026-07-27T22:16:22.091Z",
- "lastSuccessAt": "2026-07-27T22:16:22.091Z",
- "status": "partial",
- "errors": [
-  "연합뉴스: fetch failed",
-  "연합뉴스: fetch failed"
- ],
+ "lastAttemptAt": "2026-07-28T06:02:01.399Z",
+ "lastSuccessAt": "2026-07-28T06:02:01.399Z",
+ "status": "ok",
+ "errors": [],
  "quality": {
   "passed": true,
-  "score": 85,
+  "score": 100,
   "reasons": [
-   "-15 korea 2건 (<3)"
+   "모든 품질 기준 통과"
   ]
  }
 }
