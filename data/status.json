@@ -1,15 +1,13 @@
 {
- "lastAttemptAt": "2026-07-28T11:27:00.815Z",
- "lastSuccessAt": "2026-07-28T11:27:00.815Z",
- "status": "partial",
- "errors": [
-  "fx: The operation was aborted due to timeout"
- ],
+ "lastAttemptAt": "2026-07-28T16:14:54.913Z",
+ "lastSuccessAt": "2026-07-28T16:14:54.913Z",
+ "status": "ok",
+ "errors": [],
  "quality": {
   "passed": true,
-  "score": 100,
+  "score": 90,
   "reasons": [
-   "모든 품질 기준 통과"
+   "-10 중복 제목 9건"
   ]
  }
 }
