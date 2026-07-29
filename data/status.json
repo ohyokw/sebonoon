@@ -1,13 +1,13 @@
 {
- "lastAttemptAt": "2026-07-29T15:57:23.188Z",
- "lastSuccessAt": "2026-07-29T15:57:23.188Z",
+ "lastAttemptAt": "2026-07-29T22:10:48.721Z",
+ "lastSuccessAt": "2026-07-29T22:10:48.721Z",
  "status": "ok",
  "errors": [],
  "quality": {
   "passed": true,
-  "score": 90,
+  "score": 100,
   "reasons": [
-   "-10 중복 제목 13건"
+   "모든 품질 기준 통과"
   ]
  }
 }
