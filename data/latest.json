@@ -1,32 +1,112 @@
 {
  "schemaVersion": 2,
- "generatedAt": "2026-08-04T11:32:29.003Z",
- "date": "2026-08-04",
+ "generatedAt": "2026-08-04T16:21:31.723Z",
+ "date": "2026-08-05",
  "news": {
   "world": [
    {
-    "title": "\"계산된 제한적 확전\"…이란, 트럼프 양보 얻으려 승부수 던졌다",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84NTJqSmtFdTRTWEo1WWtILUd2TzA5b1hkX0Nyb1dDdUxvMUJtbmE1SkdNcE45SWxVS1hnTW83M2RvM09rVDg5YTZHWC14LTdvTkFmNUlJQzR5azjSAWBBVV95cUxPb01HbFBwRkZzaEZRWmkwUUF5VldRNUhPTW96dFQ4aE5zam9pSzE0dHVfSlFxY3NNRTZxd1RtX21PRmVRamE4NG11ZTdYV3kzdEFXeHFXcHlxbXdRbWNDVkM?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 04 Aug 2026 00:51:25 GMT"
-   },
-   {
-    "title": "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\"",
-    "link": "https://www.yna.co.kr/view/AKR20260804160700079",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 20:19:12 +0900"
-   },
-   {
-    "title": "세우타 수반 \"이주민 월경사태, 모로코가 부추겨\"",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9jSHZzWHEyN3hNRDUxakxkYi1xMkttbXVjMXlNNGlwSmo2ZW9feEw4QkdleEpCV2RqeGlZWF9yUEZHbkRrVWd4R29oRDJXUlFZcmVnRlY5RFFIazY0ZmY5WVFTUXl0VUE?oc=5",
+    "title": "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\"",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBqOUVoaWRhc3lXMkVyTUZtbW15UGlfdkdEUnNLdENMRWFLZS1tU0pkanJIUVByMUpIb0pxR3NXQm10YUw5MndSSXVWYTFJQjg4aF9YMjBWZEFtak52ejZ4RmlNTXZlSGs?oc=5",
     "source": "연합뉴스TV",
-    "pubDate": "Tue, 04 Aug 2026 02:01:00 GMT"
+    "pubDate": "Tue, 04 Aug 2026 06:33:00 GMT"
    },
    {
-    "title": "예멘 후티 반군 \"사우디 나즈란 공항에 드론 공격\"",
-    "link": "https://www.yna.co.kr/view/AKR20260804159900079",
+    "title": "쿠바 7월 반정부 시위·항의 1천415건…역대 최다",
+    "link": "https://www.yna.co.kr/view/AKR20260805001000087",
     "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 19:42:23 +0900"
+    "pubDate": "Wed, 5 Aug 2026 01:17:53 +0900"
+   },
+   {
+    "title": "이웃나라 정상에 \"도둑\"…아르헨 밀레이, 대선 앞둔 브라질 룰라 또 비난",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5OVGdhaFU1Mm1iZlJPMG02U1NSbzdwQmdVamlqU0lqaGpMM1lLdXh2SnJhMFZHRXpiMlhNT0hZN3ZWcGdyYzRSQ3FXUS0ySGk5aHRFc29xV05zZzNQS1lJUzNMZFVmUGc?oc=5",
+    "source": "연합뉴스TV",
+    "pubDate": "Tue, 04 Aug 2026 05:14:00 GMT"
+   },
+   {
+    "title": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합)",
+    "link": "https://www.yna.co.kr/view/AKR20260804168951098",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 01:15:28 +0900"
+   },
+   {
+    "title": "중국·일본도 폭염…인명피해 잇따르고 농작물 피해 우려",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLWWpnNm9YRXo0VFIyWVZ0U2ROLWlUR2FkX0Foc0k1SE55emZVZ1pMTXV5MHNsOTE2NmFpeWs3VTM1U1hybWdvQVJYVEdKSU1OSEo4M1JZN1M1THVVWEcwUDR1am5YdDA?oc=5",
+    "source": "연합뉴스TV",
+    "pubDate": "Tue, 04 Aug 2026 04:40:00 GMT"
+   },
+   {
+    "title": "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과",
+    "link": "https://www.yna.co.kr/view/AKR20260805000900071",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 01:13:39 +0900"
+   },
+   {
+    "title": "“남성 성장 방해”…‘여성 출입 금지’ 발리 리조트 논란 [잇슈#태그]",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zeFpDcHJCV3k0T2pnM1ktQ1otYkR0dDItUERpenNuRnZDZmNqcW9wTEozZF8yaGw0V0F5Nl9ZZXpFRDNpVm9XelNtZG1xQk9UZHZuQjRKejFfazg?oc=5",
+    "source": "KBS 뉴스",
+    "pubDate": "Mon, 03 Aug 2026 02:50:00 GMT"
+   },
+   {
+    "title": "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합)",
+    "link": "https://www.yna.co.kr/view/AKR20260804166651071",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 00:35:31 +0900"
+   },
+   {
+    "title": "'기독교 발원지' 이스라엘서 反기독교 사건 급증세…왜?",
+    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4tSzhwclktbEFmM2k2S0lqTjdKemZRS3hRZUtsWWxIYlREZVpOQ1RHaVl2dUZYallleFk4aktnQlJ0SjBLTU9WUzN0WVJ1d19JNjBuZDc0bkRnaERCX2lPbVJ3?oc=5",
+    "source": "뉴스1",
+    "pubDate": "Mon, 03 Aug 2026 07:12:55 GMT"
+   },
+   {
+    "title": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+    "link": "https://www.yna.co.kr/view/AKR20260805000400071",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 00:23:11 +0900"
+   }
+  ],
+  "korea": [
+   {
+    "title": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합)",
+    "link": "https://www.yna.co.kr/view/AKR20260804168951098",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 01:15:28 +0900"
+   },
+   {
+    "title": "李대통령 \"공정위, 경제檢 역할 제대로…담합 꿈 못꾸게 해달라\"",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83SmlVRjE3dFVaN3RZeFozQ2hPTlMtNHNFc2RiTW5yWEphbFpDem55aENNeU1iRGs1NXN0UmNtek5uT0gwbzgzUzlzTmdxWVVxMjg2UEFLaXFWQkHSAWBBVV95cUxPTk9LUlNRVWsxVDc3ckRhUkJoX0VyUndvaDRzV3FoMXpSZ3NHLVVSOGY5VU0zeFRCTzd4ZHNZNXVzSkwySEQweDhCVkJtRE5ra0doTU5nUGZ4Z255UTVqQmU?oc=5",
+    "source": "연합뉴스",
+    "pubDate": "Tue, 04 Aug 2026 07:59:30 GMT"
+   },
+   {
+    "title": "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과",
+    "link": "https://www.yna.co.kr/view/AKR20260805000900071",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 01:13:39 +0900"
+   },
+   {
+    "title": "“조세 정상화” vs “증오의 세제”…여야, ‘부동산 세제 개편’ 대충돌 [지금뉴스]",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE40dEo2WFplS2N5Ql9fTXBnZWZheW9vdWE2UWVlT2ZMVXA0eVV3SzNTZ2xNb082dTZvb3d3aUx3U0tKV1diamdHLVUyaEJfeEU0ZkNmQnFCaGQxbU9LbHAtd25sV0w1UQ?oc=5",
+    "source": "KBS 뉴스",
+    "pubDate": "Tue, 04 Aug 2026 04:13:00 GMT"
+   },
+   {
+    "title": "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합)",
+    "link": "https://www.yna.co.kr/view/AKR20260804166651071",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 00:35:31 +0900"
+   },
+   {
+    "title": "“일본 폭염에 1주일간 열사병으로 9천 명 병원행…구마모토서도 급증”",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5rTTlEY0wxeU8yTjFXUVVyQUlPU1VFcmg4SlNxdC1NbGtTOG84alR5dEJnblNFa2NVOS10UWx2Z2gtVW9hd3pPUGw3Mkx4V181VlZvVUh4a3R0MG8?oc=5",
+    "source": "KBS 뉴스",
+    "pubDate": "Tue, 04 Aug 2026 13:07:00 GMT"
+   },
+   {
+    "title": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+    "link": "https://www.yna.co.kr/view/AKR20260805000400071",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 00:23:11 +0900"
    },
    {
     "title": "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\"",
@@ -35,152 +115,78 @@
     "pubDate": "Tue, 04 Aug 2026 06:33:00 GMT"
    },
    {
-    "title": "스페인-모로코 '세우타 월경' 두고 책임 공방 고조",
-    "link": "https://www.yna.co.kr/view/AKR20260804158200099",
+    "title": "열대야에 정전까지…수원 아파트주민 20여명 한때 행정센터 대피",
+    "link": "https://www.yna.co.kr/view/AKR20260804170700061",
     "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 19:31:12 +0900"
+    "pubDate": "Wed, 5 Aug 2026 00:13:55 +0900"
    },
    {
-    "title": "러 \"모스크바 식당 테러, 우크라 계획\" 주장",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBYVGEteXhwOVRDOElQUjV6WlhYUnE3d1pSNW95WmQ0TGl4ZGJQM1BsejlnQkxfRGRiNVBQakpqVjExemItUnFDandJWWRLMXRCdXE0YWN3Q1R4a290WTdMaU1TS1VJdTQ?oc=5",
+    "title": "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라”",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1SNmxsNFNKRTNCX1dlVXFGUkhlSDNaWlJWMF81Q3pBT0dPem9mZkoxRU9aRW5rUTlPVDBLUVVPUTV2OC1Wa1ZnQV9tazItSE9IcUppSGZpWDFrSlE?oc=5",
+    "source": "KBS 뉴스",
+    "pubDate": "Tue, 04 Aug 2026 13:34:00 GMT"
+   },
+   {
+    "title": "[알림] 연합뉴스 콘텐츠 저작권 고지",
+    "link": "https://www.yna.co.kr/view/AKR20260805000100011",
+    "source": "연합뉴스",
+    "pubDate": "Wed, 5 Aug 2026 00:00:00 +0900"
+   },
+   {
+    "title": "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOR0ZsQURsamxmR3RPQ1dZMjFrc01ocDFldl9CeHVwUlhobGNvTUotbEVINW5yTldqcUVqcnI4WjRsLXMwcGxYckFLNTJSVWJ5aUM1TnhzaVY0Q2I5dUQ0VXhJMVNYYVE?oc=5",
     "source": "연합뉴스TV",
-    "pubDate": "Tue, 04 Aug 2026 10:16:00 GMT"
-   },
-   {
-    "title": "영국 우익당, 불법이민 차단 위해 해군 투입 공약…프랑스 반발(종합)",
-    "link": "https://www.yna.co.kr/view/AKR20260804151751081",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 19:23:43 +0900"
-   },
-   {
-    "title": "폭염·가뭄에 네덜란드에서도 산불 확산…유럽 곳곳 활활",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9acVc2eWFqR1IyY1RXa0RmUURsT0wwXy01RG8wQXhZQkRBN05Qck9uT3V3MTh3UE1MU0w2UzZEdGFvOEZ1M1M5MWwyb1pLejJYUEttMUl0RUpvZGc?oc=5",
-    "source": "KBS 뉴스",
-    "pubDate": "Tue, 04 Aug 2026 08:47:00 GMT"
-   },
-   {
-    "title": "도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분",
-    "link": "https://www.yna.co.kr/view/AKR20260804156100109",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 19:13:14 +0900"
-   }
-  ],
-  "korea": [
-   {
-    "title": "국힘 서범수, '돌려차기' 실언 논란…徐 \"깊이 사죄\"",
-    "link": "https://www.yna.co.kr/view/AKR20260804159100001",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 20:24:00 +0900"
-   },
-   {
-    "title": "수도권 첫 ‘폭염중대경보’…현재 폭염 상황은?",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBpbkZYV0NVUVQ2MUtpYmVxZlhQUjN2MDNKNWYwclRCbWFKMGJQUVZDeERqWmNtTmR1R0JBaXdOOHJGUFVTZlVESDV1QWZHNFpQSWQ4VF9GRjVJVkE?oc=5",
-    "source": "KBS 뉴스",
-    "pubDate": "Tue, 04 Aug 2026 08:07:00 GMT"
-   },
-   {
-    "title": "與선관위, '생일별 투표'·'金 구호 현수막' 제소안건 내일 결론",
-    "link": "https://www.yna.co.kr/view/AKR20260804159700001",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 20:20:58 +0900"
-   },
-   {
-    "title": "연이은 폭염에 온열질환 추정 사망자 2명 발생",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Qb3F5SUh3ZUVTclg4bS0xem1rR3d0OGpHMXlwWGYwX29NRkNuTFJPOGRqaW53b2ZSaTkyRUoxV3I0a192RkFWaHh0dDdHTVhpTFVOVnRVVl9fVDQ?oc=5",
-    "source": "KBS 뉴스",
-    "pubDate": "Tue, 04 Aug 2026 07:25:00 GMT"
-   },
-   {
-    "title": "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\"",
-    "link": "https://www.yna.co.kr/view/AKR20260804160700079",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 20:19:12 +0900"
-   },
-   {
-    "title": "경기 시흥서도 투표자 수 3천600여명 '대규모 오입력'",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VOGxJa1RyU1I5aW5MTUQ1X2x6QTR1Ti0tY3dNMmR3NUxOeXBydDhBcXZ2SlJYcWZmUFN6NEt3V002dEdBQ0t0LUJGZ2NkamkxQ1NyRkk2Ym44ZGvSAWBBVV95cUxPc2I2NlF1Y3pjQ3plMnJSczh5WXppeE56a1VBVmljb2c1NFpuOTluR3ZxRFk5M2VOWUdmRTVIcHlsSXVBa0E5MktSZ05uLW5JYlpqMGd3b3lfeElUaUlLLVU?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 04 Aug 2026 03:26:13 GMT"
-   },
-   {
-    "title": "'이흥구 후임' 대법관 후보 4명 압축…두명 동시 제청하나(종합2보)",
-    "link": "https://www.yna.co.kr/view/AKR20260804155552004",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 20:15:54 +0900"
-   },
-   {
-    "title": "호르무즈 해협서 화물선 1척 발사체에 피격",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WU193ajMwMzByMGhjWkJCQkVBc3oxa0ZsYlJqUkp1UjRJVWc1MzNZLWFZSk5MMnA1clZ0TE5DSmJMNlhJRjYtRTdSNVZpdXMzZ0tOU1FHUVlROFhTYjdFWC16YXNLSDA?oc=5",
-    "source": "연합뉴스TV",
-    "pubDate": "Tue, 04 Aug 2026 01:11:00 GMT"
-   },
-   {
-    "title": "메가프로젝트·제조 AX 박차…반도체 클러스터 조성 속도↑(종합)",
-    "link": "https://www.yna.co.kr/view/AKR20260804088751003",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 20:06:49 +0900"
-   },
-   {
-    "title": "우주청, ‘태양권 탐사 계획’ 발표…“2031년 지구-달 탐사선으로 태양풍 관측”",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBydlltOUdqZlJ6ZmZuZ05qSS1RMkozUTBpYThPdFNiR056X1VRNFpXRXJtYUc5bm55WXNzcFUtYUFMaUxDSHNFVFhfSy0wWWM0RDRDTC1BdV95LU0?oc=5",
-    "source": "KBS 뉴스",
-    "pubDate": "Tue, 04 Aug 2026 05:53:00 GMT"
-   },
-   {
-    "title": "현대차그룹 미국 워싱턴사무소장에 국무부 출신 클라이네",
-    "link": "https://www.yna.co.kr/view/AKR20260804159200003",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 20:01:44 +0900"
+    "pubDate": "Tue, 04 Aug 2026 06:37:00 GMT"
    }
   ],
   "business": [
    {
-    "title": "中 로봇 막은 美…북미 공급망 재편에 LG이노텍 '두근두근'",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1RcDVqaElMOUJlT2JXMEZNV2xZc01KaW9CdjhhMTdKdmFtZW0wWVY4WkRWMUluaFktMzR3alRlaER5S1Boblp6UlktU2MxNjBhZThMUFFSaWxya1UwSl8tZkw5TFBTdlRHYS11RG1SSFA?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Tue, 04 Aug 2026 04:29:32 GMT"
+    "title": "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라”",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1SNmxsNFNKRTNCX1dlVXFGUkhlSDNaWlJWMF81Q3pBT0dPem9mZkoxRU9aRW5rUTlPVDBLUVVPUTV2OC1Wa1ZnQV9tazItSE9IcUppSGZpWDFrSlE?oc=5",
+    "source": "KBS 뉴스",
+    "pubDate": "Tue, 04 Aug 2026 13:34:00 GMT"
    },
    {
-    "title": "진원생명과학, 150억원 유상증자…리볼트투자조합에 제3자배정",
-    "link": "https://www.yna.co.kr/view/AKR20260804154300008",
+    "title": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+    "link": "https://www.yna.co.kr/view/AKR20260805000400071",
     "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 18:39:05 +0900"
+    "pubDate": "Wed, 5 Aug 2026 00:23:11 +0900"
    },
    {
-    "title": "상반기 단기사채 990조 발행 역대최대…기업 단기자금 수요 확대",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5vNVBrczVFMkZsVV82Nl9XeUpfNWFMcGJXZUJ1eWdsU3dCTGFJSldSVm1VeFljcmZhUzZ3bF9xdGtNTlhTQUJqYVY3Um5pcW9hWWdYbHVwcnQ2dDDSAWBBVV95cUxPeU5GSndfT0VyYnJZLUQyV3VTMTVFdHR1TEYxbjlzUHFlYVotQUpueGsyaXNhRFBjV1VLMVFLZnZRUDJLbmRVVDRTaXFKbm9oeTA3V19vb1NBMXM1aUVsbUY?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Mon, 03 Aug 2026 21:00:01 GMT"
-   },
-   {
-    "title": "김남구 한투지주 회장 장남, 입사 7년 만에 임원 승진",
-    "link": "https://www.yna.co.kr/view/AKR20260804152700008",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 18:19:20 +0900"
-   },
-   {
-    "title": "팔란티어 2분기 매출 93% 급증…美상업부문 매출은 149%↑",
-    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsWkFsemFRaWctRjliUHNVekRCR1VFdk8xQ2p5RFBtbVAtN21TaDh1OHlsRjUwS1RwQWIyNmt0bERLSnpzTm1fZDBTdkFTalFlTXU1OXhoOGliSG_SAWBBVV95cUxNMnNIU0czT0J1bkM5am1WenRMd3VnMUMzemRFS0hqTERZNXB2NTgxWVhSeGY2Z1RlWnI1M1AwWWNURlVDN2hfZk9WZnZDc3ppQTFUZF9KcmFDR2JUUTBmSm4?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Mon, 03 Aug 2026 21:48:47 GMT"
-   },
-   {
-    "title": "주병기 \"배달앱수수료 상한제 법률상 가능…영세소상공인 낮게\"",
-    "link": "https://www.yna.co.kr/view/AKR20260804152000002",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 18:17:32 +0900"
-   },
-   {
-    "title": "뉴욕증시, 미 이란공격 취소·기술주 강세에 상승…나스닥 2%↑",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50RnQxSkhYb0R1eVBpR2R1R3hCR2o5dGFOUGZ4WFpvVHdpWUxLSFNGSk1DSUptSDVMNGVkYTM0SFNXVk5oNFVhMkZaVDZzT3NDMkpyQ0RnR2RVa2poZTBLeExtamg5ckE?oc=5",
+    "title": "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOR0ZsQURsamxmR3RPQ1dZMjFrc01ocDFldl9CeHVwUlhobGNvTUotbEVINW5yTldqcUVqcnI4WjRsLXMwcGxYckFLNTJSVWJ5aUM1TnhzaVY0Q2I5dUQ0VXhJMVNYYVE?oc=5",
     "source": "연합뉴스TV",
-    "pubDate": "Mon, 03 Aug 2026 20:16:00 GMT"
+    "pubDate": "Tue, 04 Aug 2026 06:37:00 GMT"
    },
    {
-    "title": "HD현대 정기선, 정몽준 지분 3.54％ 증여받아…2대 주주 올라서",
-    "link": "https://www.yna.co.kr/view/AKR20260804150800003",
+    "title": "美재무 \"원화 과도한 변동성…엔화 약세에 다른 통화 뒤따를 것\"(종합)",
+    "link": "https://www.yna.co.kr/view/AKR20260804167451071",
     "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 18:05:20 +0900"
+    "pubDate": "Tue, 4 Aug 2026 23:39:11 +0900"
+   },
+   {
+    "title": "소비자 울리는 돼지고기 담합…6개 납품 업체 기소",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE50c2FIanc1UUtYX0R1eEZhV0trRV80WlB0LTY1MDZ1QWUxZ1lNckxISm1LbFFmMkZBajVRN3RZUW1RQlczaWNFeGJTQjJtN01IZFkyVkUwc3ZySGdvVXVGelB5X1BLdw?oc=5",
+    "source": "KBS 뉴스",
+    "pubDate": "Tue, 04 Aug 2026 12:32:00 GMT"
+   },
+   {
+    "title": "美재무 \"원화 과도한 변동성…엔화약세면 다른 통화도 뒤따라\"",
+    "link": "https://www.yna.co.kr/view/AKR20260804167400071",
+    "source": "연합뉴스",
+    "pubDate": "Tue, 4 Aug 2026 22:22:53 +0900"
+   },
+   {
+    "title": "폭염 속 車 실내 최고 90도…보조배터리·라이터 '폭발 주의'",
+    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JbzlYT19ZSWJaUG96MnVQSGdDRkFPZTB5d2hQcERVX1RIQ1AwU3ZUbmVrS0YzRUlKQURTTmNnYUg2WHd2Vk1GWEFPY2VZNGtxSHd4M2NZT3JGMlU?oc=5",
+    "source": "뉴스1",
+    "pubDate": "Tue, 04 Aug 2026 05:46:06 GMT"
+   },
+   {
+    "title": "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
+    "link": "https://www.yna.co.kr/view/AKR20260804166600071",
+    "source": "연합뉴스",
+    "pubDate": "Tue, 4 Aug 2026 22:08:27 +0900"
    },
    {
     "title": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
@@ -189,10 +195,10 @@
     "pubDate": "Mon, 03 Aug 2026 23:56:43 GMT"
    },
    {
-    "title": "반복담합·시장지위남용에 매각·양도명령…'초강수' 대응한다",
-    "link": "https://www.yna.co.kr/view/AKR20260804107300002",
+    "title": "한국거래소, 변동성 장세에 선물·옵션 증거금률 대거 인상",
+    "link": "https://www.yna.co.kr/view/AKR20260804163200008",
     "source": "연합뉴스",
-    "pubDate": "Tue, 4 Aug 2026 18:03:05 +0900"
+    "pubDate": "Tue, 4 Aug 2026 21:12:28 +0900"
    }
   ],
   "tech": [
@@ -203,10 +209,16 @@
     "pubDate": "Mon, 03 Aug 2026 22:44:55 GMT"
    },
    {
-    "title": "Trump’s AI protectionism has come for robotics",
-    "link": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
+    "title": "휴대폰 운전자 잡으려 ’덤불’ 위장 美 경찰…74건 적발",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yRmQ3SEJrbk90eUtib1pnbG1FOHFhMzJSREhzSXo4TDdkZUZzOXNJVDVLeGt0VTNUSUZXNmVDaDZZUkctSDQtanJmbEM1TXBjYm5VaWs0R3g1WnpiYkF5U0RjMHhNQjQ?oc=5",
+    "source": "연합뉴스TV",
+    "pubDate": "Mon, 03 Aug 2026 20:30:34 GMT"
+   },
+   {
+    "title": "The Download: US robot restrictions, and ICE’s DNA grab",
+    "link": "https://www.technologyreview.com/2026/08/04/1141098/the-download-robot-restrictions-ice-dna/",
     "source": "MIT Tech Review",
-    "pubDate": "Mon, 03 Aug 2026 18:43:30 +0000"
+    "pubDate": "Tue, 04 Aug 2026 12:14:00 +0000"
    },
    {
     "title": "Apple issues new challenge against UK order for access to private user data",
@@ -215,10 +227,10 @@
     "pubDate": "Tue, 04 Aug 2026 10:22:40 GMT"
    },
    {
-    "title": "The Download: reward hacking explained, and suspected Iranian cyberattacks",
-    "link": "https://www.technologyreview.com/2026/08/03/1141039/the-download-reward-hacking-water-cyberattacks/",
+    "title": "Trump’s AI protectionism has come for robotics",
+    "link": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
     "source": "MIT Tech Review",
-    "pubDate": "Mon, 03 Aug 2026 12:08:00 +0000"
+    "pubDate": "Mon, 03 Aug 2026 18:43:30 +0000"
    },
    {
     "title": "Tokenomics: Why making AI pay is tricky",
@@ -227,10 +239,10 @@
     "pubDate": "Mon, 03 Aug 2026 23:21:10 GMT"
    },
    {
-    "title": "Here’s why AI agents lie and cheat to reach their goals",
-    "link": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
+    "title": "The Download: reward hacking explained, and suspected Iranian cyberattacks",
+    "link": "https://www.technologyreview.com/2026/08/03/1141039/the-download-reward-hacking-water-cyberattacks/",
     "source": "MIT Tech Review",
-    "pubDate": "Mon, 03 Aug 2026 08:30:05 +0000"
+    "pubDate": "Mon, 03 Aug 2026 12:08:00 +0000"
    },
    {
     "title": "Xbox Series X price hiked by £170 due to rising memory chip costs",
@@ -255,78 +267,72 @@
   ],
   "ai": [
    {
-    "title": "'AI 시대' 금융사고 나면 누가 책임지나…\"규제 공백\" 한목소리 |",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DSmdiRGNEVTlEbjBhc2VxdzVQYUhNVTJOZEZwUVlnRGdrX1hNXy1LTTNmTnpZSjBjVm93NkJMbWZhNXAxVDVjTjRCN3FOclBvRlAxTVN5WUhNRVgxUEZOdC1lSG9PSnhBb2xmaDdPNlYzWkZo?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Tue, 04 Aug 2026 07:11:27 GMT"
-   },
-   {
-    "title": "’AI 시대 전략시설’ 데이터센터…“새 전쟁 표적으로 부상“",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBnZGl1YjVISFVGTmFENG12akJfVEVVc0JuUjJqLXZYMnJ5djB5WGxsOXo0RV8zX1JKYlpLb2xQVGQyVmlYQ3RtTC1oQ0Izd25QUlF6cF94R3loeFFxc05VWFpobXhtNVk?oc=5",
+    "title": "기상청, 폭염에 AI 활용하고 국외 지진 강화",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DY2YtSmMxaWJ3ZHJzTTBxWERsbnp2Q2tQai1LUnQzRlVqSUYzcThFOHNCNDRtRDB1Z3JZVS1Cdm92SF9WTmlSZHhIVHptWWNTSEM2T0VTRnZoSFJtQ2hCREszOHpmQ2M?oc=5",
     "source": "연합뉴스TV",
-    "pubDate": "Tue, 04 Aug 2026 07:58:00 GMT"
+    "pubDate": "Tue, 04 Aug 2026 12:13:00 GMT"
    },
    {
-    "title": "\"IP로 경제성장 판 바꾼다\" 지식재산처, 수익화·AI대전환 등 추진",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsSzhXdXc1X2xDbnpmdzhDbnNGVUd1OEFYQ2J5Tng3UmpFQ1MyWEgyeGJaVzE5RHhHTGVtTThOanZ6bjY3bXoxaS1Ebjc3VTd5eUtrMW1STVF0WU5waURMSUZVZmV1ZHM?oc=5",
+    "title": "中, 기계늑대·AI 공습체계 공개…고에너지 무기 예고",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1KNzRIeHc2dzNtdS1aTU1IeWFIQkEtRlNsdlNtRV9tVXV3aGl5c2Y4MV9KTlJ4TVkxNDJ6dUFfczl3SXRSaXJMQ1BkbzdwZlRPMEdOcG9XUENVdW5OX3Q3SHNhdldZaEU?oc=5",
     "source": "연합뉴스TV",
-    "pubDate": "Tue, 04 Aug 2026 08:42:00 GMT"
+    "pubDate": "Tue, 04 Aug 2026 14:19:00 GMT"
    },
    {
-    "title": "네이버, 남미 AI 인프라 시장 교두보…브라질·칠레 최대 기업과 협업 논의 |",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE02Qk5fY0VTaUlOTF9nLTJic0lmNmFmVl84RE5LRm5UTkVfSWlCYTFtQkVmNE51dGwwRjhRckM5X0kyNThNUUZXeGZPbDdMWTdxMnBWMzdmNGVHSm9DYlM3MFJqS09jMVlvQ0R2dEdvaVgzOE1S?oc=5",
+    "title": "[크랩] “우리 그냥 사랑하게 해주세요!”…중국이 ‘AI 연인’ 금지시킨 이유",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1kVVViYkxFZmFNUHBsT3VmS3hCNHMwdVNocmhMT3FRQTJJOVd4MG0xVEFpcTloR3ZoMzN1eHlHbzM5SzMtOVhqeFUwYlBsS0dQcEp1SmEwRm1sQVVhbnkxWnFBNkFNdw?oc=5",
+    "source": "KBS 뉴스",
+    "pubDate": "Tue, 04 Aug 2026 09:59:00 GMT"
+   },
+   {
+    "title": "[중국증시-마감] AI·반도체주 강세에 상승 |",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE45eW9rcHJ0VlprY2duT2RfT25HRFpWaGFPVG5Hb3hETmJDRG9kRmhodE9wNWpCNHBmU3JGaVJkS29UTU92SF9Ld2kyVF9xWk83X0M2RDJhWGVybDQyT3BMRGQ1ZURVMHNpMkh0R2hTYnpvRlYz?oc=5",
     "source": "연합인포맥스",
-    "pubDate": "Tue, 04 Aug 2026 06:54:46 GMT"
+    "pubDate": "Tue, 04 Aug 2026 09:39:19 GMT"
    },
    {
-    "title": "\"'AI칩 확대' 구글, 286조원 인프라 금융 사업망 구축\"",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10dF9VM2p4VmZiU3VpNXJWNnM0WXZucWI2OEduS3gxS0c2ZWVLcEpfdWZPeEJOYXdRazByc3Z3cHV4b3dmRkRTa2xBZXFjQlFxN2FFeGh6Q0JGVWxuN0EzY9IBYEFVX3lxTE10dF9VM2p4VmZiU3VpNXJWNnM0WXZucWI2OEduS3gxS0c2ZWVLcEpfdWZPeEJOYXdRazByc3Z3cHV4b3dmRkRTa2xBZXFjQlFxN2FFeGh6Q0JGVWxuN0EzYw?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 04 Aug 2026 08:15:15 GMT"
-   },
-   {
-    "title": "[AI픽] 삼성 AI 스마트글래스, 사생활 침해 막을 안전장치 적용",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YaTRpZ1A4UkZaY3pFRzdEVzZQRmJaV2p2M1c2cWFWZFo0QVp0SzFKbHV5YUMtOEFsN1JVcHk3RUd2M3BfNk5UTlV4Y3ROMkhVQ3BwcUs1dGs4enppYUExadIBYEFVX3lxTE1YaTRpZ1A4UkZaY3pFRzdEVzZQRmJaV2p2M1c2cWFWZFo0QVp0SzFKbHV5YUMtOEFsN1JVcHk3RUd2M3BfNk5UTlV4Y3ROMkhVQ3BwcUs1dGs4enppYUExaQ?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 04 Aug 2026 06:53:26 GMT"
-   },
-   {
-    "title": "AI·디지털 사각지대 없앤다…과기부·신한금융 협력",
-    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE03aVItdWhBc2hLRGFRN1Mya3dqYWlKREExRV9JVElmb0Fyb3ZCcWRXUVg5QjVqalB4Zi14cUNZMm9LUmQ1S1Q3Tl9ObFRRbnpadG0yU0FaZzFibndvNWNvSdIBYEFVX3lxTE03aVItdWhBc2hLRGFRN1Mya3dqYWlKREExRV9JVElmb0Fyb3ZCcWRXUVg5QjVqalB4Zi14cUNZMm9LUmQ1S1Q3Tl9ObFRRbnpadG0yU0FaZzFibndvNWNvSQ?oc=5",
-    "source": "연합뉴스",
-    "pubDate": "Tue, 04 Aug 2026 06:00:02 GMT"
-   },
-   {
-    "title": "수자원공사 'AI 물관리' 연수, 美 주립대 공식 학사과정으로 |",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mMVlDWHYwTWo4RW1mTWlZWkktWHZ4NHJrbk5pQUtWbmJPdmJtOW4yNjExLUR1SkdVM0VXMnF3Q2plLVY4bjIyZldvcmlNdy1Dd3BWaFJ3VkxIQnZqTml6MGZlNHZJZWFJOTA5Z0l3ZTZjQWRu?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Tue, 04 Aug 2026 07:03:26 GMT"
-   },
-   {
-    "title": "EXCLUSIVE: Trump administration drafting ban on Chinese data center devices, sources say",
-    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZEFjZDdmMzAxM2tTaHIwTWpFMHVCUldHdGs3Y3hTejI2ajRQeTVWUFU4RThDRGlIUmhXM0duczgySG5xUExONFhPMmtZR2liTVVJR19JcVhBYndwTjBURk1qM0lvOU1sTnlGYVd3VUxLQTJBQklmZjlsSmdUd0p1bVpGRElVSlp5NHl3YTBnSmhrMUpfSl9ld0NmLVhDdTF0MXg1enZIcXE0aEpFQTJDRWxYUUdRdw?oc=5",
+    "title": "AI offers 'lifeline' for emerging economies, World Bank says",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaVZGc1lSSGxvaXVoX2pBRG5rN1hTcU40dS1TQXl0ZU4yYUNDVFU2ODdCakpRai1hbFJwUVVkQVo0MVdENEg0YUQ4c25uZERIRUJqMHlBbVUwYXVfX3c0ZlpmdmVhVjRWUVFTbE93YnlzLV8zVW1FU3hhbFQ4Sy1OVkNXcHZsQzdIRXpVYmplcXdwOFJQS19XZk5TdVIxNlU?oc=5",
     "source": "Reuters",
-    "pubDate": "Tue, 04 Aug 2026 10:42:53 GMT"
+    "pubDate": "Tue, 04 Aug 2026 13:05:30 GMT"
    },
    {
     "title": "Trump’s AI protectionism has come for robotics",
     "link": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics/",
     "source": "MIT Tech Review",
     "pubDate": "Mon, 03 Aug 2026 18:43:30 +0000"
+   },
+   {
+    "title": "Meta, Anthropic, Google, OpenAI to meet with Trump advisers amid rogue AI agent fallout",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNa1dFYnlpdVZxSzIyWnptbDAxbjlwMzNtdEFtVFRkYXQ5OWpxbTBBaU44LUg5Tl9oX2ZnT2R2REQ0S2JWdjVid1NkWmM5aUJyOTZFZE9lQnNRWHhhS1NIVXBsTW9CRGZoRHlQTVZTOXhzVndCYkxZUEFUcElGdG9leU1ISlpLaWJER3dZUC13NmQ2SjNGMVpPcXc4NzdrbWlhekFiV19aYWZKaGJCblhvNnVFbWo0UVJUSWQ4eWVCSHZtRXFqU01zOQ?oc=5",
+    "source": "Reuters",
+    "pubDate": "Tue, 04 Aug 2026 15:34:28 GMT"
+   },
+   {
+    "title": "EXCLUSIVE: Trump administration drafting ban on Chinese data center devices, sources say",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZEFjZDdmMzAxM2tTaHIwTWpFMHVCUldHdGs3Y3hTejI2ajRQeTVWUFU4RThDRGlIUmhXM0duczgySG5xUExONFhPMmtZR2liTVVJR19JcVhBYndwTjBURk1qM0lvOU1sTnlGYVd3VUxLQTJBQklmZjlsSmdUd0p1bVpGRElVSlp5NHl3YTBnSmhrMUpfSl9ld0NmLVhDdTF0MXg1enZIcXE0aEpFQTJDRWxYUUdRdw?oc=5",
+    "source": "Reuters",
+    "pubDate": "Tue, 04 Aug 2026 13:53:44 GMT"
    }
   ],
   "crypto": [
    {
-    "title": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은",
-    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9FcXo3aWxHN2tWN1FkQXFNR1FMdTF5cVdQbTFHUDJQelowdzFKbkVEXzA4cHJmaDctZ09yUXJoWDc5Mk5RV2daX1Y0Z3QzVUYzQTZXLVc0OXNfdkI4SzBKcXJFU2xDOG1HM3FnU1MzVE8?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Tue, 04 Aug 2026 02:30:00 GMT"
+    "title": "러시아 내 암호화폐 사용 합법화…중앙은행이 규제",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PRWRRWlhQNDdnd25qaHBfRXdFb3BGT2RDMVdua3U4UXpPbkFyc3ozbTRtQzFONXBPQkJvbkNoN0czOUc3WlZ6Nm5rWWN1Z2pWTFZGb3lVdlFYUTBoaG9NLdIBYEFVX3lxTE9PRWRRWlhQNDdnd25qaHBfRXdFb3BGT2RDMVdua3U4UXpPbkFyc3ozbTRtQzFONXBPQkJvbkNoN0czOUc3WlZ6Nm5rWWN1Z2pWTFZGb3lVdlFYUTBoaG9NLQ?oc=5",
+    "source": "연합뉴스",
+    "pubDate": "Tue, 04 Aug 2026 13:43:03 GMT"
    },
    {
-    "title": "비트코인 ETF 순유입 전환…이더리움 ETF는 3거래일 만에 순유출",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VbGFNM3hQWVdaUTNPc29sTG1JTmtQVFF3QllyaEppcXR2Rkp0dDRoVlFxMDJTQUFHMWdBd3dHTlJrNzRndEVJSXZHUGFNTjBwaEZuQ003Skl2ZzFIbzBCZXd2Q0ZOdw?oc=5",
-    "source": "뉴스1",
-    "pubDate": "Tue, 04 Aug 2026 07:00:29 GMT"
+    "title": "비트코인 시장에는 충분히 우려할 만한 이유들이 존재하지만, 여전히 침착함이 지배하고 있다",
+    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQY0NDaWJELXFTcGtSZDV1aEYxcXUtRmlzOVhoWUZ4M0hyd2JlYWJfbWhyZXJHU2lldUlTbVJvSlZWYVY0X0syV2lKNzRaRzQ5a1Z6RGRtUFl0ckxwLWs0NTlFaENFenpkaWdpeGxRSi1vSFY1REZGSFlHc0lSbThiTmI5VGZlOFRER0lEYS1fUTRmZERVVmdCVm5nc1NiMjZnb3ZiTHZGbGIzQ3Z0SFdfVEhwWHVQM1pkSUxleGh3?oc=5",
+    "source": "CoinDesk",
+    "pubDate": "Tue, 04 Aug 2026 11:52:55 GMT"
+   },
+   {
+    "title": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은 |",
+    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9xQmQ2ZXJQbU4yMTZVbUVPaVlaVll5VGI2bDVCOWpGOWpmQ2d0Ti1OOHlhdUxhczNXaGxVSTZzUTdIMXJ6S3ZwblhWd2gtRXBsSEQyVGt0VkNwZ29SbmNzSlJjRlJIX09NNmE4cmhjNEVqWXdX?oc=5",
+    "source": "연합인포맥스",
+    "pubDate": "Tue, 04 Aug 2026 02:40:18 GMT"
    },
    {
     "title": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
@@ -341,60 +347,54 @@
     "pubDate": "Mon, 03 Aug 2026 23:50:00 GMT"
    },
    {
-    "title": "번스타인 \"'클래리티 법' 논의 지연…비트코인 추가 하락할 듯\"",
-    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5bll3U3NpcHhCNThhbzFKNUM4QUdCaVJ1R3JLWXFySW5uT0pydldremdwcWs5ak10VV9Kb1NyNWZzMUk0cklYX0ZkbGFxQUViX2hIdXlxYVZhQWNNU0tnSFM1T1dOQQ?oc=5",
+    "title": "비트코인 ETF 순유입 전환…이더리움 ETF는 3거래일 만에 순유출",
+    "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VbGFNM3hQWVdaUTNPc29sTG1JTmtQVFF3QllyaEppcXR2Rkp0dDRoVlFxMDJTQUFHMWdBd3dHTlJrNzRndEVJSXZHUGFNTjBwaEZuQ003Skl2ZzFIbzBCZXd2Q0ZOdw?oc=5",
     "source": "뉴스1",
-    "pubDate": "Tue, 04 Aug 2026 02:19:40 GMT"
+    "pubDate": "Tue, 04 Aug 2026 07:00:29 GMT"
    },
    {
-    "title": "BTC 뉴스: 2013년부터 잠자고 있던 비트코인 지갑에서 3,100만 달러 이동",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaDI1emNPS0pNa1VHdm55dU9oVm00ak52MUVSTEprTERpbmVzMGNlV2FFRjZnUjlBU3JCV2hhRXBtTnd0NHJQeHpsVk16Vi13N0JORDBzejYxMHdicnZQTjRqOEpZTDI5dHdseUVZT09mUDZuWm9WUlBlMFp6dnNtN3Atc25feFYzYVdwcXpVRDhPbzBsbTV4bnZzbGVxbUFVVldGVHY1LTZvUWFKMTdNcG55VTJ4TXVBckMxT1pYMTFLa1J5NlZJ?oc=5",
+    "title": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
+    "link": "https://www.coindesk.com/business/2026/08/04/wells-fargo-to-offer-tokenized-deposits-for-24-7-corporate-payments",
     "source": "CoinDesk",
-    "pubDate": "Tue, 04 Aug 2026 03:55:07 GMT"
+    "pubDate": "Tue, 04 Aug 2026 15:47:05 +0000"
    },
    {
-    "title": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
-    "link": "https://www.coindesk.com/daybook-us/2026/08/04/the-bitcoin-market-has-plenty-of-reasons-to-freak-out-yet-calm-pervades",
+    "title": "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode",
+    "link": "https://www.coindesk.com/markets/2026/08/04/bitcoin-s-usd63-000-zone-emerges-as-key-battleground-for-buyers-glassnode",
     "source": "CoinDesk",
-    "pubDate": "Tue, 04 Aug 2026 11:23:33 +0000"
-   },
-   {
-    "title": "South African lawmakers propose draft rules on cross-border crypto transactions",
-    "link": "https://www.coindesk.com/policy/2026/08/04/south-african-lawmakers-propose-draft-rules-on-cross-border-crypto-transactions",
-    "source": "CoinDesk",
-    "pubDate": "Tue, 04 Aug 2026 10:59:41 +0000"
+    "pubDate": "Tue, 04 Aug 2026 14:49:33 +0000"
    }
   ],
   "wealth": [
    {
-    "title": "민주 \"세제개편안 꼼꼼히 점검·보완\"…부동산 민심 주시",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBBV3dVMDhGRXNpODJWY3FXZ2NEUVNuOFQ2UmJaUDFRelBqX05qU1FmU253cEw5VUhla0J5Z3pDUkNqYkZRdmIyaTlrOUF1WHZyck01LXFtbTJNS000X0NKV0o2RHNhdm8?oc=5",
+    "title": "한은 금통위 \"기준금리 인상, 필요성 커지고 부담은 줄어\"",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5SMTJmRk1FZ1JGVzlicnZMV1hCYkppbkRNNlMzcWNXcno0c0VURkRpVkIzOHdFcHlsUVNiTHpUTGlTejJHNzMtTU9GYzF4NkxyanVDYzNuMTd2RmZfY0pnY2VPemNmMjQ?oc=5",
     "source": "연합뉴스TV",
-    "pubDate": "Tue, 04 Aug 2026 08:38:00 GMT"
+    "pubDate": "Tue, 04 Aug 2026 15:29:00 GMT"
    },
    {
-    "title": "IRS 금리 전 구간 하락…外人 매수 이어져",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5lLXp4ZE9xWGcxTUgwNWNGVlk4a1hPV1ViYlJNcUQ3X2lteFRPbHhzNVVXMTE5amh2NEpkV3R1LVBnTW1jdm0taDFqZ0J5eVp4bUR6RXdOelUwYUFOQ3pxdGJKMzd2clhQNVkyVE5iMVQtLU5X0gF0QVVfeXFMTmUtenhkT3FYZzFNSDA1Y0ZWWThrWE9XVWJiUk1xRDdfaW14VE9seHM1VVcxMTlqaHY0SmRXdHUtUGdNbWN2bS1oMWpnQnl5WnhtRHpFd056VTBhQU5DenF0YkozN3ZyWFA1WTJUTmIxVC0tTlc?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Tue, 04 Aug 2026 09:55:44 GMT"
-   },
-   {
-    "title": "부동산 세제개편안, '실거주'에 초점...내용 들여다봤더니 [자막뉴스]",
-    "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBudUYtTjgxQll1dGxUbG50UWhiaVBidEhuTjlWMzQ0aWhReDRxUjZscTRDQlEtaXM4cGVqY3dCalhvMXFXMXkyZEdFbVRPSUh1VWtqTVh4dlFWdmdqQXcwaEhsUQ?oc=5",
+    "title": "'부동산 세제개편안'에 온도 차...국힘 '맹폭'·민주 '신중'",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9fNENpMmJHYjdOOUJtR1hmN0JLdnJBUF9FTXdnNEJ1alRMbDJESG93UXdsMXZBOElma0V2ZlJlZ0lGTHNhcGYzTkVSQzFTQ1pVQ2tJV1pEUFd0Mks3SlE?oc=5",
     "source": "YTN",
-    "pubDate": "Tue, 04 Aug 2026 07:29:00 GMT"
+    "pubDate": "Tue, 04 Aug 2026 11:45:00 GMT"
    },
    {
-    "title": "국회 국토위, 11일 전체회의…부동산 세제개편안 현안질의",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9VT2p3MVo3V2loWFRxVFVyb2s4MTR3dk5CaXFYbXFFUy1fZzE4MERXdGFnTDUzTFhOWjZmazg5eUNwWnhrRUFXbzhnbTFYTXltWFdQQjBXa2xrUzlJNFlvMkNaMi00QUU?oc=5",
-    "source": "연합뉴스TV",
-    "pubDate": "Tue, 04 Aug 2026 08:44:00 GMT"
+    "title": "소비자물가 석 달 만에 2%대로…'8월 금리인상' 주목",
+    "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NeEFFcEsxTlg1WkdMWkVKUGRscklQdlkyNE11SG9Qa1kzZmxEaG1nTm1nQlI2OGtuSlpEX0RYQXdYel9BaUticFpoR0pwbGxBMjRHcUhCZmxBd3hBczFYetIBYEFVX3lxTE5NeEFFcEsxTlg1WkdMWkVKUGRscklQdlkyNE11SG9Qa1kzZmxEaG1nTm1nQlI2OGtuSlpEX0RYQXdYel9BaUticFpoR0pwbGxBMjRHcUhCZmxBd3hBczFYeg?oc=5",
+    "source": "연합뉴스",
+    "pubDate": "Tue, 04 Aug 2026 14:01:05 GMT"
    },
    {
-    "title": "\"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
-    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1STWdONGV2MWx1enEyWUJ3b1VuQWlXVTZvVVVCdnhyT3VEOVVpX2xqTHdUSC1aMTliYm9oNWlPdnVCektHaFhYd210WTV2VDhkY1ZQUzlmOW9ta1VsbzRVREwzeGV3TVk?oc=5",
+    "title": "이 대통령 \"부동산 100억대 벌어도 세금 몇억\"...세제 개편 당위성 부각",
+    "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5sTng1Sld3dDFEZWZSMmZza0d4cmpDS3ZDQmhDQ2g0YWVBUGZhUG1PVTM0Mzl1VlJwSXpWaDZ2UzU0TWhmeEZKOVp1bEhLcTdEd3VyWXVDNHZVNl9TSWc?oc=5",
+    "source": "YTN",
+    "pubDate": "Tue, 04 Aug 2026 11:14:00 GMT"
+   },
+   {
+    "title": "이 대통령 \"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9uTXdmaHdwTWdhMFVGcHg5NE11VGk2N1ZyNG0wcGFMc0pqbzVCR25makd5NkpyNE1KRVQxbEs2cGRnamtZMGlWSEc4SXgyZ3ZfOFEyY1lPSkl0UEt0R3F6UmFlcWF3WEE?oc=5",
     "source": "연합뉴스TV",
-    "pubDate": "Tue, 04 Aug 2026 10:07:00 GMT"
+    "pubDate": "Tue, 04 Aug 2026 12:54:00 GMT"
    },
    {
     "title": "금통위원들 \"기준금리 인상 필요성 커지고 부담은 줄어\"",
@@ -403,16 +403,16 @@
     "pubDate": "Tue, 04 Aug 2026 07:34:55 GMT"
    },
    {
-    "title": "\"부동산 공급 대책 마련해라\" 주문에 금융위, PF 긴급 점검",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1IVXBaZW5HcWJ6Q2ZaZ2szUXJMdTJYQ3huODBzaVpWZzV5ZkNlSmJ3SXA4NkMyV21ZMWRKUHZNYkpwSUxxNkxmd3NESURTMV9Ua1hVLUJmXzR6aFR5YklKRnhxczFUb2taVGlLQlYxNUFEckhP0gF0QVVfeXFMTUhVcFplbkdxYnpDZlpnazNRckx1MlhDeG44MHNpWlZnNXlmQ2VKYndJcDg2QzJXbVkxZEpQdk1iSnBJTHE2TGZ3c0RJRFMxX1RrWFUtQmZfNHpoVHliSUpGeHFzMVRva1pUaUtCVjE1QURySE8?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Tue, 04 Aug 2026 07:03:27 GMT"
+    "title": "민주 \"세제개편안 꼼꼼히 점검·보완\"…부동산 민심 주시",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBBV3dVMDhGRXNpODJWY3FXZ2NEUVNuOFQ2UmJaUDFRelBqX05qU1FmU253cEw5VUhla0J5Z3pDUkNqYkZRdmIyaTlrOUF1WHZyck01LXFtbTJNS000X0NKV0o2RHNhdm8?oc=5",
+    "source": "연합뉴스TV",
+    "pubDate": "Tue, 04 Aug 2026 08:38:00 GMT"
    },
    {
-    "title": "與, 부동산 간담회·TF 회의 연달아 개최…민심 촉각 |",
-    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90cktybXRlbnhxQzl4V2Z3aGhqNGhVVEM2b2d1WWZicURJOGtlY01NSHhEUTNiaVlnWUZ0RTJmUFlSd3pQS01UY3B5RWRkd0h3ODdHaFJhZzVGTUhTVU5BbVJ4TGZGOWhRak5Zc001b0hLZ2Ny?oc=5",
-    "source": "연합인포맥스",
-    "pubDate": "Tue, 04 Aug 2026 06:08:45 GMT"
+    "title": "국회 국토위, 11일 전체회의…부동산 세제개편안 현안질의",
+    "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9VT2p3MVo3V2loWFRxVFVyb2s4MTR3dk5CaXFYbXFFUy1fZzE4MERXdGFnTDUzTFhOWjZmazg5eUNwWnhrRUFXbzhnbTFYTXltWFdQQjBXa2xrUzlJNFlvMkNaMi00QUU?oc=5",
+    "source": "연합뉴스TV",
+    "pubDate": "Tue, 04 Aug 2026 08:44:00 GMT"
    }
   ]
  },
@@ -423,7 +423,7 @@
    "shortage": false
   },
   "korea": {
-   "count": 11,
+   "count": 12,
    "target": 12,
    "shortage": false
   },
@@ -433,7 +433,7 @@
    "shortage": false
   },
   "tech": {
-   "count": 7,
+   "count": 8,
    "target": 8,
    "shortage": false
   },
@@ -443,7 +443,7 @@
    "shortage": true
   },
   "ai": {
-   "count": 10,
+   "count": 8,
    "target": 10,
    "shortage": false
   },
@@ -460,62 +460,83 @@
  },
  "events": [
   {
-   "id": "evt-korea-5jp6wp",
+   "id": "evt-korea-1y1y72o",
    "category": "korea",
-   "headline": "메가프로젝트·제조 AX 박차…반도체 클러스터 조성 속도↑(종합)",
+   "headline": "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라”",
    "status": "new",
    "articles": [
     {
-     "title": "메가프로젝트·제조 AX 박차…반도체 클러스터 조성 속도↑(종합)",
+     "title": "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라”",
+     "source": "KBS 뉴스",
+     "sourceType": "public",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1SNmxsNFNKRTNCX1dlVXFGUkhlSDNaWlJWMF81Q3pBT0dPem9mZkoxRU9aRW5rUTlPVDBLUVVPUTV2OC1Wa1ZnQV9tazItSE9IcUppSGZpWDFrSlE?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 13:34:00 GMT"
+    },
+    {
+     "title": "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라”",
+     "source": "KBS 뉴스",
+     "sourceType": "public",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1SNmxsNFNKRTNCX1dlVXFGUkhlSDNaWlJWMF81Q3pBT0dPem9mZkoxRU9aRW5rUTlPVDBLUVVPUTV2OC1Wa1ZnQV9tazItSE9IcUppSGZpWDFrSlE?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 13:34:00 GMT"
+    },
+    {
+     "title": "美재무 \"원화 과도한 변동성…엔화 약세에 다른 통화 뒤따를 것\"(종합)",
      "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804088751003",
-     "publishedAt": "Tue, 4 Aug 2026 20:06:49 +0900"
+     "url": "https://www.yna.co.kr/view/AKR20260804167451071",
+     "publishedAt": "Tue, 4 Aug 2026 23:39:11 +0900"
+    },
+    {
+     "title": "美재무 \"원화 과도한 변동성…엔화약세면 다른 통화도 뒤따라\"",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260804167400071",
+     "publishedAt": "Tue, 4 Aug 2026 22:22:53 +0900"
     }
    ],
-   "importanceScore": 34,
+   "importanceScore": 40,
    "importanceReasons": [
+    "2개 독립 출처",
     "한국 관련",
-    "기술 파급력",
     "최신 보도"
    ],
-   "confidence": "low",
+   "confidence": "medium",
    "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
+    "KBS 뉴스·연합뉴스 2개 출처 확인"
    ],
    "briefing": {
-    "headline": "메가프로젝트·제조 AX 박차…반도체 클러스터 조성 속도↑(종합)",
-    "whatHappened": "메가프로젝트·제조 AX 박차…반도체 클러스터 조성 속도↑(종합)",
+    "headline": "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라”",
+    "whatHappened": "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라”",
     "confirmedFacts": [
-     "메가프로젝트·제조 AX 박차…반도체 클러스터 조성 속도↑(종합) (연합뉴스)"
+     "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라” (KBS 뉴스)",
+     "미 재무 “원화 과도한 변동성…엔화 약세면 다른 통화도 뒤따라” (KBS 뉴스)",
+     "美재무 \"원화 과도한 변동성…엔화 약세에 다른 통화 뒤따를 것\"(종합) (연합뉴스)"
     ],
     "whyItMatters": [
-     "반도체 산업 변화는 글로벌 기술 공급망의 핵심 변수입니다."
+     "환율 변동은 수출입 가격과 물가에 영향을 줄 가능성이 있습니다."
     ],
     "koreaImpact": [
-     "한국 반도체 기업 실적·수출 비중에 직접 영향 가능성."
+     "수입 물가·해외여행 비용·수출 기업 실적에 영향 가능성."
     ],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
+    "uncertainty": [],
     "whatToWatch": [
-     "주요 기업 실적 발표와 각국 보조금·규제 정책 확인 필요."
+     "원/달러 환율 추이와 외환 당국 대응 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-ai-1ldl5fc",
+   "id": "evt-ai-bxgn2p",
    "category": "ai",
-   "headline": "’AI 시대 전략시설’ 데이터센터…“새 전쟁 표적으로 부상“",
+   "headline": "中, 기계늑대·AI 공습체계 공개…고에너지 무기 예고",
    "status": "new",
    "articles": [
     {
-     "title": "’AI 시대 전략시설’ 데이터센터…“새 전쟁 표적으로 부상“",
+     "title": "中, 기계늑대·AI 공습체계 공개…고에너지 무기 예고",
      "source": "연합뉴스TV",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBnZGl1YjVISFVGTmFENG12akJfVEVVc0JuUjJqLXZYMnJ5djB5WGxsOXo0RV8zX1JKYlpLb2xQVGQyVmlYQ3RtTC1oQ0Izd25QUlF6cF94R3loeFFxc05VWFpobXhtNVk?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 07:58:00 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1KNzRIeHc2dzNtdS1aTU1IeWFIQkEtRlNsdlNtRV9tVXV3aGl5c2Y4MV9KTlJ4TVkxNDJ6dUFfczl3SXRSaXJMQ1BkbzdwZlRPMEdOcG9XUENVdW5OX3Q3SHNhdldZaEU?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 14:19:00 GMT"
     }
    ],
    "importanceScore": 34,
@@ -529,10 +550,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "’AI 시대 전략시설’ 데이터센터…“새 전쟁 표적으로 부상“",
-    "whatHappened": "’AI 시대 전략시설’ 데이터센터…“새 전쟁 표적으로 부상“",
+    "headline": "中, 기계늑대·AI 공습체계 공개…고에너지 무기 예고",
+    "whatHappened": "中, 기계늑대·AI 공습체계 공개…고에너지 무기 예고",
     "confirmedFacts": [
-     "’AI 시대 전략시설’ 데이터센터…“새 전쟁 표적으로 부상“ (연합뉴스TV)"
+     "中, 기계늑대·AI 공습체계 공개…고에너지 무기 예고 (연합뉴스TV)"
     ],
     "whyItMatters": [
      "군사적 긴장은 에너지 가격과 국제 정세 전반에 영향을 줄 가능성이 있습니다.",
@@ -549,248 +570,65 @@
      "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-korea-1mjvoiu",
-   "category": "korea",
-   "headline": "국힘 서범수, '돌려차기' 실언 논란…徐 \"깊이 사죄\"",
+   "id": "evt-ai-27vi24",
+   "category": "ai",
+   "headline": "기상청, 폭염에 AI 활용하고 국외 지진 강화",
    "status": "new",
    "articles": [
     {
-     "title": "국힘 서범수, '돌려차기' 실언 논란…徐 \"깊이 사죄\"",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804159100001",
-     "publishedAt": "Tue, 4 Aug 2026 20:24:00 +0900"
-    }
-   ],
-   "importanceScore": 28,
-   "importanceReasons": [
-    "한국 관련",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "국힘 서범수, '돌려차기' 실언 논란…徐 \"깊이 사죄\"",
-    "whatHappened": "국힘 서범수, '돌려차기' 실언 논란…徐 \"깊이 사죄\"",
-    "confirmedFacts": [
-     "국힘 서범수, '돌려차기' 실언 논란…徐 \"깊이 사죄\" (연합뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-korea-vigjot",
-   "category": "korea",
-   "headline": "수도권 첫 ‘폭염중대경보’…현재 폭염 상황은?",
-   "status": "new",
-   "articles": [
-    {
-     "title": "수도권 첫 ‘폭염중대경보’…현재 폭염 상황은?",
-     "source": "KBS 뉴스",
-     "sourceType": "public",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBpbkZYV0NVUVQ2MUtpYmVxZlhQUjN2MDNKNWYwclRCbWFKMGJQUVZDeERqWmNtTmR1R0JBaXdOOHJGUFVTZlVESDV1QWZHNFpQSWQ4VF9GRjVJVkE?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 08:07:00 GMT"
-    }
-   ],
-   "importanceScore": 28,
-   "importanceReasons": [
-    "한국 관련",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "수도권 첫 ‘폭염중대경보’…현재 폭염 상황은?",
-    "whatHappened": "수도권 첫 ‘폭염중대경보’…현재 폭염 상황은?",
-    "confirmedFacts": [
-     "수도권 첫 ‘폭염중대경보’…현재 폭염 상황은? (KBS 뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-korea-1pngczr",
-   "category": "korea",
-   "headline": "與선관위, '생일별 투표'·'金 구호 현수막' 제소안건 내일 결론",
-   "status": "new",
-   "articles": [
-    {
-     "title": "與선관위, '생일별 투표'·'金 구호 현수막' 제소안건 내일 결론",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804159700001",
-     "publishedAt": "Tue, 4 Aug 2026 20:20:58 +0900"
-    }
-   ],
-   "importanceScore": 28,
-   "importanceReasons": [
-    "한국 관련",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "與선관위, '생일별 투표'·'金 구호 현수막' 제소안건 내일 결론",
-    "whatHappened": "與선관위, '생일별 투표'·'金 구호 현수막' 제소안건 내일 결론",
-    "confirmedFacts": [
-     "與선관위, '생일별 투표'·'金 구호 현수막' 제소안건 내일 결론 (연합뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-korea-17h539l",
-   "category": "korea",
-   "headline": "연이은 폭염에 온열질환 추정 사망자 2명 발생",
-   "status": "new",
-   "articles": [
-    {
-     "title": "연이은 폭염에 온열질환 추정 사망자 2명 발생",
-     "source": "KBS 뉴스",
-     "sourceType": "public",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Qb3F5SUh3ZUVTclg4bS0xem1rR3d0OGpHMXlwWGYwX29NRkNuTFJPOGRqaW53b2ZSaTkyRUoxV3I0a192RkFWaHh0dDdHTVhpTFVOVnRVVl9fVDQ?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 07:25:00 GMT"
-    }
-   ],
-   "importanceScore": 28,
-   "importanceReasons": [
-    "한국 관련",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "연이은 폭염에 온열질환 추정 사망자 2명 발생",
-    "whatHappened": "연이은 폭염에 온열질환 추정 사망자 2명 발생",
-    "confirmedFacts": [
-     "연이은 폭염에 온열질환 추정 사망자 2명 발생 (KBS 뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-korea-h9v8hg",
-   "category": "korea",
-   "headline": "경기 시흥서도 투표자 수 3천600여명 '대규모 오입력'",
-   "status": "new",
-   "articles": [
-    {
-     "title": "경기 시흥서도 투표자 수 3천600여명 '대규모 오입력'",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VOGxJa1RyU1I5aW5MTUQ1X2x6QTR1Ti0tY3dNMmR3NUxOeXBydDhBcXZ2SlJYcWZmUFN6NEt3V002dEdBQ0t0LUJGZ2NkamkxQ1NyRkk2Ym44ZGvSAWBBVV95cUxPc2I2NlF1Y3pjQ3plMnJSczh5WXppeE56a1VBVmljb2c1NFpuOTluR3ZxRFk5M2VOWUdmRTVIcHlsSXVBa0E5MktSZ05uLW5JYlpqMGd3b3lfeElUaUlLLVU?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 03:26:13 GMT"
-    }
-   ],
-   "importanceScore": 28,
-   "importanceReasons": [
-    "한국 관련",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "경기 시흥서도 투표자 수 3천600여명 '대규모 오입력'",
-    "whatHappened": "경기 시흥서도 투표자 수 3천600여명 '대규모 오입력'",
-    "confirmedFacts": [
-     "경기 시흥서도 투표자 수 3천600여명 '대규모 오입력' (연합뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-korea-1kmuh6g",
-   "category": "korea",
-   "headline": "'이흥구 후임' 대법관 후보 4명 압축…두명 동시 제청하나(종합2보)",
-   "status": "new",
-   "articles": [
-    {
-     "title": "'이흥구 후임' 대법관 후보 4명 압축…두명 동시 제청하나(종합2보)",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804155552004",
-     "publishedAt": "Tue, 4 Aug 2026 20:15:54 +0900"
-    }
-   ],
-   "importanceScore": 28,
-   "importanceReasons": [
-    "한국 관련",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "'이흥구 후임' 대법관 후보 4명 압축…두명 동시 제청하나(종합2보)",
-    "whatHappened": "'이흥구 후임' 대법관 후보 4명 압축…두명 동시 제청하나(종합2보)",
-    "confirmedFacts": [
-     "'이흥구 후임' 대법관 후보 4명 압축…두명 동시 제청하나(종합2보) (연합뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-korea-17cisz0",
-   "category": "korea",
-   "headline": "호르무즈 해협서 화물선 1척 발사체에 피격",
-   "status": "new",
-   "articles": [
-    {
-     "title": "호르무즈 해협서 화물선 1척 발사체에 피격",
+     "title": "기상청, 폭염에 AI 활용하고 국외 지진 강화",
      "source": "연합뉴스TV",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1WU193ajMwMzByMGhjWkJCQkVBc3oxa0ZsYlJqUkp1UjRJVWc1MzNZLWFZSk5MMnA1clZ0TE5DSmJMNlhJRjYtRTdSNVZpdXMzZ0tOU1FHUVlROFhTYjdFWC16YXNLSDA?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 01:11:00 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DY2YtSmMxaWJ3ZHJzTTBxWERsbnp2Q2tQai1LUnQzRlVqSUYzcThFOHNCNDRtRDB1Z3JZVS1Cdm92SF9WTmlSZHhIVHptWWNTSEM2T0VTRnZoSFJtQ2hCREszOHpmQ2M?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 12:13:00 GMT"
+    }
+   ],
+   "importanceScore": 32,
+   "importanceReasons": [
+    "기술 파급력",
+    "사회적 파급력",
+    "최신 보도"
+   ],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "기상청, 폭염에 AI 활용하고 국외 지진 강화",
+    "whatHappened": "기상청, 폭염에 AI 활용하고 국외 지진 강화",
+    "confirmedFacts": [
+     "기상청, 폭염에 AI 활용하고 국외 지진 강화 (연합뉴스TV)"
+    ],
+    "whyItMatters": [
+     "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다.",
+     "재난은 인명·기반시설 피해와 복구 비용으로 이어질 가능성이 있습니다."
+    ],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": [
+     "실제 제품 출시·규제 입법의 구체 내용 확인 필요.",
+     "피해 집계 공식 발표와 정부 대응 확인 필요."
+    ]
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-world-1kdju49",
+   "category": "world",
+   "headline": "쿠바 7월 반정부 시위·항의 1천415건…역대 최다",
+   "status": "new",
+   "articles": [
+    {
+     "title": "쿠바 7월 반정부 시위·항의 1천415건…역대 최다",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260805001000087",
+     "publishedAt": "Wed, 5 Aug 2026 01:17:53 +0900"
     }
    ],
    "importanceScore": 28,
@@ -803,10 +641,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "호르무즈 해협서 화물선 1척 발사체에 피격",
-    "whatHappened": "호르무즈 해협서 화물선 1척 발사체에 피격",
+    "headline": "쿠바 7월 반정부 시위·항의 1천415건…역대 최다",
+    "whatHappened": "쿠바 7월 반정부 시위·항의 1천415건…역대 최다",
     "confirmedFacts": [
-     "호르무즈 해협서 화물선 1척 발사체에 피격 (연합뉴스TV)"
+     "쿠바 7월 반정부 시위·항의 1천415건…역대 최다 (연합뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -815,20 +653,58 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-korea-1nohvac",
+   "id": "evt-korea-17bgnh9",
    "category": "korea",
-   "headline": "우주청, ‘태양권 탐사 계획’ 발표…“2031년 지구-달 탐사선으로 태양풍 관측”",
+   "headline": "李대통령 \"공정위, 경제檢 역할 제대로…담합 꿈 못꾸게 해달라\"",
    "status": "new",
    "articles": [
     {
-     "title": "우주청, ‘태양권 탐사 계획’ 발표…“2031년 지구-달 탐사선으로 태양풍 관측”",
+     "title": "李대통령 \"공정위, 경제檢 역할 제대로…담합 꿈 못꾸게 해달라\"",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE83SmlVRjE3dFVaN3RZeFozQ2hPTlMtNHNFc2RiTW5yWEphbFpDem55aENNeU1iRGs1NXN0UmNtek5uT0gwbzgzUzlzTmdxWVVxMjg2UEFLaXFWQkHSAWBBVV95cUxPTk9LUlNRVWsxVDc3ckRhUkJoX0VyUndvaDRzV3FoMXpSZ3NHLVVSOGY5VU0zeFRCTzd4ZHNZNXVzSkwySEQweDhCVkJtRE5ra0doTU5nUGZ4Z255UTVqQmU?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 07:59:30 GMT"
+    }
+   ],
+   "importanceScore": 28,
+   "importanceReasons": [
+    "한국 관련",
+    "최신 보도"
+   ],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "李대통령 \"공정위, 경제檢 역할 제대로…담합 꿈 못꾸게 해달라\"",
+    "whatHappened": "李대통령 \"공정위, 경제檢 역할 제대로…담합 꿈 못꾸게 해달라\"",
+    "confirmedFacts": [
+     "李대통령 \"공정위, 경제檢 역할 제대로…담합 꿈 못꾸게 해달라\" (연합뉴스)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-korea-14l7na8",
+   "category": "korea",
+   "headline": "“일본 폭염에 1주일간 열사병으로 9천 명 병원행…구마모토서도 급증”",
+   "status": "new",
+   "articles": [
+    {
+     "title": "“일본 폭염에 1주일간 열사병으로 9천 명 병원행…구마모토서도 급증”",
      "source": "KBS 뉴스",
      "sourceType": "public",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBydlltOUdqZlJ6ZmZuZ05qSS1RMkozUTBpYThPdFNiR056X1VRNFpXRXJtYUc5bm55WXNzcFUtYUFMaUxDSHNFVFhfSy0wWWM0RDRDTC1BdV95LU0?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 05:53:00 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5rTTlEY0wxeU8yTjFXUVVyQUlPU1VFcmg4SlNxdC1NbGtTOG84alR5dEJnblNFa2NVOS10UWx2Z2gtVW9hd3pPUGw3Mkx4V181VlZvVUh4a3R0MG8?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 13:07:00 GMT"
     }
    ],
    "importanceScore": 28,
@@ -841,10 +717,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "우주청, ‘태양권 탐사 계획’ 발표…“2031년 지구-달 탐사선으로 태양풍 관측”",
-    "whatHappened": "우주청, ‘태양권 탐사 계획’ 발표…“2031년 지구-달 탐사선으로 태양풍 관측”",
+    "headline": "“일본 폭염에 1주일간 열사병으로 9천 명 병원행…구마모토서도 급증”",
+    "whatHappened": "“일본 폭염에 1주일간 열사병으로 9천 명 병원행…구마모토서도 급증”",
     "confirmedFacts": [
-     "우주청, ‘태양권 탐사 계획’ 발표…“2031년 지구-달 탐사선으로 태양풍 관측” (KBS 뉴스)"
+     "“일본 폭염에 1주일간 열사병으로 9천 명 병원행…구마모토서도 급증” (KBS 뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -853,20 +729,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-korea-1qth66l",
+   "id": "evt-korea-135tlh9",
    "category": "korea",
-   "headline": "현대차그룹 미국 워싱턴사무소장에 국무부 출신 클라이네",
+   "headline": "열대야에 정전까지…수원 아파트주민 20여명 한때 행정센터 대피",
    "status": "new",
    "articles": [
     {
-     "title": "현대차그룹 미국 워싱턴사무소장에 국무부 출신 클라이네",
+     "title": "열대야에 정전까지…수원 아파트주민 20여명 한때 행정센터 대피",
      "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804159200003",
-     "publishedAt": "Tue, 4 Aug 2026 20:01:44 +0900"
+     "url": "https://www.yna.co.kr/view/AKR20260804170700061",
+     "publishedAt": "Wed, 5 Aug 2026 00:13:55 +0900"
     }
    ],
    "importanceScore": 28,
@@ -879,70 +755,38 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "현대차그룹 미국 워싱턴사무소장에 국무부 출신 클라이네",
-    "whatHappened": "현대차그룹 미국 워싱턴사무소장에 국무부 출신 클라이네",
+    "headline": "열대야에 정전까지…수원 아파트주민 20여명 한때 행정센터 대피",
+    "whatHappened": "열대야에 정전까지…수원 아파트주민 20여명 한때 행정센터 대피",
     "confirmedFacts": [
-     "현대차그룹 미국 워싱턴사무소장에 국무부 출신 클라이네 (연합뉴스)"
+     "열대야에 정전까지…수원 아파트주민 20여명 한때 행정센터 대피 (연합뉴스)"
     ],
-    "whyItMatters": [],
-    "koreaImpact": [],
+    "whyItMatters": [
+     "군사적 긴장은 에너지 가격과 국제 정세 전반에 영향을 줄 가능성이 있습니다."
+    ],
+    "koreaImpact": [
+     "유가·환율 경로로 한국 물가에 영향 가능성."
+    ],
     "uncertainty": [
      "단일 출처 보도 단계 — 교차 확인 필요."
     ],
-    "whatToWatch": []
+    "whatToWatch": [
+     "휴전·협상 관련 후속 발표와 주변국 반응 확인 필요."
+    ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-business-8vo4s9",
-   "category": "business",
-   "headline": "中 로봇 막은 美…북미 공급망 재편에 LG이노텍 '두근두근'",
-   "status": "new",
+   "id": "evt-korea-9dreed",
+   "category": "korea",
+   "headline": "[알림] 연합뉴스 콘텐츠 저작권 고지",
+   "status": "developing",
    "articles": [
     {
-     "title": "中 로봇 막은 美…북미 공급망 재편에 LG이노텍 '두근두근'",
-     "source": "연합인포맥스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1RcDVqaElMOUJlT2JXMEZNV2xZc01KaW9CdjhhMTdKdmFtZW0wWVY4WkRWMUluaFktMzR3alRlaER5S1Boblp6UlktU2MxNjBhZThMUFFSaWxya1UwSl8tZkw5TFBTdlRHYS11RG1SSFA?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 04:29:32 GMT"
-    }
-   ],
-   "importanceScore": 28,
-   "importanceReasons": [
-    "한국 관련",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "中 로봇 막은 美…북미 공급망 재편에 LG이노텍 '두근두근'",
-    "whatHappened": "中 로봇 막은 美…북미 공급망 재편에 LG이노텍 '두근두근'",
-    "confirmedFacts": [
-     "中 로봇 막은 美…북미 공급망 재편에 LG이노텍 '두근두근' (연합인포맥스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-business-twp3dt",
-   "category": "business",
-   "headline": "진원생명과학, 150억원 유상증자…리볼트투자조합에 제3자배정",
-   "status": "new",
-   "articles": [
-    {
-     "title": "진원생명과학, 150억원 유상증자…리볼트투자조합에 제3자배정",
+     "title": "[알림] 연합뉴스 콘텐츠 저작권 고지",
      "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804154300008",
-     "publishedAt": "Tue, 4 Aug 2026 18:39:05 +0900"
+     "url": "https://www.yna.co.kr/view/AKR20260805000100011",
+     "publishedAt": "Wed, 5 Aug 2026 00:00:00 +0900"
     }
    ],
    "importanceScore": 28,
@@ -955,10 +799,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "진원생명과학, 150억원 유상증자…리볼트투자조합에 제3자배정",
-    "whatHappened": "진원생명과학, 150억원 유상증자…리볼트투자조합에 제3자배정",
+    "headline": "[알림] 연합뉴스 콘텐츠 저작권 고지",
+    "whatHappened": "[알림] 연합뉴스 콘텐츠 저작권 고지",
     "confirmedFacts": [
-     "진원생명과학, 150억원 유상증자…리볼트투자조합에 제3자배정 (연합뉴스)"
+     "[알림] 연합뉴스 콘텐츠 저작권 고지 (연합뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -967,20 +811,27 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-business-19lypeh",
-   "category": "business",
-   "headline": "김남구 한투지주 회장 장남, 입사 7년 만에 임원 승진",
+   "id": "evt-korea-1a67dkk",
+   "category": "korea",
+   "headline": "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등",
    "status": "new",
    "articles": [
     {
-     "title": "김남구 한투지주 회장 장남, 입사 7년 만에 임원 승진",
-     "source": "연합뉴스",
+     "title": "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등",
+     "source": "연합뉴스TV",
      "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804152700008",
-     "publishedAt": "Tue, 4 Aug 2026 18:19:20 +0900"
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOR0ZsQURsamxmR3RPQ1dZMjFrc01ocDFldl9CeHVwUlhobGNvTUotbEVINW5yTldqcUVqcnI4WjRsLXMwcGxYckFLNTJSVWJ5aUM1TnhzaVY0Q2I5dUQ0VXhJMVNYYVE?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 06:37:00 GMT"
+    },
+    {
+     "title": "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등",
+     "source": "연합뉴스TV",
+     "sourceType": "wire",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBOR0ZsQURsamxmR3RPQ1dZMjFrc01ocDFldl9CeHVwUlhobGNvTUotbEVINW5yTldqcUVqcnI4WjRsLXMwcGxYckFLNTJSVWJ5aUM1TnhzaVY0Q2I5dUQ0VXhJMVNYYVE?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 06:37:00 GMT"
     }
    ],
    "importanceScore": 28,
@@ -993,10 +844,11 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "김남구 한투지주 회장 장남, 입사 7년 만에 임원 승진",
-    "whatHappened": "김남구 한투지주 회장 장남, 입사 7년 만에 임원 승진",
+    "headline": "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등",
+    "whatHappened": "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등",
     "confirmedFacts": [
-     "김남구 한투지주 회장 장남, 입사 7년 만에 임원 승진 (연합뉴스)"
+     "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등 (연합뉴스TV)",
+     "코스피, 1.62% 상승 마감…코스닥은 5.88% 급등 (연합뉴스TV)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -1005,20 +857,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-business-9ypjsj",
+   "id": "evt-business-1ajs7vx",
    "category": "business",
-   "headline": "주병기 \"배달앱수수료 상한제 법률상 가능…영세소상공인 낮게\"",
+   "headline": "소비자 울리는 돼지고기 담합…6개 납품 업체 기소",
    "status": "new",
    "articles": [
     {
-     "title": "주병기 \"배달앱수수료 상한제 법률상 가능…영세소상공인 낮게\"",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804152000002",
-     "publishedAt": "Tue, 4 Aug 2026 18:17:32 +0900"
+     "title": "소비자 울리는 돼지고기 담합…6개 납품 업체 기소",
+     "source": "KBS 뉴스",
+     "sourceType": "public",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE50c2FIanc1UUtYX0R1eEZhV0trRV80WlB0LTY1MDZ1QWUxZ1lNckxISm1LbFFmMkZBajVRN3RZUW1RQlczaWNFeGJTQjJtN01IZFkyVkUwc3ZySGdvVXVGelB5X1BLdw?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 12:32:00 GMT"
     }
    ],
    "importanceScore": 28,
@@ -1031,10 +883,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "주병기 \"배달앱수수료 상한제 법률상 가능…영세소상공인 낮게\"",
-    "whatHappened": "주병기 \"배달앱수수료 상한제 법률상 가능…영세소상공인 낮게\"",
+    "headline": "소비자 울리는 돼지고기 담합…6개 납품 업체 기소",
+    "whatHappened": "소비자 울리는 돼지고기 담합…6개 납품 업체 기소",
     "confirmedFacts": [
-     "주병기 \"배달앱수수료 상한제 법률상 가능…영세소상공인 낮게\" (연합뉴스)"
+     "소비자 울리는 돼지고기 담합…6개 납품 업체 기소 (KBS 뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -1043,20 +895,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-business-vjyh74",
+   "id": "evt-business-1oirda5",
    "category": "business",
-   "headline": "HD현대 정기선, 정몽준 지분 3.54％ 증여받아…2대 주주 올라서",
+   "headline": "폭염 속 車 실내 최고 90도…보조배터리·라이터 '폭발 주의'",
    "status": "new",
    "articles": [
     {
-     "title": "HD현대 정기선, 정몽준 지분 3.54％ 증여받아…2대 주주 올라서",
-     "source": "연합뉴스",
+     "title": "폭염 속 車 실내 최고 90도…보조배터리·라이터 '폭발 주의'",
+     "source": "뉴스1",
      "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804150800003",
-     "publishedAt": "Tue, 4 Aug 2026 18:05:20 +0900"
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9JbzlYT19ZSWJaUG96MnVQSGdDRkFPZTB5d2hQcERVX1RIQ1AwU3ZUbmVrS0YzRUlKQURTTmNnYUg2WHd2Vk1GWEFPY2VZNGtxSHd4M2NZT3JGMlU?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 05:46:06 GMT"
     }
    ],
    "importanceScore": 28,
@@ -1069,10 +921,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "HD현대 정기선, 정몽준 지분 3.54％ 증여받아…2대 주주 올라서",
-    "whatHappened": "HD현대 정기선, 정몽준 지분 3.54％ 증여받아…2대 주주 올라서",
+    "headline": "폭염 속 車 실내 최고 90도…보조배터리·라이터 '폭발 주의'",
+    "whatHappened": "폭염 속 車 실내 최고 90도…보조배터리·라이터 '폭발 주의'",
     "confirmedFacts": [
-     "HD현대 정기선, 정몽준 지분 3.54％ 증여받아…2대 주주 올라서 (연합뉴스)"
+     "폭염 속 車 실내 최고 90도…보조배터리·라이터 '폭발 주의' (뉴스1)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -1081,20 +933,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-business-1yem119",
+   "id": "evt-business-1qnuf7",
    "category": "business",
-   "headline": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
+   "headline": "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
    "status": "new",
    "articles": [
     {
-     "title": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
+     "title": "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
      "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9OdUwyVGVCbFpvX2tlN21OWGRzLWd3aHdyNnFmYkxpU1lhTDlwS2MzeWVwUmRhY1ljUHNfRTlJaWVjaVVVdnRzc1k3bk9xX1MxeVJ5WTRCSmZvXzDSAWBBVV95cUxPb1FWUXYxYUt3LTE1WVU3Y19WUFNwTG1KUWQ3QUQzYXJsbDIyS19UTG5GRXk0Q1o4YWpsZWY5ZHhLLVJNVXpSczUwMXJUdmE2b21oMTU3ZHltOUZFcVNLcno?oc=5",
-     "publishedAt": "Mon, 03 Aug 2026 23:56:43 GMT"
+     "url": "https://www.yna.co.kr/view/AKR20260804166600071",
+     "publishedAt": "Tue, 4 Aug 2026 22:08:27 +0900"
     }
    ],
    "importanceScore": 28,
@@ -1107,10 +959,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
-    "whatHappened": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
+    "headline": "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
+    "whatHappened": "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\"",
     "confirmedFacts": [
-     "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개 (연합뉴스)"
+     "美재무, 이란 호르무즈 통행료 여부 확답없이 \"금명간 합의 가능\" (연합뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -1119,20 +971,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-business-1ixoidx",
+   "id": "evt-business-c2dabd",
    "category": "business",
-   "headline": "반복담합·시장지위남용에 매각·양도명령…'초강수' 대응한다",
+   "headline": "한국거래소, 변동성 장세에 선물·옵션 증거금률 대거 인상",
    "status": "new",
    "articles": [
     {
-     "title": "반복담합·시장지위남용에 매각·양도명령…'초강수' 대응한다",
+     "title": "한국거래소, 변동성 장세에 선물·옵션 증거금률 대거 인상",
      "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804107300002",
-     "publishedAt": "Tue, 4 Aug 2026 18:03:05 +0900"
+     "url": "https://www.yna.co.kr/view/AKR20260804163200008",
+     "publishedAt": "Tue, 4 Aug 2026 21:12:28 +0900"
     }
    ],
    "importanceScore": 28,
@@ -1145,10 +997,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "반복담합·시장지위남용에 매각·양도명령…'초강수' 대응한다",
-    "whatHappened": "반복담합·시장지위남용에 매각·양도명령…'초강수' 대응한다",
+    "headline": "한국거래소, 변동성 장세에 선물·옵션 증거금률 대거 인상",
+    "whatHappened": "한국거래소, 변동성 장세에 선물·옵션 증거금률 대거 인상",
     "confirmedFacts": [
-     "반복담합·시장지위남용에 매각·양도명령…'초강수' 대응한다 (연합뉴스)"
+     "한국거래소, 변동성 장세에 선물·옵션 증거금률 대거 인상 (연합뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -1157,7 +1009,7 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-wealth-1fq16bw",
@@ -1195,64 +1047,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-wealth-wglzb5",
-   "category": "wealth",
-   "headline": "IRS 금리 전 구간 하락…外人 매수 이어져",
+   "id": "evt-world-na5pvs",
+   "category": "world",
+   "headline": "이웃나라 정상에 \"도둑\"…아르헨 밀레이, 대선 앞둔 브라질 룰라 또 비난",
    "status": "new",
    "articles": [
     {
-     "title": "IRS 금리 전 구간 하락…外人 매수 이어져",
-     "source": "연합인포맥스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5lLXp4ZE9xWGcxTUgwNWNGVlk4a1hPV1ViYlJNcUQ3X2lteFRPbHhzNVVXMTE5amh2NEpkV3R1LVBnTW1jdm0taDFqZ0J5eVp4bUR6RXdOelUwYUFOQ3pxdGJKMzd2clhQNVkyVE5iMVQtLU5X0gF0QVVfeXFMTmUtenhkT3FYZzFNSDA1Y0ZWWThrWE9XVWJiUk1xRDdfaW14VE9seHM1VVcxMTlqaHY0SmRXdHUtUGdNbWN2bS1oMWpnQnl5WnhtRHpFd056VTBhQU5DenF0YkozN3ZyWFA1WTJUTmIxVC0tTlc?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 09:55:44 GMT"
-    }
-   ],
-   "importanceScore": 26,
-   "importanceReasons": [
-    "경제 파급력",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "IRS 금리 전 구간 하락…外人 매수 이어져",
-    "whatHappened": "IRS 금리 전 구간 하락…外人 매수 이어져",
-    "confirmedFacts": [
-     "IRS 금리 전 구간 하락…外人 매수 이어져 (연합인포맥스)"
-    ],
-    "whyItMatters": [
-     "금리 변화는 대출·소비·투자 전반에 영향을 줄 가능성이 있습니다."
-    ],
-    "koreaImpact": [
-     "한국 가계부채 이자 부담과 부동산 금융 비용에 영향 가능성."
-    ],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": [
-     "다음 한국은행 금융통화위원회·미 연준(FOMC) 발표 확인 필요."
-    ]
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-wealth-31x3sc",
-   "category": "wealth",
-   "headline": "\"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
-   "status": "new",
-   "articles": [
-    {
-     "title": "\"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
+     "title": "이웃나라 정상에 \"도둑\"…아르헨 밀레이, 대선 앞둔 브라질 룰라 또 비난",
      "source": "연합뉴스TV",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1STWdONGV2MWx1enEyWUJ3b1VuQWlXVTZvVVVCdnhyT3VEOVVpX2xqTHdUSC1aMTliYm9oNWlPdnVCektHaFhYd210WTV2VDhkY1ZQUzlmOW9ta1VsbzRVREwzeGV3TVk?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 10:07:00 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5OVGdhaFU1Mm1iZlJPMG02U1NSbzdwQmdVamlqU0lqaGpMM1lLdXh2SnJhMFZHRXpiMlhNT0hZN3ZWcGdyYzRSQ3FXUS0ySGk5aHRFc29xV05zZzNQS1lJUzNMZFVmUGc?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 05:14:00 GMT"
     }
    ],
    "importanceScore": 26,
@@ -1265,30 +1073,37 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "\"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
-    "whatHappened": "\"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
+    "headline": "이웃나라 정상에 \"도둑\"…아르헨 밀레이, 대선 앞둔 브라질 룰라 또 비난",
+    "whatHappened": "이웃나라 정상에 \"도둑\"…아르헨 밀레이, 대선 앞둔 브라질 룰라 또 비난",
     "confirmedFacts": [
-     "\"부동산 조세 정상화…폭염 국가재난 총력 대응\" (연합뉴스TV)"
+     "이웃나라 정상에 \"도둑\"…아르헨 밀레이, 대선 앞둔 브라질 룰라 또 비난 (연합뉴스TV)"
     ],
     "whyItMatters": [
-     "재난은 인명·기반시설 피해와 복구 비용으로 이어질 가능성이 있습니다."
+     "정치 일정의 결과는 정책 방향 전반을 바꿀 수 있습니다."
     ],
     "koreaImpact": [],
     "uncertainty": [
      "단일 출처 보도 단계 — 교차 확인 필요."
     ],
     "whatToWatch": [
-     "피해 집계 공식 발표와 정부 대응 확인 필요."
+     "공식 결과 발표와 이후 정책 발표 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-wealth-yfnchl",
+   "id": "evt-wealth-11yhqx9",
    "category": "wealth",
-   "headline": "금통위원들 \"기준금리 인상 필요성 커지고 부담은 줄어\"",
+   "headline": "한은 금통위 \"기준금리 인상, 필요성 커지고 부담은 줄어\"",
    "status": "new",
    "articles": [
+    {
+     "title": "한은 금통위 \"기준금리 인상, 필요성 커지고 부담은 줄어\"",
+     "source": "연합뉴스TV",
+     "sourceType": "wire",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5SMTJmRk1FZ1JGVzlicnZMV1hCYkppbkRNNlMzcWNXcno0c0VURkRpVkIzOHdFcHlsUVNiTHpUTGlTejJHNzMtTU9GYzF4NkxyanVDYzNuMTd2RmZfY0pnY2VPemNmMjQ?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 15:29:00 GMT"
+    },
     {
      "title": "금통위원들 \"기준금리 인상 필요성 커지고 부담은 줄어\"",
      "source": "연합뉴스",
@@ -1307,9 +1122,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "금통위원들 \"기준금리 인상 필요성 커지고 부담은 줄어\"",
-    "whatHappened": "금통위원들 \"기준금리 인상 필요성 커지고 부담은 줄어\"",
+    "headline": "한은 금통위 \"기준금리 인상, 필요성 커지고 부담은 줄어\"",
+    "whatHappened": "한은 금통위 \"기준금리 인상, 필요성 커지고 부담은 줄어\"",
     "confirmedFacts": [
+     "한은 금통위 \"기준금리 인상, 필요성 커지고 부담은 줄어\" (연합뉴스TV)",
      "금통위원들 \"기준금리 인상 필요성 커지고 부담은 줄어\" (연합뉴스)"
     ],
     "whyItMatters": [
@@ -1325,25 +1141,25 @@
      "다음 한국은행 금융통화위원회·미 연준(FOMC) 발표 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-ai-55c6vg",
-   "category": "ai",
-   "headline": "'AI 시대' 금융사고 나면 누가 책임지나…\"규제 공백\" 한목소리 |",
+   "id": "evt-wealth-1hyfnlp",
+   "category": "wealth",
+   "headline": "소비자물가 석 달 만에 2%대로…'8월 금리인상' 주목",
    "status": "new",
    "articles": [
     {
-     "title": "'AI 시대' 금융사고 나면 누가 책임지나…\"규제 공백\" 한목소리 |",
-     "source": "연합인포맥스",
+     "title": "소비자물가 석 달 만에 2%대로…'8월 금리인상' 주목",
+     "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9DSmdiRGNEVTlEbjBhc2VxdzVQYUhNVTJOZEZwUVlnRGdrX1hNXy1LTTNmTnpZSjBjVm93NkJMbWZhNXAxVDVjTjRCN3FOclBvRlAxTVN5WUhNRVgxUEZOdC1lSG9PSnhBb2xmaDdPNlYzWkZo?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 07:11:27 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NeEFFcEsxTlg1WkdMWkVKUGRscklQdlkyNE11SG9Qa1kzZmxEaG1nTm1nQlI2OGtuSlpEX0RYQXdYel9BaUticFpoR0pwbGxBMjRHcUhCZmxBd3hBczFYetIBYEFVX3lxTE5NeEFFcEsxTlg1WkdMWkVKUGRscklQdlkyNE11SG9Qa1kzZmxEaG1nTm1nQlI2OGtuSlpEX0RYQXdYel9BaUticFpoR0pwbGxBMjRHcUhCZmxBd3hBczFYeg?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 14:01:05 GMT"
     }
    ],
-   "importanceScore": 24,
+   "importanceScore": 26,
    "importanceReasons": [
-    "기술 파급력",
+    "경제 파급력",
     "최신 보도"
    ],
    "confidence": "low",
@@ -1351,36 +1167,80 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "'AI 시대' 금융사고 나면 누가 책임지나…\"규제 공백\" 한목소리 |",
-    "whatHappened": "'AI 시대' 금융사고 나면 누가 책임지나…\"규제 공백\" 한목소리 |",
+    "headline": "소비자물가 석 달 만에 2%대로…'8월 금리인상' 주목",
+    "whatHappened": "소비자물가 석 달 만에 2%대로…'8월 금리인상' 주목",
     "confirmedFacts": [
-     "'AI 시대' 금융사고 나면 누가 책임지나…\"규제 공백\" 한목소리 | (연합인포맥스)"
+     "소비자물가 석 달 만에 2%대로…'8월 금리인상' 주목 (연합뉴스)"
     ],
     "whyItMatters": [
-     "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다."
+     "금리 변화는 대출·소비·투자 전반에 영향을 줄 가능성이 있습니다."
     ],
-    "koreaImpact": [],
+    "koreaImpact": [
+     "한국 가계부채 이자 부담과 부동산 금융 비용에 영향 가능성."
+    ],
     "uncertainty": [
      "단일 출처 보도 단계 — 교차 확인 필요."
     ],
     "whatToWatch": [
-     "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
+     "다음 한국은행 금융통화위원회·미 연준(FOMC) 발표 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-ai-1wdljl9",
-   "category": "ai",
-   "headline": "\"IP로 경제성장 판 바꾼다\" 지식재산처, 수익화·AI대전환 등 추진",
+   "id": "evt-wealth-1kn1qoo",
+   "category": "wealth",
+   "headline": "이 대통령 \"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
    "status": "new",
    "articles": [
     {
-     "title": "\"IP로 경제성장 판 바꾼다\" 지식재산처, 수익화·AI대전환 등 추진",
+     "title": "이 대통령 \"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
      "source": "연합뉴스TV",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsSzhXdXc1X2xDbnpmdzhDbnNGVUd1OEFYQ2J5Tng3UmpFQ1MyWEgyeGJaVzE5RHhHTGVtTThOanZ6bjY3bXoxaS1Ebjc3VTd5eUtrMW1STVF0WU5waURMSUZVZmV1ZHM?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 08:42:00 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9uTXdmaHdwTWdhMFVGcHg5NE11VGk2N1ZyNG0wcGFMc0pqbzVCR25makd5NkpyNE1KRVQxbEs2cGRnamtZMGlWSEc4SXgyZ3ZfOFEyY1lPSkl0UEt0R3F6UmFlcWF3WEE?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 12:54:00 GMT"
+    }
+   ],
+   "importanceScore": 26,
+   "importanceReasons": [
+    "사회적 파급력",
+    "최신 보도"
+   ],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "이 대통령 \"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
+    "whatHappened": "이 대통령 \"부동산 조세 정상화…폭염 국가재난 총력 대응\"",
+    "confirmedFacts": [
+     "이 대통령 \"부동산 조세 정상화…폭염 국가재난 총력 대응\" (연합뉴스TV)"
+    ],
+    "whyItMatters": [
+     "재난은 인명·기반시설 피해와 복구 비용으로 이어질 가능성이 있습니다."
+    ],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": [
+     "피해 집계 공식 발표와 정부 대응 확인 필요."
+    ]
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-ai-1gluyel",
+   "category": "ai",
+   "headline": "[크랩] “우리 그냥 사랑하게 해주세요!”…중국이 ‘AI 연인’ 금지시킨 이유",
+   "status": "new",
+   "articles": [
+    {
+     "title": "[크랩] “우리 그냥 사랑하게 해주세요!”…중국이 ‘AI 연인’ 금지시킨 이유",
+     "source": "KBS 뉴스",
+     "sourceType": "public",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1kVVViYkxFZmFNUHBsT3VmS3hCNHMwdVNocmhMT3FRQTJJOVd4MG0xVEFpcTloR3ZoMzN1eHlHbzM5SzMtOVhqeFUwYlBsS0dQcEp1SmEwRm1sQVVhbnkxWnFBNkFNdw?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 09:59:00 GMT"
     }
    ],
    "importanceScore": 24,
@@ -1393,10 +1253,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "\"IP로 경제성장 판 바꾼다\" 지식재산처, 수익화·AI대전환 등 추진",
-    "whatHappened": "\"IP로 경제성장 판 바꾼다\" 지식재산처, 수익화·AI대전환 등 추진",
+    "headline": "[크랩] “우리 그냥 사랑하게 해주세요!”…중국이 ‘AI 연인’ 금지시킨 이유",
+    "whatHappened": "[크랩] “우리 그냥 사랑하게 해주세요!”…중국이 ‘AI 연인’ 금지시킨 이유",
     "confirmedFacts": [
-     "\"IP로 경제성장 판 바꾼다\" 지식재산처, 수익화·AI대전환 등 추진 (연합뉴스TV)"
+     "[크랩] “우리 그냥 사랑하게 해주세요!”…중국이 ‘AI 연인’ 금지시킨 이유 (KBS 뉴스)"
     ],
     "whyItMatters": [
      "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다."
@@ -1409,20 +1269,20 @@
      "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-ai-1uba4b4",
+   "id": "evt-ai-1va8fao",
    "category": "ai",
-   "headline": "네이버, 남미 AI 인프라 시장 교두보…브라질·칠레 최대 기업과 협업 논의 |",
+   "headline": "[중국증시-마감] AI·반도체주 강세에 상승 |",
    "status": "new",
    "articles": [
     {
-     "title": "네이버, 남미 AI 인프라 시장 교두보…브라질·칠레 최대 기업과 협업 논의 |",
+     "title": "[중국증시-마감] AI·반도체주 강세에 상승 |",
      "source": "연합인포맥스",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE02Qk5fY0VTaUlOTF9nLTJic0lmNmFmVl84RE5LRm5UTkVfSWlCYTFtQkVmNE51dGwwRjhRckM5X0kyNThNUUZXeGZPbDdMWTdxMnBWMzdmNGVHSm9DYlM3MFJqS09jMVlvQ0R2dEdvaVgzOE1S?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 06:54:46 GMT"
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE45eW9rcHJ0VlprY2duT2RfT25HRFpWaGFPVG5Hb3hETmJDRG9kRmhodE9wNWpCNHBmU3JGaVJkS29UTU92SF9Ld2kyVF9xWk83X0M2RDJhWGVybDQyT3BMRGQ1ZURVMHNpMkh0R2hTYnpvRlYz?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 09:39:19 GMT"
     }
    ],
    "importanceScore": 24,
@@ -1435,36 +1295,40 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "네이버, 남미 AI 인프라 시장 교두보…브라질·칠레 최대 기업과 협업 논의 |",
-    "whatHappened": "네이버, 남미 AI 인프라 시장 교두보…브라질·칠레 최대 기업과 협업 논의 |",
+    "headline": "[중국증시-마감] AI·반도체주 강세에 상승 |",
+    "whatHappened": "[중국증시-마감] AI·반도체주 강세에 상승 |",
     "confirmedFacts": [
-     "네이버, 남미 AI 인프라 시장 교두보…브라질·칠레 최대 기업과 협업 논의 | (연합인포맥스)"
+     "[중국증시-마감] AI·반도체주 강세에 상승 | (연합인포맥스)"
     ],
     "whyItMatters": [
+     "반도체 산업 변화는 글로벌 기술 공급망의 핵심 변수입니다.",
      "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다."
     ],
-    "koreaImpact": [],
+    "koreaImpact": [
+     "한국 반도체 기업 실적·수출 비중에 직접 영향 가능성."
+    ],
     "uncertainty": [
      "단일 출처 보도 단계 — 교차 확인 필요."
     ],
     "whatToWatch": [
+     "주요 기업 실적 발표와 각국 보조금·규제 정책 확인 필요.",
      "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-ai-82lhaw",
+   "id": "evt-ai-7obuya",
    "category": "ai",
-   "headline": "\"'AI칩 확대' 구글, 286조원 인프라 금융 사업망 구축\"",
+   "headline": "AI offers 'lifeline' for emerging economies, World Bank says",
    "status": "new",
    "articles": [
     {
-     "title": "\"'AI칩 확대' 구글, 286조원 인프라 금융 사업망 구축\"",
-     "source": "연합뉴스",
+     "title": "AI offers 'lifeline' for emerging economies, World Bank says",
+     "source": "Reuters",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE10dF9VM2p4VmZiU3VpNXJWNnM0WXZucWI2OEduS3gxS0c2ZWVLcEpfdWZPeEJOYXdRazByc3Z3cHV4b3dmRkRTa2xBZXFjQlFxN2FFeGh6Q0JGVWxuN0EzY9IBYEFVX3lxTE10dF9VM2p4VmZiU3VpNXJWNnM0WXZucWI2OEduS3gxS0c2ZWVLcEpfdWZPeEJOYXdRazByc3Z3cHV4b3dmRkRTa2xBZXFjQlFxN2FFeGh6Q0JGVWxuN0EzYw?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 08:15:15 GMT"
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNaVZGc1lSSGxvaXVoX2pBRG5rN1hTcU40dS1TQXl0ZU4yYUNDVFU2ODdCakpRai1hbFJwUVVkQVo0MVdENEg0YUQ4c25uZERIRUJqMHlBbVUwYXVfX3c0ZlpmdmVhVjRWUVFTbE93YnlzLV8zVW1FU3hhbFQ4Sy1OVkNXcHZsQzdIRXpVYmplcXdwOFJQS19XZk5TdVIxNlU?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 13:05:30 GMT"
     }
    ],
    "importanceScore": 24,
@@ -1477,10 +1341,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "\"'AI칩 확대' 구글, 286조원 인프라 금융 사업망 구축\"",
-    "whatHappened": "\"'AI칩 확대' 구글, 286조원 인프라 금융 사업망 구축\"",
+    "headline": "AI offers 'lifeline' for emerging economies, World Bank says",
+    "whatHappened": "AI offers 'lifeline' for emerging economies, World Bank says",
     "confirmedFacts": [
-     "\"'AI칩 확대' 구글, 286조원 인프라 금융 사업망 구축\" (연합뉴스)"
+     "AI offers 'lifeline' for emerging economies, World Bank says (Reuters)"
     ],
     "whyItMatters": [
      "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다."
@@ -1493,20 +1357,20 @@
      "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-ai-1np245h",
+   "id": "evt-ai-a148if",
    "category": "ai",
-   "headline": "[AI픽] 삼성 AI 스마트글래스, 사생활 침해 막을 안전장치 적용",
+   "headline": "Meta, Anthropic, Google, OpenAI to meet with Trump advisers amid rogue AI agent fallout",
    "status": "new",
    "articles": [
     {
-     "title": "[AI픽] 삼성 AI 스마트글래스, 사생활 침해 막을 안전장치 적용",
-     "source": "연합뉴스",
+     "title": "Meta, Anthropic, Google, OpenAI to meet with Trump advisers amid rogue AI agent fallout",
+     "source": "Reuters",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YaTRpZ1A4UkZaY3pFRzdEVzZQRmJaV2p2M1c2cWFWZFo0QVp0SzFKbHV5YUMtOEFsN1JVcHk3RUd2M3BfNk5UTlV4Y3ROMkhVQ3BwcUs1dGs4enppYUExadIBYEFVX3lxTE1YaTRpZ1A4UkZaY3pFRzdEVzZQRmJaV2p2M1c2cWFWZFo0QVp0SzFKbHV5YUMtOEFsN1JVcHk3RUd2M3BfNk5UTlV4Y3ROMkhVQ3BwcUs1dGs4enppYUExaQ?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 06:53:26 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNa1dFYnlpdVZxSzIyWnptbDAxbjlwMzNtdEFtVFRkYXQ5OWpxbTBBaU44LUg5Tl9oX2ZnT2R2REQ0S2JWdjVid1NkWmM5aUJyOTZFZE9lQnNRWHhhS1NIVXBsTW9CRGZoRHlQTVZTOXhzVndCYkxZUEFUcElGdG9leU1ISlpLaWJER3dZUC13NmQ2SjNGMVpPcXc4NzdrbWlhekFiV19aYWZKaGJCblhvNnVFbWo0UVJUSWQ4eWVCSHZtRXFqU01zOQ?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 15:34:28 GMT"
     }
    ],
    "importanceScore": 24,
@@ -1519,10 +1383,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "[AI픽] 삼성 AI 스마트글래스, 사생활 침해 막을 안전장치 적용",
-    "whatHappened": "[AI픽] 삼성 AI 스마트글래스, 사생활 침해 막을 안전장치 적용",
+    "headline": "Meta, Anthropic, Google, OpenAI to meet with Trump advisers amid rogue AI agent fallout",
+    "whatHappened": "Meta, Anthropic, Google, OpenAI to meet with Trump advisers amid rogue AI agent fallout",
     "confirmedFacts": [
-     "[AI픽] 삼성 AI 스마트글래스, 사생활 침해 막을 안전장치 적용 (연합뉴스)"
+     "Meta, Anthropic, Google, OpenAI to meet with Trump advisers amid rogue AI agent fallout (Reuters)"
     ],
     "whyItMatters": [
      "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다."
@@ -1535,104 +1399,20 @@
      "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-ai-wry0mz",
-   "category": "ai",
-   "headline": "AI·디지털 사각지대 없앤다…과기부·신한금융 협력",
+   "id": "evt-korea-wk09eo",
+   "category": "korea",
+   "headline": "“조세 정상화” vs “증오의 세제”…여야, ‘부동산 세제 개편’ 대충돌 [지금뉴스]",
    "status": "new",
    "articles": [
     {
-     "title": "AI·디지털 사각지대 없앤다…과기부·신한금융 협력",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE03aVItdWhBc2hLRGFRN1Mya3dqYWlKREExRV9JVElmb0Fyb3ZCcWRXUVg5QjVqalB4Zi14cUNZMm9LUmQ1S1Q3Tl9ObFRRbnpadG0yU0FaZzFibndvNWNvSdIBYEFVX3lxTE03aVItdWhBc2hLRGFRN1Mya3dqYWlKREExRV9JVElmb0Fyb3ZCcWRXUVg5QjVqalB4Zi14cUNZMm9LUmQ1S1Q3Tl9ObFRRbnpadG0yU0FaZzFibndvNWNvSQ?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 06:00:02 GMT"
-    }
-   ],
-   "importanceScore": 24,
-   "importanceReasons": [
-    "기술 파급력",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "AI·디지털 사각지대 없앤다…과기부·신한금융 협력",
-    "whatHappened": "AI·디지털 사각지대 없앤다…과기부·신한금융 협력",
-    "confirmedFacts": [
-     "AI·디지털 사각지대 없앤다…과기부·신한금융 협력 (연합뉴스)"
-    ],
-    "whyItMatters": [
-     "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다."
-    ],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": [
-     "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
-    ]
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-ai-q4cx4x",
-   "category": "ai",
-   "headline": "수자원공사 'AI 물관리' 연수, 美 주립대 공식 학사과정으로 |",
-   "status": "new",
-   "articles": [
-    {
-     "title": "수자원공사 'AI 물관리' 연수, 美 주립대 공식 학사과정으로 |",
-     "source": "연합인포맥스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mMVlDWHYwTWo4RW1mTWlZWkktWHZ4NHJrbk5pQUtWbmJPdmJtOW4yNjExLUR1SkdVM0VXMnF3Q2plLVY4bjIyZldvcmlNdy1Dd3BWaFJ3VkxIQnZqTml6MGZlNHZJZWFJOTA5Z0l3ZTZjQWRu?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 07:03:26 GMT"
-    }
-   ],
-   "importanceScore": 24,
-   "importanceReasons": [
-    "기술 파급력",
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "수자원공사 'AI 물관리' 연수, 美 주립대 공식 학사과정으로 |",
-    "whatHappened": "수자원공사 'AI 물관리' 연수, 美 주립대 공식 학사과정으로 |",
-    "confirmedFacts": [
-     "수자원공사 'AI 물관리' 연수, 美 주립대 공식 학사과정으로 | (연합인포맥스)"
-    ],
-    "whyItMatters": [
-     "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다."
-    ],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": [
-     "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
-    ]
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-business-1m4ogdo",
-   "category": "business",
-   "headline": "상반기 단기사채 990조 발행 역대최대…기업 단기자금 수요 확대",
-   "status": "developing",
-   "articles": [
-    {
-     "title": "상반기 단기사채 990조 발행 역대최대…기업 단기자금 수요 확대",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5vNVBrczVFMkZsVV82Nl9XeUpfNWFMcGJXZUJ1eWdsU3dCTGFJSldSVm1VeFljcmZhUzZ3bF9xdGtNTlhTQUJqYVY3Um5pcW9hWWdYbHVwcnQ2dDDSAWBBVV95cUxPeU5GSndfT0VyYnJZLUQyV3VTMTVFdHR1TEYxbjlzUHFlYVotQUpueGsyaXNhRFBjV1VLMVFLZnZRUDJLbmRVVDRTaXFKbm9oeTA3V19vb1NBMXM1aUVsbUY?oc=5",
-     "publishedAt": "Mon, 03 Aug 2026 21:00:01 GMT"
+     "title": "“조세 정상화” vs “증오의 세제”…여야, ‘부동산 세제 개편’ 대충돌 [지금뉴스]",
+     "source": "KBS 뉴스",
+     "sourceType": "public",
+     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE40dEo2WFplS2N5Ql9fTXBnZWZheW9vdWE2UWVlT2ZMVXA0eVV3SzNTZ2xNb082dTZvb3d3aUx3U0tKV1diamdHLVUyaEJfeEU0ZkNmQnFCaGQxbU9LbHAtd25sV0w1UQ?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 04:13:00 GMT"
     }
    ],
    "importanceScore": 22,
@@ -1644,10 +1424,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "상반기 단기사채 990조 발행 역대최대…기업 단기자금 수요 확대",
-    "whatHappened": "상반기 단기사채 990조 발행 역대최대…기업 단기자금 수요 확대",
+    "headline": "“조세 정상화” vs “증오의 세제”…여야, ‘부동산 세제 개편’ 대충돌 [지금뉴스]",
+    "whatHappened": "“조세 정상화” vs “증오의 세제”…여야, ‘부동산 세제 개편’ 대충돌 [지금뉴스]",
     "confirmedFacts": [
-     "상반기 단기사채 990조 발행 역대최대…기업 단기자금 수요 확대 (연합뉴스)"
+     "“조세 정상화” vs “증오의 세제”…여야, ‘부동산 세제 개편’ 대충돌 [지금뉴스] (KBS 뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -1656,20 +1436,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-business-e5fc4v",
+   "id": "evt-business-1yem119",
    "category": "business",
-   "headline": "팔란티어 2분기 매출 93% 급증…美상업부문 매출은 149%↑",
+   "headline": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
    "status": "new",
    "articles": [
     {
-     "title": "팔란티어 2분기 매출 93% 급증…美상업부문 매출은 149%↑",
+     "title": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
      "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBsWkFsemFRaWctRjliUHNVekRCR1VFdk8xQ2p5RFBtbVAtN21TaDh1OHlsRjUwS1RwQWIyNmt0bERLSnpzTm1fZDBTdkFTalFlTXU1OXhoOGliSG_SAWBBVV95cUxNMnNIU0czT0J1bkM5am1WenRMd3VnMUMzemRFS0hqTERZNXB2NTgxWVhSeGY2Z1RlWnI1M1AwWWNURlVDN2hfZk9WZnZDc3ppQTFUZF9KcmFDR2JUUTBmSm4?oc=5",
-     "publishedAt": "Mon, 03 Aug 2026 21:48:47 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9OdUwyVGVCbFpvX2tlN21OWGRzLWd3aHdyNnFmYkxpU1lhTDlwS2MzeWVwUmRhY1ljUHNfRTlJaWVjaVVVdnRzc1k3bk9xX1MxeVJ5WTRCSmZvXzDSAWBBVV95cUxPb1FWUXYxYUt3LTE1WVU3Y19WUFNwTG1KUWQ3QUQzYXJsbDIyS19UTG5GRXk0Q1o4YWpsZWY5ZHhLLVJNVXpSczUwMXJUdmE2b21oMTU3ZHltOUZFcVNLcno?oc=5",
+     "publishedAt": "Mon, 03 Aug 2026 23:56:43 GMT"
     }
    ],
    "importanceScore": 22,
@@ -1681,10 +1461,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "팔란티어 2분기 매출 93% 급증…美상업부문 매출은 149%↑",
-    "whatHappened": "팔란티어 2분기 매출 93% 급증…美상업부문 매출은 149%↑",
+    "headline": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
+    "whatHappened": "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개",
     "confirmedFacts": [
-     "팔란티어 2분기 매출 93% 급증…美상업부문 매출은 149%↑ (연합뉴스)"
+     "SK하이닉스, 샌디스크와 차세대 스토리지 HBF 첫 표준규격 공개 (연합뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -1693,200 +1473,7 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-business-q594z1",
-   "category": "business",
-   "headline": "뉴욕증시, 미 이란공격 취소·기술주 강세에 상승…나스닥 2%↑",
-   "status": "new",
-   "articles": [
-    {
-     "title": "뉴욕증시, 미 이란공격 취소·기술주 강세에 상승…나스닥 2%↑",
-     "source": "연합뉴스TV",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE50RnQxSkhYb0R1eVBpR2R1R3hCR2o5dGFOUGZ4WFpvVHdpWUxLSFNGSk1DSUptSDVMNGVkYTM0SFNXVk5oNFVhMkZaVDZzT3NDMkpyQ0RnR2RVa2poZTBLeExtamg5ckE?oc=5",
-     "publishedAt": "Mon, 03 Aug 2026 20:16:00 GMT"
-    }
-   ],
-   "importanceScore": 22,
-   "importanceReasons": [
-    "한국 관련"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "뉴욕증시, 미 이란공격 취소·기술주 강세에 상승…나스닥 2%↑",
-    "whatHappened": "뉴욕증시, 미 이란공격 취소·기술주 강세에 상승…나스닥 2%↑",
-    "confirmedFacts": [
-     "뉴욕증시, 미 이란공격 취소·기술주 강세에 상승…나스닥 2%↑ (연합뉴스TV)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-world-1ac9916",
-   "category": "world",
-   "headline": "\"계산된 제한적 확전\"…이란, 트럼프 양보 얻으려 승부수 던졌다",
-   "status": "new",
-   "articles": [
-    {
-     "title": "\"계산된 제한적 확전\"…이란, 트럼프 양보 얻으려 승부수 던졌다",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE84NTJqSmtFdTRTWEo1WWtILUd2TzA5b1hkX0Nyb1dDdUxvMUJtbmE1SkdNcE45SWxVS1hnTW83M2RvM09rVDg5YTZHWC14LTdvTkFmNUlJQzR5azjSAWBBVV95cUxPb01HbFBwRkZzaEZRWmkwUUF5VldRNUhPTW96dFQ4aE5zam9pSzE0dHVfSlFxY3NNRTZxd1RtX21PRmVRamE4NG11ZTdYV3kzdEFXeHFXcHlxbXdRbWNDVkM?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 00:51:25 GMT"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "\"계산된 제한적 확전\"…이란, 트럼프 양보 얻으려 승부수 던졌다",
-    "whatHappened": "\"계산된 제한적 확전\"…이란, 트럼프 양보 얻으려 승부수 던졌다",
-    "confirmedFacts": [
-     "\"계산된 제한적 확전\"…이란, 트럼프 양보 얻으려 승부수 던졌다 (연합뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-world-1585e2t",
-   "category": "world",
-   "headline": "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\"",
-   "status": "new",
-   "articles": [
-    {
-     "title": "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\"",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804160700079",
-     "publishedAt": "Tue, 4 Aug 2026 20:19:12 +0900"
-    },
-    {
-     "title": "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\"",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804160700079",
-     "publishedAt": "Tue, 4 Aug 2026 20:19:12 +0900"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\"",
-    "whatHappened": "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\"",
-    "confirmedFacts": [
-     "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\" (연합뉴스)",
-     "\"이란, 호르무즈 진입 선박 통제권 요구…빠져나가는 선박도 감시\" (연합뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-world-11wvra8",
-   "category": "world",
-   "headline": "세우타 수반 \"이주민 월경사태, 모로코가 부추겨\"",
-   "status": "developing",
-   "articles": [
-    {
-     "title": "세우타 수반 \"이주민 월경사태, 모로코가 부추겨\"",
-     "source": "연합뉴스TV",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9jSHZzWHEyN3hNRDUxakxkYi1xMkttbXVjMXlNNGlwSmo2ZW9feEw4QkdleEpCV2RqeGlZWF9yUEZHbkRrVWd4R29oRDJXUlFZcmVnRlY5RFFIazY0ZmY5WVFTUXl0VUE?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 02:01:00 GMT"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "세우타 수반 \"이주민 월경사태, 모로코가 부추겨\"",
-    "whatHappened": "세우타 수반 \"이주민 월경사태, 모로코가 부추겨\"",
-    "confirmedFacts": [
-     "세우타 수반 \"이주민 월경사태, 모로코가 부추겨\" (연합뉴스TV)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-world-n9akyt",
-   "category": "world",
-   "headline": "예멘 후티 반군 \"사우디 나즈란 공항에 드론 공격\"",
-   "status": "new",
-   "articles": [
-    {
-     "title": "예멘 후티 반군 \"사우디 나즈란 공항에 드론 공격\"",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804159900079",
-     "publishedAt": "Tue, 4 Aug 2026 19:42:23 +0900"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "예멘 후티 반군 \"사우디 나즈란 공항에 드론 공격\"",
-    "whatHappened": "예멘 후티 반군 \"사우디 나즈란 공항에 드론 공격\"",
-    "confirmedFacts": [
-     "예멘 후티 반군 \"사우디 나즈란 공항에 드론 공격\" (연합뉴스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-world-myum6l",
@@ -1894,6 +1481,13 @@
    "headline": "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\"",
    "status": "new",
    "articles": [
+    {
+     "title": "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\"",
+     "source": "연합뉴스TV",
+     "sourceType": "wire",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBqOUVoaWRhc3lXMkVyTUZtbW15UGlfdkdEUnNLdENMRWFLZS1tU0pkanJIUVByMUpIb0pxR3NXQm10YUw5MndSSXVWYTFJQjg4aF9YMjBWZEFtak52ejZ4RmlNTXZlSGs?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 06:33:00 GMT"
+    },
     {
      "title": "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\"",
      "source": "연합뉴스TV",
@@ -1914,6 +1508,7 @@
     "headline": "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\"",
     "whatHappened": "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\"",
     "confirmedFacts": [
+     "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\" (연합뉴스TV)",
      "\"미 워싱턴주 산불 관련 방화 용의자 30대 1명 체포\" (연합뉴스TV)"
     ],
     "whyItMatters": [
@@ -1927,20 +1522,27 @@
      "피해 집계 공식 발표와 정부 대응 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-world-j85xjd",
+   "id": "evt-world-1q5o0td",
    "category": "world",
-   "headline": "스페인-모로코 '세우타 월경' 두고 책임 공방 고조",
+   "headline": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합)",
    "status": "new",
    "articles": [
     {
-     "title": "스페인-모로코 '세우타 월경' 두고 책임 공방 고조",
+     "title": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합)",
      "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804158200099",
-     "publishedAt": "Tue, 4 Aug 2026 19:31:12 +0900"
+     "url": "https://www.yna.co.kr/view/AKR20260804168951098",
+     "publishedAt": "Wed, 5 Aug 2026 01:15:28 +0900"
+    },
+    {
+     "title": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합)",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260804168951098",
+     "publishedAt": "Wed, 5 Aug 2026 01:15:28 +0900"
     }
    ],
    "importanceScore": 18,
@@ -1952,10 +1554,11 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "스페인-모로코 '세우타 월경' 두고 책임 공방 고조",
-    "whatHappened": "스페인-모로코 '세우타 월경' 두고 책임 공방 고조",
+    "headline": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합)",
+    "whatHappened": "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합)",
     "confirmedFacts": [
-     "스페인-모로코 '세우타 월경' 두고 책임 공방 고조 (연합뉴스)"
+     "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합) (연합뉴스)",
+     "세우타 사태에 놀란 EU 긴급회의…국경 강화 등 재발 방지 논의(종합) (연합뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -1964,20 +1567,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-world-12r9309",
+   "id": "evt-world-39u2ij",
    "category": "world",
-   "headline": "러 \"모스크바 식당 테러, 우크라 계획\" 주장",
+   "headline": "중국·일본도 폭염…인명피해 잇따르고 농작물 피해 우려",
    "status": "new",
    "articles": [
     {
-     "title": "러 \"모스크바 식당 테러, 우크라 계획\" 주장",
+     "title": "중국·일본도 폭염…인명피해 잇따르고 농작물 피해 우려",
      "source": "연합뉴스TV",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBYVGEteXhwOVRDOElQUjV6WlhYUnE3d1pSNW95WmQ0TGl4ZGJQM1BsejlnQkxfRGRiNVBQakpqVjExemItUnFDandJWWRLMXRCdXE0YWN3Q1R4a290WTdMaU1TS1VJdTQ?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 10:16:00 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLWWpnNm9YRXo0VFIyWVZ0U2ROLWlUR2FkX0Foc0k1SE55emZVZ1pMTXV5MHNsOTE2NmFpeWs3VTM1U1hybWdvQVJYVEdKSU1OSEo4M1JZN1M1THVVWEcwUDR1am5YdDA?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 04:40:00 GMT"
     }
    ],
    "importanceScore": 18,
@@ -1989,10 +1592,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "러 \"모스크바 식당 테러, 우크라 계획\" 주장",
-    "whatHappened": "러 \"모스크바 식당 테러, 우크라 계획\" 주장",
+    "headline": "중국·일본도 폭염…인명피해 잇따르고 농작물 피해 우려",
+    "whatHappened": "중국·일본도 폭염…인명피해 잇따르고 농작물 피해 우려",
     "confirmedFacts": [
-     "러 \"모스크바 식당 테러, 우크라 계획\" 주장 (연합뉴스TV)"
+     "중국·일본도 폭염…인명피해 잇따르고 농작물 피해 우려 (연합뉴스TV)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2001,20 +1604,27 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-world-1i04tkt",
+   "id": "evt-world-ngl0f2",
    "category": "world",
-   "headline": "영국 우익당, 불법이민 차단 위해 해군 투입 공약…프랑스 반발(종합)",
+   "headline": "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과",
    "status": "new",
    "articles": [
     {
-     "title": "영국 우익당, 불법이민 차단 위해 해군 투입 공약…프랑스 반발(종합)",
+     "title": "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과",
      "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804151751081",
-     "publishedAt": "Tue, 4 Aug 2026 19:23:43 +0900"
+     "url": "https://www.yna.co.kr/view/AKR20260805000900071",
+     "publishedAt": "Wed, 5 Aug 2026 01:13:39 +0900"
+    },
+    {
+     "title": "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260805000900071",
+     "publishedAt": "Wed, 5 Aug 2026 01:13:39 +0900"
     }
    ],
    "importanceScore": 18,
@@ -2026,10 +1636,11 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "영국 우익당, 불법이민 차단 위해 해군 투입 공약…프랑스 반발(종합)",
-    "whatHappened": "영국 우익당, 불법이민 차단 위해 해군 투입 공약…프랑스 반발(종합)",
+    "headline": "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과",
+    "whatHappened": "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과",
     "confirmedFacts": [
-     "영국 우익당, 불법이민 차단 위해 해군 투입 공약…프랑스 반발(종합) (연합뉴스)"
+     "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과 (연합뉴스)",
+     "'트럼프 충성파' 美법무 후보, 우여곡절 끝 인준 첫 관문 통과 (연합뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2038,20 +1649,155 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-world-1xa7mjl",
+   "id": "evt-world-1jila21",
    "category": "world",
-   "headline": "폭염·가뭄에 네덜란드에서도 산불 확산…유럽 곳곳 활활",
+   "headline": "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합)",
    "status": "new",
    "articles": [
     {
-     "title": "폭염·가뭄에 네덜란드에서도 산불 확산…유럽 곳곳 활활",
-     "source": "KBS 뉴스",
+     "title": "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합)",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260804166651071",
+     "publishedAt": "Wed, 5 Aug 2026 00:35:31 +0900"
+    },
+    {
+     "title": "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합)",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260804166651071",
+     "publishedAt": "Wed, 5 Aug 2026 00:35:31 +0900"
+    }
+   ],
+   "importanceScore": 18,
+   "importanceReasons": [
+    "최신 보도"
+   ],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합)",
+    "whatHappened": "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합)",
+    "confirmedFacts": [
+     "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합) (연합뉴스)",
+     "美 \"조만간 호르무즈 합의 기대…이란·오만 협상에 관여중\"(종합) (연합뉴스)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-world-9qw5g",
+   "category": "world",
+   "headline": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+   "status": "new",
+   "articles": [
+    {
+     "title": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260805000400071",
+     "publishedAt": "Wed, 5 Aug 2026 00:23:11 +0900"
+    },
+    {
+     "title": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260805000400071",
+     "publishedAt": "Wed, 5 Aug 2026 00:23:11 +0900"
+    },
+    {
+     "title": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+     "source": "연합뉴스",
+     "sourceType": "wire",
+     "url": "https://www.yna.co.kr/view/AKR20260805000400071",
+     "publishedAt": "Wed, 5 Aug 2026 00:23:11 +0900"
+    }
+   ],
+   "importanceScore": 18,
+   "importanceReasons": [
+    "최신 보도"
+   ],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+    "whatHappened": "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\"",
+    "confirmedFacts": [
+     "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\" (연합뉴스)",
+     "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\" (연합뉴스)",
+     "美, '엔화 구하기'에 유로화 썼다…재무장관 \"유럽과 긴밀 접촉\" (연합뉴스)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-tech-1pjvgc5",
+   "category": "tech",
+   "headline": "The Download: US robot restrictions, and ICE’s DNA grab",
+   "status": "new",
+   "articles": [
+    {
+     "title": "The Download: US robot restrictions, and ICE’s DNA grab",
+     "source": "MIT Tech Review",
+     "sourceType": "specialist",
+     "url": "https://www.technologyreview.com/2026/08/04/1141098/the-download-robot-restrictions-ice-dna/",
+     "publishedAt": "Tue, 04 Aug 2026 12:14:00 +0000"
+    }
+   ],
+   "importanceScore": 18,
+   "importanceReasons": [
+    "최신 보도"
+   ],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "The Download: US robot restrictions, and ICE’s DNA grab",
+    "whatHappened": "The Download: US robot restrictions, and ICE’s DNA grab",
+    "confirmedFacts": [
+     "The Download: US robot restrictions, and ICE’s DNA grab (MIT Tech Review)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-tech-rshqdb",
+   "category": "tech",
+   "headline": "Apple issues new challenge against UK order for access to private user data",
+   "status": "new",
+   "articles": [
+    {
+     "title": "Apple issues new challenge against UK order for access to private user data",
+     "source": "BBC",
      "sourceType": "public",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9acVc2eWFqR1IyY1RXa0RmUURsT0wwXy01RG8wQXhZQkRBN05Qck9uT3V3MTh3UE1MU0w2UzZEdGFvOEZ1M1M5MWwyb1pLejJYUEttMUl0RUpvZGc?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 08:47:00 GMT"
+     "url": "https://www.bbc.co.uk/news/articles/cvg0kk3ek2vo?at_medium=RSS&at_campaign=rss",
+     "publishedAt": "Tue, 04 Aug 2026 10:22:40 GMT"
     }
    ],
    "importanceScore": 18,
@@ -2063,51 +1809,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "폭염·가뭄에 네덜란드에서도 산불 확산…유럽 곳곳 활활",
-    "whatHappened": "폭염·가뭄에 네덜란드에서도 산불 확산…유럽 곳곳 활활",
+    "headline": "Apple issues new challenge against UK order for access to private user data",
+    "whatHappened": "Apple issues new challenge against UK order for access to private user data",
     "confirmedFacts": [
-     "폭염·가뭄에 네덜란드에서도 산불 확산…유럽 곳곳 활활 (KBS 뉴스)"
-    ],
-    "whyItMatters": [
-     "재난은 인명·기반시설 피해와 복구 비용으로 이어질 가능성이 있습니다."
-    ],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": [
-     "피해 집계 공식 발표와 정부 대응 확인 필요."
-    ]
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-world-9ku3cv",
-   "category": "world",
-   "headline": "도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분",
-   "status": "new",
-   "articles": [
-    {
-     "title": "도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분",
-     "source": "연합뉴스",
-     "sourceType": "wire",
-     "url": "https://www.yna.co.kr/view/AKR20260804156100109",
-     "publishedAt": "Tue, 4 Aug 2026 19:13:14 +0900"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분",
-    "whatHappened": "도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분",
-    "confirmedFacts": [
-     "도망치는 상인 뒤쫓아 쾅…자폭드론 영상에 우크라 격분 (연합뉴스)"
+     "Apple issues new challenge against UK order for access to private user data (BBC)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2116,7 +1821,7 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-tech-18gwska",
@@ -2165,44 +1870,7 @@
      "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-tech-rshqdb",
-   "category": "tech",
-   "headline": "Apple issues new challenge against UK order for access to private user data",
-   "status": "new",
-   "articles": [
-    {
-     "title": "Apple issues new challenge against UK order for access to private user data",
-     "source": "BBC",
-     "sourceType": "public",
-     "url": "https://www.bbc.co.uk/news/articles/cvg0kk3ek2vo?at_medium=RSS&at_campaign=rss",
-     "publishedAt": "Tue, 04 Aug 2026 10:22:40 GMT"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "Apple issues new challenge against UK order for access to private user data",
-    "whatHappened": "Apple issues new challenge against UK order for access to private user data",
-    "confirmedFacts": [
-     "Apple issues new challenge against UK order for access to private user data (BBC)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-tech-851yhs",
@@ -2243,48 +1911,7 @@
      "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
     ]
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-tech-1enjjii",
-   "category": "tech",
-   "headline": "Here’s why AI agents lie and cheat to reach their goals",
-   "status": "developing",
-   "articles": [
-    {
-     "title": "Here’s why AI agents lie and cheat to reach their goals",
-     "source": "MIT Tech Review",
-     "sourceType": "specialist",
-     "url": "https://www.technologyreview.com/2026/08/03/1141009/heres-why-ai-agents-lie-and-cheat-to-reach-their-goals/",
-     "publishedAt": "Mon, 03 Aug 2026 08:30:05 +0000"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "기술 파급력"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "Here’s why AI agents lie and cheat to reach their goals",
-    "whatHappened": "Here’s why AI agents lie and cheat to reach their goals",
-    "confirmedFacts": [
-     "Here’s why AI agents lie and cheat to reach their goals (MIT Tech Review)"
-    ],
-    "whyItMatters": [
-     "AI 기술·정책 변화는 산업 구조와 일자리에 영향을 줄 가능성이 있습니다."
-    ],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": [
-     "실제 제품 출시·규제 입법의 구체 내용 확인 필요."
-    ]
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-ai-145hawm",
@@ -2297,7 +1924,7 @@
      "source": "Reuters",
      "sourceType": "wire",
      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQZEFjZDdmMzAxM2tTaHIwTWpFMHVCUldHdGs3Y3hTejI2ajRQeTVWUFU4RThDRGlIUmhXM0duczgySG5xUExONFhPMmtZR2liTVVJR19JcVhBYndwTjBURk1qM0lvOU1sTnlGYVd3VUxLQTJBQklmZjlsSmdUd0p1bVpGRElVSlp5NHl3YTBnSmhrMUpfSl9ld0NmLVhDdTF0MXg1enZIcXE0aEpFQTJDRWxYUUdRdw?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 10:42:53 GMT"
+     "publishedAt": "Tue, 04 Aug 2026 13:53:44 GMT"
     }
    ],
    "importanceScore": 18,
@@ -2321,20 +1948,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-crypto-1o6skf4",
+   "id": "evt-crypto-f4h5wh",
    "category": "crypto",
-   "headline": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은",
-   "status": "developing",
+   "headline": "러시아 내 암호화폐 사용 합법화…중앙은행이 규제",
+   "status": "new",
    "articles": [
     {
-     "title": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은",
-     "source": "연합인포맥스",
+     "title": "러시아 내 암호화폐 사용 합법화…중앙은행이 규제",
+     "source": "연합뉴스",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9FcXo3aWxHN2tWN1FkQXFNR1FMdTF5cVdQbTFHUDJQelowdzFKbkVEXzA4cHJmaDctZ09yUXJoWDc5Mk5RV2daX1Y0Z3QzVUYzQTZXLVc0OXNfdkI4SzBKcXJFU2xDOG1HM3FnU1MzVE8?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 02:30:00 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9PRWRRWlhQNDdnd25qaHBfRXdFb3BGT2RDMVdua3U4UXpPbkFyc3ozbTRtQzFONXBPQkJvbkNoN0czOUc3WlZ6Nm5rWWN1Z2pWTFZGb3lVdlFYUTBoaG9NLdIBYEFVX3lxTE9PRWRRWlhQNDdnd25qaHBfRXdFb3BGT2RDMVdua3U4UXpPbkFyc3ozbTRtQzFONXBPQkJvbkNoN0czOUc3WlZ6Nm5rWWN1Z2pWTFZGb3lVdlFYUTBoaG9NLQ?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 13:43:03 GMT"
     }
    ],
    "importanceScore": 18,
@@ -2346,10 +1973,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은",
-    "whatHappened": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은",
+    "headline": "러시아 내 암호화폐 사용 합법화…중앙은행이 규제",
+    "whatHappened": "러시아 내 암호화폐 사용 합법화…중앙은행이 규제",
     "confirmedFacts": [
-     "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은 (연합인포맥스)"
+     "러시아 내 암호화폐 사용 합법화…중앙은행이 규제 (연합뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2358,7 +1985,44 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-crypto-1rgychg",
+   "category": "crypto",
+   "headline": "비트코인 시장에는 충분히 우려할 만한 이유들이 존재하지만, 여전히 침착함이 지배하고 있다",
+   "status": "new",
+   "articles": [
+    {
+     "title": "비트코인 시장에는 충분히 우려할 만한 이유들이 존재하지만, 여전히 침착함이 지배하고 있다",
+     "source": "CoinDesk",
+     "sourceType": "specialist",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQY0NDaWJELXFTcGtSZDV1aEYxcXUtRmlzOVhoWUZ4M0hyd2JlYWJfbWhyZXJHU2lldUlTbVJvSlZWYVY0X0syV2lKNzRaRzQ5a1Z6RGRtUFl0ckxwLWs0NTlFaENFenpkaWdpeGxRSi1vSFY1REZGSFlHc0lSbThiTmI5VGZlOFRER0lEYS1fUTRmZERVVmdCVm5nc1NiMjZnb3ZiTHZGbGIzQ3Z0SFdfVEhwWHVQM1pkSUxleGh3?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 11:52:55 GMT"
+    }
+   ],
+   "importanceScore": 18,
+   "importanceReasons": [
+    "최신 보도"
+   ],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "비트코인 시장에는 충분히 우려할 만한 이유들이 존재하지만, 여전히 침착함이 지배하고 있다",
+    "whatHappened": "비트코인 시장에는 충분히 우려할 만한 이유들이 존재하지만, 여전히 침착함이 지배하고 있다",
+    "confirmedFacts": [
+     "비트코인 시장에는 충분히 우려할 만한 이유들이 존재하지만, 여전히 침착함이 지배하고 있다 (CoinDesk)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-crypto-hizhdk",
@@ -2395,131 +2059,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-crypto-lon3lo",
+   "id": "evt-crypto-1qa4kb2",
    "category": "crypto",
-   "headline": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
-   "status": "developing",
-   "articles": [
-    {
-     "title": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
-     "source": "연합인포맥스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBaQXFpemwyVDRfU3ZmQmhteUJmeGQ2NGU3cmJ6b0lIcjhFV3UtdEhZSjRHZTVoNFpDRV9reV9FOFQ5T25jRWNfVVM3VWxvVlNZSUpSY1R1SEFsTlJVZzFkWko4dk9vc3pNSVdIbENnZk5nUG9J?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 00:07:41 GMT"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
-    "whatHappened": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
-    "confirmedFacts": [
-     "비트마인, 이더리움 추가 매수…자사주 매입도 병행 | (연합인포맥스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-crypto-gkqyl8",
-   "category": "crypto",
-   "headline": "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용",
-   "status": "developing",
-   "articles": [
-    {
-     "title": "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용",
-     "source": "연합인포맥스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03cXM4TFoyYmtVb09FNUJTTjhEUWNKNmdEMzFHZm4zWFdNS0Z3Mnh3Q19UeHBmSVdqZTI2ejA5VFhKWDJ4b3hUTVpaTzZKT1F4bVdsaU5VcjBUeW90Z1U0Rk5GRnl3eW9Palh3LUNQZXfSAXRBVV95cUxQX2NtSUVQZ19NMEltbDJrUi1EUWVuZXoxZW9qc2J2MkR6QWdwV3U3czhVaHdUMmlMZk5BLW5vRUtzamxseVp0WFladG9fQWtHRkRvYnA1OC1mMnltVmVkaHVYWWtwQlNTaEFtUnUyZE80TWFreA?oc=5",
-     "publishedAt": "Mon, 03 Aug 2026 23:50:00 GMT"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용",
-    "whatHappened": "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용",
-    "confirmedFacts": [
-     "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용 (연합인포맥스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-crypto-craelp",
-   "category": "crypto",
-   "headline": "번스타인 \"'클래리티 법' 논의 지연…비트코인 추가 하락할 듯\"",
-   "status": "developing",
-   "articles": [
-    {
-     "title": "번스타인 \"'클래리티 법' 논의 지연…비트코인 추가 하락할 듯\"",
-     "source": "뉴스1",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA5bll3U3NpcHhCNThhbzFKNUM4QUdCaVJ1R3JLWXFySW5uT0pydldremdwcWs5ak10VV9Kb1NyNWZzMUk0cklYX0ZkbGFxQUViX2hIdXlxYVZhQWNNU0tnSFM1T1dOQQ?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 02:19:40 GMT"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "번스타인 \"'클래리티 법' 논의 지연…비트코인 추가 하락할 듯\"",
-    "whatHappened": "번스타인 \"'클래리티 법' 논의 지연…비트코인 추가 하락할 듯\"",
-    "confirmedFacts": [
-     "번스타인 \"'클래리티 법' 논의 지연…비트코인 추가 하락할 듯\" (뉴스1)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-crypto-fnq01q",
-   "category": "crypto",
-   "headline": "BTC 뉴스: 2013년부터 잠자고 있던 비트코인 지갑에서 3,100만 달러 이동",
+   "headline": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
    "status": "new",
    "articles": [
     {
-     "title": "BTC 뉴스: 2013년부터 잠자고 있던 비트코인 지갑에서 3,100만 달러 이동",
+     "title": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
      "source": "CoinDesk",
      "sourceType": "specialist",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaDI1emNPS0pNa1VHdm55dU9oVm00ak52MUVSTEprTERpbmVzMGNlV2FFRjZnUjlBU3JCV2hhRXBtTnd0NHJQeHpsVk16Vi13N0JORDBzejYxMHdicnZQTjRqOEpZTDI5dHdseUVZT09mUDZuWm9WUlBlMFp6dnNtN3Atc25feFYzYVdwcXpVRDhPbzBsbTV4bnZzbGVxbUFVVldGVHY1LTZvUWFKMTdNcG55VTJ4TXVBckMxT1pYMTFLa1J5NlZJ?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 03:55:07 GMT"
+     "url": "https://www.coindesk.com/business/2026/08/04/wells-fargo-to-offer-tokenized-deposits-for-24-7-corporate-payments",
+     "publishedAt": "Tue, 04 Aug 2026 15:47:05 +0000"
     }
    ],
    "importanceScore": 18,
@@ -2531,10 +2084,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "BTC 뉴스: 2013년부터 잠자고 있던 비트코인 지갑에서 3,100만 달러 이동",
-    "whatHappened": "BTC 뉴스: 2013년부터 잠자고 있던 비트코인 지갑에서 3,100만 달러 이동",
+    "headline": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
+    "whatHappened": "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails",
     "confirmedFacts": [
-     "BTC 뉴스: 2013년부터 잠자고 있던 비트코인 지갑에서 3,100만 달러 이동 (CoinDesk)"
+     "Wells Fargo joins JPMorgan and Citi in the race to tokenize Wall Street’s settlement rails (CoinDesk)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2543,20 +2096,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-crypto-jieusg",
+   "id": "evt-crypto-h2yimw",
    "category": "crypto",
-   "headline": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
+   "headline": "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode",
    "status": "new",
    "articles": [
     {
-     "title": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
+     "title": "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode",
      "source": "CoinDesk",
      "sourceType": "specialist",
-     "url": "https://www.coindesk.com/daybook-us/2026/08/04/the-bitcoin-market-has-plenty-of-reasons-to-freak-out-yet-calm-pervades",
-     "publishedAt": "Tue, 04 Aug 2026 11:23:33 +0000"
+     "url": "https://www.coindesk.com/markets/2026/08/04/bitcoin-s-usd63-000-zone-emerges-as-key-battleground-for-buyers-glassnode",
+     "publishedAt": "Tue, 04 Aug 2026 14:49:33 +0000"
     }
    ],
    "importanceScore": 18,
@@ -2568,10 +2121,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
-    "whatHappened": "The bitcoin market has plenty of reasons to freak out, yet calm pervades",
+    "headline": "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode",
+    "whatHappened": "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode",
     "confirmedFacts": [
-     "The bitcoin market has plenty of reasons to freak out, yet calm pervades (CoinDesk)"
+     "Bitcoin’s $63,000 zone emerges as key battleground for buyers: Glassnode (CoinDesk)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2580,20 +2133,20 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-crypto-1p8w5xd",
-   "category": "crypto",
-   "headline": "South African lawmakers propose draft rules on cross-border crypto transactions",
+   "id": "evt-wealth-1gfsdox",
+   "category": "wealth",
+   "headline": "'부동산 세제개편안'에 온도 차...국힘 '맹폭'·민주 '신중'",
    "status": "new",
    "articles": [
     {
-     "title": "South African lawmakers propose draft rules on cross-border crypto transactions",
-     "source": "CoinDesk",
-     "sourceType": "specialist",
-     "url": "https://www.coindesk.com/policy/2026/08/04/south-african-lawmakers-propose-draft-rules-on-cross-border-crypto-transactions",
-     "publishedAt": "Tue, 04 Aug 2026 10:59:41 +0000"
+     "title": "'부동산 세제개편안'에 온도 차...국힘 '맹폭'·민주 '신중'",
+     "source": "YTN",
+     "sourceType": "public",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9fNENpMmJHYjdOOUJtR1hmN0JLdnJBUF9FTXdnNEJ1alRMbDJESG93UXdsMXZBOElma0V2ZlJlZ0lGTHNhcGYzTkVSQzFTQ1pVQ2tJV1pEUFd0Mks3SlE?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 11:45:00 GMT"
     }
    ],
    "importanceScore": 18,
@@ -2605,10 +2158,10 @@
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "South African lawmakers propose draft rules on cross-border crypto transactions",
-    "whatHappened": "South African lawmakers propose draft rules on cross-border crypto transactions",
+    "headline": "'부동산 세제개편안'에 온도 차...국힘 '맹폭'·민주 '신중'",
+    "whatHappened": "'부동산 세제개편안'에 온도 차...국힘 '맹폭'·민주 '신중'",
     "confirmedFacts": [
-     "South African lawmakers propose draft rules on cross-border crypto transactions (CoinDesk)"
+     "'부동산 세제개편안'에 온도 차...국힘 '맹폭'·민주 '신중' (YTN)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2617,7 +2170,44 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-wealth-1gcq1f0",
+   "category": "wealth",
+   "headline": "이 대통령 \"부동산 100억대 벌어도 세금 몇억\"...세제 개편 당위성 부각",
+   "status": "new",
+   "articles": [
+    {
+     "title": "이 대통령 \"부동산 100억대 벌어도 세금 몇억\"...세제 개편 당위성 부각",
+     "source": "YTN",
+     "sourceType": "public",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5sTng1Sld3dDFEZWZSMmZza0d4cmpDS3ZDQmhDQ2g0YWVBUGZhUG1PVTM0Mzl1VlJwSXpWaDZ2UzU0TWhmeEZKOVp1bEhLcTdEd3VyWXVDNHZVNl9TSWc?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 11:14:00 GMT"
+    }
+   ],
+   "importanceScore": 18,
+   "importanceReasons": [
+    "최신 보도"
+   ],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "이 대통령 \"부동산 100억대 벌어도 세금 몇억\"...세제 개편 당위성 부각",
+    "whatHappened": "이 대통령 \"부동산 100억대 벌어도 세금 몇억\"...세제 개편 당위성 부각",
+    "confirmedFacts": [
+     "이 대통령 \"부동산 100억대 벌어도 세금 몇억\"...세제 개편 당위성 부각 (YTN)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-wealth-1jz6gnk",
@@ -2654,35 +2244,33 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-wealth-ttyu6r",
-   "category": "wealth",
-   "headline": "부동산 세제개편안, '실거주'에 초점...내용 들여다봤더니 [자막뉴스]",
+   "id": "evt-world-17xfa1p",
+   "category": "world",
+   "headline": "“남성 성장 방해”…‘여성 출입 금지’ 발리 리조트 논란 [잇슈#태그]",
    "status": "new",
    "articles": [
     {
-     "title": "부동산 세제개편안, '실거주'에 초점...내용 들여다봤더니 [자막뉴스]",
-     "source": "YTN",
+     "title": "“남성 성장 방해”…‘여성 출입 금지’ 발리 리조트 논란 [잇슈#태그]",
+     "source": "KBS 뉴스",
      "sourceType": "public",
-     "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBudUYtTjgxQll1dGxUbG50UWhiaVBidEhuTjlWMzQ0aWhReDRxUjZscTRDQlEtaXM4cGVqY3dCalhvMXFXMXkyZEdFbVRPSUh1VWtqTVh4dlFWdmdqQXcwaEhsUQ?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 07:29:00 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zeFpDcHJCV3k0T2pnM1ktQ1otYkR0dDItUERpenNuRnZDZmNqcW9wTEozZF8yaGw0V0F5Nl9ZZXpFRDNpVm9XelNtZG1xQk9UZHZuQjRKejFfazg?oc=5",
+     "publishedAt": "Mon, 03 Aug 2026 02:50:00 GMT"
     }
    ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
+   "importanceScore": 12,
+   "importanceReasons": [],
    "confidence": "low",
    "confidenceReasons": [
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "부동산 세제개편안, '실거주'에 초점...내용 들여다봤더니 [자막뉴스]",
-    "whatHappened": "부동산 세제개편안, '실거주'에 초점...내용 들여다봤더니 [자막뉴스]",
+    "headline": "“남성 성장 방해”…‘여성 출입 금지’ 발리 리조트 논란 [잇슈#태그]",
+    "whatHappened": "“남성 성장 방해”…‘여성 출입 금지’ 발리 리조트 논란 [잇슈#태그]",
     "confirmedFacts": [
-     "부동산 세제개편안, '실거주'에 초점...내용 들여다봤더니 [자막뉴스] (YTN)"
+     "“남성 성장 방해”…‘여성 출입 금지’ 발리 리조트 논란 [잇슈#태그] (KBS 뉴스)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2691,35 +2279,33 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
-   "id": "evt-wealth-1dp4tfe",
-   "category": "wealth",
-   "headline": "\"부동산 공급 대책 마련해라\" 주문에 금융위, PF 긴급 점검",
+   "id": "evt-world-wk3y24",
+   "category": "world",
+   "headline": "'기독교 발원지' 이스라엘서 反기독교 사건 급증세…왜?",
    "status": "new",
    "articles": [
     {
-     "title": "\"부동산 공급 대책 마련해라\" 주문에 금융위, PF 긴급 점검",
-     "source": "연합인포맥스",
+     "title": "'기독교 발원지' 이스라엘서 反기독교 사건 급증세…왜?",
+     "source": "뉴스1",
      "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1IVXBaZW5HcWJ6Q2ZaZ2szUXJMdTJYQ3huODBzaVpWZzV5ZkNlSmJ3SXA4NkMyV21ZMWRKUHZNYkpwSUxxNkxmd3NESURTMV9Ua1hVLUJmXzR6aFR5YklKRnhxczFUb2taVGlLQlYxNUFEckhP0gF0QVVfeXFMTUhVcFplbkdxYnpDZlpnazNRckx1MlhDeG44MHNpWlZnNXlmQ2VKYndJcDg2QzJXbVkxZEpQdk1iSnBJTHE2TGZ3c0RJRFMxX1RrWFUtQmZfNHpoVHliSUpGeHFzMVRva1pUaUtCVjE1QURySE8?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 07:03:27 GMT"
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4tSzhwclktbEFmM2k2S0lqTjdKemZRS3hRZUtsWWxIYlREZVpOQ1RHaVl2dUZYallleFk4aktnQlJ0SjBLTU9WUzN0WVJ1d19JNjBuZDc0bkRnaERCX2lPbVJ3?oc=5",
+     "publishedAt": "Mon, 03 Aug 2026 07:12:55 GMT"
     }
    ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
+   "importanceScore": 12,
+   "importanceReasons": [],
    "confidence": "low",
    "confidenceReasons": [
     "단일 출처 보도 — 교차 확인 필요"
    ],
    "briefing": {
-    "headline": "\"부동산 공급 대책 마련해라\" 주문에 금융위, PF 긴급 점검",
-    "whatHappened": "\"부동산 공급 대책 마련해라\" 주문에 금융위, PF 긴급 점검",
+    "headline": "'기독교 발원지' 이스라엘서 反기독교 사건 급증세…왜?",
+    "whatHappened": "'기독교 발원지' 이스라엘서 反기독교 사건 급증세…왜?",
     "confirmedFacts": [
-     "\"부동산 공급 대책 마련해라\" 주문에 금융위, PF 긴급 점검 (연합인포맥스)"
+     "'기독교 발원지' 이스라엘서 反기독교 사건 급증세…왜? (뉴스1)"
     ],
     "whyItMatters": [],
     "koreaImpact": [],
@@ -2728,44 +2314,7 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
-  },
-  {
-   "id": "evt-wealth-45m52",
-   "category": "wealth",
-   "headline": "與, 부동산 간담회·TF 회의 연달아 개최…민심 촉각 |",
-   "status": "new",
-   "articles": [
-    {
-     "title": "與, 부동산 간담회·TF 회의 연달아 개최…민심 촉각 |",
-     "source": "연합인포맥스",
-     "sourceType": "wire",
-     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90cktybXRlbnhxQzl4V2Z3aGhqNGhVVEM2b2d1WWZicURJOGtlY01NSHhEUTNiaVlnWUZ0RTJmUFlSd3pQS01UY3B5RWRkd0h3ODdHaFJhZzVGTUhTVU5BbVJ4TGZGOWhRak5Zc001b0hLZ2Ny?oc=5",
-     "publishedAt": "Tue, 04 Aug 2026 06:08:45 GMT"
-    }
-   ],
-   "importanceScore": 18,
-   "importanceReasons": [
-    "최신 보도"
-   ],
-   "confidence": "low",
-   "confidenceReasons": [
-    "단일 출처 보도 — 교차 확인 필요"
-   ],
-   "briefing": {
-    "headline": "與, 부동산 간담회·TF 회의 연달아 개최…민심 촉각 |",
-    "whatHappened": "與, 부동산 간담회·TF 회의 연달아 개최…민심 촉각 |",
-    "confirmedFacts": [
-     "與, 부동산 간담회·TF 회의 연달아 개최…민심 촉각 | (연합인포맥스)"
-    ],
-    "whyItMatters": [],
-    "koreaImpact": [],
-    "uncertainty": [
-     "단일 출처 보도 단계 — 교차 확인 필요."
-    ],
-    "whatToWatch": []
-   },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-tech-1opt76l",
@@ -2800,7 +2349,42 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-tech-l8bjd4",
+   "category": "tech",
+   "headline": "휴대폰 운전자 잡으려 ’덤불’ 위장 美 경찰…74건 적발",
+   "status": "new",
+   "articles": [
+    {
+     "title": "휴대폰 운전자 잡으려 ’덤불’ 위장 美 경찰…74건 적발",
+     "source": "연합뉴스TV",
+     "sourceType": "wire",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yRmQ3SEJrbk90eUtib1pnbG1FOHFhMzJSREhzSXo4TDdkZUZzOXNJVDVLeGt0VTNUSUZXNmVDaDZZUkctSDQtanJmbEM1TXBjYm5VaWs0R3g1WnpiYkF5U0RjMHhNQjQ?oc=5",
+     "publishedAt": "Mon, 03 Aug 2026 20:30:34 GMT"
+    }
+   ],
+   "importanceScore": 12,
+   "importanceReasons": [],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "휴대폰 운전자 잡으려 ’덤불’ 위장 美 경찰…74건 적발",
+    "whatHappened": "휴대폰 운전자 잡으려 ’덤불’ 위장 美 경찰…74건 적발",
+    "confirmedFacts": [
+     "휴대폰 운전자 잡으려 ’덤불’ 위장 美 경찰…74건 적발 (연합뉴스TV)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-tech-jismgo",
@@ -2835,7 +2419,7 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-tech-18zf3vr",
@@ -2870,7 +2454,7 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-science-smspfc",
@@ -2905,7 +2489,7 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   },
   {
    "id": "evt-science-8215fw",
@@ -2940,312 +2524,417 @@
     ],
     "whatToWatch": []
    },
-   "updatedAt": "2026-08-04T11:32:29.003Z"
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-crypto-1o6skf4",
+   "category": "crypto",
+   "headline": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은 |",
+   "status": "developing",
+   "articles": [
+    {
+     "title": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은 |",
+     "source": "연합인포맥스",
+     "sourceType": "wire",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9xQmQ2ZXJQbU4yMTZVbUVPaVlaVll5VGI2bDVCOWpGOWpmQ2d0Ti1OOHlhdUxhczNXaGxVSTZzUTdIMXJ6S3ZwblhWd2gtRXBsSEQyVGt0VkNwZ29SbmNzSlJjRlJIX09NNmE4cmhjNEVqWXdX?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 02:40:18 GMT"
+    }
+   ],
+   "importanceScore": 12,
+   "importanceReasons": [],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은 |",
+    "whatHappened": "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은 |",
+    "confirmedFacts": [
+     "美·日 개입에 엔캐리 트레이드 청산 우려 재점화…비트코인 영향은 | (연합인포맥스)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-crypto-lon3lo",
+   "category": "crypto",
+   "headline": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
+   "status": "developing",
+   "articles": [
+    {
+     "title": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
+     "source": "연합인포맥스",
+     "sourceType": "wire",
+     "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBaQXFpemwyVDRfU3ZmQmhteUJmeGQ2NGU3cmJ6b0lIcjhFV3UtdEhZSjRHZTVoNFpDRV9reV9FOFQ5T25jRWNfVVM3VWxvVlNZSUpSY1R1SEFsTlJVZzFkWko4dk9vc3pNSVdIbENnZk5nUG9J?oc=5",
+     "publishedAt": "Tue, 04 Aug 2026 00:07:41 GMT"
+    }
+   ],
+   "importanceScore": 12,
+   "importanceReasons": [],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
+    "whatHappened": "비트마인, 이더리움 추가 매수…자사주 매입도 병행 |",
+    "confirmedFacts": [
+     "비트마인, 이더리움 추가 매수…자사주 매입도 병행 | (연합인포맥스)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
+  },
+  {
+   "id": "evt-crypto-gkqyl8",
+   "category": "crypto",
+   "headline": "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용",
+   "status": "developing",
+   "articles": [
+    {
+     "title": "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용",
+     "source": "연합인포맥스",
+     "sourceType": "wire",
+     "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03cXM4TFoyYmtVb09FNUJTTjhEUWNKNmdEMzFHZm4zWFdNS0Z3Mnh3Q19UeHBmSVdqZTI2ejA5VFhKWDJ4b3hUTVpaTzZKT1F4bVdsaU5VcjBUeW90Z1U0Rk5GRnl3eW9Palh3LUNQZXfSAXRBVV95cUxQX2NtSUVQZ19NMEltbDJrUi1EUWVuZXoxZW9qc2J2MkR6QWdwV3U3czhVaHdUMmlMZk5BLW5vRUtzamxseVp0WFladG9fQWtHRkRvYnA1OC1mMnltVmVkaHVYWWtwQlNTaEFtUnUyZE80TWFreA?oc=5",
+     "publishedAt": "Mon, 03 Aug 2026 23:50:00 GMT"
+    }
+   ],
+   "importanceScore": 12,
+   "importanceReasons": [],
+   "confidence": "low",
+   "confidenceReasons": [
+    "단일 출처 보도 — 교차 확인 필요"
+   ],
+   "briefing": {
+    "headline": "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용",
+    "whatHappened": "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용",
+    "confirmedFacts": [
+     "스트래티지, 비트코인 1억달러 매각…자사 우선주 매입에 활용 (연합인포맥스)"
+    ],
+    "whyItMatters": [],
+    "koreaImpact": [],
+    "uncertainty": [
+     "단일 출처 보도 단계 — 교차 확인 필요."
+    ],
+    "whatToWatch": []
+   },
+   "updatedAt": "2026-08-04T16:21:31.723Z"
   }
  ],
  "top5": [
-  "evt-korea-5jp6wp",
-  "evt-ai-1ldl5fc",
-  "evt-korea-1mjvoiu",
-  "evt-korea-vigjot",
-  "evt-korea-1pngczr"
+  "evt-korea-1y1y72o",
+  "evt-ai-bxgn2p",
+  "evt-ai-27vi24",
+  "evt-world-1kdju49",
+  "evt-korea-17bgnh9"
  ],
  "changedSinceYesterday": [
-  "evt-korea-5jp6wp",
-  "evt-ai-1ldl5fc",
-  "evt-korea-1mjvoiu",
-  "evt-korea-vigjot",
-  "evt-korea-1pngczr",
-  "evt-korea-17h539l"
+  "evt-korea-1y1y72o",
+  "evt-ai-bxgn2p",
+  "evt-ai-27vi24",
+  "evt-world-1kdju49",
+  "evt-korea-17bgnh9",
+  "evt-korea-14l7na8"
  ],
  "developerSignal": [
   {
-   "title": "FFmpeg 9.0",
-   "link": "https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES",
-   "points": 203,
-   "comments": 35,
-   "hnLink": "https://news.ycombinator.com/item?id=49166202"
+   "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
+   "link": "https://toneyalexander.github.io/inclusive-color-space/",
+   "points": 74,
+   "comments": 20,
+   "hnLink": "https://news.ycombinator.com/item?id=49170165"
+  },
+  {
+   "title": "Ray Bradbury's \"There Will Come Soft Rains\" is set today (2026-08-04)",
+   "link": "https://short-stories.co/@raybradbury/there-will-come-soft-rains-6k8vr4xxlnmj",
+   "points": 395,
+   "comments": 177,
+   "hnLink": "https://news.ycombinator.com/item?id=49166491"
   },
   {
    "title": "DeepSeek V4 Flash on a Single AMD MI300X",
    "link": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
-   "points": 54,
-   "comments": 6,
+   "points": 252,
+   "comments": 58,
    "hnLink": "https://news.ycombinator.com/item?id=49166386"
+  },
+  {
+   "title": "Germany Records Historic 12B KWh Solar Feed-In in July 2026",
+   "link": "https://solarquarter.com/2026/08/03/germany-records-historic-12-billion-kwh-solar-feed-in-in-july-2026/",
+   "points": 56,
+   "comments": 24,
+   "hnLink": "https://news.ycombinator.com/item?id=49168886"
+  },
+  {
+   "title": "Agent skills that bring team coding standards to Claude Code and Codex",
+   "link": "https://github.com/tikalk/adlc-team-skills",
+   "points": 55,
+   "comments": 25,
+   "hnLink": "https://news.ycombinator.com/item?id=49169640"
+  },
+  {
+   "title": "Dates That Don't Exist (2015)",
+   "link": "https://blog.yossarian.net/2015/06/09/Dates-That-Dont-Exist",
+   "points": 48,
+   "comments": 27,
+   "hnLink": "https://news.ycombinator.com/item?id=49136363"
+  },
+  {
+   "title": "Keyv and friends compromised in active Shai-Hulud supply chain attack",
+   "link": "https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack",
+   "points": 115,
+   "comments": 47,
+   "hnLink": "https://news.ycombinator.com/item?id=49166874"
   },
   {
    "title": "LLMs reward expertise",
    "link": "https://www.seangoedecke.com/llms-reward-expertise/",
-   "points": 1017,
-   "comments": 433,
+   "points": 1217,
+   "comments": 502,
    "hnLink": "https://news.ycombinator.com/item?id=49161518"
   },
   {
-   "title": "U.S. used 'virtually all' of its long-range precision missiles during Iran war",
-   "link": "https://www.cnbc.com/2026/08/04/us-has-used-virtually-all-of-its-long-range-precision-missiles-report.html",
-   "points": 65,
-   "comments": 37,
-   "hnLink": "https://news.ycombinator.com/item?id=49166860"
+   "title": "Buckminster Fuller: everything I know",
+   "link": "https://www.bfi.org/about-fuller/everything-i-know/",
+   "points": 77,
+   "comments": 25,
+   "hnLink": "https://news.ycombinator.com/item?id=49167147"
   },
   {
-   "title": "Harness Engineering for Self-Improvement",
-   "link": "https://lilianweng.github.io/posts/2026-07-04-harness/",
-   "points": 80,
-   "comments": 9,
-   "hnLink": "https://news.ycombinator.com/item?id=49164896"
+   "title": "Xbox goes down. You can't play games you own on disc",
+   "link": "https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/",
+   "points": 361,
+   "comments": 403,
+   "hnLink": "https://news.ycombinator.com/item?id=49167448"
   },
   {
-   "title": "Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
-   "link": "https://github.com/leonickson1/Swiftlet",
-   "points": 206,
-   "comments": 92,
-   "hnLink": "https://news.ycombinator.com/item?id=49158333"
-  },
-  {
-   "title": "Ten advances in mathematics and theoretical computer science",
-   "link": "https://openai.com/index/ten-advances-in-mathematics/",
-   "points": 554,
-   "comments": 845,
-   "hnLink": "https://news.ycombinator.com/item?id=49157930"
-  },
-  {
-   "title": "Devtools must be open source",
-   "link": "https://blog.exe.dev/devtools-must-be-open-source",
-   "points": 628,
-   "comments": 208,
-   "hnLink": "https://news.ycombinator.com/item?id=49156111"
-  },
-  {
-   "title": "You don't need React: creating a minimal UI library in Vanilla JavaScript",
-   "link": "https://pedroth.github.io/?p=post/NoNeedReact",
-   "points": 67,
-   "comments": 49,
-   "hnLink": "https://news.ycombinator.com/item?id=49165665"
-  },
-  {
-   "title": "Amazonian civilization had estimated 3M people in 3% of forest area",
-   "link": "https://www.science.org/content/article/odd-shapes-hidden-dense-amazon-rainforest-reveal-sprawling-ancient-civilization",
-   "points": 167,
-   "comments": 136,
-   "hnLink": "https://news.ycombinator.com/item?id=49099336"
-  },
-  {
-   "title": "Archaeologists Find Ancient Glyphs in the Amazon",
-   "link": "https://www.nytimes.com/2026/07/31/world/americas/amazon-archaeology-geoglyphs.html",
-   "points": 13,
+   "title": "Online ad giant Adform was hacked, proving once again why ad blockers are needed",
+   "link": "https://this.weekinsecurity.com/online-advertising-giant-adform-was-hacked-proving-once-again-why-ad-blockers-are-necessary/",
+   "points": 45,
    "comments": 6,
-   "hnLink": "https://news.ycombinator.com/item?id=49135005"
+   "hnLink": "https://news.ycombinator.com/item?id=49170001"
   },
   {
-   "title": "That time when I failed the Microsoft interview",
-   "link": "https://ochagavia.nl/blog/that-time-when-i-failed-the-microsoft-interview/",
-   "points": 78,
-   "comments": 138,
-   "hnLink": "https://news.ycombinator.com/item?id=49095386"
+   "title": "Show HN: Fine-tune an 8B model on a 4 GB laptop GPU",
+   "link": "https://github.com/MakazhanAlpamys/Soup",
+   "points": 76,
+   "comments": 8,
+   "hnLink": "https://news.ycombinator.com/item?id=49166984"
   }
  ],
  "publicAttentionSignal": [
   {
-   "title": "맷 데이먼",
+   "title": "양산시",
    "traffic": "200+"
   },
   {
-   "title": "이란 대통령",
-   "traffic": "200+"
-  },
-  {
-   "title": "제주 대 바이에른",
-   "traffic": "20000+"
-  },
-  {
-   "title": "식사",
-   "traffic": "500+"
-  },
-  {
-   "title": "김서현",
-   "traffic": "500+"
-  },
-  {
-   "title": "체리 자동차",
-   "traffic": "100+"
-  },
-  {
-   "title": "토토",
-   "traffic": "200+"
-  },
-  {
-   "title": "환자",
+   "title": "삼성 갤럭시 z 폴드 6",
    "traffic": "2000+"
   },
   {
-   "title": "중대범죄수사청",
-   "traffic": "1000+"
+   "title": "장동건",
+   "traffic": "5000+"
   },
   {
-   "title": "당근마켓",
+   "title": "이윤지",
+   "traffic": "100+"
+  },
+  {
+   "title": "이투데이",
+   "traffic": "200+"
+  },
+  {
+   "title": "투신",
+   "traffic": "200+"
+  },
+  {
+   "title": "비행기",
    "traffic": "500+"
+  },
+  {
+   "title": "정몽준",
+   "traffic": "500+"
+  },
+  {
+   "title": "셀트리온",
+   "traffic": "200+"
+  },
+  {
+   "title": "송영규",
+   "traffic": "100+"
   }
  ],
  "hackernews": [
   {
-   "title": "FFmpeg 9.0",
-   "link": "https://github.com/FFmpeg/FFmpeg/blob/n9.0/RELEASE_NOTES",
-   "points": 203,
-   "comments": 35,
-   "hnLink": "https://news.ycombinator.com/item?id=49166202"
+   "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
+   "link": "https://toneyalexander.github.io/inclusive-color-space/",
+   "points": 74,
+   "comments": 20,
+   "hnLink": "https://news.ycombinator.com/item?id=49170165"
+  },
+  {
+   "title": "Ray Bradbury's \"There Will Come Soft Rains\" is set today (2026-08-04)",
+   "link": "https://short-stories.co/@raybradbury/there-will-come-soft-rains-6k8vr4xxlnmj",
+   "points": 395,
+   "comments": 177,
+   "hnLink": "https://news.ycombinator.com/item?id=49166491"
   },
   {
    "title": "DeepSeek V4 Flash on a Single AMD MI300X",
    "link": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
-   "points": 54,
-   "comments": 6,
+   "points": 252,
+   "comments": 58,
    "hnLink": "https://news.ycombinator.com/item?id=49166386"
+  },
+  {
+   "title": "Germany Records Historic 12B KWh Solar Feed-In in July 2026",
+   "link": "https://solarquarter.com/2026/08/03/germany-records-historic-12-billion-kwh-solar-feed-in-in-july-2026/",
+   "points": 56,
+   "comments": 24,
+   "hnLink": "https://news.ycombinator.com/item?id=49168886"
+  },
+  {
+   "title": "Agent skills that bring team coding standards to Claude Code and Codex",
+   "link": "https://github.com/tikalk/adlc-team-skills",
+   "points": 55,
+   "comments": 25,
+   "hnLink": "https://news.ycombinator.com/item?id=49169640"
+  },
+  {
+   "title": "Dates That Don't Exist (2015)",
+   "link": "https://blog.yossarian.net/2015/06/09/Dates-That-Dont-Exist",
+   "points": 48,
+   "comments": 27,
+   "hnLink": "https://news.ycombinator.com/item?id=49136363"
+  },
+  {
+   "title": "Keyv and friends compromised in active Shai-Hulud supply chain attack",
+   "link": "https://www.aikido.dev/blog/keyv-and-friends-compromised-in-npm-supply-chain-attack",
+   "points": 115,
+   "comments": 47,
+   "hnLink": "https://news.ycombinator.com/item?id=49166874"
   },
   {
    "title": "LLMs reward expertise",
    "link": "https://www.seangoedecke.com/llms-reward-expertise/",
-   "points": 1017,
-   "comments": 433,
+   "points": 1217,
+   "comments": 502,
    "hnLink": "https://news.ycombinator.com/item?id=49161518"
   },
   {
-   "title": "U.S. used 'virtually all' of its long-range precision missiles during Iran war",
-   "link": "https://www.cnbc.com/2026/08/04/us-has-used-virtually-all-of-its-long-range-precision-missiles-report.html",
-   "points": 65,
-   "comments": 37,
-   "hnLink": "https://news.ycombinator.com/item?id=49166860"
+   "title": "Buckminster Fuller: everything I know",
+   "link": "https://www.bfi.org/about-fuller/everything-i-know/",
+   "points": 77,
+   "comments": 25,
+   "hnLink": "https://news.ycombinator.com/item?id=49167147"
   },
   {
-   "title": "Harness Engineering for Self-Improvement",
-   "link": "https://lilianweng.github.io/posts/2026-07-04-harness/",
-   "points": 80,
-   "comments": 9,
-   "hnLink": "https://news.ycombinator.com/item?id=49164896"
+   "title": "Xbox goes down. You can't play games you own on disc",
+   "link": "https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/",
+   "points": 361,
+   "comments": 403,
+   "hnLink": "https://news.ycombinator.com/item?id=49167448"
   },
   {
-   "title": "Show HN: Run an 80B Qwen in 4.3 GB of RAM on a Mac, and a 35B on an iPhone",
-   "link": "https://github.com/leonickson1/Swiftlet",
-   "points": 206,
-   "comments": 92,
-   "hnLink": "https://news.ycombinator.com/item?id=49158333"
-  },
-  {
-   "title": "Ten advances in mathematics and theoretical computer science",
-   "link": "https://openai.com/index/ten-advances-in-mathematics/",
-   "points": 554,
-   "comments": 845,
-   "hnLink": "https://news.ycombinator.com/item?id=49157930"
-  },
-  {
-   "title": "Devtools must be open source",
-   "link": "https://blog.exe.dev/devtools-must-be-open-source",
-   "points": 628,
-   "comments": 208,
-   "hnLink": "https://news.ycombinator.com/item?id=49156111"
-  },
-  {
-   "title": "You don't need React: creating a minimal UI library in Vanilla JavaScript",
-   "link": "https://pedroth.github.io/?p=post/NoNeedReact",
-   "points": 67,
-   "comments": 49,
-   "hnLink": "https://news.ycombinator.com/item?id=49165665"
-  },
-  {
-   "title": "Amazonian civilization had estimated 3M people in 3% of forest area",
-   "link": "https://www.science.org/content/article/odd-shapes-hidden-dense-amazon-rainforest-reveal-sprawling-ancient-civilization",
-   "points": 167,
-   "comments": 136,
-   "hnLink": "https://news.ycombinator.com/item?id=49099336"
-  },
-  {
-   "title": "Archaeologists Find Ancient Glyphs in the Amazon",
-   "link": "https://www.nytimes.com/2026/07/31/world/americas/amazon-archaeology-geoglyphs.html",
-   "points": 13,
+   "title": "Online ad giant Adform was hacked, proving once again why ad blockers are needed",
+   "link": "https://this.weekinsecurity.com/online-advertising-giant-adform-was-hacked-proving-once-again-why-ad-blockers-are-necessary/",
+   "points": 45,
    "comments": 6,
-   "hnLink": "https://news.ycombinator.com/item?id=49135005"
+   "hnLink": "https://news.ycombinator.com/item?id=49170001"
   },
   {
-   "title": "That time when I failed the Microsoft interview",
-   "link": "https://ochagavia.nl/blog/that-time-when-i-failed-the-microsoft-interview/",
-   "points": 78,
-   "comments": 138,
-   "hnLink": "https://news.ycombinator.com/item?id=49095386"
+   "title": "Show HN: Fine-tune an 8B model on a 4 GB laptop GPU",
+   "link": "https://github.com/MakazhanAlpamys/Soup",
+   "points": 76,
+   "comments": 8,
+   "hnLink": "https://news.ycombinator.com/item?id=49166984"
   }
  ],
  "trends": [
   {
-   "title": "맷 데이먼",
+   "title": "양산시",
    "traffic": "200+"
   },
   {
-   "title": "이란 대통령",
-   "traffic": "200+"
-  },
-  {
-   "title": "제주 대 바이에른",
-   "traffic": "20000+"
-  },
-  {
-   "title": "식사",
-   "traffic": "500+"
-  },
-  {
-   "title": "김서현",
-   "traffic": "500+"
-  },
-  {
-   "title": "체리 자동차",
-   "traffic": "100+"
-  },
-  {
-   "title": "토토",
-   "traffic": "200+"
-  },
-  {
-   "title": "환자",
+   "title": "삼성 갤럭시 z 폴드 6",
    "traffic": "2000+"
   },
   {
-   "title": "중대범죄수사청",
-   "traffic": "1000+"
+   "title": "장동건",
+   "traffic": "5000+"
   },
   {
-   "title": "당근마켓",
+   "title": "이윤지",
+   "traffic": "100+"
+  },
+  {
+   "title": "이투데이",
+   "traffic": "200+"
+  },
+  {
+   "title": "투신",
+   "traffic": "200+"
+  },
+  {
+   "title": "비행기",
    "traffic": "500+"
+  },
+  {
+   "title": "정몽준",
+   "traffic": "500+"
+  },
+  {
+   "title": "셀트리온",
+   "traffic": "200+"
+  },
+  {
+   "title": "송영규",
+   "traffic": "100+"
   }
  ],
  "markets": {
   "fx": {
-   "date": "2026-08-03",
+   "date": "2026-08-04",
    "rates": {
-    "CNY": 6.7526,
-    "EUR": 0.86693,
-    "JPY": 156.68,
-    "KRW": 1427.05
+    "CNY": 6.7535,
+    "EUR": 0.86843,
+    "JPY": 157.41,
+    "KRW": 1427.11
    }
   },
   "crypto": {
    "btc": {
-    "usd": 63715,
-    "change24h": 1.6919790032647368
+    "usd": 64015,
+    "change24h": 0.35538424981857214
    },
    "eth": {
-    "usd": 1866.71,
-    "change24h": 1.2755687673305693
+    "usd": 1870,
+    "change24h": 0.20290370499475024
    }
   },
   "indices": {
+   "sp500": {
+    "price": 7713.33,
+    "changePct": 3.8303732241364017
+   },
+   "nasdaq": {
+    "price": 26458.14,
+    "changePct": 6.356215462450922
+   },
    "kospi": {
     "price": 6358.95,
     "changePct": 5.566217216775183
-   },
-   "sp500": {
-    "price": 7600.5,
-    "changePct": 2.5268508251519552
-   },
-   "nasdaq": {
-    "price": 25913.896,
-    "changePct": 3.9379626569463873
    }
   }
  },
