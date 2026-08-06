@@ -1,8 +1,10 @@
 {
- "lastAttemptAt": "2026-08-05T22:18:47.200Z",
- "lastSuccessAt": "2026-08-05T22:18:47.200Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-08-06T06:03:36.184Z",
+ "lastSuccessAt": "2026-08-06T06:03:36.184Z",
+ "status": "partial",
+ "errors": [
+  "fx: The operation was aborted due to timeout"
+ ],
  "quality": {
   "passed": true,
   "score": 100,
