@@ -1,13 +1,22 @@
 {
- "lastAttemptAt": "2026-09-13T08:15:02.374Z",
- "lastSuccessAt": "2026-09-13T08:15:02.374Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-09-13T13:47:10.912Z",
+ "lastSuccessAt": "2026-09-13T13:47:10.912Z",
+ "status": "partial",
+ "errors": [
+  "GN토픽/: fetch failed",
+  "GN토픽/headlines/section/topic/WORLD: fetch failed",
+  "GN토픽/headlines/section/topic/BUSINESS: fetch failed",
+  "GN토픽/headlines/section/topic/TECHNOLOGY: fetch failed",
+  "GN토픽/headlines/section/topic/SCIENCE: fetch failed",
+  "GN검색(비트코인 OR 이더리움 O…): fetch failed",
+  "GN검색(금리 OR 부동산 OR 청…): fetch failed"
+ ],
  "quality": {
   "passed": true,
-  "score": 100,
+  "score": 82,
   "reasons": [
-   "모든 품질 기준 통과"
+   "-8 수집 오류 7/27",
+   "-10 중복 제목 8건"
   ]
  }
 }
