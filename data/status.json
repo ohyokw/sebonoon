@@ -1,11 +1,9 @@
 {
- "lastAttemptAt": "2026-09-15T14:18:29.423Z",
- "lastSuccessAt": "2026-09-15T14:18:29.423Z",
+ "lastAttemptAt": "2026-09-15T23:30:56.213Z",
+ "lastSuccessAt": "2026-09-15T23:30:56.213Z",
  "status": "partial",
  "errors": [
-  "연합뉴스: fetch failed",
-  "연합뉴스: fetch failed",
-  "연합뉴스: fetch failed"
+  "Science: 403 Forbidden — https://www.science.org/rss/news_current.xml"
  ],
  "quality": {
   "passed": true,
