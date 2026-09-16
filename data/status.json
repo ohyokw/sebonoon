@@ -1,13 +1,16 @@
 {
- "lastAttemptAt": "2026-09-16T18:10:30.564Z",
- "lastSuccessAt": "2026-09-16T18:10:30.564Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-09-16T23:38:24.341Z",
+ "lastSuccessAt": "2026-09-16T23:38:24.341Z",
+ "status": "partial",
+ "errors": [
+  "Science: 403 Forbidden — https://www.science.org/rss/news_current.xml",
+  "crypto: 429 Too Many Requests — https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true"
+ ],
  "quality": {
   "passed": true,
-  "score": 90,
+  "score": 100,
   "reasons": [
-   "-10 중복 제목 13건"
+   "모든 품질 기준 통과"
   ]
  }
 }
