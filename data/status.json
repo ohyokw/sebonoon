@@ -1,10 +1,9 @@
 {
- "lastAttemptAt": "2026-09-27T14:40:38.029Z",
- "lastSuccessAt": "2026-09-27T14:40:38.029Z",
+ "lastAttemptAt": "2026-09-27T23:47:25.447Z",
+ "lastSuccessAt": "2026-09-27T23:47:25.447Z",
  "status": "partial",
  "errors": [
-  "Science: 403 Forbidden — https://www.science.org/rss/news_current.xml",
-  "crypto: fetch failed"
+  "Science: 403 Forbidden — https://www.science.org/rss/news_current.xml"
  ],
  "quality": {
   "passed": true,
