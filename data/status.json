@@ -1,10 +1,8 @@
 {
- "lastAttemptAt": "2026-09-30T00:24:03.888Z",
- "lastSuccessAt": "2026-09-30T00:24:03.888Z",
- "status": "partial",
- "errors": [
-  "crypto: 403 Forbidden — https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true"
- ],
+ "lastAttemptAt": "2026-09-30T09:37:45.519Z",
+ "lastSuccessAt": "2026-09-30T09:37:45.519Z",
+ "status": "ok",
+ "errors": [],
  "quality": {
   "passed": true,
   "score": 100,
