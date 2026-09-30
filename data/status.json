@@ -1,15 +1,15 @@
 {
- "lastAttemptAt": "2026-09-29T19:23:46.677Z",
- "lastSuccessAt": "2026-09-29T19:23:46.677Z",
+ "lastAttemptAt": "2026-09-30T00:24:03.888Z",
+ "lastSuccessAt": "2026-09-30T00:24:03.888Z",
  "status": "partial",
  "errors": [
   "crypto: 403 Forbidden — https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_24hr_change=true"
  ],
  "quality": {
   "passed": true,
-  "score": 90,
+  "score": 100,
   "reasons": [
-   "-10 중복 제목 10건"
+   "모든 품질 기준 통과"
   ]
  }
 }
