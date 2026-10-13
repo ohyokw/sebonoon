@@ -1,8 +1,10 @@
 {
- "lastAttemptAt": "2026-10-13T10:29:17.843Z",
- "lastSuccessAt": "2026-10-13T10:29:17.843Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-10-13T20:14:17.110Z",
+ "lastSuccessAt": "2026-10-13T20:14:17.110Z",
+ "status": "partial",
+ "errors": [
+  "Science: fetch failed"
+ ],
  "quality": {
   "passed": true,
   "score": 100,
