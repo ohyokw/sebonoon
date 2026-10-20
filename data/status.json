@@ -1,13 +1,15 @@
 {
- "lastAttemptAt": "2026-10-20T14:16:35.094Z",
- "lastSuccessAt": "2026-10-20T14:16:35.094Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-10-20T18:28:31.819Z",
+ "lastSuccessAt": "2026-10-20T18:28:31.819Z",
+ "status": "partial",
+ "errors": [
+  "Science: fetch failed"
+ ],
  "quality": {
   "passed": true,
-  "score": 100,
+  "score": 90,
   "reasons": [
-   "모든 품질 기준 통과"
+   "-10 중복 제목 12건"
   ]
  }
 }
