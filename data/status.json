@@ -1,8 +1,10 @@
 {
- "lastAttemptAt": "2026-10-20T23:50:26.530Z",
- "lastSuccessAt": "2026-10-20T23:50:26.530Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-10-21T08:29:36.772Z",
+ "lastSuccessAt": "2026-10-21T08:29:36.772Z",
+ "status": "partial",
+ "errors": [
+  "연합뉴스: fetch failed"
+ ],
  "quality": {
   "passed": true,
   "score": 100,
