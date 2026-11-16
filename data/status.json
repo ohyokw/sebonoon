@@ -1,8 +1,13 @@
 {
- "lastAttemptAt": "2026-11-16T11:05:51.731Z",
- "lastSuccessAt": "2026-11-16T11:05:51.731Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-11-16T23:22:24.460Z",
+ "lastSuccessAt": "2026-11-16T23:22:24.460Z",
+ "status": "partial",
+ "errors": [
+  "GN토픽/headlines/section/topic/WORLD: 429 Too Many Requests — https://news.google.com/rss/headlines/section/topic/WORLD?hl=ko&gl=KR&ceid=KR:ko",
+  "GN토픽/headlines/section/topic/BUSINESS: 429 Too Many Requests — https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko",
+  "GN토픽/headlines/section/topic/TECHNOLOGY: 429 Too Many Requests — https://news.google.com/rss/headlines/section/topic/TECHNOLOGY?hl=ko&gl=KR&ceid=KR:ko",
+  "GN토픽/headlines/section/topic/SCIENCE: 429 Too Many Requests — https://news.google.com/rss/headlines/section/topic/SCIENCE?hl=ko&gl=KR&ceid=KR:ko"
+ ],
  "quality": {
   "passed": true,
   "score": 100,
