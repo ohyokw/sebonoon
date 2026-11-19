@@ -1,10 +1,9 @@
 {
- "lastAttemptAt": "2026-11-19T11:31:05.728Z",
- "lastSuccessAt": "2026-11-19T11:31:05.728Z",
+ "lastAttemptAt": "2026-11-19T22:07:30.703Z",
+ "lastSuccessAt": "2026-11-19T22:07:30.703Z",
  "status": "partial",
  "errors": [
-  "GN:Associated Press: 429 Too Many Requests — https://news.google.com/rss/search?q=when%3A1d%20source%3A%22Associated%20Press%22&hl=en-US&gl=US&ceid=US:en",
-  "GN검색(금리 OR 부동산 OR 청…): 429 Too Many Requests — https://news.google.com/rss/search?q=%EA%B8%88%EB%A6%AC%20OR%20%EB%B6%80%EB%8F%99%EC%82%B0%20OR%20%EC%B2%AD%EC%95%BD%20OR%20%EC%97%B0%EA%B8%88%20OR%20%EC%9E%AC%ED%85%8C%ED%81%AC%20OR%20%EC%A0%88%EC%84%B8%20when%3A1d&hl=ko&gl=KR&ceid=KR:ko"
+  "GN:Reuters: 429 Too Many Requests — https://news.google.com/rss/search?q=when%3A1d%20business%20source%3AReuters&hl=en-US&gl=US&ceid=US:en"
  ],
  "quality": {
   "passed": true,
