@@ -1,8 +1,10 @@
 {
- "lastAttemptAt": "2026-11-24T01:38:15.813Z",
- "lastSuccessAt": "2026-11-24T01:38:15.813Z",
- "status": "ok",
- "errors": [],
+ "lastAttemptAt": "2026-11-24T13:35:12.152Z",
+ "lastSuccessAt": "2026-11-24T13:35:12.152Z",
+ "status": "partial",
+ "errors": [
+  "GN토픽/headlines/section/topic/WORLD: 429 Too Many Requests — https://news.google.com/rss/headlines/section/topic/WORLD?hl=ko&gl=KR&ceid=KR:ko"
+ ],
  "quality": {
   "passed": true,
   "score": 100,
