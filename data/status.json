@@ -1,11 +1,8 @@
 {
- "lastAttemptAt": "2026-11-27T12:07:40.701Z",
- "lastSuccessAt": "2026-11-27T12:07:40.701Z",
- "status": "partial",
- "errors": [
-  "GN검색(비트코인 OR 이더리움 O…): 429 Too Many Requests — https://news.google.com/rss/search?q=%EB%B9%84%ED%8A%B8%EC%BD%94%EC%9D%B8%20OR%20%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80%20OR%20%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90%20OR%20%EB%B8%94%EB%A1%9D%EC%B2%B4%EC%9D%B8%20when%3A1d&hl=ko&gl=KR&ceid=KR:ko",
-  "GN토픽/headlines/section/topic/BUSINESS: 429 Too Many Requests — https://news.google.com/rss/headlines/section/topic/BUSINESS?hl=ko&gl=KR&ceid=KR:ko"
- ],
+ "lastAttemptAt": "2026-11-27T22:40:14.529Z",
+ "lastSuccessAt": "2026-11-27T22:40:14.529Z",
+ "status": "ok",
+ "errors": [],
  "quality": {
   "passed": true,
   "score": 100,
